@@ -228,7 +228,14 @@
 			"ID": "24e5fee54c3ee75ddc88f1bae61f43e8",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "temp"
+			"Name": "temp",
+			"Transform": {
+				"Translation": {
+					"X": 5.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			}
 		},
 		{
 			"ID": "af80c7ed46a27f36d195b781769aa25c",
@@ -237,12 +244,12 @@
 			"V": {
 	"DoorRight": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
 	"DoorLeft": "47ce427c466c386f47a00d91e02a271b",
-	"OpenPosLeft": {
+	"openPosLeft": {
 		"X": 100.0,
 		"Y": 0.0,
 		"Z": 0.0
 	},
-	"OpenPosRight": {
+	"openPosRight": {
 		"X": -100.0,
 		"Y": 0.0,
 		"Z": 0.0
