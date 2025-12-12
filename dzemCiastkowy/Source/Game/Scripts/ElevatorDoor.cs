@@ -5,8 +5,8 @@ public class ElevatorDoor : Script
     public Actor DoorRight;
     public Actor DoorLeft;
 
-    public Vector3 OpenPosLeft;
-    public Vector3 OpenPosRight;
+    public Vector3 openPosLeft;
+    public Vector3 openPosRight;
 
     private Vector3 closedPosLeft;
     private Vector3 closedPosRight;
@@ -15,18 +15,23 @@ public class ElevatorDoor : Script
     private float openTime;
     private readonly float duration = 1.5f;
 
+    private bool openc = false;
+
     public override void OnStart()
     {
         closedPosLeft = DoorLeft.Position;
         closedPosRight = DoorRight.Position;
-        OpenPosLeft = closedPosLeft + OpenPosLeft;
-        OpenPosRight = closedPosRight + OpenPosRight;
+        openPosLeft = closedPosLeft + openPosLeft;
+        openPosRight = closedPosRight + openPosRight;
     }
 
-    public void OnOpen()
+    public void OnOpenClose()
     {
-        opening = true;
-        openTime = 0f;
+        if(!opening)
+        {
+            opening = true;
+            openTime = 0f;
+        }
     }
 
     public override void OnUpdate()
@@ -36,11 +41,22 @@ public class ElevatorDoor : Script
 
         openTime += Time.DeltaTime;
         float alpha = Mathf.Clamp(openTime / duration, 0, 1);
-
-        DoorRight.Position = Vector3.Lerp(closedPosRight, OpenPosRight, alpha);
-        DoorLeft.Position = Vector3.Lerp(closedPosLeft, OpenPosLeft, alpha);
+        
+        if(!openc)
+        {
+            DoorRight.Position = Vector3.Lerp(closedPosRight, openPosRight, alpha);
+            DoorLeft.Position = Vector3.Lerp(closedPosLeft, openPosLeft, alpha);
+        }
+        else
+        {
+            DoorRight.Position = Vector3.Lerp(openPosRight, closedPosRight, alpha);
+            DoorLeft.Position = Vector3.Lerp(openPosLeft, closedPosLeft, alpha);
+        }
 
         if (alpha >= 1f)
+        {
             opening = false;
+            openc = !openc;
+        }
     }
 }
