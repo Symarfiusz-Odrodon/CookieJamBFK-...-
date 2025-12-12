@@ -255,6 +255,28 @@
 		"Z": 0.0
 	}
 }
+		},
+		{
+			"ID": "183c2f7b428e65781793cca233e0de5c",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "TextRender",
+			"Transform": {
+				"Translation": {
+					"X": -220.0,
+					"Y": 210.0,
+					"Z": 0.0
+				}
+			},
+			"Text": "I EAT\nROCKS\n",
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "6203d3b04fc3f13896346996b9750750"
+		},
+		{
+			"ID": "1964ceb44c40586cc933259b50cc3602",
+			"TypeName": "Game.FloorRenderer",
+			"ParentID": "183c2f7b428e65781793cca233e0de5c",
+			"V": {}
 		}
 	]
 }
