@@ -158,12 +158,12 @@
 			"ID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Cube",
+			"Name": "Right",
 			"Transform": {
 				"Translation": {
-					"X": 6.8406219482421875,
-					"Y": 61.59697723388672,
-					"Z": -84.26880645751953
+					"X": -50.0,
+					"Y": 100.0,
+					"Z": 0.0
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
@@ -183,6 +183,61 @@
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
 			"Name": "BoxCollider"
+		},
+		{
+			"ID": "47ce427c466c386f47a00d91e02a271b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Left",
+			"Transform": {
+				"Translation": {
+					"X": 50.0,
+					"Y": 100.0,
+					"Z": 0.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "8391b6da40053a988a0959ab9f26f700",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "c9a414f5489fab2d1a36cb95b53ba0a9",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "47ce427c466c386f47a00d91e02a271b",
+			"Name": "BoxCollider"
+		},
+		{
+			"ID": "24e5fee54c3ee75ddc88f1bae61f43e8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "temp"
+		},
+		{
+			"ID": "af80c7ed46a27f36d195b781769aa25c",
+			"TypeName": "ElevatorDoor",
+			"ParentID": "24e5fee54c3ee75ddc88f1bae61f43e8",
+			"V": {
+	"DoorRight": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
+	"DoorLeft": "47ce427c466c386f47a00d91e02a271b",
+	"OpenPosLeft": {
+		"X": 100.0,
+		"Y": 0.0,
+		"Z": 0.0
+	},
+	"OpenPosRight": {
+		"X": -100.0,
+		"Y": 0.0,
+		"Z": 0.0
+	}
+}
 		}
 	]
 }

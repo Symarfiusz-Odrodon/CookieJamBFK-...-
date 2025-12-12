@@ -8,11 +8,14 @@ public class PlayerController : Script
     [Tooltip("Camera rotation smoothing factor")]
     public float CameraSmoothing { get; set; } = 20.0f;
 
+    private ElevatorDoor doorController;
+
     private float pitch;
     private float yaw;
 
     public override void OnStart()
     {
+        doorController = Actor.Scene.FindScript<ElevatorDoor>();
         var initialEulerAngles = Actor.Orientation.EulerAngles;
         pitch = initialEulerAngles.X;
         yaw = initialEulerAngles.Y;
@@ -44,5 +47,10 @@ public class PlayerController : Script
         camTrans.Translation += move * MoveSpeed;
 
         Actor.Transform = camTrans;
+
+        if(Input.GetKeyDown(KeyboardKeys.F))
+        {
+            doorController.OnOpen();
+        }
     }
 }
