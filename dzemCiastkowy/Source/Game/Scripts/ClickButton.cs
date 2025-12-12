@@ -92,6 +92,7 @@ namespace Game
                 isAnimating = true;
                 animTime = 0f;
                 positionOriginal = Actor.Position;
+                Actor.Scene.FindScript<FloorRenderer>().OnFloorUpdate(5);
             }
         }
     }
