@@ -163,7 +163,7 @@
 				"Translation": {
 					"X": -50.0,
 					"Y": 190.0,
-					"Z": 0.0
+					"Z": -579.478759765625
 				},
 				"Scale": {
 					"X": 1.0,
@@ -198,7 +198,7 @@
 				"Translation": {
 					"X": 50.0,
 					"Y": 190.0,
-					"Z": 0.0
+					"Z": -579.478759765625
 				},
 				"Scale": {
 					"X": 1.0,
@@ -242,19 +242,527 @@
 			"TypeName": "ElevatorDoor",
 			"ParentID": "24e5fee54c3ee75ddc88f1bae61f43e8",
 			"V": {
-	"DoorRight": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-	"DoorLeft": "47ce427c466c386f47a00d91e02a271b",
+	"DoorRight": "19b00bb24abc14570328cb93f4967f57",
+	"DoorLeft": "62d1d1144aa773a31430fa97fcd66ce2",
 	"openPosLeft": {
-		"X": 100.0,
+		"X": 0.0,
 		"Y": 0.0,
-		"Z": 0.0
+		"Z": 80.0
 	},
 	"openPosRight": {
-		"X": -100.0,
+		"X": 0.0,
 		"Y": 0.0,
-		"Z": 0.0
+		"Z": -80.0
 	}
 }
+		},
+		{
+			"ID": "55ecc5e349d2c495be6d6a944af2f096",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "ELEVATOR",
+			"Transform": {
+				"Translation": {
+					"X": 340.04400634765625,
+					"Y": -4.952505588531494,
+					"Z": 163.83187866210938
+				}
+			}
+		},
+		{
+			"ID": "df7903764cd9c8e1b6fcaeb88968414a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "Doors",
+			"Transform": {
+				"Translation": {
+					"X": -2.104583740234375,
+					"Y": 25.642343521118164,
+					"Z": -11.331878662109375
+				}
+			}
+		},
+		{
+			"ID": "62d1d1144aa773a31430fa97fcd66ce2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "df7903764cd9c8e1b6fcaeb88968414a",
+			"Name": "drzwi osobno",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -127.5
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "bf85ffc94bff88cef0aed3bd89adb694",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "19b00bb24abc14570328cb93f4967f57",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "df7903764cd9c8e1b6fcaeb88968414a",
+			"Name": "drzwi osobno drzwi_prawe",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 127.5
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "28b6628244e7467c3b75f3b64339af6b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "9ade17c7423b235732165b85fe2789f6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "Button",
+			"Transform": {
+				"Translation": {
+					"X": -2.104583740234375,
+					"Y": -99.48815155029297,
+					"Z": -7.3035125732421875
+				}
+			}
+		},
+		{
+			"ID": "deba2e8d47664aba083089a6eb51d9ff",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "9ade17c7423b235732165b85fe2789f6",
+			"Name": "drzwi osobno duzy_przycisk",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -0.5919036865234375,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "9f3183724cf88b235c9f91b4ae62cbfd",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ff21851b47dc11441d7a348a0b6acd96",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "9ade17c7423b235732165b85fe2789f6",
+			"Name": "drzwi osobno duzy_przycisk_obowdka",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.5919036865234375,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "c10110cf468f0e5c265394a5a1e2d40f",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "bda79b184447742ee5a60180ccce2030",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "Mapa",
+			"Transform": {
+				"Translation": {
+					"X": -2.104583740234375,
+					"Y": -87.58015441894531,
+					"Z": -7.3035125732421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 3.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "e015fcdc4356c3d1e6041fb48b6cf049",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "7d1ca7484fa8abca95a1bc9e49af54df",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "bda79b184447742ee5a60180ccce2030",
+			"Name": "drzwi osobno mapa_swiatlo_1",
+			"Transform": {
+				"Translation": {
+					"X": -0.030288731679320335,
+					"Y": -0.23366928100585938,
+					"Z": 0.1340942233800888
+				}
+			},
+			"Model": "e96349c64d6db9a3dfac8f980ecc41c6",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "2bcfafe442c2e7841bfe0289981eddc1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "bda79b184447742ee5a60180ccce2030",
+			"Name": "drzwi osobno mapa_swiatlo_2",
+			"Transform": {
+				"Translation": {
+					"X": -0.030288731679320335,
+					"Y": -0.23366928100585938,
+					"Z": 0.1340942233800888
+				}
+			},
+			"Model": "77ced1a94accad7a5ec5c7b1ec92c9d1",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "4707fb8c4f77574358f45a9ed16cfc4c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "bda79b184447742ee5a60180ccce2030",
+			"Name": "drzwi osobno mapa_swiatlo_3",
+			"Transform": {
+				"Translation": {
+					"X": -0.030288731679320335,
+					"Y": -0.23366928100585938,
+					"Z": 0.1340942233800888
+				}
+			},
+			"Model": "3f48cda349d8325200a41eab9a54c9ff",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "627e47e5401c7a3a363a4387598385bd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "bda79b184447742ee5a60180ccce2030",
+			"Name": "drzwi osobno mapa_swiatlo_4",
+			"Transform": {
+				"Translation": {
+					"X": -0.030288731679320335,
+					"Y": -0.23366928100585938,
+					"Z": 0.1340942233800888
+				}
+			},
+			"Model": "7599029b42b2f566964bb8a29e61a044",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3ea1ae8b4268fcfc204311a79ecff357",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "bda79b184447742ee5a60180ccce2030",
+			"Name": "drzwi osobno mapa_swiatlo_5",
+			"Transform": {
+				"Translation": {
+					"X": -0.030288731679320335,
+					"Y": -0.23366928100585938,
+					"Z": 0.1340942233800888
+				}
+			},
+			"Model": "d308b2f7475d6aefc81ca58e1339967c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "42b7725945852f864b93009ff6671e71",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "drzwi osobno oparcie",
+			"Transform": {
+				"Translation": {
+					"X": -2.104583740234375,
+					"Y": -63.746055603027344,
+					"Z": -7.3035125732421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "f0d65f6d4f6c845b71eb0b84d4051538",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "551b560846a5bfa9ce0252a177812d89",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "drzwi osobno oparcie.001",
+			"Transform": {
+				"Translation": {
+					"X": -2.104583740234375,
+					"Y": -63.7364501953125,
+					"Z": -7.3035125732421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "c70f9f3d46338bd0668857812cd45a99",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "71d3c6a84d4134527b6c6094ae53d364",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "drzwi osobno winda",
+			"Transform": {
+				"Translation": {
+					"X": -2.104583740234375,
+					"Y": 29.952444076538086,
+					"Z": -7.3035125732421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "ea299baf45676ff8731a68a5be459485",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "2c63c18040c2d1b8c3a03f948515b396",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "drzwi osobno wyswietlacz_pietra",
+			"Transform": {
+				"Translation": {
+					"X": 53.147125244140625,
+					"Y": -78.9301528930664,
+					"Z": -7.3035125732421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -2.384185791015625e-7,
+					"Z": 0.0,
+					"W": -1.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "8fd50e404054a58a0f6d668ab96fc435",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "183c2f7b428e65781793cca233e0de5c",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "2c63c18040c2d1b8c3a03f948515b396",
+			"Name": "TextRender",
+			"Transform": {
+				"Translation": {
+					"X": -10.522786140441895,
+					"Y": 166.1225128173828,
+					"Z": -40.54594039916992
+				},
+				"Scale": {
+					"X": 0.125,
+					"Y": 0.125,
+					"Z": 0.125
+				}
+			},
+			"Text": "10",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Size": 64.0,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "6203d3b04fc3f13896346996b9750750"
+		},
+		{
+			"ID": "1964ceb44c40586cc933259b50cc3602",
+			"TypeName": "Game.FloorRenderer",
+			"ParentID": "183c2f7b428e65781793cca233e0de5c",
+			"V": {}
 		}
 	]
 }

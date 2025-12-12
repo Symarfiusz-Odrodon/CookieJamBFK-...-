@@ -1,4 +1,5 @@
 ﻿using FlaxEngine;
+using Game;
 
 public class PlayerController : Script
 {
@@ -50,7 +51,15 @@ public class PlayerController : Script
 
         if(Input.GetKeyDown(KeyboardKeys.F))
         {
+            Debug.Log("DebugDoorOpen");
             doorController.OnOpenClose();
+        }
+
+
+        if (Input.GetKeyDown(KeyboardKeys.G))
+        {
+            Debug.Log("DebugFloorUpdate");
+            Actor.Scene.FindScript<FloorRenderer>().OnFloorUpdate(5);
         }
     }
 }
