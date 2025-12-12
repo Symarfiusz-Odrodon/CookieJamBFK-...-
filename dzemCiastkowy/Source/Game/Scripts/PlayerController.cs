@@ -50,7 +50,7 @@ public class PlayerController : Script
 
         if(Input.GetKeyDown(KeyboardKeys.F))
         {
-            doorController.OnOpen();
+            doorController.OnOpenClose();
         }
     }
 }
