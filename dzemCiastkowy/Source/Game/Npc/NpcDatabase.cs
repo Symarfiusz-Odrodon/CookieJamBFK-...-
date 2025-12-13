@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 
-namespace Game.Npc;
+namespace Game.NPC;
 
 public class NpcDatabase
 {
-    public List<NPCCLass> npcs = [];
+    public List<NPC_Class> npcs = [];
 
-    public NPCCLass GetNpcById(string id) {
+    public NPC_Class GetNpcById(string id) {
         return npcs[0];
     }
 }
