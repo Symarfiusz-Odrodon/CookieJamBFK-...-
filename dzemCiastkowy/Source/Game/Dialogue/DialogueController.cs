@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FlaxEngine;
 using FlaxInk;
 using FlaxEngine.GUI;
-using Game.Npc;
+using Game.NPC;
 
 namespace Game.Dialogue;
 
