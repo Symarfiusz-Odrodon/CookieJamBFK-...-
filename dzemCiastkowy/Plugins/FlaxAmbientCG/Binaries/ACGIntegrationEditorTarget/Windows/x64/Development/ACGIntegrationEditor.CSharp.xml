@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ACGIntegrationEditor.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:ACGIntegrationEditor.AmbientCGPlugin">
+            <summary>
+            AmbientCgPlugin Script.
+            </summary>
+        </member>
+        <member name="T:ACGIntegrationEditor.AmbientCGWindow">
+            <summary>
+            AmbientCGWindow Script.
+            </summary>
+        </member>
+        <member name="M:ACGIntegrationEditor.AmbientCGWindow.Update(System.Boolean)">
+            <summary>
+            Updates the entries by either using a cached response (saved in <see cref="F:FlaxEditor.Editor.CustomData"/>)
+            or fetching a new one from ambientCG.
+            </summary>
+            <param name="force">Where to force update by fetching new data from the API.</param>
+        </member>
+        <member name="P:ACGIntegrationEditor.Api.Download.Size">
+            <summary>
+            Size in bytes.
+            </summary>
+        </member>
+        <member name="P:ACGIntegrationEditor.Api.Download.Attribute">
+            <summary>
+            The asset type. Includes the name of the resolution and filetype(PNG or JPEG).
+            </summary>
+        </member>
+        <member name="P:ACGIntegrationEditor.Api.Download.DownloadLink">
+            <summary>
+            The download link recommended by the api docs. It is use to track downloads.
+            </summary>
+        </member>
+        <member name="P:ACGIntegrationEditor.Api.Download.FullDownloadPath">
+            <summary>
+            The full download path bypassing any tracking. It is provided in case the client
+            cannot handle redirects.
+            </summary>
+        </member>
+        <member name="P:ACGIntegrationEditor.Api.Download.FileType">
+            <summary>
+            Filetype of the download, usually zip.
+            </summary>
+        </member>
+        <member name="P:ACGIntegrationEditor.Api.Download.ZipContent">
+            <summary>
+            The names of the files contained inside the zip.
+            </summary>
+        </member>
+    </members>
+</doc>
