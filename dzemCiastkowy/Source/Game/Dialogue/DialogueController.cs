@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using FlaxEngine;
 using FlaxInk;
 using FlaxEngine.GUI;
+using Game.Npc;
 
 namespace Game.Dialogue;
 
 public class DialogueController : Script
 {
+    private const string _SPEAKER_VAR_NAME = "speaker";
+
+    [Header("Database")]
+    public JsonAssetReference<NpcDatabase> npcDatabase;
+
     [Header("Input")]
     public InputEvent progressDialogueInput = new();
 
@@ -20,16 +26,16 @@ public class DialogueController : Script
     public Actor rootControl;
     [Tooltip("Label or RichTextBox that displays the dialogue lines.")]
     public UIControl textControl;
+    [Space(16)]
     [Tooltip("A ui control containing option buttons.")]
     public UIControl optionsRootControl;
     [Tooltip("List of buttons with labels as their children representing options.")]
     public UIControl[] optionControls;
+    [Space(16)]
+    [Tooltip("Label that displays the current speaking character.")]
+    public UIControl speakerLabelControl;
 
     public bool StoryActive { get; private set; }
-
-    private bool _storyAlmostEnded = false;
-    private bool _lineRead;
-    private Queue<string> _lines = [];
 
     public override void OnStart()
     {
@@ -43,15 +49,27 @@ public class DialogueController : Script
             }
         }
 
+        runner.NewDialogueChoices += _ =>
+        {
+            ShowOptions();
+        };
+
         runner.NewDialogueLine += line =>
         {
-            _lineRead = true;
-            _lines.Enqueue(line.Text);
+            runner.GetVariable(_SPEAKER_VAR_NAME, out string speakerId);
+            HideOptions();
+            if (textControl.Control is RichTextBox textBox)
+                textBox.Text = line.Text;
+            else if (textControl.Control is Label label)
+                label.Text = line.Text;
+            
+            if (speakerLabelControl.Control is Label speakerLabel)
+                speakerLabel.Text = npcDatabase.Instance.GetNpcById(speakerId)?.charName ?? speakerId;
         };
 
         runner.DialogueEnded += () =>
         {
-            _storyAlmostEnded = true;
+            FinishStory();
         };
 
         progressDialogueInput.Pressed += () =>
@@ -71,18 +89,15 @@ public class DialogueController : Script
         if (!runner.IsStoryActive) return;
         runner.ChooseChoice(index);
         HideOptions();
-        UpdateLines();
         ContinueDialogue();
     }
 
     public void StartDialogue(JsonAssetReference<InkStory> story)
     {
-        _storyAlmostEnded = false;
         rootControl.IsActive = true;
         HideOptions();
         StoryActive = true;
         runner.StartDialogue(story);
-        UpdateLines();
         ContinueDialogue();
     }
 
@@ -90,21 +105,7 @@ public class DialogueController : Script
     {
         if (optionsRootControl.IsActive) return;
 
-        if (_lines.TryDequeue(out var line))
-        {
-            HideOptions();
-            if (textControl.Control is RichTextBox textBox)
-                textBox.Text = line;
-            else if (textControl.Control is Label label)
-                label.Text = line;
-            
-            if (_lines.Count > 0) return;
-        }
-
-        if (_storyAlmostEnded)
-            FinishPlay();
-
-        ShowOptions();
+        runner.ContinueDialogue();
     }
 
     private void ShowOptions()
@@ -127,7 +128,7 @@ public class DialogueController : Script
         }
     }
 
-    private void FinishPlay()
+    private void FinishStory()
     {
         HideAllElements();
         StoryActive = false;
@@ -142,15 +143,5 @@ public class DialogueController : Script
     {
         rootControl.IsActive = false;
         HideOptions();
-    }
-
-    void UpdateLines()
-    {
-        do
-        {
-            _lineRead = false;
-            runner.ContinueDialogue();
-        }
-        while (_lineRead);
     }
 }
