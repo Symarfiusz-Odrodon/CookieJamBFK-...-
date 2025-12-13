@@ -30,73 +30,45 @@
 			"Name": "Visuals"
 		},
 		{
-			"ID": "bc81376747666609b0974580a21519a1",
-			"TypeName": "FlaxEngine.Sky",
+			"ID": "0e4b49ed406882487953b5b975f8bd5e",
+			"TypeName": "FlaxEngine.PointLight",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "Sky",
+			"Name": "PointLight",
 			"Transform": {
 				"Translation": {
-					"X": -69.65292358398438,
-					"Y": 124.01800537109375,
-					"Z": 35.34806823730469
-				}
-			},
-			"Sun": "deecf0894777293a4f478dadacf2a6f8",
-			"SunPower": 10.0
-		},
-		{
-			"ID": "da5e1c454a56377517d41686ebb0348f",
-			"TypeName": "FlaxEngine.EnvironmentProbe",
-			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "Environment Probe",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 249.3258056640625,
-					"Z": 0.0
-				}
-			},
-			"ProbeID": "1e1fb3a7447c1265b15967b480549d98"
-		},
-		{
-			"ID": "deecf0894777293a4f478dadacf2a6f8",
-			"TypeName": "FlaxEngine.DirectionalLight",
-			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "Directional Light",
-			"Transform": {
-				"Translation": {
-					"X": -1.6893305778503418,
-					"Y": 267.7931823730469,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.5176515579223633,
-					"Y": 0.0833025798201561,
-					"Z": 0.06534233689308167,
-					"W": 0.8490158915519714
+					"X": 507.5553894042969,
+					"Y": 388.8555603027344,
+					"Z": 139.74148559570313
 				}
 			},
 			"Color": {
-				"R": 1.0,
-				"G": 0.9770245552062988,
-				"B": 0.8860000371932983,
+				"R": 0.3711111545562744,
+				"G": 0.3711111545562744,
+				"B": 0.3711111545562744,
 				"A": 1.0
-			}
+			},
+			"Brightness": 5.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 16.0
 		},
 		{
-			"ID": "eb18e84d41670d6314174b89a1d5ffea",
-			"TypeName": "FlaxEngine.SkyLight",
+			"ID": "96d2d1c34fa75b18a4ba0c8685e321da",
+			"TypeName": "FlaxEngine.DirectionalLight",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "SkyLight",
+			"Name": "DirectionalLight",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 150.0,
-					"Z": 0.0
+					"X": -190.97642517089844,
+					"Y": 3060.92724609375,
+					"Z": -344.12115478515625
+				},
+				"Orientation": {
+					"X": 0.07691167294979095,
+					"Y": 0.3813551664352417,
+					"Z": -0.03185785561800003,
+					"W": 0.920672595500946
 				}
-			},
-			"BakedProbe": "1c0e10484ff57d402275289550564b9f",
-			"Mode": 0
+			}
 		},
 		{
 			"ID": "b0d72c3746caebca055e1f921ca21c7c",
@@ -105,15 +77,15 @@
 			"Name": "Camera",
 			"Transform": {
 				"Translation": {
-					"X": -198.75326538085938,
-					"Y": 196.89071655273438,
-					"Z": 190.70037841796875
+					"X": 524.030517578125,
+					"Y": 193.84527587890625,
+					"Z": 151.21543884277344
 				},
 				"Orientation": {
-					"X": 0.06189095228910446,
-					"Y": 0.9198267459869385,
-					"Z": -0.1617070734500885,
-					"W": 0.35204988718032837
+					"X": -0.015396232716739178,
+					"Y": 0.7160336375236511,
+					"Z": -0.0013944300590083003,
+					"W": -0.6978946328163147
 				}
 			},
 			"StaticFlags": 0
@@ -123,6 +95,46 @@
 			"TypeName": "PlayerController",
 			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
 			"V": {}
+		},
+		{
+			"ID": "c3f7c98b4d726c8a681a559e4c1056d2",
+			"TypeName": "FlaxEngine.PostFxVolume",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"Name": "Volume",
+			"Settings": {
+				"AO": {},
+				"GI": {},
+				"Bloom": {
+					"OverrideFlags": 7,
+					"Intensity": 0.1499999463558197,
+					"Threshold": 0.6000000238418579
+				},
+				"ToneMapping": {},
+				"ColorGrading": {},
+				"EyeAdaptation": {},
+				"CameraArtifacts": {
+					"OverrideFlags": 123,
+					"VignetteIntensity": 2.0,
+					"GrainAmount": 0.05000000074505806,
+					"GrainSpeed": 0.10000000149011612,
+					"ChromaticDistortion": 0.29999998211860657
+				},
+				"LensFlares": {},
+				"DepthOfField": {
+					"OverrideFlags": 3,
+					"Enabled": true,
+					"BlurStrength": 0.10000000149011612
+				},
+				"MotionBlur": {},
+				"SSR": {
+					"OverrideFlags": 32775,
+					"Intensity": 2.0,
+					"DepthResolution": 1,
+					"RayTracePassResolution": 1
+				},
+				"AA": {},
+				"PostFxMaterials": {}
+			}
 		},
 		{
 			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
@@ -152,76 +164,6 @@
 			"ID": "4a7045e748c74e3de29afd8856f99205",
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Right",
-			"Transform": {
-				"Translation": {
-					"X": -50.0,
-					"Y": 190.0,
-					"Z": -579.478759765625
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 3.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "f05185004d85b1695fc5b1ae710ba373",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "47ce427c466c386f47a00d91e02a271b",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Left",
-			"Transform": {
-				"Translation": {
-					"X": 50.0,
-					"Y": 190.0,
-					"Z": -579.478759765625
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 3.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "c9a414f5489fab2d1a36cb95b53ba0a9",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "47ce427c466c386f47a00d91e02a271b",
 			"Name": "BoxCollider"
 		},
 		{
@@ -266,6 +208,11 @@
 					"X": 340.04400634765625,
 					"Y": -4.952505588531494,
 					"Z": 163.83187866210938
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 1.0,
+					"Z": 1.5
 				}
 			}
 		},
@@ -309,7 +256,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "c95a19284865f54d85cf448ea52268ba",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -344,7 +291,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "c95a19284865f54d85cf448ea52268ba",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -373,7 +320,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": -0.5919036865234375,
+					"Y": 0.5,
 					"Z": 0.0
 				},
 				"Orientation": {
@@ -392,7 +339,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "4a6969d540488944c04f1ca84a0ceff7",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -462,7 +409,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "2aa4e07b449bb38ef8e6d5851f2d844c",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -486,7 +433,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "634ac8cb47074b6ff7258da498f19a78",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -510,7 +457,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "bbe1c4a14711f34a1b8bf3a25d21ea27",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -534,7 +481,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "bbe1c4a14711f34a1b8bf3a25d21ea27",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -558,7 +505,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "634ac8cb47074b6ff7258da498f19a78",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -582,7 +529,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "634ac8cb47074b6ff7258da498f19a78",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -617,7 +564,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "2b52d0a94db5a4ea61085f89c400d688",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -652,7 +599,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "2b52d0a94db5a4ea61085f89c400d688",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -687,7 +634,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "c4bdbea540b0fd66088c3098035bab4c",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -762,6 +709,486 @@
 			"ID": "1964ceb44c40586cc933259b50cc3602",
 			"TypeName": "Game.FloorRenderer",
 			"ParentID": "183c2f7b428e65781793cca233e0de5c",
+			"V": {}
+		},
+		{
+			"ID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Biuro",
+			"Transform": {
+				"Translation": {
+					"X": 273.2959289550781,
+					"Y": 3.5484530925750732,
+					"Z": 115.71886444091797
+				}
+			}
+		},
+		{
+			"ID": "80f8661b46ef0856432564bf17afbe20",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale zaluzja.001",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 16.989248275756836,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "c683a20842debc75671e3cb1ef238c0c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "141f5cfb48f719f878eab7b27c8630d9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 23.634647369384766,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "6e53932148b46faef4fae3876c15e321",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "27140a12439dc94ad2036ea79939ab36",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale biuro",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 23.312047958374023,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "3c26b7e043971244e806239e6e5aeb3e",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "a7c0f29346dc069fb83b9fbf6951fe95",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale drzwi",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 34.883846282958984,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "e0b9d3e0496c6766b41260bcf1b5194a",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ac71260a4350dcdf197428b854bae948",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale dywan",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 23.64234733581543,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "6c38da844a4d35905e27b98a8650408d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "c0cd67c64ef81d3c7c6cab92195d0b63",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale klawiatura",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": -73.05045318603516,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "f0bdbce24eb4707fb2415f8db5139ccf",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "c977fe0b4fd4ae3be44314acf8293797",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale kwiatek",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 22.334047317504883,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "38f0630948c385f4327f77a32e59c7d5",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "38c917024b4e20b2c441b3a8a842b0db",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale monitor",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": -73.27665710449219,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "36d41420403350b0c846bd9b169ff6e5",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f8a4ea3c4023e9ae6c9b55a62f07b489",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale okno",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 23.502147674560547,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "c63ef56b4eee477732988aa27d5c6d32",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "127e6e584b69ead8f33cdbae663fd060",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale okno.001",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 23.502147674560547,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "9f4ade0e497d382a9e89679c1ee612ce",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "b37d5cfb464d78dc48c09b971190ad9f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale slup.001",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 21.731348037719727,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "3ca032db44105c7a2bc640961cd7c9ad",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3f3779eb4e24af12173880b8f3c579f9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale włącznik_światła",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": -88.93605041503906,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "0f4481eb417395de3957868e349340a1",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "b1be03494fa102d607bf86894d911bcb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale slup.002",
+			"Transform": {
+				"Translation": {
+					"X": 0.000030517578125,
+					"Y": 21.731348037719727,
+					"Z": -0.00002288818359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "17366cf8400de0b022b406956d7aa447",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "FloorController"
+		},
+		{
+			"ID": "a2da3c2a4e7b1341313c46848157b7e0",
+			"TypeName": "dzemCiastkowy.FloorDisplay",
+			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
 			"V": {}
 		}
 	]
