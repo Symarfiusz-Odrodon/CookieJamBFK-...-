@@ -13,7 +13,7 @@ public class ElevatorDoor : Script
 
     private bool opening;
     private float openTime;
-    private readonly float duration = 1.5f;
+    private readonly float duration = 0.5f;
 
     private bool openc = false;
 

@@ -71,6 +71,151 @@
 			}
 		},
 		{
+			"ID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "officeLights",
+			"Transform": {
+				"Translation": {
+					"X": -343.8863525390625,
+					"Y": 506.0727844238281,
+					"Z": 101.53353881835938
+				}
+			}
+		},
+		{
+			"ID": "20942dc1466a70061aea849cfcc6c49b",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 337.52789306640625,
+					"Y": 0.000030517578125,
+					"Z": -165.13812255859375
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "0c14828f4b36a0e8d5bb7283ac71404b",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 2",
+			"Transform": {
+				"Translation": {
+					"X": 6.728118896484375,
+					"Y": 0.000030517578125,
+					"Z": 194.54733276367188
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "9e95e74f485060353c03d58bda641aaa",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 1",
+			"Transform": {
+				"Translation": {
+					"X": 337.52789306640625,
+					"Y": 0.000030517578125,
+					"Z": 179.04452514648438
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "0c8727f5468b3b01da00129027596dc1",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 3",
+			"Transform": {
+				"Translation": {
+					"X": -344.25604248046875,
+					"Y": 0.000030517578125,
+					"Z": 194.54733276367188
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "b121bc5b4b7568a23621b2b4520d910b",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 5",
+			"Transform": {
+				"Translation": {
+					"X": 6.728118896484375,
+					"Y": 0.000030517578125,
+					"Z": -201.50054931640625
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "ad24aea64226fea10e212d8938ce6b4d",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 6",
+			"Transform": {
+				"Translation": {
+					"X": -344.25604248046875,
+					"Y": 0.000030517578125,
+					"Z": -201.50054931640625
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
 			"ID": "b0d72c3746caebca055e1f921ca21c7c",
 			"TypeName": "FlaxEngine.Camera",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -189,12 +334,12 @@
 	"openPosLeft": {
 		"X": 0.0,
 		"Y": 0.0,
-		"Z": 80.0
+		"Z": 120.0
 	},
 	"openPosRight": {
 		"X": 0.0,
 		"Y": 0.0,
-		"Z": -80.0
+		"Z": -120.0
 	}
 }
 		},
@@ -345,6 +490,35 @@
 						"ReceiveDecals": true
 					}
 				]
+			}
+		},
+		{
+			"ID": "2aae78904590e40b20ab7ba46c6f2aca",
+			"TypeName": "Game.ClickButton",
+			"ParentID": "deba2e8d47664aba083089a6eb51d9ff",
+			"V": {
+	"Camera": "b0d72c3746caebca055e1f921ca21c7c",
+	"movement": {
+		"X": 0.0,
+		"Y": 0.0,
+		"Z": 1.5
+	}
+}
+		},
+		{
+			"ID": "060157e8400d0ff2c3d74a9010e81dde",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "deba2e8d47664aba083089a6eb51d9ff",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": -26.640106201171875,
+				"Y": 132.68785095214844,
+				"Z": -40.337249755859375
+			},
+			"Size": {
+				"X": 5.313201904296875,
+				"Y": 5.310699462890625,
+				"Z": 1.1277008056640625
 			}
 		},
 		{
@@ -712,6 +886,41 @@
 			"V": {}
 		},
 		{
+			"ID": "c3e601ec491e1ad7b492cea7b083554d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "biuro cale kwiatek.001",
+			"Transform": {
+				"Translation": {
+					"X": 273.5,
+					"Y": 26.0,
+					"Z": 115.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 5.066394237474015e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "25d705f24049e4080ef366ab38535341",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "90ad8fe849bab84b478532a03da45646",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -872,7 +1081,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": 23.64234733581543,
+					"Y": 29.0,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -891,7 +1100,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "ea91ac35400b96a5e5d28c860bfecbda",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -907,7 +1116,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": -73.05045318603516,
+					"Y": 23.0,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -961,7 +1170,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "52fede9043de5a0111f749a6552623b8",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -977,7 +1186,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": -73.27665710449219,
+					"Y": 22.500154495239258,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -1180,6 +1389,71 @@
 			}
 		},
 		{
+			"ID": "0016d09d48ffc8c2644a1b9242e31ce2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale zaluzja",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "715c753741c2dd9783262680cbf37135",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "e716fb6f44de371f0a7950bcf60afb22",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale drzwi.001",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 35.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "3a8f1efb4f5ecf6bef86b7af8774e57a",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -1192,641 +1466,15 @@
 			"V": {}
 		},
 		{
-			"ID": "47455b0d4b99d6d2250ada8270e4e911",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Visuals 0"
-		},
-		{
-			"ID": "e90707c24317251dab5a8880207cc57f",
-			"TypeName": "FlaxEngine.Sky",
-			"ParentID": "47455b0d4b99d6d2250ada8270e4e911",
-			"Name": "Sky",
-			"Transform": {
-				"Translation": {
-					"X": -69.65292358398438,
-					"Y": 124.01800537109375,
-					"Z": 35.34806823730469
-				}
-			},
-			"Sun": "d630ee774a5cb7e9aa1994954a2c1519",
-			"SunPower": 10.0
-		},
-		{
-			"ID": "9bbf95ad4478c71fd0ebaea26c1c3730",
-			"TypeName": "FlaxEngine.EnvironmentProbe",
-			"ParentID": "47455b0d4b99d6d2250ada8270e4e911",
-			"Name": "Environment Probe",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 249.3258056640625,
-					"Z": 0.0
-				}
-			}
-		},
-		{
-			"ID": "d630ee774a5cb7e9aa1994954a2c1519",
-			"TypeName": "FlaxEngine.DirectionalLight",
-			"ParentID": "47455b0d4b99d6d2250ada8270e4e911",
-			"Name": "Directional Light",
-			"Transform": {
-				"Translation": {
-					"X": -1.6893305778503418,
-					"Y": 267.7931823730469,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.5176515579223633,
-					"Y": 0.0833025798201561,
-					"Z": 0.06534233689308167,
-					"W": 0.8490158915519714
-				}
-			},
-			"Color": {
-				"R": 1.0,
-				"G": 0.9770245552062988,
-				"B": 0.8860000371932983,
-				"A": 1.0
-			}
-		},
-		{
-			"ID": "45d429c94379454106b8be9af1d159a0",
-			"TypeName": "FlaxEngine.SkyLight",
-			"ParentID": "47455b0d4b99d6d2250ada8270e4e911",
-			"Name": "SkyLight",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 150.0,
-					"Z": 0.0
-				}
-			},
-			"Mode": 0
-		},
-		{
-			"ID": "8d9ec4a048d19fff0b2747b12cab0ac5",
-			"TypeName": "FlaxEngine.Camera",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Camera 0",
-			"Transform": {
-				"Translation": {
-					"X": -198.75326538085938,
-					"Y": 196.89071655273438,
-					"Z": 190.70037841796875
-				},
-				"Orientation": {
-					"X": 0.06189095228910446,
-					"Y": 0.9198267459869385,
-					"Z": -0.1617070734500885,
-					"W": 0.35204988718032837
-				}
-			},
-			"StaticFlags": 0
-		},
-		{
-			"ID": "f17af4b348aba2dbef6aeabd938702c7",
-			"TypeName": "PlayerController",
-			"ParentID": "8d9ec4a048d19fff0b2747b12cab0ac5",
-			"V": {}
-		},
-		{
-			"ID": "5b899401452679bb426a87b6df8b0c74",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Floor 0",
-			"Transform": {
-				"Scale": {
-					"X": 10.0,
-					"Y": 0.5,
-					"Z": 10.0
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "382f1ae946c519eff6e6f3a2965cf56b",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "671125c0431582e41a1c86ade26fdb6e",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "5b899401452679bb426a87b6df8b0c74",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "9210c4a24b0397120ab775976ebc82ad",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Right",
-			"Transform": {
-				"Translation": {
-					"X": -50.0,
-					"Y": 190.0,
-					"Z": -579.478759765625
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 3.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "00dbd1a14c354556b7d879bd467e7137",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "9210c4a24b0397120ab775976ebc82ad",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "1e011df044685133d6879fa2ffe8d97f",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Left",
-			"Transform": {
-				"Translation": {
-					"X": 50.0,
-					"Y": 190.0,
-					"Z": -579.478759765625
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 3.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "18f5b759400d9f4022c586bf006e1693",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "1e011df044685133d6879fa2ffe8d97f",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "3b3c2305479a01c447bdcdbc2038f907",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "temp 0",
-			"Transform": {
-				"Translation": {
-					"X": 5.0,
-					"Y": 0.0,
-					"Z": 0.0
-				}
-			}
-		},
-		{
-			"ID": "f34281ea4644e920472b1d893b5555b0",
-			"TypeName": "ElevatorDoor",
-			"ParentID": "3b3c2305479a01c447bdcdbc2038f907",
-			"V": {
-	"DoorRight": "ee40db6845274f2052d042b7dab91e41",
-	"DoorLeft": "a164c44e4a5a3931fda6b5923b25db67",
-	"openPosLeft": {
-		"X": 0.0,
-		"Y": 0.0,
-		"Z": 80.0
-	},
-	"openPosRight": {
-		"X": 0.0,
-		"Y": 0.0,
-		"Z": -80.0
-	}
-}
-		},
-		{
-			"ID": "0ada29f045531a627ef3b9a7b1169c86",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "ELEVATOR 0",
-			"Transform": {
-				"Translation": {
-					"X": 340.04400634765625,
-					"Y": -4.952505588531494,
-					"Z": 163.83187866210938
-				}
-			}
-		},
-		{
-			"ID": "7425b8d1497ad07b57c412a854b30027",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "Doors",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": 25.642343521118164,
-					"Z": -11.331878662109375
-				}
-			}
-		},
-		{
-			"ID": "a164c44e4a5a3931fda6b5923b25db67",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "7425b8d1497ad07b57c412a854b30027",
-			"Name": "drzwi osobno",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": -127.5
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "ee40db6845274f2052d042b7dab91e41",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "7425b8d1497ad07b57c412a854b30027",
-			"Name": "drzwi osobno drzwi_prawe",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": 127.5
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "d96869174e57c1d0be8c15bcc51663a6",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "Button",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -99.48815155029297,
-					"Z": -7.3035125732421875
-				}
-			}
-		},
-		{
-			"ID": "9207214a48a1facba921c89d84141c52",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "d96869174e57c1d0be8c15bcc51663a6",
-			"Name": "drzwi osobno duzy_przycisk",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": -0.5919036865234375,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "570973c143c1c7513b4f238d938e70d8",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "d96869174e57c1d0be8c15bcc51663a6",
-			"Name": "drzwi osobno duzy_przycisk_obowdka",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.5919036865234375,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "bbfdafe143f4df58efd957b20ad6e0f7",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "Mapa",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -87.58015441894531,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 3.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "9bd58b394e8583804d4a3b8ea7c9b53c",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "bbfdafe143f4df58efd957b20ad6e0f7",
-			"Name": "drzwi osobno mapa_swiatlo_1",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "e6e1cf674426e20710772b87a2684c8a",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "bbfdafe143f4df58efd957b20ad6e0f7",
-			"Name": "drzwi osobno mapa_swiatlo_2",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "34f4a8ac4e5410ed9eebc083e56fd945",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "bbfdafe143f4df58efd957b20ad6e0f7",
-			"Name": "drzwi osobno mapa_swiatlo_3",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "31ca902547acef46a3ff5392dceb2891",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "bbfdafe143f4df58efd957b20ad6e0f7",
-			"Name": "drzwi osobno mapa_swiatlo_4",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "20bacf104ca271477e2b5c844abb485f",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "bbfdafe143f4df58efd957b20ad6e0f7",
-			"Name": "drzwi osobno mapa_swiatlo_5",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "ab56bc8d43598f972e149983c2ff3c5c",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "drzwi osobno oparcie",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -63.746055603027344,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "72ec282c476987e7f92daea7ab73394a",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "drzwi osobno oparcie.001",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -63.7364501953125,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "5b2a054d437a65a0fa5265a66772090f",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "drzwi osobno winda",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": 29.952444076538086,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "a61ebf2944917f7bed78539f8829e7cb",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "0ada29f045531a627ef3b9a7b1169c86",
-			"Name": "drzwi osobno wyswietlacz_pietra",
-			"Transform": {
-				"Translation": {
-					"X": 53.147125244140625,
-					"Y": -78.9301528930664,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": -2.384185791015625e-7,
-					"Z": 0.0,
-					"W": -1.0
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Buffer": {
-				"Entries": []
-			}
-		},
-		{
-			"ID": "f0b95bb44358d302f7244799d6825411",
-			"TypeName": "FlaxEngine.TextRender",
-			"ParentID": "a61ebf2944917f7bed78539f8829e7cb",
-			"Name": "TextRender",
-			"Transform": {
-				"Translation": {
-					"X": -10.522786140441895,
-					"Y": 166.1225128173828,
-					"Z": -40.54594039916992
-				},
-				"Scale": {
-					"X": 0.125,
-					"Y": 0.125,
-					"Z": 0.125
-				}
-			},
-			"Text": "10",
-			"Color": {
-				"R": 0.0,
-				"G": 0.0,
-				"B": 0.0,
-				"A": 1.0
-			},
-			"Size": 64.0,
-			"Material": "e72782bd4d898e2f236ca3be780438af"
-		},
-		{
-			"ID": "414d3b2a4d6f93efa8f076a0ff223a74",
-			"TypeName": "Game.FloorRenderer",
-			"ParentID": "f0b95bb44358d302f7244799d6825411",
-			"V": {}
-		},
-		{
-			"ID": "c679cecf4c37e9c05197d08425f5c6c0",
+			"ID": "5a305c1147067da12331d4b3724269f3",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "NPC_ACTOR"
 		},
 		{
-			"ID": "beb85a78432da228b823b897a70a207b",
+			"ID": "44eb976044bd8cdf1cf7a4a6e5aef35c",
 			"TypeName": "Game.NPC.NPC_System",
-			"ParentID": "c679cecf4c37e9c05197d08425f5c6c0",
+			"ParentID": "5a305c1147067da12331d4b3724269f3",
 			"V": {
 	"backgroundTex": "edf4805a4570fb85d10c2282fd9c4006",
 	"frameTex": "03dc0e8949737f0bb724fe84eac5dfe7",
@@ -1837,39 +1485,39 @@
 	"APFillTex": "7c0c1bda445770854343819c570ef1a1",
 	"APFrameTex": "8af7c41d40de0a0404e04e9ccffac62c",
 	"NPC_Background": [
-		"8ef57ab54c55d9beed6ac5b2cf4c153d",
-		"4aa4d8fc4b12db94f0e45c834846a4ff",
-		"b1635d5d4bc1bb2a764485b1e885a756"
+		"65063e9a44fb36820d79ae9e92b00285",
+		"254ffdfd4f9dd5ada73df9b417167481",
+		"edb697e0482bcd12c357048ceda3ddd6"
 	],
 	"NPC_Character": [
-		"93b0d5d34a90610fddecc7b688c51c27",
-		"01f69863498bdbcc449c94a53b61a42a",
-		"29ff996a4cbba255c331ba9ea00bdcbc"
+		"8ca026d54cef3a7fc6a90194248eae42",
+		"7face27f4b247c0d572634a527bee703",
+		"cd2846c648eb2bf05be19983da23ac51"
 	],
 	"NPC_Frame": [
-		"c146681c4d827f64d7cf718527ef59b2",
-		"8919a09e4d59a8c1611481b79b28b0d8",
-		"ef63cae14d4783be129df28e82afa5e3"
+		"4632878e447b933cc3786e8c8cfc077c",
+		"efa0b0234a0ee17a2c789685de26506e",
+		"14854cf74e78d3573913e78f7b21f2c7"
 	],
 	"NPC_HPProgress": [
-		"f596525b48f186e4547e758cd477cbaa",
-		"deb269a045974a0aaf0500b6a4a1d6aa",
-		"3edb43d0464b78c544134987b7f49d86"
+		"9cdb8601442fd7a036213eaebb22a24e",
+		"507809fb431a202d8bd1fd959db15ebe",
+		"7b7259f64b6ef877c16accb55158c446"
 	],
 	"NPC_HPFrame": [
-		"fb81439b4b7717499b44c092550f7a6e",
-		"bdd673ed4d74a7347e7f4bab8717426f",
-		"5602f23541c1912fb492f49d1d7433a0"
+		"d96e4c5040269f4f88c4dfb4ad9a0bab",
+		"d8bc79f4424a2df669899280a1ae82f7",
+		"fe48d9704163470330a61eabc11cef61"
 	],
 	"NPC_APProgress": [
-		"4ddb6ed94b66c06c0c169888c6854719",
-		"8308a0024f044e7b1f5d1d8ec1b0c449",
-		"1033573a4d99dbd9ed468782d78523a2"
+		"a4aa490b4f9938b5acaae8b783a6a0c0",
+		"c95dda694913ebfaac20eb943fb20c69",
+		"c69858d74edd5a5c6c88b889e0ed76d9"
 	],
 	"NPC_APFrame": [
-		"cba073bf4af168d357b609a1ad869144",
-		"23a4a12b434907662e4b9e9ed95342a0",
-		"8c55f5694f375e03dd0d1db096dd756f"
+		"1adcd40b41561fccf6dc51a1bb0d7617",
+		"795a68b14319bd7a821d74a9e42773b7",
+		"f3625d114dde9cb9e54875ba67caf571"
 	],
 	"NPCs": [
 		{
@@ -1893,9 +1541,9 @@
 }
 		},
 		{
-			"ID": "675b91644e413559224ec4b460edf130",
+			"ID": "e15fe606426d235efde173a364b26cfb",
 			"TypeName": "FlaxEngine.UICanvas",
-			"ParentID": "c679cecf4c37e9c05197d08425f5c6c0",
+			"ParentID": "5a305c1147067da12331d4b3724269f3",
 			"Name": "NPC_UI",
 			"Transform": {
 				"Orientation": {
@@ -1908,9 +1556,9 @@
 			"V": {}
 		},
 		{
-			"ID": "550f22d644b0b4d158842984460ed712",
+			"ID": "cb8af40441c73d7fb852fa8defefbea1",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "675b91644e413559224ec4b460edf130",
+			"ParentID": "e15fe606426d235efde173a364b26cfb",
 			"Name": "Canvas Scalar",
 			"Transform": {
 				"Translation": {
@@ -2020,9 +1668,9 @@
 }
 		},
 		{
-			"ID": "8ef57ab54c55d9beed6ac5b2cf4c153d",
+			"ID": "65063e9a44fb36820d79ae9e92b00285",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC1_Background",
 			"Transform": {
 				"Translation": {
@@ -2105,9 +1753,9 @@
 }
 		},
 		{
-			"ID": "93b0d5d34a90610fddecc7b688c51c27",
+			"ID": "8ca026d54cef3a7fc6a90194248eae42",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "8ef57ab54c55d9beed6ac5b2cf4c153d",
+			"ParentID": "65063e9a44fb36820d79ae9e92b00285",
 			"Name": "NPC1_Character",
 			"Transform": {
 				"Translation": {
@@ -2190,9 +1838,9 @@
 }
 		},
 		{
-			"ID": "c146681c4d827f64d7cf718527ef59b2",
+			"ID": "4632878e447b933cc3786e8c8cfc077c",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "93b0d5d34a90610fddecc7b688c51c27",
+			"ParentID": "8ca026d54cef3a7fc6a90194248eae42",
 			"Name": "NPC1_Frame",
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
@@ -2272,9 +1920,9 @@
 }
 		},
 		{
-			"ID": "f596525b48f186e4547e758cd477cbaa",
+			"ID": "9cdb8601442fd7a036213eaebb22a24e",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC1_HPProgress",
 			"Transform": {
 				"Translation": {
@@ -2354,9 +2002,9 @@
 }
 		},
 		{
-			"ID": "fb81439b4b7717499b44c092550f7a6e",
+			"ID": "d96e4c5040269f4f88c4dfb4ad9a0bab",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "f596525b48f186e4547e758cd477cbaa",
+			"ParentID": "9cdb8601442fd7a036213eaebb22a24e",
 			"Name": "NPC1_HPFrame",
 			"Transform": {
 				"Translation": {
@@ -2439,9 +2087,9 @@
 }
 		},
 		{
-			"ID": "4ddb6ed94b66c06c0c169888c6854719",
+			"ID": "a4aa490b4f9938b5acaae8b783a6a0c0",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC1_APProgress",
 			"Transform": {
 				"Translation": {
@@ -2521,9 +2169,9 @@
 }
 		},
 		{
-			"ID": "cba073bf4af168d357b609a1ad869144",
+			"ID": "1adcd40b41561fccf6dc51a1bb0d7617",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "4ddb6ed94b66c06c0c169888c6854719",
+			"ParentID": "a4aa490b4f9938b5acaae8b783a6a0c0",
 			"Name": "NPC1_APFrame",
 			"Transform": {
 				"Translation": {
@@ -2606,9 +2254,9 @@
 }
 		},
 		{
-			"ID": "4aa4d8fc4b12db94f0e45c834846a4ff",
+			"ID": "254ffdfd4f9dd5ada73df9b417167481",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC2_Background",
 			"Transform": {
 				"Translation": {
@@ -2691,9 +2339,9 @@
 }
 		},
 		{
-			"ID": "01f69863498bdbcc449c94a53b61a42a",
+			"ID": "7face27f4b247c0d572634a527bee703",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "4aa4d8fc4b12db94f0e45c834846a4ff",
+			"ParentID": "254ffdfd4f9dd5ada73df9b417167481",
 			"Name": "NPC2_Character",
 			"Transform": {
 				"Translation": {
@@ -2776,9 +2424,9 @@
 }
 		},
 		{
-			"ID": "8919a09e4d59a8c1611481b79b28b0d8",
+			"ID": "efa0b0234a0ee17a2c789685de26506e",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "01f69863498bdbcc449c94a53b61a42a",
+			"ParentID": "7face27f4b247c0d572634a527bee703",
 			"Name": "NPC2_Frame",
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
@@ -2858,9 +2506,9 @@
 }
 		},
 		{
-			"ID": "deb269a045974a0aaf0500b6a4a1d6aa",
+			"ID": "507809fb431a202d8bd1fd959db15ebe",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC2_HPProgress",
 			"Transform": {
 				"Translation": {
@@ -2940,9 +2588,9 @@
 }
 		},
 		{
-			"ID": "bdd673ed4d74a7347e7f4bab8717426f",
+			"ID": "d8bc79f4424a2df669899280a1ae82f7",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "deb269a045974a0aaf0500b6a4a1d6aa",
+			"ParentID": "507809fb431a202d8bd1fd959db15ebe",
 			"Name": "NPC2_HPFrame",
 			"Transform": {
 				"Translation": {
@@ -3025,9 +2673,9 @@
 }
 		},
 		{
-			"ID": "8308a0024f044e7b1f5d1d8ec1b0c449",
+			"ID": "c95dda694913ebfaac20eb943fb20c69",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC2_APProgress",
 			"Transform": {
 				"Translation": {
@@ -3107,9 +2755,9 @@
 }
 		},
 		{
-			"ID": "23a4a12b434907662e4b9e9ed95342a0",
+			"ID": "795a68b14319bd7a821d74a9e42773b7",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "8308a0024f044e7b1f5d1d8ec1b0c449",
+			"ParentID": "c95dda694913ebfaac20eb943fb20c69",
 			"Name": "NPC2_APFrame",
 			"Transform": {
 				"Translation": {
@@ -3192,9 +2840,9 @@
 }
 		},
 		{
-			"ID": "b1635d5d4bc1bb2a764485b1e885a756",
+			"ID": "edb697e0482bcd12c357048ceda3ddd6",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC3_Background",
 			"Transform": {
 				"Translation": {
@@ -3277,9 +2925,9 @@
 }
 		},
 		{
-			"ID": "29ff996a4cbba255c331ba9ea00bdcbc",
+			"ID": "cd2846c648eb2bf05be19983da23ac51",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "b1635d5d4bc1bb2a764485b1e885a756",
+			"ParentID": "edb697e0482bcd12c357048ceda3ddd6",
 			"Name": "NPC3_Character",
 			"Transform": {
 				"Translation": {
@@ -3362,9 +3010,9 @@
 }
 		},
 		{
-			"ID": "ef63cae14d4783be129df28e82afa5e3",
+			"ID": "14854cf74e78d3573913e78f7b21f2c7",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "29ff996a4cbba255c331ba9ea00bdcbc",
+			"ParentID": "cd2846c648eb2bf05be19983da23ac51",
 			"Name": "NPC3_Frame",
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
@@ -3444,9 +3092,9 @@
 }
 		},
 		{
-			"ID": "3edb43d0464b78c544134987b7f49d86",
+			"ID": "7b7259f64b6ef877c16accb55158c446",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC3_HPProgress",
 			"Transform": {
 				"Translation": {
@@ -3526,9 +3174,9 @@
 }
 		},
 		{
-			"ID": "5602f23541c1912fb492f49d1d7433a0",
+			"ID": "fe48d9704163470330a61eabc11cef61",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "3edb43d0464b78c544134987b7f49d86",
+			"ParentID": "7b7259f64b6ef877c16accb55158c446",
 			"Name": "NPC3_HPFrame",
 			"Transform": {
 				"Translation": {
@@ -3611,9 +3259,9 @@
 }
 		},
 		{
-			"ID": "1033573a4d99dbd9ed468782d78523a2",
+			"ID": "c69858d74edd5a5c6c88b889e0ed76d9",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "550f22d644b0b4d158842984460ed712",
+			"ParentID": "cb8af40441c73d7fb852fa8defefbea1",
 			"Name": "NPC3_APProgress",
 			"Transform": {
 				"Translation": {
@@ -3693,9 +3341,9 @@
 }
 		},
 		{
-			"ID": "8c55f5694f375e03dd0d1db096dd756f",
+			"ID": "f3625d114dde9cb9e54875ba67caf571",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "1033573a4d99dbd9ed468782d78523a2",
+			"ParentID": "c69858d74edd5a5c6c88b889e0ed76d9",
 			"Name": "NPC3_APFrame",
 			"Transform": {
 				"Translation": {
