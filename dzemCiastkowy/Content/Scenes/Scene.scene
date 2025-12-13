@@ -71,6 +71,151 @@
 			}
 		},
 		{
+			"ID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "officeLights",
+			"Transform": {
+				"Translation": {
+					"X": -343.8863525390625,
+					"Y": 506.0727844238281,
+					"Z": 101.53353881835938
+				}
+			}
+		},
+		{
+			"ID": "20942dc1466a70061aea849cfcc6c49b",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 337.52789306640625,
+					"Y": 0.000030517578125,
+					"Z": -165.13812255859375
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "9e95e74f485060353c03d58bda641aaa",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 1",
+			"Transform": {
+				"Translation": {
+					"X": 337.52789306640625,
+					"Y": 0.000030517578125,
+					"Z": 179.04452514648438
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "0c14828f4b36a0e8d5bb7283ac71404b",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 2",
+			"Transform": {
+				"Translation": {
+					"X": 6.728118896484375,
+					"Y": 0.000030517578125,
+					"Z": 194.54733276367188
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "0c8727f5468b3b01da00129027596dc1",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 3",
+			"Transform": {
+				"Translation": {
+					"X": -344.25604248046875,
+					"Y": 0.000030517578125,
+					"Z": 194.54733276367188
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "b121bc5b4b7568a23621b2b4520d910b",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 5",
+			"Transform": {
+				"Translation": {
+					"X": 6.728118896484375,
+					"Y": 0.000030517578125,
+					"Z": -201.50054931640625
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
+			"ID": "ad24aea64226fea10e212d8938ce6b4d",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 6",
+			"Transform": {
+				"Translation": {
+					"X": -344.25604248046875,
+					"Y": 0.000030517578125,
+					"Z": -201.50054931640625
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 7.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 7.0
+		},
+		{
 			"ID": "b0d72c3746caebca055e1f921ca21c7c",
 			"TypeName": "FlaxEngine.Camera",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -189,12 +334,12 @@
 	"openPosLeft": {
 		"X": 0.0,
 		"Y": 0.0,
-		"Z": 80.0
+		"Z": 120.0
 	},
 	"openPosRight": {
 		"X": 0.0,
 		"Y": 0.0,
-		"Z": -80.0
+		"Z": -120.0
 	}
 }
 		},
@@ -345,6 +490,35 @@
 						"ReceiveDecals": true
 					}
 				]
+			}
+		},
+		{
+			"ID": "2aae78904590e40b20ab7ba46c6f2aca",
+			"TypeName": "Game.ClickButton",
+			"ParentID": "deba2e8d47664aba083089a6eb51d9ff",
+			"V": {
+	"Camera": "b0d72c3746caebca055e1f921ca21c7c",
+	"movement": {
+		"X": 0.0,
+		"Y": 0.0,
+		"Z": 1.5
+	}
+}
+		},
+		{
+			"ID": "060157e8400d0ff2c3d74a9010e81dde",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "deba2e8d47664aba083089a6eb51d9ff",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": -26.640106201171875,
+				"Y": 132.68785095214844,
+				"Z": -40.337249755859375
+			},
+			"Size": {
+				"X": 5.313201904296875,
+				"Y": 5.310699462890625,
+				"Z": 1.1277008056640625
 			}
 		},
 		{
@@ -712,6 +886,41 @@
 			"V": {}
 		},
 		{
+			"ID": "c3e601ec491e1ad7b492cea7b083554d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "biuro cale kwiatek.001",
+			"Transform": {
+				"Translation": {
+					"X": 273.5,
+					"Y": 26.0,
+					"Z": 115.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 5.066394237474015e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "25d705f24049e4080ef366ab38535341",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "90ad8fe849bab84b478532a03da45646",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -872,7 +1081,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": 23.64234733581543,
+					"Y": 29.0,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -891,7 +1100,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "ea91ac35400b96a5e5d28c860bfecbda",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -907,7 +1116,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": -73.05045318603516,
+					"Y": 23.0,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -961,7 +1170,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "52fede9043de5a0111f749a6552623b8",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -977,7 +1186,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": -73.27665710449219,
+					"Y": 22.500154495239258,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -1180,6 +1389,71 @@
 			}
 		},
 		{
+			"ID": "0016d09d48ffc8c2644a1b9242e31ce2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale zaluzja",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "715c753741c2dd9783262680cbf37135",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "e716fb6f44de371f0a7950bcf60afb22",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale drzwi.001",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 35.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "3a8f1efb4f5ecf6bef86b7af8774e57a",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -1189,7 +1463,32 @@
 			"ID": "a2da3c2a4e7b1341313c46848157b7e0",
 			"TypeName": "dzemCiastkowy.FloorDisplay",
 			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
-			"V": {}
+			"V": {
+	"ActiveMaterial": "634ac8cb47074b6ff7258da498f19a78",
+	"InactiveMaterial": "bbe1c4a14711f34a1b8bf3a25d21ea27",
+	"Floors": [
+		{
+			"FloorObject": "7d1ca7484fa8abca95a1bc9e49af54df",
+			"IsActive": false
+		},
+		{
+			"FloorObject": "2bcfafe442c2e7841bfe0289981eddc1",
+			"IsActive": false
+		},
+		{
+			"FloorObject": "4707fb8c4f77574358f45a9ed16cfc4c",
+			"IsActive": false
+		},
+		{
+			"FloorObject": "627e47e5401c7a3a363a4387598385bd",
+			"IsActive": true
+		},
+		{
+			"FloorObject": "3ea1ae8b4268fcfc204311a79ecff357",
+			"IsActive": true
+		}
+	]
+}
 		}
 	]
 }
