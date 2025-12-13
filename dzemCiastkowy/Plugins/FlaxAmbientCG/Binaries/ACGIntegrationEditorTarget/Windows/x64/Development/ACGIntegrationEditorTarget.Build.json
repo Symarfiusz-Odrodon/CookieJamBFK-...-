@@ -3,7 +3,6 @@
   "Platform": "Windows",
   "Architecture": "x64",
   "Configuration": "Development",
-  "HotReloadPostfix": ".HotReload.24",
   "BinaryModules": [
     {
       "Name": "ACGIntegration",

@@ -282,36 +282,6 @@
 			}
 		},
 		{
-			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Floor",
-			"Transform": {
-				"Scale": {
-					"X": 10.0,
-					"Y": 0.5,
-					"Z": 10.0
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "382f1ae946c519eff6e6f3a2965cf56b",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "4a7045e748c74e3de29afd8856f99205",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"Name": "BoxCollider"
-		},
-		{
 			"ID": "24e5fee54c3ee75ddc88f1bae61f43e8",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -921,539 +891,6 @@
 			}
 		},
 		{
-			"ID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Biuro",
-			"Transform": {
-				"Translation": {
-					"X": 273.2959289550781,
-					"Y": 3.5484530925750732,
-					"Z": 115.71886444091797
-				}
-			}
-		},
-		{
-			"ID": "80f8661b46ef0856432564bf17afbe20",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale zaluzja.001",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 16.989248275756836,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "c683a20842debc75671e3cb1ef238c0c",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "141f5cfb48f719f878eab7b27c8630d9",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 23.634647369384766,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "6e53932148b46faef4fae3876c15e321",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "27140a12439dc94ad2036ea79939ab36",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale biuro",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 23.312047958374023,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "3c26b7e043971244e806239e6e5aeb3e",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "a7c0f29346dc069fb83b9fbf6951fe95",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale drzwi",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 34.883846282958984,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "e0b9d3e0496c6766b41260bcf1b5194a",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "ac71260a4350dcdf197428b854bae948",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale dywan",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 29.0,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "6c38da844a4d35905e27b98a8650408d",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "ea91ac35400b96a5e5d28c860bfecbda",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "c0cd67c64ef81d3c7c6cab92195d0b63",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale klawiatura",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 23.0,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "f0bdbce24eb4707fb2415f8db5139ccf",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "c977fe0b4fd4ae3be44314acf8293797",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale kwiatek",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 22.334047317504883,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "38f0630948c385f4327f77a32e59c7d5",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "52fede9043de5a0111f749a6552623b8",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "38c917024b4e20b2c441b3a8a842b0db",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale monitor",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 22.500154495239258,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "36d41420403350b0c846bd9b169ff6e5",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "f8a4ea3c4023e9ae6c9b55a62f07b489",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale okno",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 23.502147674560547,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "c63ef56b4eee477732988aa27d5c6d32",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "127e6e584b69ead8f33cdbae663fd060",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale okno.001",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 23.502147674560547,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "9f4ade0e497d382a9e89679c1ee612ce",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "b37d5cfb464d78dc48c09b971190ad9f",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale slup.001",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 21.731348037719727,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "3ca032db44105c7a2bc640961cd7c9ad",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "3f3779eb4e24af12173880b8f3c579f9",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale włącznik_światła",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": -88.93605041503906,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "0f4481eb417395de3957868e349340a1",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "b1be03494fa102d607bf86894d911bcb",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale slup.002",
-			"Transform": {
-				"Translation": {
-					"X": 0.000030517578125,
-					"Y": 21.731348037719727,
-					"Z": -0.00002288818359375
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "17366cf8400de0b022b406956d7aa447",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "0016d09d48ffc8c2644a1b9242e31ce2",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale zaluzja",
-			"Transform": {
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.4901161193847656e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "715c753741c2dd9783262680cbf37135",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "e716fb6f44de371f0a7950bcf60afb22",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
-			"Name": "biuro cale drzwi.001",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 35.0,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.4901161193847656e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "3a8f1efb4f5ecf6bef86b7af8774e57a",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
 			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -1526,11 +963,6 @@
 		"de242748441560f10286e3b281180438",
 		"173343194eab77de5de9099b54713ed6",
 		"1b4f5e084ac700c9b6ef36a1401a7106"
-	],
-	"NPC_enemyHPProgress": [
-		"46bfb7954ac7002e5100dfb1307023ba",
-		"ad7ce81c43f9e9bd5c3d7db91ea9953d",
-		null
 	]
 }
 		},
@@ -5192,6 +4624,201 @@
 	"Visible": true,
 	"AutoFocus": false
 }
+		},
+		{
+			"ID": "2ae62a664f3073ae32da72b61efc82b5",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "cc3bbe114e633935028a11a7abe8aef3",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Transform": {
+				"Translation": {
+					"X": 264.0888671875,
+					"Y": 0.0,
+					"Z": 123.44703674316406
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -3.27825517842939e-7,
+					"Z": 0.0,
+					"W": -1.0
+				}
+			}
+		},
+		{
+			"ID": "d842942948f0e24709d43182abe3faef",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "d85815ed41c0dc6e6e95bba0ca358f1b",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "a281a8e645f52a26a53de8877c7e518b",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "955adb0b48b29fea347714a193eb0e1f",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ed9b1a80427dc5fbde08c2a95297b6cc",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "59d97c0a41599b71d218b0bca9334dde",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "3992214f4eedd83b2e2474901a586e3f",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "e7df582244fa6711c58c35b84d7fd9ff",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7b76590d4e56e047e937d79389a6a171",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "47e2e6d24cc207c26c47a6a4d6ddfb20",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "cdc6c29c4306812b6071c0a2e5b7918a",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "e8aef1f6465046e03ed579b263ad2da0",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "d3ffab4249a775f9963b4ab21a0370f6",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "27ceb7c247badbc8954efda6e47a2ecc",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "b7add26e45c93e7a4c04c086df321af4",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "e261bf9d4e04f2b2372939acd0ae8c21",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "88a2ad6347d2d7fa5db42781c283e389",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "b41de2734f2ea3aa5cb3b3ade35cca28",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "38e291e2417d1990f37ef2873c9d1847",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "d86c707c4049e03705177189bacc7a3e",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "de3d198b4a5edec275afe194175feec0",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "6e279bcf49ce7fbea6fc0691e3e9e6ee",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "6837fbc144f813ce77bf4e8727cf31fb",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "88671d4c410597dd143a279acfde3880",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "cadc08634a0b53c99fa1a4baf6f59fd1",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "6654c2cc497309c27ffc76914fa09858",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "494d94cc4bbe00319a49d3a4e1c5c53b",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "616259c640ad8c8c3d2da1bc755a3f45",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "76008d7b44dcb046457e598f67d6e033",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "d4358d204743758839d0f2b50ce36a1e",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "90efce3e4d295ed8342146bc195349a3",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "ab1d9bd448d5cac17d58779b2e1517bd",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
 		}
 	]
 }
