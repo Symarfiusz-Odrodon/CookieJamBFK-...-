@@ -356,8 +356,8 @@
 			"Name": "drzwi osobno duzy_przycisk",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": -0.5919036865234375,
+					"X": -0.10000000149011612,
+					"Y": 1.0,
 					"Z": 0.0
 				},
 				"Orientation": {
@@ -374,6 +374,35 @@
 			},
 			"Buffer": {
 				"Entries": []
+			}
+		},
+		{
+			"ID": "fea6e4d643b1a6f3f5982ca8a229cbe3",
+			"TypeName": "Game.ClickButton",
+			"ParentID": "deba2e8d47664aba083089a6eb51d9ff",
+			"V": {
+	"Camera": "b0d72c3746caebca055e1f921ca21c7c",
+	"movement": {
+		"X": 0.0,
+		"Y": 0.0,
+		"Z": 1.0
+	}
+}
+		},
+		{
+			"ID": "c611b28a496f114e6d81ec8099fd08ab",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "deba2e8d47664aba083089a6eb51d9ff",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": -26.640106201171875,
+				"Y": 132.68785095214844,
+				"Z": -40.337249755859375
+			},
+			"Size": {
+				"X": 5.3131866455078125,
+				"Y": 5.310699462890625,
+				"Z": 1.1277008056640625
 			}
 		},
 		{
@@ -421,7 +450,7 @@
 					"W": -1.341104507446289e-7
 				},
 				"Scale": {
-					"X": 3.0,
+					"X": 2.0,
 					"Y": 2.0,
 					"Z": 2.0
 				}
