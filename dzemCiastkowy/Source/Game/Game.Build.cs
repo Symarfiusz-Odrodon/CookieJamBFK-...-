@@ -1,4 +1,4 @@
-using Flax.Build;
+﻿using Flax.Build;
 using Flax.Build.NativeCpp;
 
 public class Game : GameModule
@@ -16,6 +16,9 @@ public class Game : GameModule
     public override void Setup(BuildOptions options)
     {
         base.Setup(options);
+        options.PublicDependencies.Add("ACGIntegration");
+        options.PublicDependencies.Add("FlaxInk");
+        options.PublicDependencies.Add("Ink");
 
         options.ScriptingAPI.IgnoreMissingDocumentationWarnings = true;
 

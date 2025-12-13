@@ -1,0 +1,13 @@
+{
+	"ID": "08de3a4a07c9e19fb7374ae8621073df",
+	"TypeName": "Game.NPCCLass",
+	"EngineBuild": 6802,
+	"Data": {
+	"charTexture": "d72377b9451f63c7cdca81b0dde4224f",
+	"charName": "Ana",
+	"charID": 0,
+	"healthPoints": 0,
+	"maxHealth": 0,
+	"actionPoints": 0.0
+}
+}

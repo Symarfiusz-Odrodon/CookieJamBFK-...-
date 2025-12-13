@@ -1,0 +1,8 @@
+{
+	"ID": "08de3a3f46144ca6a43f55e4a461724b",
+	"TypeName": "FlaxInk.InkStory",
+	"EngineBuild": 6802,
+	"Data": {
+	"_story": "{\"inkVersion\":21,\"root\":[[{\"->\":\"intro\"},[\"done\",{\"#f\":5,\"#n\":\"g-0\"}],null],\"done\",{\"intro\":[[\"^This is the main elevator.\",\"\\n\",\"^It can get you literally anywhere, but it requires keycard access.\",\"\\n\",\"^Mine only allows for reaching the first floor.\",\"\\n\",\"^Which is already weird considering what I do.\",\"\\n\",\"ev\",\"str\",\"^Why are you risking your job for me?\",\"/str\",\"/ev\",{\"*\":\".^.c-0\",\"flg\":20},\"ev\",\"str\",\"^Why do they limit your access so much?\",\"/str\",\"/ev\",{\"*\":\".^.c-1\",\"flg\":20},{\"c-0\":[\"\\n\",\"^I don't know.\",\"\\n\",\"^I guess, I have nothing to lose.\",\"\\n\",{\"->\":\"world\"},{\"#f\":5}],\"c-1\":[\"\\n\",\"^I mean, I am barely a receptionist\",\"\\n\",\"^I act more like decoration for positive PR.\",\"\\n\",{\"->\":\"world\"},{\"#f\":5}]}],{\"#f\":1}],\"world\":[\"^Look around you.\",\"\\n\",\"^You know how the world operates now.\",\"\\n\",\"^And this is the building where everything started.\",\"\\n\",\"^Anyway, press the elevator button, when you're ready.\",\"\\n\",\"end\",{\"#f\":1}],\"global decl\":[\"ev\",\"str\",\"^tut\",\"/str\",{\"VAR=\":\"speaker\"},\"/ev\",\"end\",null],\"#f\":1}],\"listDefs\":{}}"
+}
+}
