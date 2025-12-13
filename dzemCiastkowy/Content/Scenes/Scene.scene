@@ -249,10 +249,10 @@
 					"Z": 151.21543884277344
 				},
 				"Orientation": {
-					"X": -0.015396232716739178,
-					"Y": 0.7160336375236511,
-					"Z": -0.0013944300590083003,
-					"W": -0.6978946328163147
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
 				}
 			},
 			"StaticFlags": 0
@@ -998,7 +998,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1103,7 +1103,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1448,7 +1448,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
