@@ -72,7 +72,7 @@ public class ExternalNPCManager : Script
         }
 
         Debug.Log($"External Manager: Requesting Spawn of '{npcId}'");
-        NPC_System.Instance.AddNpc(npcId);
+        NPC_System.Instance.AddFriendNpc(npcId);
     }
 
     /// <summary>

@@ -1,0 +1,26 @@
+{
+	"ID": "2eb341d54b8b8a29c3134fa8ab6a85bd",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "skelefolder",
+	"name": "Skelefolder",
+	"headTexture": "14e560e74d514ddb2d5665b89521445f",
+	"dialogueTexture": "14e560e74d514ddb2d5665b89521445f",
+	"worldTexture": "14e560e74d514ddb2d5665b89521445f",
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"friendActionRegen": 0.0,
+	"friendAction1Name": null,
+	"friendAction2Name": null,
+	"friendAction1Id": 0,
+	"friendAction2Id": 0,
+	"enemyHealth": 20,
+	"enemyMaxHealth": 20,
+	"enemyActionRegen": 0.2,
+	"enemyAction1Name": "Papercut",
+	"enemyAction2Name": "",
+	"enemyAction1Id": 1,
+	"enemyAction2Id": 0
+}
+}
