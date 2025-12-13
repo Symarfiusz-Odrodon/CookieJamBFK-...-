@@ -10,6 +10,8 @@
 	"worldTexture": null,
 	"friendHealth": 30,
 	"friendMaxHealth": 100,
+	"action1Name": "Rzut fotelem Marcus Ikea (30 Phys ATK)",
+	"action2Name": "Przerwa na kawę (+50% HP)",
 	"enemyHealth": 0
 }
 }

@@ -1477,14 +1477,6 @@
 			"ParentID": "5a305c1147067da12331d4b3724269f3",
 			"V": {
 	"database": "08de3a4a06d063cbb5a413a552504b72",
-	"backgroundTex": "edf4805a4570fb85d10c2282fd9c4006",
-	"frameTex": "03dc0e8949737f0bb724fe84eac5dfe7",
-	"HPUnderTex": "527ede324a63bb663d18f7abc87183ed",
-	"HPFillTex": "5d4118d548576c59aa80b9bf520022c5",
-	"HPFrameTex": "1d58c88f4fa3fa32205b06a34cfe2709",
-	"APUnderTex": "84f687c444d491c5ab1f5db20f1a0da5",
-	"APFillTex": "7c0c1bda445770854343819c570ef1a1",
-	"APFrameTex": "8af7c41d40de0a0404e04e9ccffac62c",
 	"NPC_Background": [
 		"65063e9a44fb36820d79ae9e92b00285",
 		"254ffdfd4f9dd5ada73df9b417167481",
@@ -1519,6 +1511,16 @@
 		"1adcd40b41561fccf6dc51a1bb0d7617",
 		"795a68b14319bd7a821d74a9e42773b7",
 		"f3625d114dde9cb9e54875ba67caf571"
+	],
+	"NPC_Action1": [
+		"e233725b41eb8544335dc1b24471cbdb",
+		"ef4d838b42b8d687a5f679b50f6e4de6",
+		"3e6b178a4e422472fdc25384f7cef7a7"
+	],
+	"NPC_Action2": [
+		"64a766d044c2aecfd46c5197a192e244",
+		"0bdced6a4202c55b3bd409b114d52797",
+		"7c089e564364e08effdef3ac30b10fb7"
 	]
 }
 		},
@@ -1972,7 +1974,7 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
 		"Font": "ecec22084c6cbd09113a0095c68379a4",
@@ -1980,8 +1982,8 @@
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -2110,8 +2112,8 @@
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -2826,8 +2828,8 @@
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -2956,8 +2958,8 @@
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -3672,8 +3674,8 @@
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -3802,8 +3804,8 @@
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},

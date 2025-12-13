@@ -52,6 +52,7 @@ public class NPC_System : Script
         Instance.AddNpc(id);
     }
 
+
     public void AddNpc(string id)
     {
         if (Npcs.Count >= NPC_LIMIT)
@@ -98,10 +99,12 @@ public class NPC_System : Script
             var action1 = NPC_Action1[i].Get<Button>();
             action1.Visible = npc != null;
             action1.Enabled = npc?.actionPoints >= 1;
+            action1.Text = npc?.Data.action1Name;
 
             var action2 = NPC_Action2[i].Get<Button>();
             action2.Visible = npc != null;
             action2.Enabled = npc?.actionPoints >= 1;
+            action2.Text = npc?.Data.action2Name;
         }
     }
 }
