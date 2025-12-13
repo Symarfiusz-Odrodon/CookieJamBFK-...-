@@ -4,6 +4,16 @@ using FlaxEngine;
 
 namespace dzemCiastkowy;
 
+[Serializable]
+public class FloorData
+{
+    [Tooltip("The reference to the floor mesh object.")]
+    public StaticModel FloorObject;
+
+    [Tooltip("Check this to switch the material to Active.")]
+    public int IsSafe;
+}
+
 /// <summary>
 /// Controls the materials of floor objects based on a boolean state.
 /// </summary>
@@ -17,17 +27,11 @@ public class FloorDisplay : Script
     [Tooltip("Material used when the floor is inactive.")]
     public MaterialBase InactiveMaterial;
 
+    [Tooltip("Material used when the floor is none.")]
+    public MaterialBase NoneMaterial;
+
     // 2. Define a simple container for our Floor data
     // We use Serializable so it shows up in the Flax Editor
-    [Serializable]
-    public struct FloorData
-    {
-        [Tooltip("The reference to the floor mesh object.")]
-        public StaticModel FloorObject;
-
-        [Tooltip("Check this to switch the material to Active.")]
-        public bool IsActive;
-    }
 
     // 3. Create the list to hold the 5 objects
     [Header("Floors")]
@@ -63,9 +67,20 @@ public class FloorDisplay : Script
 
             // Skip if the object reference is empty
             if (floor.FloorObject == null) continue;
-
+            MaterialBase targetMaterial = NoneMaterial;
             // Determine which material to use
-            MaterialBase targetMaterial = floor.IsActive ? ActiveMaterial : InactiveMaterial;
+            switch (floor.IsSafe)
+            {
+                case 0:
+                    targetMaterial = InactiveMaterial;
+                    break;
+                case 1:
+                    targetMaterial = ActiveMaterial;
+                    break;
+                case 2:
+                    targetMaterial = NoneMaterial;
+                    break;
+            }
 
             // Apply the material to slot 0 (the first material slot)
             // We check if it's already set to avoid unnecessary processing
@@ -82,14 +97,14 @@ public class FloorDisplay : Script
     /// External method to change a specific floor's state via code.
     /// Example usage: myFloorDisplay.SetFloorState(2, true);
     /// </summary>
-    public void SetFloorState(int index, bool state)
+    public void SetFloorState(int index, int state)
     {
         if (index >= 0 && index < Floors.Count)
         {
             // We have to copy the struct, modify it, and put it back
             // because structs are value types in C#.
             var data = Floors[index];
-            data.IsActive = state;
+            data.IsSafe = state;
             Floors[index] = data;
         }
     }

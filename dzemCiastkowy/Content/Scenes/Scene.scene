@@ -495,7 +495,10 @@
 		"X": 0.0,
 		"Y": 0.0,
 		"Z": 1.5
-	}
+	},
+	"model": "deba2e8d47664aba083089a6eb51d9ff",
+	"defaultMat": "4a6969d540488944c04f1ca84a0ceff7",
+	"clickMat": "bbe1c4a14711f34a1b8bf3a25d21ea27"
 }
 		},
 		{
@@ -541,7 +544,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "b31db2e14143937a864fc69509a52fbc",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -836,7 +839,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "c4bdbea540b0fd66088c3098035bab4c",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -861,7 +864,7 @@
 					"Z": 0.125
 				}
 			},
-			"Text": "10",
+			"Text": "0",
 			"Color": {
 				"R": 0.0,
 				"G": 0.0,
@@ -869,13 +872,101 @@
 				"A": 1.0
 			},
 			"Size": 64.0,
-			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Material": "c53ad96d42e35895dc188c839be3d114",
 			"Font": "6203d3b04fc3f13896346996b9750750"
 		},
 		{
 			"ID": "1964ceb44c40586cc933259b50cc3602",
 			"TypeName": "Game.FloorRenderer",
 			"ParentID": "183c2f7b428e65781793cca233e0de5c",
+			"V": {}
+		},
+		{
+			"ID": "8026429240a6135ccab0fc92ec0dfe12",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "55ecc5e349d2c495be6d6a944af2f096",
+			"Name": "tabliczka",
+			"Transform": {
+				"Translation": {
+					"X": 36.071533203125,
+					"Y": 249.10250854492188,
+					"Z": 75.905029296875
+				},
+				"Scale": {
+					"X": 1.4440581798553467,
+					"Y": 1.4440581798553467,
+					"Z": 0.5337728261947632
+				}
+			}
+		},
+		{
+			"ID": "626203784ef6f85f3eb17ab2d18d584b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "8026429240a6135ccab0fc92ec0dfe12",
+			"Name": "Plane",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -4.371138828673793e-8
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.25,
+					"Z": 0.5
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "df9fe9e243324f4b8f193f977372dccc",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "0bedf8904c769844cbe5cc8fc534b690",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "626203784ef6f85f3eb17ab2d18d584b",
+			"Name": "TextRender 0",
+			"Transform": {
+				"Translation": {
+					"X": -0.6159058809280396,
+					"Y": -5.8243408203125,
+					"Z": 1.4166259765625
+				},
+				"Orientation": {
+					"X": -0.0,
+					"Y": -3.1391647326017846e-7,
+					"Z": 0.0,
+					"W": -1.0
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 1.0,
+					"Z": 0.75
+				}
+			},
+			"Text": "MAX LOAD:\n4 people or\nthy mother",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Size": 20.0,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "6203d3b04fc3f13896346996b9750750"
+		},
+		{
+			"ID": "3e262528407b7f5e4620df96097d96d6",
+			"TypeName": "Game.FloorRenderer",
+			"ParentID": "0bedf8904c769844cbe5cc8fc534b690",
 			"V": {}
 		},
 		{
@@ -1319,7 +1410,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": -88.93605041503906,
+					"Y": 39.552581787109375,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -1438,7 +1529,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "130348ce46f8b1fea94a59b4906ca777",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1480,18 +1571,6 @@
 					}
 				]
 			}
-		},
-		{
-			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "FloorController"
-		},
-		{
-			"ID": "a2da3c2a4e7b1341313c46848157b7e0",
-			"TypeName": "dzemCiastkowy.FloorDisplay",
-			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
-			"V": {}
 		},
 		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
@@ -1574,8 +1653,8 @@
 			"Name": "Canvas Scalar",
 			"Transform": {
 				"Translation": {
-					"X": -0.79998779296875,
-					"Y": 0.0,
+					"X": 0.0,
+					"Y": 4.0,
 					"Z": 0.0
 				}
 			},
@@ -1649,10 +1728,10 @@
 		"Y": 1.0
 	},
 	"Offsets": {
-		"Left": -0.7999878,
-		"Right": 0.7999878,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 4.0,
+		"Bottom": -4.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -4222,6 +4301,93 @@
 	"Enabled": true,
 	"Visible": true,
 	"AutoFocus": false
+}
+		},
+		{
+			"ID": "c0624ffb47ec88e7c071a98199dd759e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "CombatController"
+		},
+		{
+			"ID": "f0970d6c4f4a3bae1b1512a8dd7ab9c1",
+			"TypeName": "dzemCiastkowy.CombatController",
+			"ParentID": "c0624ffb47ec88e7c071a98199dd759e",
+			"V": {}
+		},
+		{
+			"ID": "e01f35c147c492abbd2af98998891f20",
+			"TypeName": "Game.NPC.ExternalNPCManager",
+			"ParentID": "c0624ffb47ec88e7c071a98199dd759e",
+			"V": {}
+		},
+		{
+			"ID": "8db07e8844599a2ddf7bd981fc6a9b1c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "ElevatorManager"
+		},
+		{
+			"ID": "e5865ad9437f4ac38024418fc5c95238",
+			"TypeName": "Game.Managers.ElevatorManager",
+			"ParentID": "8db07e8844599a2ddf7bd981fc6a9b1c",
+			"V": {
+	"EncounterSequence": [
+		{
+			"safeFloor": true,
+			"encounterName": "tut"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "basic_enemy"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "recruit_friend"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "basic_enemy"
+		}
+	]
+}
+		},
+		{
+			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "FloorController"
+		},
+		{
+			"ID": "a2da3c2a4e7b1341313c46848157b7e0",
+			"TypeName": "dzemCiastkowy.FloorDisplay",
+			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
+			"V": {
+	"ActiveMaterial": "634ac8cb47074b6ff7258da498f19a78",
+	"InactiveMaterial": "bbe1c4a14711f34a1b8bf3a25d21ea27",
+	"NoneMaterial": "4c1a4c4f45a97175a260f683e180af84",
+	"Floors": [
+		{
+			"FloorObject": "7d1ca7484fa8abca95a1bc9e49af54df",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "2bcfafe442c2e7841bfe0289981eddc1",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "4707fb8c4f77574358f45a9ed16cfc4c",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "627e47e5401c7a3a363a4387598385bd",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "3ea1ae8b4268fcfc204311a79ecff357",
+			"IsSafe": 0
+		}
+	]
 }
 		}
 	]
