@@ -5,7 +5,11 @@
 	"Data": {
 	"id": "tut",
 	"name": "An",
-	"image": "d72377b9451f63c7cdca81b0dde4224f",
-	"baseMaxHelth": 100
+	"headTexture": "d72377b9451f63c7cdca81b0dde4224f",
+	"dialogueTexture": null,
+	"worldTexture": null,
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"enemyHealth": 0
 }
 }

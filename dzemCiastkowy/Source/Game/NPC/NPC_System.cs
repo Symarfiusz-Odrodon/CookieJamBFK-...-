@@ -14,7 +14,6 @@ public class NPC_System : Script
     [Header("Database")]
     public JsonAssetReference<NpcDatabase> database;
 
-    [Header("Textures")]
     public Texture backgroundTex, frameTex, HPUnderTex, HPFillTex, HPFrameTex, APUnderTex, APFillTex, APFrameTex;
 
 
@@ -32,7 +31,7 @@ public class NPC_System : Script
 
     public override void OnStart()
     {
-        if (Instance != null)
+        if (Instance == null)
             Instance = this;
 
         InitStaticUi();
@@ -57,7 +56,7 @@ public class NPC_System : Script
 
     public void AddNpc(string id)
     {
-        if (Npcs.Count < NPC_LIMIT)
+        if (Npcs.Count >= NPC_LIMIT)
         {
             Debug.LogError("Can't add friendly npc, npc limit already reached!");
             return;
@@ -79,7 +78,7 @@ public class NPC_System : Script
         for (int i = 0; i < Npcs.Count; i++)
             UpdateUiForCharacter(i, Npcs[i]);
         
-        for (int i = 0; i < NPC_LIMIT; i++)
+        for (int i = Npcs.Count; i < NPC_LIMIT; i++)
             UpdateUiForCharacter(i, null);
     
 

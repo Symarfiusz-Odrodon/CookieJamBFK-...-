@@ -5,7 +5,11 @@
 	"Data": {
 	"id": "gunman",
 	"name": "Gun man",
-	"image": "9267940f40763abffd6dfb81df830128",
-	"baseMaxHelth": 100
+	"headTexture": "9267940f40763abffd6dfb81df830128",
+	"dialogueTexture": null,
+	"worldTexture": null,
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"enemyHealth": 0
 }
 }
