@@ -14,9 +14,6 @@ public class NPC_System : Script
     [Header("Database")]
     public JsonAssetReference<NpcDatabase> database;
 
-    public Texture backgroundTex, frameTex, HPUnderTex, HPFillTex, HPFrameTex, APUnderTex, APFillTex, APFrameTex;
-
-
     public UIControl[] NPC_Background = new UIControl[NPC_LIMIT];
     public UIControl[] NPC_Character = new UIControl[NPC_LIMIT];
     public UIControl[] NPC_Frame = new UIControl[NPC_LIMIT];
@@ -27,14 +24,15 @@ public class NPC_System : Script
     public UIControl[] NPC_APProgress = new UIControl[NPC_LIMIT];
     public UIControl[] NPC_APFrame = new UIControl[NPC_LIMIT];
 
+    public UIControl[] NPC_Action1 = new UIControl[NPC_LIMIT];
+    public UIControl[] NPC_Action2 = new UIControl[NPC_LIMIT];
+
     public List<FriendlyNpcInstance> Npcs { get; } = [];
 
     public override void OnStart()
     {
         if (Instance == null)
             Instance = this;
-
-        InitStaticUi();
     }
 
     public override void OnUpdate()
@@ -53,6 +51,7 @@ public class NPC_System : Script
 
         Instance.AddNpc(id);
     }
+
 
     public void AddNpc(string id)
     {
@@ -85,6 +84,9 @@ public class NPC_System : Script
         void UpdateUiForCharacter(int i, FriendlyNpcInstance npc)
         {
             NPC_Character[i].Get<Image>().Brush = npc?.Data.headTexture == null ? null : new TextureBrush(npc?.Data.headTexture);
+            NPC_Background[i].Get<Image>().Visible = npc != null;
+            NPC_Frame[i].Get<Image>().Visible = npc != null;
+
 
             var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
             HPProgress.Value = npc == null || npc.maxHealth == 0 ? HPProgress.Maximum : (float)npc.health / npc.maxHealth;
@@ -93,25 +95,16 @@ public class NPC_System : Script
             var APProgress = NPC_APProgress[i].Get<ProgressBar>();
             APProgress.Value = npc?.actionPoints ?? APProgress.Maximum;
             APProgress.Visible = npc != null;
-        }
-    }
 
-    private void InitStaticUi()
-    {
-        for (int i = 0; i < NPC_LIMIT; i++)
-        {
-            NPC_Background[i].Get<Image>().Brush = new TextureBrush(backgroundTex);
-            NPC_Frame[i].Get<Image>().Brush = new TextureBrush(frameTex);
+            var action1 = NPC_Action1[i].Get<Button>();
+            action1.Visible = npc != null;
+            action1.Enabled = npc?.actionPoints >= 1;
+            action1.Text = npc?.Data.action1Name;
 
-            var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
-            HPProgress.BarBrush = new TextureBrush(HPFillTex);
-            HPProgress.BackgroundBrush = new TextureBrush(HPUnderTex);
-            NPC_HPFrame[i].Get<Image>().Brush = new TextureBrush(HPFrameTex);
-
-            var APProgress = NPC_APProgress[i].Get<ProgressBar>();
-            APProgress.BarBrush = new TextureBrush(APFillTex);
-            APProgress.BackgroundBrush = new TextureBrush(APUnderTex);
-            NPC_APFrame[i].Get<Image>().Brush = new TextureBrush(APFrameTex);
+            var action2 = NPC_Action2[i].Get<Button>();
+            action2.Visible = npc != null;
+            action2.Enabled = npc?.actionPoints >= 1;
+            action2.Text = npc?.Data.action2Name;
         }
     }
 }

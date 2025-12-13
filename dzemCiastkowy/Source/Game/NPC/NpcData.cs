@@ -15,6 +15,8 @@ public class NpcData
     [Header("Friendly stats")]
     public int friendHealth;
     public int friendMaxHealth;
+    public string action1Name;
+    public string action2Name;
 
     [Header("Enemy stats")]
     public int enemyHealth;

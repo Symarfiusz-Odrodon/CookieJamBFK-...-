@@ -1,0 +1,15 @@
+{
+	"ID": "c2e4fa204f814b409a5f5eab7c34703a",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "0",
+	"name": null,
+	"headTexture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
+	"dialogueTexture": null,
+	"worldTexture": null,
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"enemyHealth": 0
+}
+}

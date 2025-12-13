@@ -1,0 +1,17 @@
+{
+	"ID": "4e2b03a24e2cd32f6804ea86681f084d",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "12",
+	"name": "Debil",
+	"headTexture": "d72377b9451f63c7cdca81b0dde4224f",
+	"dialogueTexture": null,
+	"worldTexture": null,
+	"friendHealth": 30,
+	"friendMaxHealth": 100,
+	"action1Name": "Rzut fotelem Marcus Ikea (30 Phys ATK)",
+	"action2Name": "Przerwa na kawę (+50% HP)",
+	"enemyHealth": 0
+}
+}
