@@ -300,6 +300,8 @@
 			"TypeName": "ElevatorDoor",
 			"ParentID": "24e5fee54c3ee75ddc88f1bae61f43e8",
 			"V": {
+	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
+	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
 	"openPosLeft": {
 		"X": 0.0,
 		"Y": 0.0,
