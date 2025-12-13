@@ -9,7 +9,7 @@
 	"dialogueTexture": null,
 	"worldTexture": null,
 	"friendHealth": 0,
-	"friendMaxHealth": 0,
+	"friendMaxHealth": 100,
 	"enemyHealth": 0
 }
 }

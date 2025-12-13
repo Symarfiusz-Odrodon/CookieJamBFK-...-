@@ -1530,6 +1530,15 @@
 			"Name": "ExternalNPCManager"
 		},
 		{
+			"ID": "0dc61307488ba5d034c361918c9b3f12",
+			"TypeName": "Game.NPC.ExternalNPCManager",
+			"ParentID": "e400259748aa032dc3e44ead2472b616",
+			"V": {
+	"DebugNpcId": "tut",
+	"DebugAmount": 0
+}
+		},
+		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -1806,7 +1815,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 293.0,
+					"Y": -27.5,
 					"Z": 0.0
 				}
 			},
@@ -1973,7 +1982,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 16.0,
-					"Y": 384.0,
+					"Y": 63.5,
 					"Z": -1.7053025658242404e-12
 				}
 			},
@@ -2140,7 +2149,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 56.0,
-					"Y": 399.0,
+					"Y": 78.5,
 					"Z": -1.8189894035458565e-12
 				}
 			},
@@ -2392,7 +2401,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 302.5,
+					"Y": -18.0,
 					"Z": 0.0
 				}
 			},
@@ -2559,7 +2568,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 16.0,
-					"Y": 578.0,
+					"Y": 257.5,
 					"Z": -1.7053025658242404e-12
 				}
 			},
@@ -2726,7 +2735,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 56.0,
-					"Y": 592.0,
+					"Y": 271.5,
 					"Z": -1.8189894035458565e-12
 				}
 			},
@@ -2978,7 +2987,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 273.0,
+					"Y": -47.5,
 					"Z": 0.0
 				}
 			},
@@ -3145,7 +3154,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 16.0,
-					"Y": 777.0,
+					"Y": 456.5,
 					"Z": -1.7053025658242404e-12
 				}
 			},
@@ -3312,7 +3321,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 56.0,
-					"Y": 791.0,
+					"Y": 470.5,
 					"Z": -1.8189894035458565e-12
 				}
 			},

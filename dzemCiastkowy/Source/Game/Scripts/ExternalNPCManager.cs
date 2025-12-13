@@ -1,127 +1,149 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using FlaxEngine;
+﻿using System;
+using FlaxEngine;
 
-//namespace Game.NPC
-//{
-//    /// <summary>
-//    /// Manages the data layer for NPCs, allowing external scripts to add/modify NPCs
-//    /// which the NPC_System then visualizes.
-//    /// </summary>
-//    public class ExternalNPCManager : Script
-//    {
-//        [Tooltip("Reference to the NPC_System script that handles the UI.")]
-//        public NPC_System NpcSystem;
+namespace Game.NPC;
 
-//        /// <summary>
-//        /// Adds a new NPC to the first available slot in the system.
-//        /// </summary>
-//        /// <param name="name">Name of the NPC.</param>
-//        /// <param name="hp">Current Health.</param>
-//        /// <param name="maxHp">Max Health.</param>
-//        /// <param name="ap">Action Points.</param>
-//        /// <param name="portrait">Character Texture.</param>
-//        /// <returns>True if added successfully, False if the party is full.</returns>
-//        public bool AddNpc(string name, int hp, int maxHp, float ap, Texture portrait)
-//        {
-//            if (NpcSystem == null)
-//            {
-//                Debug.LogError("ExternalNPCManager: NpcSystem reference is missing!");
-//                return false;
-//            }
+/// <summary>
+/// script to externally manage NPC states and spawning.
+/// </summary>
+public class ExternalNPCManager : Script
+{
+    // ========================================================================
+    // EDITOR DEBUGGING / TESTING SECTION
+    // ========================================================================
+    [Header("Debug Controls")]
+    [Tooltip("The ID of the NPC to spawn when triggering 'SpawnNpc'.")]
+    public string DebugNpcId = "warrior";
 
-//            // Find the first empty slot in the NPC_System array
-//            for (int i = 0; i < NpcSystem.NPCs.Length; i++)
-//            {
-//                if (NpcSystem.NPCs[i] == null)
-//                {
-//                    // Create the new data object
-//                    NPC_Class newNpc = new NPC_Class
-//                    {
-//                        charName = name,
-//                        healthPoints = hp,
-//                        maxHealth = maxHp,
-//                        actionPoints = ap,
-//                        charTexture = portrait,
-//                        charID = new Random().Next(1000, 9999) // Simple random ID
-//                    };
+    [Tooltip("The index in the Npcs list (0, 1, or 2) to target for stat changes.")]
+    public int DebugTargetIndex = 0;
 
-//                    // Assign to system
-//                    NpcSystem.NPCs[i] = newNpc;
-//                    Debug.Log($"Added NPC '{name}' to slot {i}");
-//                    return true;
-//                }
-//            }
+    [Tooltip("Amount to change Health or AP by when triggering the bools below.")]
+    public float DebugAmount = 0.1f;
+    public float DebugAmount2 = 10f;
 
-//            Debug.LogWarning("Cannot add NPC: Party is full (Max 3).");
-//            return false;
-//        }
+    // --- Triggers ---
 
-//        /// <summary>
-//        /// Modifies the Health of a specific NPC slot.
-//        /// </summary>
-//        public void ModifyHealth(int slotIndex, int amount)
-//        {
-//            if (IsValidSlot(slotIndex))
-//            {
-//                var npc = NpcSystem.NPCs[slotIndex];
+    private bool _triggerSpawn;
+    [ShowInEditor, Tooltip("Click to spawn an NPC with the ID specified above.")]
+    public bool TriggerSpawn
+    {
+        get => _triggerSpawn;
+        set { _triggerSpawn = false; if (value) SpawnNpc(DebugNpcId); }
+    }
 
-//                // Modify and Clamp
-//                npc.healthPoints += amount;
-//                npc.healthPoints = Mathf.Clamp(npc.healthPoints, 0, npc.maxHealth);
-//            }
-//        }
+    private bool _triggerDamage;
+    [ShowInEditor, Tooltip("Click to damage the target NPC.")]
+    public bool TriggerDamage
+    {
+        get => _triggerDamage;
+        set { _triggerDamage = false; if (value) ModifyNpcHealth(DebugTargetIndex, -DebugAmount2); }
+    }
 
-//        /// <summary>
-//        /// Sets the Action Points for a specific NPC slot.
-//        /// </summary>
-//        public void SetActionPoints(int slotIndex, float newAp)
-//        {
-//            if (IsValidSlot(slotIndex))
-//            {
-//                // You might want to clamp this based on a MaxAP if you have one
-//                NpcSystem.NPCs[slotIndex].actionPoints = newAp;
-//            }
-//        }
+    private bool _triggerHeal;
+    [ShowInEditor, Tooltip("Click to heal the target NPC.")]
+    public bool TriggerHeal
+    {
+        get => _triggerHeal;
+        set { _triggerHeal = false; if (value) ModifyNpcHealth(DebugTargetIndex, DebugAmount2); }
+    }
 
-//        /// <summary>
-//        /// Removes an NPC from the system completely.
-//        /// </summary>
-//        public void RemoveNpc(int slotIndex)
-//        {
-//            if (IsValidSlot(slotIndex))
-//            {
-//                Debug.Log($"Removing NPC '{NpcSystem.NPCs[slotIndex].charName}' from slot {slotIndex}");
-//                NpcSystem.NPCs[slotIndex] = null;
-//            }
-//        }
+    private bool _triggerAddAP;
+    [ShowInEditor, Tooltip("Click to add Action Points to the target NPC.")]
+    public bool TriggerAddAP
+    {
+        get => _triggerAddAP;
+        set { _triggerAddAP = false; if (value) ModifyNpcAP(DebugTargetIndex, DebugAmount); }
+    }
 
-//        // Helper to check if a slot has a valid NPC
-//        private bool IsValidSlot(int index)
-//        {
-//            if (NpcSystem == null) return false;
-//            if (index < 0 || index >= NpcSystem.NPCs.Length) return false;
-//            if (NpcSystem.NPCs[index] == null) return false;
+    // ========================================================================
+    // PUBLIC API (Call these from other scripts)
+    // ========================================================================
 
-//            return true;
-//        }
+    /// <summary>
+    /// Spawns a new NPC by ID using the main system.
+    /// </summary>
+    public void SpawnNpc(string npcId)
+    {
+        if (NPC_System.Instance == null)
+        {
+            Debug.LogError("NPC_System Instance is missing!");
+            return;
+        }
 
-//        // --- TESTING AREA (Optional) ---
-//        // You can remove this OnUpdate later, it's just for testing keys
-//        public override void OnUpdate()
-//        {
-//            // Press '1' to add a dummy NPC
-//            if (Input.GetKeyDown(KeyboardKeys.Alpha1))
-//            {
-//                // Passing 'null' for texture for now, drag a texture here if you want to test visuals
-//                AddNpc("Warrior", 100, 100, 5.0f, null);
-//            }
+        Debug.Log($"External Manager: Requesting Spawn of '{npcId}'");
+        NPC_System.Instance.AddNpc(npcId);
+    }
 
-//            // Press 'Space' to damage the first NPC
-//            if (Input.GetKeyDown(KeyboardKeys.Spacebar))
-//            {
-//                ModifyHealth(0, -10); // Deal 10 damage to slot 0
-//            }
-//        }
-//    }
-//}
+    /// <summary>
+    /// Modifies the health of a specific NPC. Handles clamping between 0 and MaxHealth.
+    /// </summary>
+    /// <param name="index">Index in the NPC list (0-2).</param>
+    /// <param name="amount">Positive to heal, negative to damage.</param>
+    public void ModifyNpcHealth(int index, float amount)
+    {
+        var npc = GetNpcSafe(index);
+        if (npc == null) return;
+
+        // Modify value
+        npc.health += (int)amount;
+
+        // Clamp to valid range
+        npc.health = Mathf.Clamp(npc.health, 0, npc.maxHealth);
+
+        Debug.Log($"NPC {index} Health is now: {npc.health}/{npc.maxHealth}");
+    }
+
+    /// <summary>
+    /// Modifies the Action Points of a specific NPC.
+    /// </summary>
+    /// <param name="index">Index in the NPC list (0-2).</param>
+    /// <param name="amount">Amount to add or subtract.</param>
+    public void ModifyNpcAP(int index, float amount)
+    {
+        var npc = GetNpcSafe(index);
+        if (npc == null) return;
+
+        npc.actionPoints += amount;
+
+        // Optional: Prevent negative AP
+        if (npc.actionPoints < 0) npc.actionPoints = 0;
+
+        Debug.Log($"NPC {index} AP is now: {npc.actionPoints}");
+    }
+
+    /// <summary>
+    /// Removes an NPC from the system.
+    /// </summary>
+    public void RemoveNpc(int index)
+    {
+        if (NPC_System.Instance == null) return;
+
+        if (index >= 0 && index < NPC_System.Instance.Npcs.Count)
+        {
+            NPC_System.Instance.Npcs.RemoveAt(index);
+            Debug.Log($"Removed NPC at index {index}");
+        }
+    }
+
+    // ========================================================================
+    // HELPERS
+    // ========================================================================
+
+    private FriendlyNpcInstance GetNpcSafe(int index)
+    {
+        if (NPC_System.Instance == null)
+        {
+            Debug.LogError("NPC_System Instance is null.");
+            return null;
+        }
+
+        if (index < 0 || index >= NPC_System.Instance.Npcs.Count)
+        {
+            Debug.LogWarning($"Invalid NPC Index: {index}. Current Count: {NPC_System.Instance.Npcs.Count}");
+            return null;
+        }
+
+        return NPC_System.Instance.Npcs[index];
+    }
+}
