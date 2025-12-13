@@ -663,36 +663,67 @@
 			"TypeName": "Game.NPC.NPC_System",
 			"ParentID": "fad071774e3daa2a6178e3a44719cb6c",
 			"V": {
-	"NPC_UIs": [
+	"backgroundTex": "edf4805a4570fb85d10c2282fd9c4006",
+	"frameTex": "03dc0e8949737f0bb724fe84eac5dfe7",
+	"HPUnderTex": "527ede324a63bb663d18f7abc87183ed",
+	"HPFillTex": "5d4118d548576c59aa80b9bf520022c5",
+	"HPFrameTex": "1d58c88f4fa3fa32205b06a34cfe2709",
+	"APUnderTex": "84f687c444d491c5ab1f5db20f1a0da5",
+	"APFillTex": "7c0c1bda445770854343819c570ef1a1",
+	"APFrameTex": "8af7c41d40de0a0404e04e9ccffac62c",
+	"NPC_Background": [
+		"f3ad428d4ac142c853f05cb41bdcb8b6",
+		"24e98b1044555c358675f0bc704db1da",
+		"e4035ab941dde0fe5c0a7899855e0811"
+	],
+	"NPC_Character": [
 		"74b8c5434173730998ebd8900419f3fa",
 		"df90d9e44036a1cc17a44b9f554e0997",
 		"cfbde2c44c564bbdcc0e369bd990cdc5"
 	],
+	"NPC_Frame": [
+		"fb53c1e84008efdf0ca65d99829a5461",
+		"78364cb8466c319b1cb9978bf6f24e7e",
+		"a62411464e827e51d17614b836020436"
+	],
+	"NPC_HPProgress": [
+		"8a2df79e422d6fb36c883da1948f8ca7",
+		"bfcf3f8e46121a783f9885a3c6c1b961",
+		"3ce1899c4d0c0478a4bd9c93cff9932a"
+	],
+	"NPC_HPFrame": [
+		"abdb03944fb793250e87d5a9d50f2608",
+		"e09ad4e94cf40e0d28ddfcb42d4d5b5f",
+		"b6056fb24144caf5228c7198ef30d391"
+	],
+	"NPC_APProgress": [
+		"642b166249d5e2be0f0eec839c307cf1",
+		"1b67b4ff4180b2ec3e50deb7a605d0f8",
+		"cca4854b4f34b7c431a18ab55541ca50"
+	],
+	"NPC_APFrame": [
+		"f2d9ea804e398b9e46999eab422d7ba2",
+		"1d7becdf41169a83f0b450adf3f3a3f9",
+		"d8eb2f3a4dc6d9a3718fee8a8af0b1d3"
+	],
 	"NPCs": [
 		{
+			"charTexture": "9267940f40763abffd6dfb81df830128",
+			"charName": null,
+			"charID": 60,
+			"healthPoints": 70,
+			"maxHealth": 120,
+			"actionPoints": 0.0
+		},
+		{
 			"charTexture": "d72377b9451f63c7cdca81b0dde4224f",
-			"charName": "Adam",
+			"charName": null,
 			"charID": 0,
 			"healthPoints": 20,
 			"maxHealth": 80,
-			"actionPoints": 1.0
-		},
-		{
-			"charTexture": "9267940f40763abffd6dfb81df830128",
-			"charName": "Debil",
-			"charID": 1,
-			"healthPoints": 40,
-			"maxHealth": 150,
 			"actionPoints": 0.4
 		},
-		{
-			"charTexture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
-			"charName": "Karp",
-			"charID": 2,
-			"healthPoints": 40,
-			"maxHealth": 40,
-			"actionPoints": 0.0
-		}
+		null
 	]
 }
 		},
@@ -716,6 +747,13 @@
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "df8eff9d48164703e121b8a22a8cfad1",
 			"Name": "Canvas Scalar",
+			"Transform": {
+				"Translation": {
+					"X": -1.5999755859375,
+					"Y": 0.8000030517578125,
+					"Z": 0.0
+				}
+			},
 			"Control": "FlaxEngine.GUI.CanvasScaler",
 			"Data": {
 	"ResolutionCurve": {
@@ -786,10 +824,10 @@
 		"Y": 1.0
 	},
 	"Offsets": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": -1.5999756,
+		"Right": 1.5999756,
+		"Top": 0.80000305,
+		"Bottom": -0.7999878
 	},
 	"Scale": {
 		"X": 1.0,
@@ -824,7 +862,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 36.0,
-					"Y": 36.0,
+					"Y": -34.0,
 					"Z": 2.2737367544323206e-13
 				}
 			},
@@ -832,7 +870,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": null,
+		"Texture": "edf4805a4570fb85d10c2282fd9c4006",
 		"Filter": 1
 	},
 	"Margin": {
@@ -868,13 +906,13 @@
 	},
 	"AnchorMax": {
 		"X": 0.0,
-		"Y": 0.0
+		"Y": 1.0
 	},
 	"Offsets": {
 		"Left": 36.0,
 		"Right": 128.0,
-		"Top": 36.0,
-		"Bottom": 128.0
+		"Top": -34.0,
+		"Bottom": 400.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -906,6 +944,13 @@
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "f3ad428d4ac142c853f05cb41bdcb8b6",
 			"Name": "NPC1_Character",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 293.0,
+					"Z": 0.0
+				}
+			},
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
 	"Brush": {
@@ -1062,10 +1107,338 @@
 }
 		},
 		{
+			"ID": "8a2df79e422d6fb36c883da1948f8ca7",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "4b465b33411c11150332329bddc1debd",
+			"Name": "NPC1_HPProgress",
+			"Transform": {
+				"Translation": {
+					"X": 16.0,
+					"Y": 384.0,
+					"Z": -1.7053025658242404e-12
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 1,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.0,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BarBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "5d4118d548576c59aa80b9bf520022c5",
+		"Filter": 1
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": 16.0,
+		"Right": 128.0,
+		"Top": -156.0,
+		"Bottom": 30.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "527ede324a63bb663d18f7abc87183ed",
+		"Filter": 1
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "abdb03944fb793250e87d5a9d50f2608",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "8a2df79e422d6fb36c883da1948f8ca7",
+			"Name": "NPC1_HPFrame",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -3.4000244140625,
+					"Z": -1.1368683772161603e-13
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "1d58c88f4fa3fa32205b06a34cfe2709",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -64.0,
+		"Right": 128.0,
+		"Top": -18.400024,
+		"Bottom": 36.800003
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "642b166249d5e2be0f0eec839c307cf1",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "4b465b33411c11150332329bddc1debd",
+			"Name": "NPC1_APProgress",
+			"Transform": {
+				"Translation": {
+					"X": 56.0,
+					"Y": 399.0,
+					"Z": -1.8189894035458565e-12
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 1,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 1.0,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BarBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "7c0c1bda445770854343819c570ef1a1",
+		"Filter": 1
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": 56.0,
+		"Right": 128.0,
+		"Top": -141.0,
+		"Bottom": 34.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "84f687c444d491c5ab1f5db20f1a0da5",
+		"Filter": 1
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
 			"ID": "f2d9ea804e398b9e46999eab422d7ba2",
 			"TypeName": "FlaxEngine.UIControl",
-			"ParentID": "f3ad428d4ac142c853f05cb41bdcb8b6",
-			"Name": "UIControl"
+			"ParentID": "642b166249d5e2be0f0eec839c307cf1",
+			"Name": "NPC1_APFrame",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -1.4000244140625,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "8af7c41d40de0a0404e04e9ccffac62c",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -64.0,
+		"Right": 128.0,
+		"Top": -18.400024,
+		"Bottom": 36.800003
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
 		},
 		{
 			"ID": "24e98b1044555c358675f0bc704db1da",
@@ -1075,7 +1448,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 36.0,
-					"Y": 186.0,
+					"Y": 151.0,
 					"Z": 2.2737367544323206e-13
 				}
 			},
@@ -1083,7 +1456,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": null,
+		"Texture": "edf4805a4570fb85d10c2282fd9c4006",
 		"Filter": 1
 	},
 	"Margin": {
@@ -1119,13 +1492,13 @@
 	},
 	"AnchorMax": {
 		"X": 0.0,
-		"Y": 0.0
+		"Y": 1.0
 	},
 	"Offsets": {
 		"Left": 36.0,
 		"Right": 128.0,
-		"Top": 186.0,
-		"Bottom": 128.0
+		"Top": 151.0,
+		"Bottom": 196.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1157,6 +1530,13 @@
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "24e98b1044555c358675f0bc704db1da",
 			"Name": "NPC2_Character",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 302.5,
+					"Z": 0.0
+				}
+			},
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
 	"Brush": {
@@ -1270,15 +1650,15 @@
 	"ClipChildren": true,
 	"CullChildren": true,
 	"AnchorMin": {
-		"X": 0.5,
+		"X": 0.0,
 		"Y": 0.5
 	},
 	"AnchorMax": {
-		"X": 0.5,
+		"X": 0.0,
 		"Y": 0.5
 	},
 	"Offsets": {
-		"Left": -64.0,
+		"Left": 0.0,
 		"Right": 128.0,
 		"Top": -64.0,
 		"Bottom": 128.0
@@ -1313,6 +1693,340 @@
 }
 		},
 		{
+			"ID": "bfcf3f8e46121a783f9885a3c6c1b961",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "4b465b33411c11150332329bddc1debd",
+			"Name": "NPC2_HPProgress",
+			"Transform": {
+				"Translation": {
+					"X": 16.0,
+					"Y": 578.0,
+					"Z": -1.7053025658242404e-12
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 1,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.0,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BarBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "5d4118d548576c59aa80b9bf520022c5",
+		"Filter": 1
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": 16.0,
+		"Right": 128.0,
+		"Top": 38.0,
+		"Bottom": 30.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "527ede324a63bb663d18f7abc87183ed",
+		"Filter": 1
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "e09ad4e94cf40e0d28ddfcb42d4d5b5f",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "bfcf3f8e46121a783f9885a3c6c1b961",
+			"Name": "NPC2_HPFrame",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -3.4000244140625,
+					"Z": -1.1368683772161603e-13
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "1d58c88f4fa3fa32205b06a34cfe2709",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -64.0,
+		"Right": 128.0,
+		"Top": -18.400024,
+		"Bottom": 36.800003
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "1b67b4ff4180b2ec3e50deb7a605d0f8",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "4b465b33411c11150332329bddc1debd",
+			"Name": "NPC2_APProgress",
+			"Transform": {
+				"Translation": {
+					"X": 56.0,
+					"Y": 592.0,
+					"Z": -1.8189894035458565e-12
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 1,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 1.0,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BarBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "7c0c1bda445770854343819c570ef1a1",
+		"Filter": 1
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": 56.0,
+		"Right": 128.0,
+		"Top": 52.0,
+		"Bottom": 34.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "84f687c444d491c5ab1f5db20f1a0da5",
+		"Filter": 1
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "1d7becdf41169a83f0b450adf3f3a3f9",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "1b67b4ff4180b2ec3e50deb7a605d0f8",
+			"Name": "NPC2_APFrame",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -1.4000244140625,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "8af7c41d40de0a0404e04e9ccffac62c",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -64.0,
+		"Right": 128.0,
+		"Top": -18.400024,
+		"Bottom": 36.800003
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
 			"ID": "e4035ab941dde0fe5c0a7899855e0811",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "4b465b33411c11150332329bddc1debd",
@@ -1320,7 +2034,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 36.0,
-					"Y": 336.0,
+					"Y": 380.0,
 					"Z": 2.2737367544323206e-13
 				}
 			},
@@ -1328,7 +2042,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": null,
+		"Texture": "edf4805a4570fb85d10c2282fd9c4006",
 		"Filter": 1
 	},
 	"Margin": {
@@ -1364,13 +2078,13 @@
 	},
 	"AnchorMax": {
 		"X": 0.0,
-		"Y": 0.0
+		"Y": 1.0
 	},
 	"Offsets": {
 		"Left": 36.0,
 		"Right": 128.0,
-		"Top": 336.0,
-		"Bottom": 128.0
+		"Top": 380.0,
+		"Bottom": 26.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1402,6 +2116,13 @@
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "e4035ab941dde0fe5c0a7899855e0811",
 			"Name": "NPC3_Character",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 273.0,
+					"Z": 0.0
+				}
+			},
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
 	"Brush": {
@@ -1552,6 +2273,340 @@
 		"Texture": null,
 		"Filter": 1
 	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "3ce1899c4d0c0478a4bd9c93cff9932a",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "4b465b33411c11150332329bddc1debd",
+			"Name": "NPC3_HPProgress",
+			"Transform": {
+				"Translation": {
+					"X": 16.0,
+					"Y": 777.0,
+					"Z": -1.7053025658242404e-12
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 1,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.0,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BarBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "5d4118d548576c59aa80b9bf520022c5",
+		"Filter": 1
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": 16.0,
+		"Right": 128.0,
+		"Top": 237.0,
+		"Bottom": 30.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "527ede324a63bb663d18f7abc87183ed",
+		"Filter": 1
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "b6056fb24144caf5228c7198ef30d391",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "3ce1899c4d0c0478a4bd9c93cff9932a",
+			"Name": "NPC3_HPFrame",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -3.4000244140625,
+					"Z": -1.1368683772161603e-13
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "1d58c88f4fa3fa32205b06a34cfe2709",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -64.0,
+		"Right": 128.0,
+		"Top": -18.400024,
+		"Bottom": 36.800003
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "cca4854b4f34b7c431a18ab55541ca50",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "4b465b33411c11150332329bddc1debd",
+			"Name": "NPC3_APProgress",
+			"Transform": {
+				"Translation": {
+					"X": 56.0,
+					"Y": 791.0,
+					"Z": -1.8189894035458565e-12
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 1,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 1.0,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BarBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "7c0c1bda445770854343819c570ef1a1",
+		"Filter": 1
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": 56.0,
+		"Right": 128.0,
+		"Top": 251.0,
+		"Bottom": 34.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "84f687c444d491c5ab1f5db20f1a0da5",
+		"Filter": 1
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "d8eb2f3a4dc6d9a3718fee8a8af0b1d3",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "cca4854b4f34b7c431a18ab55541ca50",
+			"Name": "NPC3_APFrame",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -1.4000244140625,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "8af7c41d40de0a0404e04e9ccffac62c",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -64.0,
+		"Right": 128.0,
+		"Top": -18.400024,
+		"Bottom": 36.800003
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
 	"Enabled": true,
 	"Visible": true,
 	"AutoFocus": false
