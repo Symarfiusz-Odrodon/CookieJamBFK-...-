@@ -30,48 +30,45 @@
 			"Name": "Visuals"
 		},
 		{
-			"ID": "bc81376747666609b0974580a21519a1",
-			"TypeName": "FlaxEngine.Sky",
-			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "Sky",
-			"Transform": {
-				"Translation": {
-					"X": -69.65292358398438,
-					"Y": 124.01800537109375,
-					"Z": 35.34806823730469
-				}
-			},
-			"SunPower": 10.0
-		},
-		{
-			"ID": "da5e1c454a56377517d41686ebb0348f",
-			"TypeName": "FlaxEngine.EnvironmentProbe",
-			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "Environment Probe",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 249.3258056640625,
-					"Z": 0.0
-				}
-			},
-			"ProbeID": "1e1fb3a7447c1265b15967b480549d98"
-		},
-		{
 			"ID": "0e4b49ed406882487953b5b975f8bd5e",
 			"TypeName": "FlaxEngine.PointLight",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
 			"Name": "PointLight",
 			"Transform": {
 				"Translation": {
-					"X": 448.7516784667969,
+					"X": 507.5553894042969,
 					"Y": 388.8555603027344,
 					"Z": 139.74148559570313
 				}
 			},
-			"Brightness": 7.0,
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3711111545562744,
+				"B": 0.3711111545562744,
+				"A": 1.0
+			},
+			"Brightness": 5.0,
 			"MinRoughness": 1.0,
 			"FallOffExponent": 16.0
+		},
+		{
+			"ID": "96d2d1c34fa75b18a4ba0c8685e321da",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "DirectionalLight",
+			"Transform": {
+				"Translation": {
+					"X": -190.97642517089844,
+					"Y": 3060.92724609375,
+					"Z": -344.12115478515625
+				},
+				"Orientation": {
+					"X": 0.07691167294979095,
+					"Y": 0.3813551664352417,
+					"Z": -0.03185785561800003,
+					"W": 0.920672595500946
+				}
+			}
 		},
 		{
 			"ID": "b0d72c3746caebca055e1f921ca21c7c",
@@ -109,16 +106,18 @@
 				"GI": {},
 				"Bloom": {
 					"OverrideFlags": 7,
+					"Intensity": 0.1499999463558197,
 					"Threshold": 0.6000000238418579
 				},
 				"ToneMapping": {},
 				"ColorGrading": {},
 				"EyeAdaptation": {},
 				"CameraArtifacts": {
-					"OverrideFlags": 59,
+					"OverrideFlags": 123,
 					"VignetteIntensity": 2.0,
 					"GrainAmount": 0.05000000074505806,
-					"GrainSpeed": 0.10000000149011612
+					"GrainSpeed": 0.10000000149011612,
+					"ChromaticDistortion": 0.29999998211860657
 				},
 				"LensFlares": {},
 				"DepthOfField": {
@@ -128,8 +127,10 @@
 				},
 				"MotionBlur": {},
 				"SSR": {
-					"OverrideFlags": 32771,
-					"Intensity": 2.0
+					"OverrideFlags": 32775,
+					"Intensity": 2.0,
+					"DepthResolution": 1,
+					"RayTracePassResolution": 1
 				},
 				"AA": {},
 				"PostFxMaterials": {}
@@ -163,76 +164,6 @@
 			"ID": "4a7045e748c74e3de29afd8856f99205",
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Right",
-			"Transform": {
-				"Translation": {
-					"X": -50.0,
-					"Y": 190.0,
-					"Z": -579.478759765625
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 3.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "f05185004d85b1695fc5b1ae710ba373",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "47ce427c466c386f47a00d91e02a271b",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Left",
-			"Transform": {
-				"Translation": {
-					"X": 50.0,
-					"Y": 190.0,
-					"Z": -579.478759765625
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 3.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "c9a414f5489fab2d1a36cb95b53ba0a9",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "47ce427c466c386f47a00d91e02a271b",
 			"Name": "BoxCollider"
 		},
 		{
@@ -325,7 +256,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "42dbbcdf47abf81cfdb6bf9043747e6d",
+						"Material": "c95a19284865f54d85cf448ea52268ba",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -360,7 +291,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "42dbbcdf47abf81cfdb6bf9043747e6d",
+						"Material": "c95a19284865f54d85cf448ea52268ba",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -478,7 +409,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "0a54e195403785e6e39d8d84e452f975",
+						"Material": "2aa4e07b449bb38ef8e6d5851f2d844c",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -526,7 +457,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "bbe1c4a14711f34a1b8bf3a25d21ea27",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -550,7 +481,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "bbe1c4a14711f34a1b8bf3a25d21ea27",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -574,7 +505,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "634ac8cb47074b6ff7258da498f19a78",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -598,7 +529,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "634ac8cb47074b6ff7258da498f19a78",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -633,7 +564,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "42dbbcdf47abf81cfdb6bf9043747e6d",
+						"Material": "2b52d0a94db5a4ea61085f89c400d688",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -668,7 +599,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "42dbbcdf47abf81cfdb6bf9043747e6d",
+						"Material": "2b52d0a94db5a4ea61085f89c400d688",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -703,7 +634,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "7055bd2d4962732d9d7a6eaa72c80329",
+						"Material": "c4bdbea540b0fd66088c3098035bab4c",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -781,15 +712,28 @@
 			"V": {}
 		},
 		{
+			"ID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Biuro",
+			"Transform": {
+				"Translation": {
+					"X": 273.2959289550781,
+					"Y": 3.5484530925750732,
+					"Z": 115.71886444091797
+				}
+			}
+		},
+		{
 			"ID": "80f8661b46ef0856432564bf17afbe20",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale zaluzja.001",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 20.537700653076172,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 16.989248275756836,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -818,13 +762,13 @@
 		{
 			"ID": "141f5cfb48f719f878eab7b27c8630d9",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 27.1830997467041,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 23.634647369384766,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -853,13 +797,13 @@
 		{
 			"ID": "27140a12439dc94ad2036ea79939ab36",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale biuro",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 26.86050033569336,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 23.312047958374023,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -888,13 +832,13 @@
 		{
 			"ID": "a7c0f29346dc069fb83b9fbf6951fe95",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale drzwi",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 38.43230056762695,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 34.883846282958984,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -923,13 +867,13 @@
 		{
 			"ID": "ac71260a4350dcdf197428b854bae948",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale dywan",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 27.190799713134766,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 23.64234733581543,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -958,13 +902,13 @@
 		{
 			"ID": "c0cd67c64ef81d3c7c6cab92195d0b63",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale klawiatura",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": -69.50199890136719,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": -73.05045318603516,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -993,13 +937,13 @@
 		{
 			"ID": "c977fe0b4fd4ae3be44314acf8293797",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale kwiatek",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 25.88249969482422,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 22.334047317504883,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1028,13 +972,13 @@
 		{
 			"ID": "38c917024b4e20b2c441b3a8a842b0db",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale monitor",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": -69.72820281982422,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": -73.27665710449219,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1063,13 +1007,13 @@
 		{
 			"ID": "f8a4ea3c4023e9ae6c9b55a62f07b489",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale okno",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 27.050600051879883,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 23.502147674560547,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1098,13 +1042,13 @@
 		{
 			"ID": "127e6e584b69ead8f33cdbae663fd060",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale okno.001",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 27.050600051879883,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 23.502147674560547,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1133,13 +1077,13 @@
 		{
 			"ID": "b37d5cfb464d78dc48c09b971190ad9f",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale slup.001",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 25.279800415039063,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 21.731348037719727,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1168,13 +1112,13 @@
 		{
 			"ID": "3f3779eb4e24af12173880b8f3c579f9",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale włącznik_światła",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": -85.3875961303711,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": -88.93605041503906,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1203,13 +1147,13 @@
 		{
 			"ID": "b1be03494fa102d607bf86894d911bcb",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
 			"Name": "biuro cale slup.002",
 			"Transform": {
 				"Translation": {
-					"X": 273.29595947265625,
-					"Y": 25.279800415039063,
-					"Z": 115.71884155273438
+					"X": 0.000030517578125,
+					"Y": 21.731348037719727,
+					"Z": -0.00002288818359375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1234,6 +1178,12 @@
 					}
 				]
 			}
+		},
+		{
+			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "FloorController"
 		}
 	]
 }
