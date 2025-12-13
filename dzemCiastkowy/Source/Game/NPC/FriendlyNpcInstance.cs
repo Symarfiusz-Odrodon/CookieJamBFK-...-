@@ -9,4 +9,6 @@ public class FriendlyNpcInstance(NpcData data)
     public int maxHealth = data.friendMaxHealth;
     public int health = data.friendHealth;
     public float actionPoints = 0;
+    public int attack1type = 1; 
+    public int attack2type = 2;
 }

@@ -1,4 +1,5 @@
 ﻿using FlaxEngine;
+using Game.Managers;
 
 namespace Game
 {
@@ -8,7 +9,15 @@ namespace Game
 
         public Vector3 movement = new Vector3(0, 0.1f, 0);
 
+        public bool unlocked = false;
+
+        public StaticModel model;
+
+        public Material defaultMat;
+        public Material clickMat;
+
         private Vector3 positionOriginal;
+
 
         private bool isAnimating;
         private float animTime;
@@ -22,6 +31,18 @@ namespace Game
 
         public override void OnUpdate()
         {
+            var targetmat = defaultMat;
+
+            if (unlocked)
+            {
+                targetmat = clickMat;
+            }
+
+            if (model.GetMaterial(0) != targetmat)
+            {
+                model.SetMaterial(0, targetmat);
+            }
+
             if (!isAnimating)
             {
                 if (Input.GetMouseButtonDown(MouseButton.Left))
@@ -68,7 +89,7 @@ namespace Game
                 var myChildCollider = Actor.GetChild<BoxCollider>();
                 bool hitMe = false;
 
-                if (hitInfo.Collider != null)
+                if (hitInfo.Collider != null )
                 {
                     if (myChildCollider != null && hitInfo.Collider == myChildCollider)
                         hitMe = true;
@@ -76,7 +97,7 @@ namespace Game
                         hitMe = true;
                 }
 
-                if (hitMe)
+                if (hitMe & unlocked)
                 {
                     OnClicked();
                 }
@@ -89,10 +110,11 @@ namespace Game
 
             if (!isAnimating)
             {
+                unlocked = false;
                 isAnimating = true;
                 animTime = 0f;
-                positionOriginal = Actor.Position;
-                Actor.Scene.FindScript<FloorRenderer>().OnFloorUpdate(5);
+                Actor.Scene.FindScript<ElevatorDoor>().OnOpenClose();
+                Actor.Scene.FindScript<ElevatorManager>().GoToNextFloor();
             }
         }
     }
