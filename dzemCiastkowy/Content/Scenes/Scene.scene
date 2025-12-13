@@ -216,21 +216,43 @@
 			"FallOffExponent": 7.0
 		},
 		{
+			"ID": "acb24a6149b18c63c164aba1d2707c1f",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
+			"Name": "PointLight 7",
+			"Transform": {
+				"Translation": {
+					"X": -376.65484619140625,
+					"Y": -471.7206726074219,
+					"Z": -171.1229705810547
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3305177688598633,
+				"B": 0.2805301547050476,
+				"A": 1.0
+			},
+			"Brightness": 2.0,
+			"MinRoughness": 1.0,
+			"FallOffExponent": 2.0
+		},
+		{
 			"ID": "b0d72c3746caebca055e1f921ca21c7c",
 			"TypeName": "FlaxEngine.Camera",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "Camera",
 			"Transform": {
 				"Translation": {
-					"X": 524.030517578125,
+					"X": 545.5160522460938,
 					"Y": 193.84527587890625,
 					"Z": 151.21543884277344
 				},
 				"Orientation": {
-					"X": -0.015396232716739178,
-					"Y": 0.7160336375236511,
-					"Z": -0.0013944300590083003,
-					"W": -0.6978946328163147
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
 				}
 			},
 			"StaticFlags": 0
@@ -239,7 +261,8 @@
 			"ID": "84b1cb6c4a1fb431108ad18991c3cd04",
 			"TypeName": "PlayerController",
 			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
-			"V": {}
+			"V": {},
+			"Enabled": false
 		},
 		{
 			"ID": "c3f7c98b4d726c8a681a559e4c1056d2",
@@ -280,36 +303,6 @@
 				"AA": {},
 				"PostFxMaterials": {}
 			}
-		},
-		{
-			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Floor",
-			"Transform": {
-				"Scale": {
-					"X": 10.0,
-					"Y": 0.5,
-					"Z": 10.0
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "382f1ae946c519eff6e6f3a2965cf56b",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "4a7045e748c74e3de29afd8856f99205",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"Name": "BoxCollider"
 		},
 		{
 			"ID": "24e5fee54c3ee75ddc88f1bae61f43e8",
@@ -563,7 +556,7 @@
 			"Name": "Mapa",
 			"Transform": {
 				"Translation": {
-					"X": -2.104583740234375,
+					"X": -38.104583740234375,
 					"Y": -87.58015441894531,
 					"Z": -7.3035125732421875
 				},
@@ -960,7 +953,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -995,7 +988,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "bdb922954cdc8a397efc71921428bee6",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1065,7 +1058,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1410,7 +1403,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1446,6 +1439,41 @@
 				"Entries": [
 					{
 						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "a81dac59418a8f5ede1b7dbc94ceb58e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale floor",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 25.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "5fa0b36640c9880c30fbd79332bb8e9b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "07cdc22b493d7a89034c899229f07a90",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
