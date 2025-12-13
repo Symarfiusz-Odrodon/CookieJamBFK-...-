@@ -451,9 +451,20 @@
 			"Name": "Button",
 			"Transform": {
 				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -99.48815155029297,
-					"Z": -7.3035125732421875
+					"X": -65.0,
+					"Y": -350.0,
+					"Z": -100.0
+				},
+				"Orientation": {
+					"X": 0.010096374899148941,
+					"Y": -0.0006244521937333047,
+					"Z": 0.000006303656846284866,
+					"W": 0.9999488592147827
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
 				}
 			}
 		},
@@ -563,9 +574,9 @@
 			"Name": "Mapa",
 			"Transform": {
 				"Translation": {
-					"X": -2.104583740234375,
+					"X": -34.029937744140625,
 					"Y": -87.58015441894531,
-					"Z": -7.3035125732421875
+					"Z": -7.3035078048706055
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -823,9 +834,9 @@
 			"Name": "drzwi osobno wyswietlacz_pietra",
 			"Transform": {
 				"Translation": {
-					"X": 53.147125244140625,
+					"X": 28.454315185546875,
 					"Y": -78.9301528930664,
-					"Z": -7.3035125732421875
+					"Z": -7.3035078048706055
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -1464,6 +1475,20 @@
 			"TypeName": "dzemCiastkowy.FloorDisplay",
 			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
 			"V": {}
+		},
+		{
+			"ID": "e400259748aa032dc3e44ead2472b616",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "ExternalNPCManager"
+		},
+		{
+			"ID": "1ee4c48642098370892d8eb18631ada0",
+			"TypeName": "Game.NPC.ExternalNPCManager",
+			"ParentID": "e400259748aa032dc3e44ead2472b616",
+			"V": {
+	"NpcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c"
+}
 		},
 		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
@@ -2175,7 +2200,7 @@
 			"Name": "NPC1_APFrame",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
+					"X": 0.79998779296875,
 					"Y": -1.4000244140625,
 					"Z": 0.0
 				}
@@ -2223,7 +2248,7 @@
 		"Y": 0.5
 	},
 	"Offsets": {
-		"Left": -64.0,
+		"Left": -63.200012,
 		"Right": 128.0,
 		"Top": -18.400024,
 		"Bottom": 36.800003
