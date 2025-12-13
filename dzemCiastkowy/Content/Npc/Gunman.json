@@ -1,11 +1,11 @@
 {
-	"ID": "08de3a4c05524f95f5ba5cead32f17da",
+	"ID": "08de3a4d059361ef016145ab47b43813",
 	"TypeName": "Game.NPC.NpcData",
 	"EngineBuild": 6802,
 	"Data": {
-	"id": "tut",
-	"name": "An",
-	"headTexture": "d72377b9451f63c7cdca81b0dde4224f",
+	"id": "gunman",
+	"name": "Gun man",
+	"headTexture": "9267940f40763abffd6dfb81df830128",
 	"dialogueTexture": null,
 	"worldTexture": null,
 	"friendHealth": 0,

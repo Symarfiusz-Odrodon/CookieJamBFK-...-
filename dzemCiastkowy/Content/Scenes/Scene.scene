@@ -1523,6 +1523,7 @@
 			"TypeName": "Game.NPC.NPC_System",
 			"ParentID": "5a305c1147067da12331d4b3724269f3",
 			"V": {
+	"database": "08de3a4a06d063cbb5a413a552504b72",
 	"backgroundTex": "edf4805a4570fb85d10c2282fd9c4006",
 	"frameTex": "03dc0e8949737f0bb724fe84eac5dfe7",
 	"HPUnderTex": "527ede324a63bb663d18f7abc87183ed",
@@ -1565,25 +1566,6 @@
 		"1adcd40b41561fccf6dc51a1bb0d7617",
 		"795a68b14319bd7a821d74a9e42773b7",
 		"f3625d114dde9cb9e54875ba67caf571"
-	],
-	"NPCs": [
-		{
-			"charTexture": "9267940f40763abffd6dfb81df830128",
-			"charName": null,
-			"charID": 60,
-			"healthPoints": 70,
-			"maxHealth": 120,
-			"actionPoints": 0.0
-		},
-		{
-			"charTexture": "d72377b9451f63c7cdca81b0dde4224f",
-			"charName": null,
-			"charID": 0,
-			"healthPoints": 20,
-			"maxHealth": 80,
-			"actionPoints": 0.4
-		},
-		null
 	]
 }
 		},
