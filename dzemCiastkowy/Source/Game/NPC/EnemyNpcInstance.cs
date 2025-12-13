@@ -1,4 +1,4 @@
-namespace Game.Npc;
+namespace Game.NPC;
 
 /// <summary>Instance of an enemy npc.</summary>
 /// <param name="data">Data of the npc.</param>

@@ -1,6 +1,6 @@
 using FlaxEngine;
 
-namespace Game.Npc;
+namespace Game.NPC;
 
 /// <summary>Class containing npc data. Should be used as a json asset. READ ONLY!!</summary>
 public class NpcData

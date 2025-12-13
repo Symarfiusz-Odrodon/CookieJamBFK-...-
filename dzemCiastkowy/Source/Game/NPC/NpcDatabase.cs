@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FlaxEngine;
 
-namespace Game.Npc;
+namespace Game.NPC;
 
 /// <summary>Class containing data for all npcs. READ ONLY!!!</summary>
 public class NpcDatabase

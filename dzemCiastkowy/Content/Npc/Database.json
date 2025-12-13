@@ -1,6 +1,6 @@
 {
 	"ID": "08de3a4a06d063cbb5a413a552504b72",
-	"TypeName": "Game.Npc.NpcDatabase",
+	"TypeName": "Game.NPC.NpcDatabase",
 	"EngineBuild": 6802,
 	"Data": {
 	"npcs": [

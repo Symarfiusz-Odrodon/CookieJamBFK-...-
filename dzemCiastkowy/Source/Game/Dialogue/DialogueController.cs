@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FlaxEngine;
 using FlaxInk;
 using FlaxEngine.GUI;
-using Game.Npc;
+using Game.NPC;
 
 namespace Game.Dialogue;
 
@@ -62,21 +62,21 @@ public class DialogueController : Script
         {
             runner.GetVariable(SPEAKER_VAR_NAME, out string speakerId);
             HideOptions();
-            if (textControl.Control is RichTextBox textBox)
+            if (textControl?.Control is RichTextBox textBox)
                 textBox.Text = line.Text;
-            else if (textControl.Control is Label label)
+            else if (textControl?.Control is Label label)
                 label.Text = line.Text;
             
-            if (speakerLabelControl.Control is Label speakerLabel)
+            if (speakerLabelControl?.Control is Label speakerLabel)
                 speakerLabel.Text = npcDatabase.Instance.GetNpcById(speakerId)?.name ?? speakerId;
             
-            if (characterLeftImageControl.Control is Image charLeft)
+            if (characterLeftImageControl?.Control is Image charLeft)
             {
                 runner.GetVariable(CHARACTER_LEFT_VAR_NAME, out string charLeftId);
                 charLeft.Brush = new TextureBrush(npcDatabase.Instance.GetNpcById(charLeftId)?.dialogueTexture);
             }
 
-            if (characterRightImageControl.Control is Image charRight)
+            if (characterRightImageControl?.Control is Image charRight)
             {
                 runner.GetVariable(CHARACTER_RIGHT_VAR_NAME, out string charRightId);
                 charRight.Brush = new TextureBrush(npcDatabase.Instance.GetNpcById(charRightId)?.dialogueTexture);

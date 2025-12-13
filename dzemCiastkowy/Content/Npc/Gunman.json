@@ -1,6 +1,6 @@
 {
 	"ID": "08de3a4d059361ef016145ab47b43813",
-	"TypeName": "Game.Npc.NpcData",
+	"TypeName": "Game.NPC.NpcData",
 	"EngineBuild": 6802,
 	"Data": {
 	"id": "gunman",
