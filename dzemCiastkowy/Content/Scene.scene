@@ -305,16 +305,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "bf85ffc94bff88cef0aed3bd89adb694",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -340,16 +332,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "28b6628244e7467c3b75f3b64339af6b",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -388,16 +372,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "9f3183724cf88b235c9f91b4ae62cbfd",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -423,16 +399,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "c10110cf468f0e5c265394a5a1e2d40f",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -458,16 +426,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "e015fcdc4356c3d1e6041fb48b6cf049",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -482,16 +442,8 @@
 					"Z": 0.1340942233800888
 				}
 			},
-			"Model": "e96349c64d6db9a3dfac8f980ecc41c6",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -506,16 +458,8 @@
 					"Z": 0.1340942233800888
 				}
 			},
-			"Model": "77ced1a94accad7a5ec5c7b1ec92c9d1",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -530,16 +474,8 @@
 					"Z": 0.1340942233800888
 				}
 			},
-			"Model": "3f48cda349d8325200a41eab9a54c9ff",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -554,16 +490,8 @@
 					"Z": 0.1340942233800888
 				}
 			},
-			"Model": "7599029b42b2f566964bb8a29e61a044",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -578,16 +506,8 @@
 					"Z": 0.1340942233800888
 				}
 			},
-			"Model": "d308b2f7475d6aefc81ca58e1339967c",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -613,16 +533,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "f0d65f6d4f6c845b71eb0b84d4051538",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -648,16 +560,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "c70f9f3d46338bd0668857812cd45a99",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -683,16 +587,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "ea299baf45676ff8731a68a5be459485",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -718,16 +614,8 @@
 					"Z": 2.0
 				}
 			},
-			"Model": "8fd50e404054a58a0f6d668ab96fc435",
 			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
+				"Entries": []
 			}
 		},
 		{
@@ -763,8 +651,6 @@
 			"TypeName": "Game.FloorRenderer",
 			"ParentID": "183c2f7b428e65781793cca233e0de5c",
 			"V": {}
-<<<<<<< Updated upstream
-=======
 		},
 		{
 			"ID": "fad071774e3daa2a6178e3a44719cb6c",
@@ -773,7 +659,7 @@
 			"Name": "NPC_ACTOR"
 		},
 		{
-			"ID": "92e16b9648eb27674e3214a9bf686c08",
+			"ID": "7bd268bf4ba4e61b3d9992881d203972",
 			"TypeName": "Game.NPC.NPC_System",
 			"ParentID": "fad071774e3daa2a6178e3a44719cb6c",
 			"V": {
@@ -784,28 +670,28 @@
 	],
 	"NPCs": [
 		{
-			"charTexture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
+			"charTexture": "d72377b9451f63c7cdca81b0dde4224f",
 			"charName": "Adam",
 			"charID": 0,
-			"healthPoints": 100,
-			"maxHealth": 150,
-			"actionPoints": 0.0
-		},
-		{
-			"charTexture": "9267940f40763abffd6dfb81df830128",
-			"charName": "Debil",
-			"charID": 1,
 			"healthPoints": 20,
 			"maxHealth": 80,
 			"actionPoints": 1.0
 		},
 		{
-			"charTexture": "d72377b9451f63c7cdca81b0dde4224f",
+			"charTexture": "9267940f40763abffd6dfb81df830128",
+			"charName": "Debil",
+			"charID": 1,
+			"healthPoints": 40,
+			"maxHealth": 150,
+			"actionPoints": 0.4
+		},
+		{
+			"charTexture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
 			"charName": "Karp",
 			"charID": 2,
-			"healthPoints": 80,
-			"maxHealth": 80,
-			"actionPoints": 0.4
+			"healthPoints": 40,
+			"maxHealth": 40,
+			"actionPoints": 0.0
 		}
 	]
 }
@@ -946,7 +832,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": "edf4805a4570fb85d10c2282fd9c4006",
+		"Texture": null,
 		"Filter": 1
 	},
 	"Margin": {
@@ -1024,7 +910,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
+		"Texture": null,
 		"Filter": 1
 	},
 	"Margin": {
@@ -1197,7 +1083,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": "edf4805a4570fb85d10c2282fd9c4006",
+		"Texture": null,
 		"Filter": 1
 	},
 	"Margin": {
@@ -1275,7 +1161,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
+		"Texture": null,
 		"Filter": 1
 	},
 	"Margin": {
@@ -1442,7 +1328,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": "edf4805a4570fb85d10c2282fd9c4006",
+		"Texture": null,
 		"Filter": 1
 	},
 	"Margin": {
@@ -1520,7 +1406,7 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": "7b5cbe9c4a2a062f62f3e2b0553b759e",
+		"Texture": null,
 		"Filter": 1
 	},
 	"Margin": {
@@ -1670,7 +1556,6 @@
 	"Visible": true,
 	"AutoFocus": false
 }
->>>>>>> Stashed changes
 		}
 	]
 }
