@@ -37,7 +37,7 @@ public class ExternalNPCManager : Script
     public bool TriggerDamage
     {
         get => _triggerDamage;
-        set { _triggerDamage = false; if (value) ModifyNpcHealth(DebugTargetIndex, -DebugAmount2); }
+        set { _triggerDamage = false; if (value) ModifyNpcHealth(DebugTargetIndex, -DebugAmount2    ); }
     }
 
     private bool _triggerHeal;

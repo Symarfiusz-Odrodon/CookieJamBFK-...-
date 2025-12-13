@@ -309,6 +309,11 @@
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "Floor",
 			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -933.9011840820313,
+					"Z": 0.0
+				},
 				"Scale": {
 					"X": 10.0,
 					"Y": 0.5,
@@ -1028,7 +1033,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "bdb922954cdc8a397efc71921428bee6",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -1114,7 +1119,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.000030517578125,
-					"Y": 29.0,
+					"Y": 24.215593338012695,
 					"Z": -0.00002288818359375
 				},
 				"Orientation": {
@@ -1487,6 +1492,41 @@
 			}
 		},
 		{
+			"ID": "23098fe4445691a41e60c5b48615b930",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "51e7ecf64b88937122ded9badc6dc7f4",
+			"Name": "biuro cale floor",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 23.5,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "5fa0b36640c9880c30fbd79332bb8e9b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "07cdc22b493d7a89034c899229f07a90",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -1535,7 +1575,7 @@
 			"ParentID": "e400259748aa032dc3e44ead2472b616",
 			"V": {
 	"DebugNpcId": "tut",
-	"DebugAmount": 0
+	"DebugAmount": 0.0
 }
 		},
 		{
@@ -1618,7 +1658,7 @@
 			"Transform": {
 				"Translation": {
 					"X": -1.5999755859375,
-					"Y": 0.8000030517578125,
+					"Y": 2.4000091552734375,
 					"Z": 0.0
 				}
 			},
@@ -1694,8 +1734,8 @@
 	"Offsets": {
 		"Left": -1.5999756,
 		"Right": 1.5999756,
-		"Top": 0.80000305,
-		"Bottom": -0.7999878
+		"Top": 2.4000092,
+		"Bottom": -2.4000244
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1815,7 +1855,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": -27.5,
+					"Y": 293.0,
 					"Z": 0.0
 				}
 			},
@@ -1982,7 +2022,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 16.0,
-					"Y": 63.5,
+					"Y": 384.0,
 					"Z": -1.7053025658242404e-12
 				}
 			},
@@ -2149,7 +2189,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 56.0,
-					"Y": 78.5,
+					"Y": 399.0,
 					"Z": -1.8189894035458565e-12
 				}
 			},
@@ -2401,7 +2441,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": -18.0,
+					"Y": 302.5,
 					"Z": 0.0
 				}
 			},
@@ -2568,7 +2608,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 16.0,
-					"Y": 257.5,
+					"Y": 578.0,
 					"Z": -1.7053025658242404e-12
 				}
 			},
@@ -2735,7 +2775,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 56.0,
-					"Y": 271.5,
+					"Y": 592.0,
 					"Z": -1.8189894035458565e-12
 				}
 			},
@@ -2987,7 +3027,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": -47.5,
+					"Y": 273.0,
 					"Z": 0.0
 				}
 			},
@@ -3154,7 +3194,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 16.0,
-					"Y": 456.5,
+					"Y": 777.0,
 					"Z": -1.7053025658242404e-12
 				}
 			},
@@ -3321,7 +3361,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 56.0,
-					"Y": 470.5,
+					"Y": 791.0,
 					"Z": -1.8189894035458565e-12
 				}
 			},
