@@ -19,9 +19,9 @@
 -nowarn:8632
 -nowarn:1591
 /optimize-
-/out:"C:\Users\DELL\source\repos\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Binaries\ACGIntegrationEditorTarget\Windows\x64\Development\ACGIntegration.CSharp.dll"
-/doc:"C:\Users\DELL\source\repos\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Binaries\ACGIntegrationEditorTarget\Windows\x64\Development\ACGIntegration.CSharp.xml"
-/generatedfilesout:"C:\Users\DELL\source\repos\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Cache/Intermediate\ACGIntegrationEditorTarget\Windows\x64\Development"
+/out:"C:\Users\DELL\source\repos\CookieJam\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Binaries\ACGIntegrationEditorTarget\Windows\x64\Development\ACGIntegration.CSharp.dll"
+/doc:"C:\Users\DELL\source\repos\CookieJam\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Binaries\ACGIntegrationEditorTarget\Windows\x64\Development\ACGIntegration.CSharp.xml"
+/generatedfilesout:"C:\Users\DELL\source\repos\CookieJam\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Cache/Intermediate\ACGIntegrationEditorTarget\Windows\x64\Development"
 /define:BUILD_DEVELOPMENT;PLATFORM_WINDOWS;FLAX_1;FLAX_1_11;FLAX_1_1_OR_NEWER;FLAX_1_2_OR_NEWER;FLAX_1_3_OR_NEWER;FLAX_1_4_OR_NEWER;FLAX_1_5_OR_NEWER;FLAX_1_6_OR_NEWER;FLAX_1_7_OR_NEWER;FLAX_1_8_OR_NEWER;FLAX_1_9_OR_NEWER;FLAX_1_10_OR_NEWER;FLAX_1_11_OR_NEWER;FLAX;FLAX_ASSERTIONS;FLAX_EDITOR;USE_NETCORE;NET;NET9_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP;NETCOREAPP3_1_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP1_0_OR_GREATER;USE_PROFILER
 /reference:"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.10\ref\net9.0\mscorlib.dll"
 /reference:"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.10\ref\net9.0\netstandard.dll"
@@ -78,5 +78,5 @@
 /reference:"C:\Program Files (x86)\Flax\Flax_1.11\Source\Platforms\DotNet\Newtonsoft.Json.dll"
 /analyzer:"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.10\analyzers\dotnet\cs\Microsoft.Interop.LibraryImportGenerator.dll"
 /analyzer:"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.10\analyzers\dotnet\cs\Microsoft.Interop.SourceGeneration.dll"
-"C:\Users\DELL\source\repos\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Source\ACGIntegration.Gen.cs"
-"C:\Users\DELL\source\repos\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Cache/Intermediate\ACGIntegrationEditorTarget\Windows\x64\Development\ACGIntegration.CSharp.AssemblyAttributes.cs"
+"C:\Users\DELL\source\repos\CookieJam\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Source\ACGIntegration.Gen.cs"
+"C:\Users\DELL\source\repos\CookieJam\CookieJamBFK-...-\dzemCiastkowy\Plugins\FlaxAmbientCG\Cache/Intermediate\ACGIntegrationEditorTarget\Windows\x64\Development\ACGIntegration.CSharp.AssemblyAttributes.cs"
