@@ -1,12 +1,16 @@
 using System.Collections.Generic;
+using System.Linq;
+using FlaxEngine;
 
-namespace Game.NPC;
+namespace Game.Npc;
 
+/// <summary>Class containing data for all npcs. READ ONLY!!!</summary>
 public class NpcDatabase
 {
-    public List<NPC_Class> npcs = [];
+    public List<JsonAssetReference<NpcData>> npcs = [];
 
-    public NPC_Class GetNpcById(string id) {
-        return npcs[0];
-    }
+    public NpcData GetNpcById(string id) =>
+        npcs.Where(x => x.Instance?.id == id)
+            .Select(x => x.Instance)
+            .FirstOrDefault();
 }

@@ -1,0 +1,11 @@
+{
+	"ID": "08de3a4d059361ef016145ab47b43813",
+	"TypeName": "Game.Npc.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "gunman",
+	"name": "Gun man",
+	"image": "9267940f40763abffd6dfb81df830128",
+	"baseMaxHelth": 100
+}
+}

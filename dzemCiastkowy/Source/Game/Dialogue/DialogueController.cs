@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using FlaxEngine;
 using FlaxInk;
 using FlaxEngine.GUI;
-using Game.NPC;
+using Game.Npc;
 
 namespace Game.Dialogue;
 
 public class DialogueController : Script
 {
-    private const string _SPEAKER_VAR_NAME = "speaker";
+    private const string SPEAKER_VAR_NAME = "speaker";
+    private const string CHARACTER_LEFT_VAR_NAME = "char_left";
+    private const string CHARACTER_RIGHT_VAR_NAME = "char_right";
 
     [Header("Database")]
     public JsonAssetReference<NpcDatabase> npcDatabase;
@@ -34,6 +36,8 @@ public class DialogueController : Script
     [Space(16)]
     [Tooltip("Label that displays the current speaking character.")]
     public UIControl speakerLabelControl;
+    public UIControl characterLeftImageControl;
+    public UIControl characterRightImageControl;
 
     public bool StoryActive { get; private set; }
 
@@ -56,7 +60,7 @@ public class DialogueController : Script
 
         runner.NewDialogueLine += line =>
         {
-            runner.GetVariable(_SPEAKER_VAR_NAME, out string speakerId);
+            runner.GetVariable(SPEAKER_VAR_NAME, out string speakerId);
             HideOptions();
             if (textControl.Control is RichTextBox textBox)
                 textBox.Text = line.Text;
@@ -64,7 +68,19 @@ public class DialogueController : Script
                 label.Text = line.Text;
             
             if (speakerLabelControl.Control is Label speakerLabel)
-                speakerLabel.Text = npcDatabase.Instance.GetNpcById(speakerId)?.charName ?? speakerId;
+                speakerLabel.Text = npcDatabase.Instance.GetNpcById(speakerId)?.name ?? speakerId;
+            
+            if (characterLeftImageControl.Control is Image charLeft)
+            {
+                runner.GetVariable(CHARACTER_LEFT_VAR_NAME, out string charLeftId);
+                charLeft.Brush = new TextureBrush(npcDatabase.Instance.GetNpcById(charLeftId)?.dialogueTexture);
+            }
+
+            if (characterRightImageControl.Control is Image charRight)
+            {
+                runner.GetVariable(CHARACTER_RIGHT_VAR_NAME, out string charRightId);
+                charRight.Brush = new TextureBrush(npcDatabase.Instance.GetNpcById(charRightId)?.dialogueTexture);
+            }
         };
 
         runner.DialogueEnded += () =>

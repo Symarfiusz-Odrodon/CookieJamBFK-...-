@@ -3,6 +3,9 @@
 	"TypeName": "Game.Npc.NpcDatabase",
 	"EngineBuild": 6802,
 	"Data": {
-	"npcs": []
+	"npcs": [
+		"08de3a4c05524f95f5ba5cead32f17da",
+		"08de3a4d059361ef016145ab47b43813"
+	]
 }
 }
