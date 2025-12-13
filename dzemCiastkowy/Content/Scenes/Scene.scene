@@ -1496,21 +1496,38 @@
 			"ID": "a2da3c2a4e7b1341313c46848157b7e0",
 			"TypeName": "dzemCiastkowy.FloorDisplay",
 			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
-			"V": {}
+			"V": {
+	"ActiveMaterial": "634ac8cb47074b6ff7258da498f19a78",
+	"InactiveMaterial": "bbe1c4a14711f34a1b8bf3a25d21ea27",
+	"Floors": [
+		{
+			"FloorObject": "7d1ca7484fa8abca95a1bc9e49af54df",
+			"IsActive": true
+		},
+		{
+			"FloorObject": "2bcfafe442c2e7841bfe0289981eddc1",
+			"IsActive": false
+		},
+		{
+			"FloorObject": "4707fb8c4f77574358f45a9ed16cfc4c",
+			"IsActive": true
+		},
+		{
+			"FloorObject": "627e47e5401c7a3a363a4387598385bd",
+			"IsActive": false
+		},
+		{
+			"FloorObject": "3ea1ae8b4268fcfc204311a79ecff357",
+			"IsActive": false
+		}
+	]
+}
 		},
 		{
 			"ID": "e400259748aa032dc3e44ead2472b616",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "ExternalNPCManager"
-		},
-		{
-			"ID": "1ee4c48642098370892d8eb18631ada0",
-			"TypeName": "Game.NPC.ExternalNPCManager",
-			"ParentID": "e400259748aa032dc3e44ead2472b616",
-			"V": {
-	"NpcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c"
-}
 		},
 		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
