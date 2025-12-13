@@ -239,7 +239,8 @@
 			"ID": "84b1cb6c4a1fb431108ad18991c3cd04",
 			"TypeName": "PlayerController",
 			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
-			"V": {}
+			"V": {},
+			"Enabled": false
 		},
 		{
 			"ID": "c3f7c98b4d726c8a681a559e4c1056d2",
@@ -472,7 +473,10 @@
 		"X": 0.0,
 		"Y": 0.0,
 		"Z": 1.5
-	}
+	},
+	"model": "deba2e8d47664aba083089a6eb51d9ff",
+	"defaultMat": "4a6969d540488944c04f1ca84a0ceff7",
+	"clickMat": "bbe1c4a14711f34a1b8bf3a25d21ea27"
 }
 		},
 		{
@@ -891,18 +895,6 @@
 			}
 		},
 		{
-			"ID": "ee98961942b00fb25c754d8a2d5dffd6",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "FloorController"
-		},
-		{
-			"ID": "a2da3c2a4e7b1341313c46848157b7e0",
-			"TypeName": "dzemCiastkowy.FloorDisplay",
-			"ParentID": "ee98961942b00fb25c754d8a2d5dffd6",
-			"V": {}
-		},
-		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -958,11 +950,6 @@
 		"64a766d044c2aecfd46c5197a192e244",
 		"0bdced6a4202c55b3bd409b114d52797",
 		"7c089e564364e08effdef3ac30b10fb7"
-	],
-	"enemySprites": [
-		"de242748441560f10286e3b281180438",
-		"173343194eab77de5de9099b54713ed6",
-		"1b4f5e084ac700c9b6ef36a1401a7106"
 	]
 }
 		},
@@ -4819,6 +4806,93 @@
 					{}
 				]
 			}
+		},
+		{
+			"ID": "26b4f12440baa86453edd08c3f1cba57",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "CombatController"
+		},
+		{
+			"ID": "d549305c445c9c59f03840930377d50a",
+			"TypeName": "dzemCiastkowy.CombatController",
+			"ParentID": "26b4f12440baa86453edd08c3f1cba57",
+			"V": {}
+		},
+		{
+			"ID": "d7c8e7b44481c0c1c3163a871a414807",
+			"TypeName": "Game.NPC.ExternalNPCManager",
+			"ParentID": "26b4f12440baa86453edd08c3f1cba57",
+			"V": {}
+		},
+		{
+			"ID": "f3d966e74b51d8dc0df670977fb32d0e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "ElevatorManager"
+		},
+		{
+			"ID": "f07924464bf8a3feed65b2b89f25e273",
+			"TypeName": "Game.Managers.ElevatorManager",
+			"ParentID": "f3d966e74b51d8dc0df670977fb32d0e",
+			"V": {
+	"EncounterSequence": [
+		{
+			"safeFloor": true,
+			"encounterName": "tut"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "basic_enemy"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "recruit_friend"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "basic_enemy"
+		}
+	]
+}
+		},
+		{
+			"ID": "2d0048d44b7366f68c4179b1d1d790f8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "FloorController"
+		},
+		{
+			"ID": "4db3a5d74509ae08cdc98caeab6597dc",
+			"TypeName": "dzemCiastkowy.FloorDisplay",
+			"ParentID": "2d0048d44b7366f68c4179b1d1d790f8",
+			"V": {
+	"ActiveMaterial": "634ac8cb47074b6ff7258da498f19a78",
+	"InactiveMaterial": "bbe1c4a14711f34a1b8bf3a25d21ea27",
+	"NoneMaterial": "4c1a4c4f45a97175a260f683e180af84",
+	"Floors": [
+		{
+			"FloorObject": "7d1ca7484fa8abca95a1bc9e49af54df",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "2bcfafe442c2e7841bfe0289981eddc1",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "4707fb8c4f77574358f45a9ed16cfc4c",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "627e47e5401c7a3a363a4387598385bd",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "3ea1ae8b4268fcfc204311a79ecff357",
+			"IsSafe": 0
+		}
+	]
+}
 		}
 	]
 }
