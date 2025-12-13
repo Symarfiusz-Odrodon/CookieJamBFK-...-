@@ -12,7 +12,7 @@ namespace Game.NPC
 {
     public class NPC_System : Script
     {
-        public Texture backgroundTex, frameTex, HPUnderTex, HPFillTex, HPFrameTex, APUnderTex, APFillTex, APFrameTex;
+        public Texture backgroundTex, frameTex, HPFrameTex, APFrameTex;
 
 
         public UIControl[] NPC_Background = new UIControl[3];
@@ -24,6 +24,9 @@ namespace Game.NPC
 
         public UIControl[] NPC_APProgress = new UIControl[3];
         public UIControl[] NPC_APFrame = new UIControl[3];
+
+        public UIControl[] NPC_Action1 = new UIControl[3];
+        public UIControl[] NPC_Action2 = new UIControl[3];
 
         public NPC_Class[] NPCs = new NPC_Class[3];
 
@@ -45,17 +48,28 @@ namespace Game.NPC
 
                     var HPProgress = NPC_HPProgress[position].Get<ProgressBar>();
                     HPProgress.Value = (float)NPCs[i].healthPoints / NPCs[i].maxHealth;
-                    HPProgress.BarBrush = new TextureBrush(HPFillTex);
-                    HPProgress.BackgroundBrush = new TextureBrush(HPUnderTex);
+                    HPProgress.Visible = true;
                     NPC_HPFrame[position].Get<Image>().Brush = new TextureBrush(HPFrameTex);
 
                     var APProgress = NPC_APProgress[position].Get<ProgressBar>();
                     APProgress.Value = NPCs[i].actionPoints;
-                    APProgress.BarBrush = new TextureBrush(APFillTex);
-                    APProgress.BackgroundBrush = new TextureBrush(APUnderTex);
+                    APProgress.Visible = true;
                     NPC_APFrame[position].Get<Image>().Brush = new TextureBrush(APFrameTex);
 
-                    position++;
+                    NPC_Action1[position].Get<Button>().Visible = true;
+                    NPC_Action2[position].Get<Button>().Visible = true;
+                    if (NPCs[i].actionPoints >= 1)
+                    {
+                        NPC_Action1[position].Get<Button>().Enabled = true;
+                        NPC_Action2[position].Get<Button>().Enabled = true;
+                    }
+                    else
+                    {
+                        NPC_Action1[position].Get<Button>().Enabled = false;
+                        NPC_Action2[position].Get<Button>().Enabled = false;
+                    }
+
+                        position++;
                 }
             }
 
@@ -77,9 +91,7 @@ namespace Game.NPC
                 {
                     var progress = NPC_HPProgress[i].Get<ProgressBar>();
                     if (progress.Visible)
-                    {
                         progress.Visible = false;
-                    }
                 }
                 if (NPC_HPFrame[i] != null)
                 {
@@ -91,15 +103,25 @@ namespace Game.NPC
                 {
                     var progress = NPC_APProgress[i].Get<ProgressBar>();
                     if (progress.Visible)
-                    {
                         progress.Visible = false;
-                    }
                 }
                 if (NPC_APFrame[i] != null)
                 {
                     var image = NPC_APFrame[i].Get<Image>();
                     if (image != null)
                         image.Brush = null;
+                }
+                if (NPC_Action1[i] != null)
+                {
+                    var button = NPC_Action1[i].Get<Button>();
+                    if (button.Visible)
+                        button.Visible = false;
+                }
+                if (NPC_Action2[i] != null)
+                {
+                    var button = NPC_Action2[i].Get<Button>();
+                    if (button.Visible)
+                        button.Visible = false;
                 }
 
             }
@@ -135,15 +157,26 @@ namespace Game.NPC
 
                     var HPProgress = NPC_HPProgress[position].Get<ProgressBar>();
                     HPProgress.Value = (float)NPCs[i].healthPoints / NPCs[i].maxHealth;
-                    HPProgress.BarBrush = new TextureBrush(HPFillTex);
-                    HPProgress.BackgroundBrush = new TextureBrush(HPUnderTex);
+                    HPProgress.Visible = true;
                     NPC_HPFrame[position].Get<Image>().Brush = new TextureBrush(HPFrameTex);
 
                     var APProgress = NPC_APProgress[position].Get<ProgressBar>();
                     APProgress.Value = NPCs[i].actionPoints;
-                    APProgress.BarBrush = new TextureBrush(APFillTex);
-                    APProgress.BackgroundBrush = new TextureBrush(APUnderTex);
+                    APProgress.Visible = true;
                     NPC_APFrame[position].Get<Image>().Brush = new TextureBrush(APFrameTex);
+
+                    NPC_Action1[position].Get<Button>().Visible = true;
+                    NPC_Action2[position].Get<Button>().Visible = true;
+                    if (NPCs[i].actionPoints >= 1)
+                    {
+                        NPC_Action1[position].Get<Button>().Enabled = true;
+                        NPC_Action2[position].Get<Button>().Enabled = true;
+                    }
+                    else
+                    {
+                        NPC_Action1[position].Get<Button>().Enabled = false;
+                        NPC_Action2[position].Get<Button>().Enabled = false;
+                    }
 
                     position++;
                 }
@@ -167,9 +200,7 @@ namespace Game.NPC
                 {
                     var progress = NPC_HPProgress[i].Get<ProgressBar>();
                     if (progress.Visible)
-                    {
                         progress.Visible = false;
-                    }
                 }
                 if (NPC_HPFrame[i] != null)
                 {
@@ -181,15 +212,25 @@ namespace Game.NPC
                 {
                     var progress = NPC_APProgress[i].Get<ProgressBar>();
                     if (progress.Visible)
-                    {
                         progress.Visible = false;
-                    }
                 }
                 if (NPC_APFrame[i] != null)
                 {
                     var image = NPC_APFrame[i].Get<Image>();
                     if (image != null)
                         image.Brush = null;
+                }
+                if (NPC_Action1[i] != null)
+                {
+                    var button = NPC_Action1[i].Get<Button>();
+                    if (button.Visible)
+                        button.Visible = false;
+                }
+                if (NPC_Action2[i] != null)
+                {
+                    var button = NPC_Action2[i].Get<Button>();
+                    if (button.Visible)
+                        button.Visible = false;
                 }
 
             }
