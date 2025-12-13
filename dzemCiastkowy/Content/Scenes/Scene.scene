@@ -1977,7 +1977,7 @@
 	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "ecec22084c6cbd09113a0095c68379a4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
@@ -2104,10 +2104,10 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "ecec22084c6cbd09113a0095c68379a4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
@@ -2820,10 +2820,10 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "ecec22084c6cbd09113a0095c68379a4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
@@ -2950,10 +2950,10 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "ecec22084c6cbd09113a0095c68379a4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
@@ -3666,10 +3666,10 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "ecec22084c6cbd09113a0095c68379a4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
@@ -3796,10 +3796,10 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "ecec22084c6cbd09113a0095c68379a4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
