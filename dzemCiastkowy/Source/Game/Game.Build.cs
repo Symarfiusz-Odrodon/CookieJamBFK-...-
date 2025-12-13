@@ -16,6 +16,7 @@ public class Game : GameModule
     public override void Setup(BuildOptions options)
     {
         base.Setup(options);
+        options.PublicDependencies.Add("ACGIntegration");
         options.PublicDependencies.Add("FlaxInk");
         options.PublicDependencies.Add("Ink");
 
