@@ -1,0 +1,15 @@
+{
+	"ID": "08de3a960c659f4b5de02a3fe4aa1e81",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "annoying",
+	"name": "Janice",
+	"headTexture": null,
+	"dialogueTexture": null,
+	"worldTexture": null,
+	"friendHealth": 100,
+	"friendMaxHealth": 100,
+	"enemyHealth": 100
+}
+}

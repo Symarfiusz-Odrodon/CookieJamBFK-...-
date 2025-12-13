@@ -1,0 +1,26 @@
+{
+	"ID": "5c8bc73341e2f0dd17f0e285c4fcddd1",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "replacement",
+	"name": "Trixie",
+	"headTexture": null,
+	"dialogueTexture": null,
+	"worldTexture": null,
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"friendActionRegen": 0.0,
+	"friendAction1Name": null,
+	"friendAction2Name": null,
+	"friendAction1Id": 0,
+	"friendAction2Id": 0,
+	"enemyHealth": 0,
+	"enemyMaxHealth": 0,
+	"enemyActionRegen": 0.0,
+	"enemyAction1Name": null,
+	"enemyAction2Name": null,
+	"enemyAction1Id": 0,
+	"enemyAction2Id": 0
+}
+}

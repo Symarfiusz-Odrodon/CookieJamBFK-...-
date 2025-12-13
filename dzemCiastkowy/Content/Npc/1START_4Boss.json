@@ -1,0 +1,26 @@
+{
+	"ID": "08de3a960b1089e85b4f6c93cb02b574",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "printer",
+	"name": "Inkfestation",
+	"headTexture": null,
+	"dialogueTexture": "3ff6399342528088925d46a1629793a4",
+	"worldTexture": "3ff6399342528088925d46a1629793a4",
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"friendActionRegen": 0.0,
+	"friendAction1Name": null,
+	"friendAction2Name": null,
+	"friendAction1Id": 0,
+	"friendAction2Id": 0,
+	"enemyHealth": 0,
+	"enemyMaxHealth": 0,
+	"enemyActionRegen": 0.0,
+	"enemyAction1Name": null,
+	"enemyAction2Name": null,
+	"enemyAction1Id": 0,
+	"enemyAction2Id": 0
+}
+}

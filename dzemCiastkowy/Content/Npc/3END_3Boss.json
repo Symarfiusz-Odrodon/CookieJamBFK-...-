@@ -1,0 +1,26 @@
+{
+	"ID": "47a93c66460fe879cf53678198b38341",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "bossman",
+	"name": "Boss",
+	"headTexture": "9267940f40763abffd6dfb81df830128",
+	"dialogueTexture": "5170330b4f513b3826f7618a7e3e6d32",
+	"worldTexture": "5170330b4f513b3826f7618a7e3e6d32",
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"friendActionRegen": 0.0,
+	"friendAction1Name": null,
+	"friendAction2Name": null,
+	"friendAction1Id": 0,
+	"friendAction2Id": 0,
+	"enemyHealth": 0,
+	"enemyMaxHealth": 0,
+	"enemyActionRegen": 0.0,
+	"enemyAction1Name": null,
+	"enemyAction2Name": null,
+	"enemyAction1Id": 0,
+	"enemyAction2Id": 0
+}
+}

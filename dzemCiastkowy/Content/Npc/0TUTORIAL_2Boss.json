@@ -1,0 +1,26 @@
+{
+	"ID": "08de3a4d059361ef016145ab47b43813",
+	"TypeName": "Game.NPC.NpcData",
+	"EngineBuild": 6802,
+	"Data": {
+	"id": "gunman",
+	"name": "Gun Man",
+	"headTexture": "9267940f40763abffd6dfb81df830128",
+	"dialogueTexture": "14e560e74d514ddb2d5665b89521445f",
+	"worldTexture": "14e560e74d514ddb2d5665b89521445f",
+	"friendHealth": 0,
+	"friendMaxHealth": 0,
+	"friendActionRegen": 0.0,
+	"friendAction1Name": null,
+	"friendAction2Name": null,
+	"friendAction1Id": 0,
+	"friendAction2Id": 0,
+	"enemyHealth": 0,
+	"enemyMaxHealth": 0,
+	"enemyActionRegen": 0.0,
+	"enemyAction1Name": null,
+	"enemyAction2Name": null,
+	"enemyAction1Id": 0,
+	"enemyAction2Id": 0
+}
+}

@@ -1,4 +1,5 @@
-VAR new_to_team = ""
+EXTERNAL add_to_team(id)
+
 VAR speaker = "tut"
 
 -> intro
@@ -28,5 +29,5 @@ To be honest, I'm not sure what you will find in there.
 I haven't been there for so long.
 I'm not sure if anything even is there anymore.
 Well, one way to find out.
-~ new_to_team = "tut"
+{add_to_team("tut")}
 -> END
