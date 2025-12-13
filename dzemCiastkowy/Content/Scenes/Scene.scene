@@ -106,15 +106,15 @@
 			"FallOffExponent": 7.0
 		},
 		{
-			"ID": "9e95e74f485060353c03d58bda641aaa",
+			"ID": "0c14828f4b36a0e8d5bb7283ac71404b",
 			"TypeName": "FlaxEngine.PointLight",
 			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
-			"Name": "PointLight 1",
+			"Name": "PointLight 2",
 			"Transform": {
 				"Translation": {
-					"X": 337.52789306640625,
+					"X": 6.728118896484375,
 					"Y": 0.000030517578125,
-					"Z": 179.04452514648438
+					"Z": 194.54733276367188
 				}
 			},
 			"Color": {
@@ -128,15 +128,15 @@
 			"FallOffExponent": 7.0
 		},
 		{
-			"ID": "0c14828f4b36a0e8d5bb7283ac71404b",
+			"ID": "9e95e74f485060353c03d58bda641aaa",
 			"TypeName": "FlaxEngine.PointLight",
 			"ParentID": "502d60684c1a4c0c9c0cf3808db433c6",
-			"Name": "PointLight 2",
+			"Name": "PointLight 1",
 			"Transform": {
 				"Translation": {
-					"X": 6.728118896484375,
+					"X": 337.52789306640625,
 					"Y": 0.000030517578125,
-					"Z": 194.54733276367188
+					"Z": 179.04452514648438
 				}
 			},
 			"Color": {
