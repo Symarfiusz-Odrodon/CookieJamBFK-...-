@@ -122,7 +122,9 @@
 		"Y": 0.0,
 		"Z": -120.0
 	},
-	"elevatordoorsource": "bdbf9b9541c194202c86ac9df01da98a"
+	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
+	"elevatorDoorSFX": "dca347c44ee6e094ed2d49974e34999f",
+	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
 }
 	},
 	{
@@ -145,7 +147,8 @@
 		"V": {
 	"story": "08de3a3b0840b1cf338592173d1f9104",
 	"story2": "08de3a3f46144ca6a43f55e4a461724b",
-	"controller": "266bb9744eb3d6b3b265978699db27fa",
+	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
+	"doorcont": "48e6664a465a99e6539dd7b1f72ca133",
 	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
 	"cum2": "b634da444906d4659b8c599690488adb",
 	"cum3": "b0d72c3746caebca055e1f921ca21c7c"

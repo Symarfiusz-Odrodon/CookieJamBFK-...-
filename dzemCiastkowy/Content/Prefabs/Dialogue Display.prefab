@@ -18,9 +18,9 @@
 		"Name": "Forward dialogue"
 	},
 	"runner": "08de3ac767b87a87dafe123b8bc68bb7",
+	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c",
 	"moraleDownAnimation": "08de3ac767ccf279dafe123e8bc68bd3",
 	"moraleUpAnimation": "08de3ac767c7b483dafe123d8bc68bcd",
-	"startStory": "08de3a7507d2f1e50a50bc4ba10f3a3b",
 	"rootControl": "08de3ac767b90b3ddafe123b8bc68bb9",
 	"textControl": "08de3ac767bece09dafe123c8bc68bc3",
 	"optionsRootControl": "08de3ac767bff1dcdafe123c8bc68bc4",
@@ -748,7 +748,7 @@
 		"Left": 2.0,
 		"Right": 1088.7344,
 		"Top": 2.0,
-		"Bottom": 54.0
+		"Bottom": 53.600002
 	},
 	"Scale": {
 		"X": 1.0,
@@ -783,7 +783,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 2.0,
-				"Y": 60.0,
+				"Y": 59.60000228881836,
 				"Z": 0.0
 			}
 		},
@@ -873,8 +873,8 @@
 	"Offsets": {
 		"Left": 2.0,
 		"Right": 1088.7344,
-		"Top": 60.0,
-		"Bottom": 54.0
+		"Top": 59.600002,
+		"Bottom": 53.600002
 	},
 	"Scale": {
 		"X": 1.0,
@@ -909,7 +909,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 2.0,
-				"Y": 118.0,
+				"Y": 117.20000457763672,
 				"Z": 0.0
 			}
 		},
@@ -999,8 +999,8 @@
 	"Offsets": {
 		"Left": 2.0,
 		"Right": 1088.7344,
-		"Top": 118.0,
-		"Bottom": 54.0
+		"Top": 117.200005,
+		"Bottom": 53.600002
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1035,7 +1035,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 2.0,
-				"Y": 176.0,
+				"Y": 174.8000030517578,
 				"Z": 0.0
 			}
 		},
@@ -1125,8 +1125,8 @@
 	"Offsets": {
 		"Left": 2.0,
 		"Right": 1088.7344,
-		"Top": 176.0,
-		"Bottom": 54.0
+		"Top": 174.8,
+		"Bottom": 53.600002
 	},
 	"Scale": {
 		"X": 1.0,

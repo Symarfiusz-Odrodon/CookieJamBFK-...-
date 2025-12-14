@@ -37,89 +37,6 @@
 		"FallOffExponent": 16.0
 	},
 	{
-		"ID": "793630144cdadfcbc2e941a974290376",
-		"TypeName": "FlaxEngine.EmptyActor",
-		"ParentID": "ec934407467cf90e8dd6ffbb5bcaee5f",
-		"Name": "Doors",
-		"Transform": {
-			"Translation": {
-				"X": -2.104583740234375,
-				"Y": 25.642343521118164,
-				"Z": -11.331878662109375
-			}
-		}
-	},
-	{
-		"ID": "61bdb7704de479b8dcab40aa96637ef5",
-		"TypeName": "FlaxEngine.StaticModel",
-		"ParentID": "793630144cdadfcbc2e941a974290376",
-		"Name": "drzwi osobno",
-		"Transform": {
-			"Translation": {
-				"X": 0.0,
-				"Y": 0.0,
-				"Z": -127.5
-			},
-			"Orientation": {
-				"X": 0.0,
-				"Y": 1.0,
-				"Z": 0.0,
-				"W": -1.341104507446289e-7
-			},
-			"Scale": {
-				"X": 2.0,
-				"Y": 2.0,
-				"Z": 2.0
-			}
-		},
-		"Model": "bf85ffc94bff88cef0aed3bd89adb694",
-		"Buffer": {
-			"Entries": [
-				{
-					"Material": "d80ee10447551e23011ba99b8c8d6242",
-					"ShadowsMode": 3,
-					"Visible": true,
-					"ReceiveDecals": true
-				}
-			]
-		}
-	},
-	{
-		"ID": "8f17d36140d617522df3dc94ef8cb150",
-		"TypeName": "FlaxEngine.StaticModel",
-		"ParentID": "793630144cdadfcbc2e941a974290376",
-		"Name": "drzwi osobno drzwi_prawe",
-		"Transform": {
-			"Translation": {
-				"X": 0.0,
-				"Y": 0.0,
-				"Z": 127.5
-			},
-			"Orientation": {
-				"X": 0.0,
-				"Y": 1.0,
-				"Z": 0.0,
-				"W": -1.341104507446289e-7
-			},
-			"Scale": {
-				"X": 2.0,
-				"Y": 2.0,
-				"Z": 2.0
-			}
-		},
-		"Model": "28b6628244e7467c3b75f3b64339af6b",
-		"Buffer": {
-			"Entries": [
-				{
-					"Material": "d80ee10447551e23011ba99b8c8d6242",
-					"ShadowsMode": 3,
-					"Visible": true,
-					"ReceiveDecals": true
-				}
-			]
-		}
-	},
-	{
 		"ID": "1ca54da84505ddb9c756f8bcdcc4fcd4",
 		"TypeName": "FlaxEngine.EmptyActor",
 		"ParentID": "ec934407467cf90e8dd6ffbb5bcaee5f",
@@ -258,6 +175,89 @@
 			"Entries": [
 				{
 					"Material": "b31db2e14143937a864fc69509a52fbc",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "793630144cdadfcbc2e941a974290376",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "ec934407467cf90e8dd6ffbb5bcaee5f",
+		"Name": "Doors",
+		"Transform": {
+			"Translation": {
+				"X": -2.104583740234375,
+				"Y": 25.642343521118164,
+				"Z": -11.331878662109375
+			}
+		}
+	},
+	{
+		"ID": "61bdb7704de479b8dcab40aa96637ef5",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "793630144cdadfcbc2e941a974290376",
+		"Name": "drzwi osobno",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -127.5
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.341104507446289e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "bf85ffc94bff88cef0aed3bd89adb694",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "d80ee10447551e23011ba99b8c8d6242",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "8f17d36140d617522df3dc94ef8cb150",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "793630144cdadfcbc2e941a974290376",
+		"Name": "drzwi osobno drzwi_prawe",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 127.5
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.341104507446289e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "28b6628244e7467c3b75f3b64339af6b",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "d80ee10447551e23011ba99b8c8d6242",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
