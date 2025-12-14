@@ -429,7 +429,9 @@
 			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
 			"PrefabObjectID": "44dcb7e342917379777b5f89d6bcba6e",
 			"ParentID": "e25b888244754decc87545bfe8fa36d3",
-			"V": {}
+			"V": {
+	"Camera": "b0d72c3746caebca055e1f921ca21c7c"
+}
 		},
 		{
 			"ID": "179bb332454bc0921ab068a7946557c6",
@@ -750,7 +752,9 @@
 			"ID": "9bde2279481e9a207a243abc0b975c05",
 			"TypeName": "Game.NPC.CombatSystem",
 			"ParentID": "5a305c1147067da12331d4b3724269f3",
-			"V": {}
+			"V": {
+	"gameScene": "74a68a984824b4510d12589f199ad68f"
+}
 		},
 		{
 			"ID": "e15fe606426d235efde173a364b26cfb",
@@ -886,7 +890,7 @@
 			"Name": "NPC1_Background",
 			"Transform": {
 				"Translation": {
-					"X": 36.0,
+					"X": 35.0,
 					"Y": -34.0,
 					"Z": 2.2737367544323206e-13
 				}
@@ -934,8 +938,8 @@
 		"Y": 1.0
 	},
 	"Offsets": {
-		"Left": 36.0,
-		"Right": 128.0,
+		"Left": 35.0,
+		"Right": 130.0,
 		"Top": -34.0,
 		"Bottom": 400.0
 	},
@@ -971,8 +975,8 @@
 			"Name": "NPC1_Character",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 293.0,
+					"X": -1.5,
+					"Y": 294.5,
 					"Z": 0.0
 				}
 			},
@@ -980,14 +984,14 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": null,
+		"Texture": "97eab7554322d9f217e790ac5d6924f3",
 		"Filter": 1
 	},
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
 	},
 	"Color": {
 		"R": 1.0,
@@ -1019,10 +1023,10 @@
 		"Y": 0.5
 	},
 	"Offsets": {
-		"Left": -64.0,
-		"Right": 128.0,
-		"Top": -64.0,
-		"Bottom": 128.0
+		"Left": -66.5,
+		"Right": 133.0,
+		"Top": -62.5,
+		"Bottom": 125.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1056,8 +1060,8 @@
 			"Name": "NPC1_Frame",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": -1.600006103515625,
+					"X": 2.5,
+					"Y": -3.100006103515625,
 					"Z": 0.0
 				}
 			},
@@ -1837,10 +1841,10 @@
 		"Filter": 1
 	},
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
 	},
 	"Color": {
 		"R": 1.0,
@@ -2683,10 +2687,10 @@
 		"Filter": 1
 	},
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
 	},
 	"Color": {
 		"R": 1.0,
@@ -5173,7 +5177,9 @@
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767b76a57dafe123b8bc68bb4",
 			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
-			"V": {}
+			"V": {
+	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c"
+}
 		},
 		{
 			"ID": "1a0b9ffa43990fa60735efb0133cc459",
@@ -5399,61 +5405,62 @@
 			"PrefabObjectID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
 			"ParentID": "71d7eb07498710ad14833a83f4862bbb",
 			"V": {
+	"cb": "aa85776d41d00fbaaaf8518611460350",
 	"possibleFriendlyEncounters": [
 		{
 			"safeFloor": true,
-			"encounterName": "annoying",
+			"encounterName": null,
 			"encounterName2": null,
 			"encounterName3": null,
 			"weight": 0,
 			"maxWeight": 0,
-			"idfkanymorethisisasprite": "eda23eb341c2325238282b8daa77e03d",
+			"idfkanymorethisisasprite": "16f797574ab339b9b1e99fb12827ab02",
 			"talkBeforeFight": false,
-			"storyAsset": "08de3a7d08325bafd5f928c795a3ab96"
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": true,
-			"encounterName": "printert",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 1,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "08de3b210969fbd6b52f641c6cac539b",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a8007e6daa02ad1a6efe618aa84"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "replacement",
+			"encounterName": null,
 			"encounterName2": null,
 			"encounterName3": null,
 			"weight": 0,
 			"maxWeight": 0,
-			"idfkanymorethisisasprite": "eda23eb341c2325238282b8daa77e03d",
+			"idfkanymorethisisasprite": null,
 			"talkBeforeFight": false,
-			"storyAsset": "08de3a8e082e06b98804ce428a186046"
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": true,
-			"encounterName": "hatman",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 2,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "pc",
+			"encounterName": null,
 			"encounterName2": null,
 			"encounterName3": null,
 			"weight": 0,
 			"maxWeight": 0,
-			"idfkanymorethisisasprite": "879c582d4cad1663e4888291ad1e953d",
+			"idfkanymorethisisasprite": null,
 			"talkBeforeFight": false,
-			"storyAsset": "08de3ace1a4e6e80852673b3315b1729"
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": null,
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": null,
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": true,
@@ -5477,7 +5484,7 @@
 			"maxWeight": 0,
 			"idfkanymorethisisasprite": "16f797574ab339b9b1e99fb12827ab02",
 			"talkBeforeFight": false,
-			"storyAsset": "00000000000000000000000000000000"
+			"storyAsset": "08de3a7d08325bafd5f928c795a3ab96"
 		},
 		{
 			"safeFloor": false,
@@ -5492,14 +5499,14 @@
 		},
 		{
 			"safeFloor": true,
-			"encounterName": "hatman",
+			"encounterName": "recruit_friend",
 			"encounterName2": null,
 			"encounterName3": null,
 			"weight": 0,
 			"maxWeight": 0,
-			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
+			"idfkanymorethisisasprite": null,
 			"talkBeforeFight": false,
-			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": false,
@@ -5563,7 +5570,12 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "48e6664a465a99e6539dd7b1f72ca133",
 			"ParentID": "fc36ec8b4b35c2a3e2e2a7982e0b08f1",
-			"V": {}
+			"V": {
+	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
+	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
+	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
+	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
+}
 		},
 		{
 			"ID": "a5eaab3e47dab2a7f5f930a907589c0f",
@@ -5577,7 +5589,11 @@
 			"PrefabObjectID": "d71a9ef64d910dcb7fd206b9bbda1a19",
 			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
 			"V": {
-	"sam": "0b2eab5140ce280eb94fb89a284a6063"
+	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
+	"sam": "0b2eab5140ce280eb94fb89a284a6063",
+	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
+	"cum2": "b634da444906d4659b8c599690488adb",
+	"cum3": "b0d72c3746caebca055e1f921ca21c7c"
 }
 		}
 	]
