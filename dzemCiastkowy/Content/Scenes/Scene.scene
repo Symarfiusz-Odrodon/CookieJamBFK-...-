@@ -429,9 +429,7 @@
 			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
 			"PrefabObjectID": "44dcb7e342917379777b5f89d6bcba6e",
 			"ParentID": "e25b888244754decc87545bfe8fa36d3",
-			"V": {
-	"Camera": "b0d72c3746caebca055e1f921ca21c7c"
-}
+			"V": {}
 		},
 		{
 			"ID": "179bb332454bc0921ab068a7946557c6",
@@ -5383,7 +5381,6 @@
 			"PrefabObjectID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
 			"ParentID": "71d7eb07498710ad14833a83f4862bbb",
 			"V": {
-	"cb": "aa85776d41d00fbaaaf8518611460350",
 	"possibleFriendlyEncounters": [
 		{
 			"safeFloor": true,
@@ -5458,7 +5455,7 @@
 			"encounterName3": null,
 			"weight": 6,
 			"maxWeight": 5,
-			"idfkanymorethisisasprite": "879c582d4cad1663e4888291ad1e953d",
+			"idfkanymorethisisasprite": "87b3edaf413f2cfbe7f33f9061e416fb",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3b0e06a48549ca3d18243f33f209"
 		},
@@ -5609,8 +5606,7 @@
 			"talkBeforeFight": false,
 			"storyAsset": "00000000000000000000000000000000"
 		}
-	],
-	"thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh": "a5feed3343a4ebb7c1c8559d4deaa77f"
+	]
 }
 		},
 		{
@@ -5660,12 +5656,7 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "48e6664a465a99e6539dd7b1f72ca133",
 			"ParentID": "fc36ec8b4b35c2a3e2e2a7982e0b08f1",
-			"V": {
-	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
-	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
-	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
-	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
-}
+			"V": {}
 		},
 		{
 			"ID": "a5eaab3e47dab2a7f5f930a907589c0f",
@@ -5678,13 +5669,7 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "d71a9ef64d910dcb7fd206b9bbda1a19",
 			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
-			"V": {
-	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
-	"sam": "0b2eab5140ce280eb94fb89a284a6063",
-	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
-	"cum2": "b634da444906d4659b8c599690488adb",
-	"cum3": "b0d72c3746caebca055e1f921ca21c7c"
-}
+			"V": {}
 		}
 	]
 }
