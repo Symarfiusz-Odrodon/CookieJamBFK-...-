@@ -290,6 +290,8 @@ public class ElevatorManager : Script
             if (NPC_System.Instance.Enemies.Count == 0)
             {
                 _npcManager.SpawnEnemyNpc(EncounterSequence[CurrentFloor - 1].encounterName);
+                _npcManager.SpawnEnemyNpc(EncounterSequence[CurrentFloor - 1].encounterName2);
+                _npcManager.SpawnEnemyNpc(EncounterSequence[CurrentFloor - 1].encounterName3);
                 StartCombat();
                 IsEncounterActive = true;
                 waitForKill = true;
