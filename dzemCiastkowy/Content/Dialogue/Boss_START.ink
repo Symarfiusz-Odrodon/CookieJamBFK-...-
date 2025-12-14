@@ -1,11 +1,13 @@
-EXTERNAL on_team(id)
-
 VAR speaker = "annoying"
+VAR annoying = false
+VAR printert = false
+
+VAR to_export="annoying;printert"
 
 -> intro
 
 === intro ===
-{on_team("annoying"):
+{annoying:
     ~ speaker = "annoying"
     And what are you supposed to be?
     ...
@@ -13,7 +15,7 @@ VAR speaker = "annoying"
     Ookay guy.
     ...
     Just trying to start a friendly conversation.
-    {on_team("printert"):
+    {printert:
         For the love of, just start the fight already!
     }
 - else:
@@ -23,7 +25,7 @@ VAR speaker = "annoying"
     They are bad.
     ...
     Sorry, we will have to fight through them if we want to get anywhere.
-    {on_team("printert"):
+    {printert:
         ~ speaker = "printert"
         As you command!
         ~ speaker = "replacement"

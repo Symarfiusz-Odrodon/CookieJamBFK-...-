@@ -3,7 +3,7 @@ VAR has_highlighter = true
 VAR horse_hoisted = false
 VAR intro_highlighter_shown = false
 
-CONST to_export = "has_highlighter;horse_hoisted;highlighter_num"
+VAR to_export = "horse_hoisted;highlighter_num"
 
 // To export
 VAR highlighter_num = 0

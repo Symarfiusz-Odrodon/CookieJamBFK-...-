@@ -4,14 +4,20 @@ using FlaxEngine;
 using FlaxInk;
 using FlaxEngine.GUI;
 using Game.NPC;
+using System.Linq;
 
 namespace Game.Dialogue;
 
 public class DialogueController : Script
 {
-    private const string SPEAKER_VAR_NAME = "speaker";
-    private const string CHARACTER_LEFT_VAR_NAME = "char_left";
-    private const string CHARACTER_RIGHT_VAR_NAME = "char_right";
+    public const string VAR_NAME_SPEAKER = "speaker";
+    public const string VAR_NAME_CHARACTER_LEFT = "char_left";
+    public const string VAR_NAME_CHARACTER_RIGHT = "char_right";
+    public const string VAR_NAME_TO_EXPORT = "to_export";
+    public const string FUNC_NAME_ADD_TO_TEAM = "add_to_team";
+    public const string FUNC_NAME_REMOVE_FROM_TEAM = "remove_from_team";
+    public const string FUNC_NAME_IMPROVE_MORALE = "improve_morale";
+    public const string FUNC_NAME_HURT_MORALE = "hurt_morale";
 
     [Header("Database")]
     public JsonAssetReference<NpcDatabase> npcDatabase;
@@ -20,7 +26,7 @@ public class DialogueController : Script
     public InputEvent progressDialogueInput = new();
 
     [Header("References")]
-    public DialogueRunner runner;
+    public BetterDialogueRunner runner;
     public JsonAssetReference<InkStory> startStory;
 
     [Header("UI Controls")]
@@ -60,7 +66,7 @@ public class DialogueController : Script
 
         runner.NewDialogueLine += line =>
         {
-            runner.GetVariable(SPEAKER_VAR_NAME, out string speakerId);
+            runner.GetVariable(VAR_NAME_SPEAKER, out string speakerId);
             HideOptions();
             if (textControl?.Control is RichTextBox textBox)
                 textBox.Text = line.Text;
@@ -72,13 +78,13 @@ public class DialogueController : Script
             
             if (characterLeftImageControl?.Control is Image charLeft)
             {
-                runner.GetVariable(CHARACTER_LEFT_VAR_NAME, out string charLeftId);
+                runner.GetVariable(VAR_NAME_CHARACTER_LEFT, out string charLeftId);
                 charLeft.Brush = new TextureBrush(npcDatabase.Instance.GetNpcById(charLeftId)?.dialogueTexture);
             }
 
             if (characterRightImageControl?.Control is Image charRight)
             {
-                runner.GetVariable(CHARACTER_RIGHT_VAR_NAME, out string charRightId);
+                runner.GetVariable(VAR_NAME_CHARACTER_RIGHT, out string charRightId);
                 charRight.Brush = new TextureBrush(npcDatabase.Instance.GetNpcById(charRightId)?.dialogueTexture);
             }
         };
@@ -94,10 +100,16 @@ public class DialogueController : Script
                 ContinueDialogue();
         };
 
+        NPC_System.OnNpcsChanged += _ =>
+        {
+            foreach (var item in npcDatabase.Instance.npcs)
+                SetValue(item.Instance.id, NPC_System.Instance.Npcs.Any(x => x.Data.id == item.Instance.id));
+        };
+
         HideAllElements();
 
         if (startStory.Instance != null)
-            StartDialogue(startStory);
+            StartStory(startStory);
     }
 
     public void SelectOption(int index)
@@ -108,12 +120,25 @@ public class DialogueController : Script
         ContinueDialogue();
     }
 
-    public void StartDialogue(JsonAssetReference<InkStory> story)
+    public void StartStory(JsonAssetReference<InkStory> story)
     {
         rootControl.IsActive = true;
         HideOptions();
         StoryActive = true;
         runner.StartDialogue(story);
+
+        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, NPC_System.Instance.AddEnemyNpc);
+        runner.BindExternalFunction<string>(FUNC_NAME_REMOVE_FROM_TEAM, id => 
+        {
+            var items = NPC_System.Instance.Npcs.Where(x => x.Data.id == id)
+                .ToList();
+
+            foreach (var item in items)
+                NPC_System.Instance.Npcs.Remove(item);
+        });
+
+        CopyVarsToStory();
+
         ContinueDialogue();
     }
 
@@ -131,21 +156,17 @@ public class DialogueController : Script
         for (int i = 0; i < len; i++)
         {
             optionControls[i].IsActive = true;
-
-            if ((optionControls[i].GetChild(0) as UIControl)?.Control is Label optionLabel)
-            {
-                optionLabel.Text.Value = runner.CurrentChoices[i].Text;
-            }
+            if (optionControls[i].Control is Button btn)
+                btn.Text = runner.CurrentChoices[i].Text;
         }
 
         for (int i = len; i < optionControls.Length; i++)
-        {
             optionControls[i].IsActive = false;
-        }
     }
 
     private void FinishStory()
     {
+        CopyVarsFromStory();
         HideAllElements();
         StoryActive = false;
     }
@@ -160,4 +181,61 @@ public class DialogueController : Script
         rootControl.IsActive = false;
         HideOptions();
     }
+
+    #region Variables
+    private Dictionary<string, object> _variables = [];
+
+    public T GetValue<T>(string name)
+    {
+        if (_variables.TryGetValue(name, out var obj) && obj is T t)
+            return t;
+        
+        return default;
+    }
+
+    public object GetValueObj(string name)
+    {
+        if (_variables.TryGetValue(name, out var obj))
+            return obj;
+
+        return null;
+    }
+
+    public void SetValue(string name, object value)
+    {
+        if (!_variables.ContainsKey(name))
+        {
+            _variables.Add(name, value);
+            return;
+        }
+
+        _variables[name] = value;
+    }
+
+    private string[] GetVarsToExport()
+    {
+        if (runner.GetVariable(VAR_NAME_TO_EXPORT, out string toExport))
+            return toExport.Split(";", StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToArray();
+
+        return [];
+    }
+
+    private void CopyVarsToStory()
+    {
+        var vars = GetVarsToExport();
+
+        foreach (var item in vars)
+            if (_variables.TryGetValue(item, out var val))
+                runner.SetVariable(item, val);
+    }
+
+    private void CopyVarsFromStory()
+    {
+        var vars = GetVarsToExport();
+
+        foreach (var item in vars)
+            if (runner.GetVariable(item, out object val))
+                SetValue(item, val);
+    }
+    #endregion
 }

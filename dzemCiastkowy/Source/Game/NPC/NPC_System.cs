@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using FlaxEngine;
 using FlaxEngine.GUI;
 
@@ -31,13 +32,18 @@ public class NPC_System : Script
     public UIControl[] enemyHPProgress = new UIControl[NPC_LIMIT];
     public UIControl[] enemyAPProgress = new UIControl[NPC_LIMIT];
 
-    public List<FriendlyNpcInstance> Npcs { get; } = [];
+    public ObservableCollection<FriendlyNpcInstance> Npcs { get; } = [];
     public List<EnemyNpcInstance> Enemies { get; } = [];
+
+    public static Action<System.Collections.Specialized.NotifyCollectionChangedEventArgs> OnNpcsChanged;
 
     public override void OnStart()
     {
         if (Instance == null)
+        {
             Instance = this;
+            Npcs.CollectionChanged += (o, args) => OnNpcsChanged?.Invoke(args);
+        }
     }
 
     public override void OnUpdate()

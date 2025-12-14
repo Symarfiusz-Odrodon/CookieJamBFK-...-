@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {
-      "ACGIntegration.CSharp/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/ACGIntegration.CSharp.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ACGIntegration.CSharp.dll": {}
-        }
-      }
-    }
+    "net10.0": {}
   },
-  "libraries": {
-    "ACGIntegration.CSharp/1.0.0": {
-      "type": "project",
-      "path": "ACGIntegration.csproj",
-      "msbuildProject": "ACGIntegration.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net10.0": [
-      "ACGIntegration.CSharp >= 1.0.0"
-    ]
+    "net10.0": []
   },
   "packageFolders": {
     "/home/fera/.nuget/packages/": {}
@@ -32,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/ACGIntegrationEditor.csproj",
-      "projectName": "ACGIntegrationEditor.CSharp",
-      "projectPath": "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/ACGIntegrationEditor.csproj",
+      "projectUniqueName": "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/ACGIntegration.csproj",
+      "projectName": "ACGIntegration.CSharp",
+      "projectPath": "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/ACGIntegration.csproj",
       "packagesPath": "/home/fera/.nuget/packages/",
       "outputPath": "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/obj/",
       "projectStyle": "PackageReference",
@@ -50,11 +31,7 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {
-            "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/ACGIntegration.csproj": {
-              "projectPath": "/media/files/Flax/Projects/CookieJamBFK-...-/dzemCiastkowy/Plugins/FlaxAmbientCG/Source/ACGIntegration.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,4 +1,3 @@
-EXTERNAL on_team(id)
 EXTERNAL add_to_team(id)
 EXTERNAL remove_from_team(id)
 EXTERNAL improve_morale()
@@ -6,7 +5,8 @@ EXTERNAL hurt_morale()
 
 VAR replacement_spoke = false
 VAR speaker = "replacement"
-CONST to_export = "replacement_spoke"
+VAR printert = false
+VAR to_export = "replacement_spoke;printert"
 
 { replacement_spoke:
     -> repeat
@@ -15,7 +15,7 @@ CONST to_export = "replacement_spoke"
 -> intro
 
 === intro ===
-{on_team("printert"):
+{printert:
     Hello...
     ~ speaker = "printert"
     WE HAVE TO HAVE HER.

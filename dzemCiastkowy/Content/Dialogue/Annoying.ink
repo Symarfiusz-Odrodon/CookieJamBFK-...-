@@ -3,7 +3,7 @@ EXTERNAL add_to_team(id)
 VAR annoying_admit_thief = false
 VAR speaker = "annoying"
 
-CONST to_export="annoying_admit_thief"
+VAR to_export="annoying_admit_thief"
 
 -> intro
 
