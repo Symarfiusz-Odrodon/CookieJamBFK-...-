@@ -28,6 +28,10 @@ public class DialogueController : Script
     [Header("References")]
     public BetterDialogueRunner runner;
     public NPC_System npcSystem;
+    public MoraleDownAnimation moraleDownAnimation;
+    public MoraleUpAnimation moraleUpAnimation;
+
+    [Space(16)]
     public JsonAssetReference<InkStory> startStory;
 
     [Header("UI Controls")]
@@ -101,11 +105,14 @@ public class DialogueController : Script
                 ContinueDialogue();
         };
 
-        npcSystem.Npcs.CollectionChanged += (_, _) =>
+        if (npcSystem != null)
         {
-            foreach (var item in npcDatabase.Instance.npcs)
-                SetValue(item.Instance.id, npcSystem.Npcs.Any(x => x.Data.id == item.Instance.id));
-        };
+            npcSystem.Npcs.CollectionChanged += (_, _) =>
+            {
+                foreach (var item in npcDatabase.Instance.npcs)
+                    SetValue(item.Instance.id, npcSystem.Npcs.Any(x => x.Data.id == item.Instance.id));
+            };
+        }
 
         HideAllElements();
 
@@ -128,14 +135,26 @@ public class DialogueController : Script
         StoryActive = true;
         runner.StartDialogue(story);
 
-        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, npcSystem.AddEnemyNpc);
+        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, id => npcSystem?.AddEnemyNpc(id));
         runner.BindExternalFunction<string>(FUNC_NAME_REMOVE_FROM_TEAM, id => 
         {
+            if (npcSystem == null) return;
+
             var items = npcSystem.Npcs.Where(x => x.Data.id == id)
                 .ToList();
 
             foreach (var item in items)
                 npcSystem.Npcs.Remove(item);
+        });
+        runner.BindExternalFunction(FUNC_NAME_HURT_MORALE, () => 
+        {
+            moraleDownAnimation?.Animate();
+            npcSystem?.HurtMorale();
+        });
+        runner.BindExternalFunction(FUNC_NAME_IMPROVE_MORALE, () => 
+        {
+            moraleUpAnimation?.Animate();
+            npcSystem?.ImproveMorale();
         });
 
         CopyVarsToStory();

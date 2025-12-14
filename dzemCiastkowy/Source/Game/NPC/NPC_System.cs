@@ -46,6 +46,16 @@ public class NPC_System : Script
         UpdateUi();
     }
 
+    public void HurtMorale()
+    {
+        // TODO: add code that decreases teams stats
+    }
+
+    public void ImproveMorale()
+    {
+        // TODO: add code that increases team stats
+    }
+
     [DebugCommand]
     public static void AddFriendNpcCommand(string id)
     {
