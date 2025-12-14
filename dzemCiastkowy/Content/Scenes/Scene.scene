@@ -980,14 +980,14 @@
 			"Data": {
 	"Brush": {
 		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
-		"Texture": null,
+		"Texture": "87b3edaf413f2cfbe7f33f9061e416fb",
 		"Filter": 1
 	},
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
 	},
 	"Color": {
 		"R": 1.0,
@@ -1837,10 +1837,10 @@
 		"Filter": 1
 	},
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
 	},
 	"Color": {
 		"R": 1.0,
@@ -2683,10 +2683,10 @@
 		"Filter": 1
 	},
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
 	},
 	"Color": {
 		"R": 1.0,
@@ -3447,12 +3447,6 @@
 					"Z": 2.0
 				}
 			},
-			"Color": {
-				"R": 0.46888887882232666,
-				"G": 0.25372669100761414,
-				"B": 0.28569579124450684,
-				"A": 1.0
-			},
 			"Sprite": {},
 			"Image": "5170330b4f513b3826f7618a7e3e6d32",
 			"Material": "6542187d40386b3768d0818d98dbd63a",
@@ -3777,12 +3771,6 @@
 					"Z": 2.0
 				}
 			},
-			"Color": {
-				"R": 0.46888887882232666,
-				"G": 0.25372669100761414,
-				"B": 0.28569579124450684,
-				"A": 1.0
-			},
 			"Sprite": {},
 			"Image": "5170330b4f513b3826f7618a7e3e6d32",
 			"Material": "6542187d40386b3768d0818d98dbd63a",
@@ -4106,12 +4094,6 @@
 					"Y": 2.0,
 					"Z": 2.0
 				}
-			},
-			"Color": {
-				"R": 0.46888887882232666,
-				"G": 0.25372669100761414,
-				"B": 0.28569579124450684,
-				"A": 1.0
 			},
 			"Sprite": {},
 			"Image": "5170330b4f513b3826f7618a7e3e6d32",
@@ -5173,7 +5155,9 @@
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767b76a57dafe123b8bc68bb4",
 			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
-			"V": {}
+			"V": {
+	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c"
+}
 		},
 		{
 			"ID": "1a0b9ffa43990fa60735efb0133cc459",
