@@ -1,4 +1,5 @@
-﻿using FlaxEngine;
+﻿using dzemCiastkowy;
+using FlaxEngine;
 
 public class ElevatorDoor : Script
 {
@@ -8,6 +9,9 @@ public class ElevatorDoor : Script
     public Vector3 openPosLeft;
     public Vector3 openPosRight;
 
+    public AudioClip elevatorDoorSFX;
+    public AudioSource elevatordoorsource;
+
     private Vector3 closedPosLeft;
     private Vector3 closedPosRight;
 
@@ -16,6 +20,8 @@ public class ElevatorDoor : Script
     private readonly float duration = 0.5f;
 
     private bool openc = false;
+
+    private bool tutPass = false;
 
     public override void OnStart()
     {
@@ -29,6 +35,16 @@ public class ElevatorDoor : Script
     {
         if(!opening)
         {
+            if(tutPass)
+            {
+                Actor.Scene.FindScript<MusicController>().StartStopElevatorMusic();
+            }
+            else
+            {
+                tutPass = true;
+            }
+            elevatordoorsource.Clip = elevatorDoorSFX;
+            elevatordoorsource.Play();
             opening = true;
             openTime = 0f;
         }

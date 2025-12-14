@@ -1,0 +1,129 @@
+{
+	"ID": "503079cd496f4005b0977282a25ed5d8",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6802,
+	"Data": [
+	{
+		"ID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "controllers"
+	},
+	{
+		"ID": "c5f10c1d448770427be3d3ae971e4f8e",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
+		"Name": "ElevatorManager",
+		"Transform": {
+			"Translation": {
+				"X": -1.6666666269302368,
+				"Y": 0.0,
+				"Z": 0.0
+			}
+		}
+	},
+	{
+		"ID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
+		"TypeName": "Game.Managers.ElevatorManager",
+		"ParentID": "c5f10c1d448770427be3d3ae971e4f8e",
+		"V": {
+			"cb": "aa85776d41d00fbaaaf8518611460350",
+			"EncounterSequence": [
+				{
+					"safeFloor": true,
+					"encounterName": "tut"
+				},
+				{
+					"safeFloor": false,
+					"encounterName": "skelefolder"
+				},
+				{
+					"safeFloor": true,
+					"encounterName": "recruit_friend"
+				},
+				{
+					"safeFloor": false,
+					"encounterName": "basic_enemy"
+				}
+			]
+		}
+	},
+	{
+		"ID": "4ee109054bd45fba2d628a802ee4acfe",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
+		"Name": "FloorController",
+		"Transform": {
+			"Translation": {
+				"X": -1.6666666269302368,
+				"Y": 0.0,
+				"Z": 0.0
+			}
+		}
+	},
+	{
+		"ID": "5740a86342c11eea0fe4ff853018ccb2",
+		"TypeName": "dzemCiastkowy.FloorDisplay",
+		"ParentID": "4ee109054bd45fba2d628a802ee4acfe",
+		"V": {
+			"ActiveMaterial": "634ac8cb47074b6ff7258da498f19a78",
+			"InactiveMaterial": "bbe1c4a14711f34a1b8bf3a25d21ea27",
+			"NoneMaterial": "4c1a4c4f45a97175a260f683e180af84",
+			"Floors": [
+				{
+					"FloorObject": "5895d4b440bb90146da1a1801b5a2aac",
+					"IsSafe": 0
+				},
+				{
+					"FloorObject": "d4eec09d4a63b3193b61308ae750b55c",
+					"IsSafe": 0
+				},
+				{
+					"FloorObject": "28c066074c3713799f1e5c9e52098bd4",
+					"IsSafe": 0
+				},
+				{
+					"FloorObject": "ccd4daab45b67b90a136b4a6c426b777",
+					"IsSafe": 0
+				},
+				{
+					"FloorObject": "d079715548eef8ec90190fadfa194b28",
+					"IsSafe": 0
+				}
+			]
+		}
+	},
+	{
+		"ID": "6116ab0f4652fc7dca97b48bdfe11084",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
+		"Name": "DoorFuckingKurwaJebanaMackontroler",
+		"Transform": {
+			"Translation": {
+				"X": 3.3333334922790527,
+				"Y": 0.0,
+				"Z": 0.0
+			}
+		}
+	},
+	{
+		"ID": "48e6664a465a99e6539dd7b1f72ca133",
+		"TypeName": "ElevatorDoor",
+		"ParentID": "6116ab0f4652fc7dca97b48bdfe11084",
+		"V": {
+			"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
+			"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
+			"openPosLeft": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 120.0
+			},
+			"openPosRight": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -120.0
+			}
+		}
+	}
+]
+}

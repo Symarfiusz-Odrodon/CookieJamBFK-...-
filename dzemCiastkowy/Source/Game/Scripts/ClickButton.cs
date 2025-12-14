@@ -16,6 +16,9 @@ namespace Game
         public Material defaultMat;
         public Material clickMat;
 
+        public AudioClip doorButton;
+        public AudioSource button;
+
         private Vector3 positionOriginal;
 
 
@@ -110,6 +113,8 @@ namespace Game
 
             if (!isAnimating)
             {
+                button.Clip = doorButton;
+                button.Play();
                 unlocked = false;
                 isAnimating = true;
                 animTime = 0f;
