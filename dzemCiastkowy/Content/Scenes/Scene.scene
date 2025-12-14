@@ -5417,7 +5417,7 @@
 			"encounterName2": null,
 			"encounterName3": null,
 			"weight": 1,
-			"maxWeight": 0,
+			"maxWeight": 1,
 			"idfkanymorethisisasprite": "08de3b210969fbd6b52f641c6cac539b",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a8007e6daa02ad1a6efe618aa84"
@@ -5427,8 +5427,8 @@
 			"encounterName": "replacement",
 			"encounterName2": null,
 			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
+			"weight": 2,
+			"maxWeight": 2,
 			"idfkanymorethisisasprite": "eda23eb341c2325238282b8daa77e03d",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a8e082e06b98804ce428a186046"
@@ -5438,8 +5438,8 @@
 			"encounterName": "hatman",
 			"encounterName2": null,
 			"encounterName3": null,
-			"weight": 2,
-			"maxWeight": 0,
+			"weight": 3,
+			"maxWeight": 3,
 			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
@@ -5449,15 +5449,39 @@
 			"encounterName": "pc",
 			"encounterName2": null,
 			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
+			"weight": 4,
+			"maxWeight": 4,
 			"idfkanymorethisisasprite": "879c582d4cad1663e4888291ad1e953d",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3ace1a4e6e80852673b3315b1729"
 		},
 		{
 			"safeFloor": true,
-			"encounterName": null,
+			"encounterName": "bio",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 5,
+			"maxWeight": 5,
+			"idfkanymorethisisasprite": "c78de11448bc7ccd50282b8faf652e1e",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3b0e06a48549ca3d18243f33f209"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "box",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 6,
+			"maxWeight": 6,
+			"idfkanymorethisisasprite": "ff77827c48ed68c7c8150fbba745b363",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3b0e06e3aae5cac62ead448ed3ad"
+		}
+	],
+	"possibleEnemyEncounters": [
+		{
+			"safeFloor": false,
+			"encounterName": "skelefolder",
 			"encounterName2": null,
 			"encounterName3": null,
 			"weight": 0,
@@ -5465,6 +5489,17 @@
 			"idfkanymorethisisasprite": null,
 			"talkBeforeFight": false,
 			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "gunman",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": true,
+			"storyAsset": "08de3a424723cc72eb737ef06c6a9a3e"
 		}
 	],
 	"EncounterSequence": [
@@ -5512,8 +5547,7 @@
 			"talkBeforeFight": false,
 			"storyAsset": "00000000000000000000000000000000"
 		}
-	],
-	"thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh": "a5feed3343a4ebb7c1c8559d4deaa77f"
+	]
 }
 		},
 		{
@@ -5576,9 +5610,7 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "d71a9ef64d910dcb7fd206b9bbda1a19",
 			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
-			"V": {
-	"sam": "0b2eab5140ce280eb94fb89a284a6063"
-}
+			"V": {}
 		}
 	]
 }
