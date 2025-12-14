@@ -19,7 +19,7 @@
 	"enemyMaxHealth": 20,
 	"enemyActionRegen": 0.2,
 	"enemyAction1Name": "Papercut",
-	"enemyAction2Name": "Energy steal",
+	"enemyAction2Name": "",
 	"enemyAction1Id": 0,
 	"enemyAction2Id": 1
 }

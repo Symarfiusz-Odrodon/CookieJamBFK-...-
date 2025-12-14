@@ -10,6 +10,17 @@
 	"worldTexture": null,
 	"friendHealth": 100,
 	"friendMaxHealth": 100,
-	"enemyHealth": 100
+	"friendActionRegen": 0.3,
+	"friendAction1Name": null,
+	"friendAction2Name": null,
+	"friendAction1Id": 0,
+	"friendAction2Id": 1,
+	"enemyHealth": 100,
+	"enemyMaxHealth": 0,
+	"enemyActionRegen": 0.0,
+	"enemyAction1Name": null,
+	"enemyAction2Name": null,
+	"enemyAction1Id": 0,
+	"enemyAction2Id": 0
 }
 }

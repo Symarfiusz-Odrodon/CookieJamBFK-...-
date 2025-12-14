@@ -66,6 +66,7 @@ public class ElevatorManager : Script
     private float timer1;
     private bool traveling = false;
 
+    private bool waitForKill = false;
 
     /// <inheritdoc/>
     public override void OnStart()
@@ -167,8 +168,10 @@ public class ElevatorManager : Script
         }
         else
         {
+            waitForKill = true;
             _npcManager.SpawnEnemyNpc(npcIdToSpawn);
-            Actor.Scene.FindScript<CombatSystem>().inBattle = true;
+            Actor.Scene.FindScript<CombatSystem>().inCombat = true;
+
         }
     }
 
@@ -185,7 +188,7 @@ public class ElevatorManager : Script
         }
 
         IsEncounterActive = false;
-        Actor.Scene.FindScript<CombatSystem>().inBattle = false;
+        Actor.Scene.FindScript<CombatSystem>().inCombat = false;
 
         if (cb != null)
         {
@@ -205,6 +208,12 @@ public class ElevatorManager : Script
                 traveling = false;
                 OpenDoor();
             }
+        }
+
+        if(waitForKill && NPC_System.Instance.Enemies.Count == 0)
+        {
+            waitForKill = false;
+            EndCurrentEncounter();
         }
     }
 }
