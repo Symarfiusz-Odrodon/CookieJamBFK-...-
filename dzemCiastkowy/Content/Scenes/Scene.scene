@@ -30,15 +30,15 @@
 			"Name": "DeskCamera",
 			"Transform": {
 				"Translation": {
-					"X": -373.2176818847656,
-					"Y": 287.35467529296875,
-					"Z": -21.34345817565918
+					"X": -540.2599487304688,
+					"Y": 410.7586975097656,
+					"Z": -147.19558715820313
 				},
 				"Orientation": {
-					"X": 0.052759889513254166,
-					"Y": -0.30571049451828003,
-					"Z": 0.016969047486782074,
-					"W": 0.9505101442337036
+					"X": 0.16829651594161987,
+					"Y": -0.42001545429229736,
+					"Z": 0.07958316057920456,
+					"W": 0.8882172703742981
 				}
 			}
 		},
@@ -59,15 +59,15 @@
 			"Name": "LookAtElevatorCamera",
 			"Transform": {
 				"Translation": {
-					"X": 188.47093200683594,
-					"Y": 177.16659545898438,
-					"Z": 206.6866455078125
+					"X": -623.4453125,
+					"Y": 402.7933044433594,
+					"Z": 18.44285011291504
 				},
 				"Orientation": {
-					"X": 0.006916738115251064,
-					"Y": -0.6760450601577759,
-					"Z": 0.006346394307911396,
-					"W": 0.736800491809845
+					"X": 0.10648272931575775,
+					"Y": 0.711226224899292,
+					"Z": -0.1103941947221756,
+					"W": 0.6860261559486389
 				}
 			}
 		},
@@ -254,15 +254,15 @@
 			"Name": "ElevatorCamera",
 			"Transform": {
 				"Translation": {
-					"X": 524.030517578125,
-					"Y": 193.84527587890625,
-					"Z": 151.21543884277344
+					"X": 254.5037078857422,
+					"Y": 188.9906005859375,
+					"Z": 40.0566291809082
 				},
 				"Orientation": {
-					"X": -0.015396232716739178,
-					"Y": 0.7160336375236511,
-					"Z": -0.0013944300590083003,
-					"W": -0.6978946328163147
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
 				}
 			},
 			"StaticFlags": 0,
@@ -316,82 +316,15 @@
 			}
 		},
 		{
-			"ID": "24e5fee54c3ee75ddc88f1bae61f43e8",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "temp",
-			"Transform": {
-				"Translation": {
-					"X": 5.0,
-					"Y": 0.0,
-					"Z": 0.0
-				}
-			}
-		},
-		{
-			"ID": "af80c7ed46a27f36d195b781769aa25c",
-			"TypeName": "ElevatorDoor",
-			"ParentID": "24e5fee54c3ee75ddc88f1bae61f43e8",
-			"V": {
-	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
-	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
-	"openPosLeft": {
-		"X": 0.0,
-		"Y": 0.0,
-		"Z": 120.0
-	},
-	"openPosRight": {
-		"X": 0.0,
-		"Y": 0.0,
-		"Z": -120.0
-	}
-}
-		},
-		{
-			"ID": "c3e601ec491e1ad7b492cea7b083554d",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "biuro cale kwiatek.001",
-			"Transform": {
-				"Translation": {
-					"X": 273.5,
-					"Y": 26.0,
-					"Z": 115.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": -1.0,
-					"Z": 0.0,
-					"W": 5.066394237474015e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "25d705f24049e4080ef366ab38535341",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "90ad8fe849bab84b478532a03da45646",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
 			"ID": "132dad9f4a3cde59ce45ff8425566666",
-			"TypeName": "FlaxEngine.EmptyActor",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "ec934407467cf90e8dd6ffbb5bcaee5f",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "ELEVATOR",
 			"Transform": {
 				"Translation": {
-					"X": 340.04400634765625,
+					"X": 78.55776977539063,
 					"Y": -4.952505588531494,
-					"Z": 163.83187866210938
+					"Z": 40.372276306152344
 				},
 				"Scale": {
 					"X": 1.0,
@@ -402,647 +335,243 @@
 		},
 		{
 			"ID": "0e4b49ed406882487953b5b975f8bd5e",
-			"TypeName": "FlaxEngine.PointLight",
-			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "PointLight",
-			"Transform": {
-				"Translation": {
-					"X": 86.31402587890625,
-					"Y": 393.8080749511719,
-					"Z": -16.06026268005371
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 1.0,
-					"Z": 0.6666666865348816
-				}
-			},
-			"Color": {
-				"R": 0.3711111545562744,
-				"G": 0.3711111545562744,
-				"B": 0.3711111545562744,
-				"A": 1.0
-			},
-			"Brightness": 5.0,
-			"MinRoughness": 1.0,
-			"Radius": 2000.0,
-			"FallOffExponent": 16.0
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "194a0772408b086451e3939296cb3cb3",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666"
 		},
 		{
 			"ID": "01814c294d1fc95d24d103a3ae79ace1",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "Doors",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": 25.642343521118164,
-					"Z": -11.331878662109375
-				}
-			}
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "793630144cdadfcbc2e941a974290376",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666"
 		},
 		{
 			"ID": "10ed67ad47c208ef9119b7afa6dc1fea",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "61bdb7704de479b8dcab40aa96637ef5",
 			"ParentID": "01814c294d1fc95d24d103a3ae79ace1",
-			"Name": "drzwi osobno",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": -127.5
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "bf85ffc94bff88cef0aed3bd89adb694",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "d80ee10447551e23011ba99b8c8d6242",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "b3593f7e498d788f8ae80f90f834bb0b",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "8f17d36140d617522df3dc94ef8cb150",
 			"ParentID": "01814c294d1fc95d24d103a3ae79ace1",
-			"Name": "drzwi osobno drzwi_prawe",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": 127.5
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "28b6628244e7467c3b75f3b64339af6b",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "d80ee10447551e23011ba99b8c8d6242",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "06a4512b4792ec92cfe92a94895502d2",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "Button",
-			"Transform": {
-				"Translation": {
-					"X": -63.104583740234375,
-					"Y": -372.90460205078125,
-					"Z": -7.3035078048706055
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 1.0
-				}
-			}
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "1ca54da84505ddb9c756f8bcdcc4fcd4",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666"
 		},
 		{
 			"ID": "e25b888244754decc87545bfe8fa36d3",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "4e078b39443a040be0d4228587cc343d",
 			"ParentID": "06a4512b4792ec92cfe92a94895502d2",
-			"Name": "drzwi osobno duzy_przycisk",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.5,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "9f3183724cf88b235c9f91b4ae62cbfd",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "4a6969d540488944c04f1ca84a0ceff7",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "aa85776d41d00fbaaaf8518611460350",
-			"TypeName": "Game.ClickButton",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "44dcb7e342917379777b5f89d6bcba6e",
 			"ParentID": "e25b888244754decc87545bfe8fa36d3",
-			"V": {
-	"Camera": "b0d72c3746caebca055e1f921ca21c7c",
-	"movement": {
-		"X": 0.0,
-		"Y": 0.0,
-		"Z": 1.5
-	},
-	"model": "e25b888244754decc87545bfe8fa36d3",
-	"defaultMat": "4a6969d540488944c04f1ca84a0ceff7",
-	"clickMat": "bbe1c4a14711f34a1b8bf3a25d21ea27"
-}
+			"V": {}
 		},
 		{
 			"ID": "179bb332454bc0921ab068a7946557c6",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "e25b888244754decc87545bfe8fa36d3",
-			"Name": "BoxCollider",
-			"Center": {
-				"X": -26.640106201171875,
-				"Y": 132.68785095214844,
-				"Z": -40.337249755859375
-			},
-			"Size": {
-				"X": 5.313201904296875,
-				"Y": 5.310699462890625,
-				"Z": 1.1277008056640625
-			}
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "4111616e4cf5c395c5f25db954d54c71",
+			"ParentID": "e25b888244754decc87545bfe8fa36d3"
+		},
+		{
+			"ID": "39d1bfcc4a6e16b01eb3aa8575cbc70e",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "b76cebb845138ef0ef1b0e877cdd2777",
+			"ParentID": "e25b888244754decc87545bfe8fa36d3"
 		},
 		{
 			"ID": "5985ddb948d9f191d0dc5782f7450b97",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "7496b4f34c33c38cff5faca133c9715f",
 			"ParentID": "06a4512b4792ec92cfe92a94895502d2",
-			"Name": "drzwi osobno duzy_przycisk_obowdka",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.5919036865234375,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "c10110cf468f0e5c265394a5a1e2d40f",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "b31db2e14143937a864fc69509a52fbc",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "3901483e4a48583508ce7e90799c2212",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "fd58727b42c2975b2e90b69463d9b457",
 			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "Mapa",
-			"Transform": {
-				"Translation": {
-					"X": -38.104583740234375,
-					"Y": -87.58015441894531,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 3.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "e015fcdc4356c3d1e6041fb48b6cf049",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "b31db2e14143937a864fc69509a52fbc",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "5895d4b440bb90146da1a1801b5a2aac",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "7b758b8d4fb1c264887916aa29c270e6",
 			"ParentID": "3901483e4a48583508ce7e90799c2212",
-			"Name": "drzwi osobno mapa_swiatlo_1",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Model": "e96349c64d6db9a3dfac8f980ecc41c6",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "634ac8cb47074b6ff7258da498f19a78",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "d4eec09d4a63b3193b61308ae750b55c",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "34b6f807429f8d31c97cc88102267dce",
 			"ParentID": "3901483e4a48583508ce7e90799c2212",
-			"Name": "drzwi osobno mapa_swiatlo_2",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Model": "77ced1a94accad7a5ec5c7b1ec92c9d1",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "bbe1c4a14711f34a1b8bf3a25d21ea27",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "28c066074c3713799f1e5c9e52098bd4",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "8c5cfc4748d0bd7043ad61b39b641efa",
 			"ParentID": "3901483e4a48583508ce7e90799c2212",
-			"Name": "drzwi osobno mapa_swiatlo_3",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Model": "3f48cda349d8325200a41eab9a54c9ff",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "bbe1c4a14711f34a1b8bf3a25d21ea27",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "ccd4daab45b67b90a136b4a6c426b777",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "6266fd5e4284230cade34cb4b58a1803",
 			"ParentID": "3901483e4a48583508ce7e90799c2212",
-			"Name": "drzwi osobno mapa_swiatlo_4",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Model": "7599029b42b2f566964bb8a29e61a044",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "634ac8cb47074b6ff7258da498f19a78",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "d079715548eef8ec90190fadfa194b28",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "ceed9ffb4ed030bfab071ead61cf9142",
 			"ParentID": "3901483e4a48583508ce7e90799c2212",
-			"Name": "drzwi osobno mapa_swiatlo_5",
-			"Transform": {
-				"Translation": {
-					"X": -0.030288731679320335,
-					"Y": -0.23366928100585938,
-					"Z": 0.1340942233800888
-				}
-			},
-			"Model": "d308b2f7475d6aefc81ca58e1339967c",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "634ac8cb47074b6ff7258da498f19a78",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "1cc5368c4480d3b94ae57b90841992e5",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "347f95b84cce8186c31bba9f0d0816f2",
 			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "drzwi osobno oparcie",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -63.746055603027344,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "f0d65f6d4f6c845b71eb0b84d4051538",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "2b52d0a94db5a4ea61085f89c400d688",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "847f93524c86e187e335fe8c6a6420b0",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "62781db5451e48d8bc0a4ca182c5f93b",
 			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "drzwi osobno oparcie.001",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": -63.7364501953125,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "c70f9f3d46338bd0668857812cd45a99",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "2b52d0a94db5a4ea61085f89c400d688",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "7c68513142c7939868112ea286eeae63",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "5546ae6242d577f5c7c3bfafb93a9533",
 			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "drzwi osobno winda",
-			"Transform": {
-				"Translation": {
-					"X": -2.104583740234375,
-					"Y": 29.952444076538086,
-					"Z": -7.3035078048706055
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -1.341104507446289e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "ea299baf45676ff8731a68a5be459485",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "14a224a34900d790e23608b1922a2c5d",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "43d7534c4d06d7ed04641693ff87204c",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "518d168d4fd21554a60e49a4fb504256",
 			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "drzwi osobno wyswietlacz_pietra",
-			"Transform": {
-				"Translation": {
-					"X": 67.14713287353516,
-					"Y": -53.93014907836914,
-					"Z": -7.3035125732421875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": -2.384185791015625e-7,
-					"Z": 0.0,
-					"W": -1.0
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "8fd50e404054a58a0f6d668ab96fc435",
-			"DrawModes": 126,
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "6d8a577b457179c081a0b3a0692634e8",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "74ff8a69442a0e56ea81f68f52f4e924",
-			"TypeName": "FlaxEngine.TextRender",
-			"ParentID": "43d7534c4d06d7ed04641693ff87204c",
-			"Name": "TextRender",
-			"Transform": {
-				"Translation": {
-					"X": -10.522786140441895,
-					"Y": 166.1225128173828,
-					"Z": -40.54594039916992
-				},
-				"Scale": {
-					"X": 0.125,
-					"Y": 0.125,
-					"Z": 0.125
-				}
-			},
-			"Text": "0",
-			"Size": 64.0,
-			"Material": "c53ad96d42e35895dc188c839be3d114",
-			"Font": "6203d3b04fc3f13896346996b9750750",
-			"ShadowsMode": 0
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "6ef0f7c241ca4c6863d7c4a7885dab2e",
+			"ParentID": "43d7534c4d06d7ed04641693ff87204c"
 		},
 		{
 			"ID": "d7467eb54ffb7ce48ce2bcbeef0a45aa",
-			"TypeName": "Game.FloorRenderer",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "f55b7a3e4c2cee44e26056b52e6a00d4",
 			"ParentID": "74ff8a69442a0e56ea81f68f52f4e924",
 			"V": {}
 		},
 		{
 			"ID": "db5a51d74b5ee957299fff95262026c3",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
-			"Name": "tabliczka",
-			"Transform": {
-				"Translation": {
-					"X": 27.071529388427734,
-					"Y": 259.1025085449219,
-					"Z": 75.905029296875
-				},
-				"Scale": {
-					"X": 1.4440581798553467,
-					"Y": 1.4440581798553467,
-					"Z": 0.5337728261947632
-				}
-			}
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "d013780143de6c43d779bc80845a05e9",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666"
 		},
 		{
 			"ID": "ffd1f33c49c013128fb21c889fd602e5",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "e606939c4169decc03f411b688dfae64",
 			"ParentID": "db5a51d74b5ee957299fff95262026c3",
-			"Name": "Plane",
-			"Transform": {
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -4.371138828673793e-8
-				},
-				"Scale": {
-					"X": 0.5,
-					"Y": 0.25,
-					"Z": 0.5
-				}
-			},
-			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "df9fe9e243324f4b8f193f977372dccc",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "798c4ebf4a541fdbe0de808b47d3eb04",
-			"TypeName": "FlaxEngine.TextRender",
-			"ParentID": "ffd1f33c49c013128fb21c889fd602e5",
-			"Name": "TextRender 0",
-			"Transform": {
-				"Translation": {
-					"X": -0.6159058809280396,
-					"Y": -5.8243408203125,
-					"Z": 1.4166259765625
-				},
-				"Orientation": {
-					"X": -0.0,
-					"Y": -3.1391647326017846e-7,
-					"Z": 0.0,
-					"W": -1.0
-				},
-				"Scale": {
-					"X": 0.5,
-					"Y": 1.0,
-					"Z": 0.75
-				}
-			},
-			"Text": "MAX LOAD:\n4 people or\nthy mother",
-			"Color": {
-				"R": 0.0,
-				"G": 0.0,
-				"B": 0.0,
-				"A": 1.0
-			},
-			"Size": 20.0,
-			"Material": "e72782bd4d898e2f236ca3be780438af",
-			"Font": "6203d3b04fc3f13896346996b9750750"
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "d433dcd14fa60a07b1676f852fabe31a",
+			"ParentID": "ffd1f33c49c013128fb21c889fd602e5"
 		},
 		{
 			"ID": "08adfe1748bd1149a1fb2aa98ebe52e7",
-			"TypeName": "Game.FloorRenderer",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "852d5d814022c77ba2ff3e89d8078b69",
 			"ParentID": "798c4ebf4a541fdbe0de808b47d3eb04",
 			"V": {}
+		},
+		{
+			"ID": "74b0a0f74b6261482023f5844bd412c7",
+			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
+			"PrefabObjectID": "51cbd92541eba144065d37b25657d3ba",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666"
 		},
 		{
 			"ID": "26b4f12440baa86453edd08c3f1cba57",
@@ -1055,76 +584,6 @@
 			"TypeName": "Game.NPC.ExternalNPCManager",
 			"ParentID": "26b4f12440baa86453edd08c3f1cba57",
 			"V": {}
-		},
-		{
-			"ID": "f3d966e74b51d8dc0df670977fb32d0e",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "ElevatorManager"
-		},
-		{
-			"ID": "f07924464bf8a3feed65b2b89f25e273",
-			"TypeName": "Game.Managers.ElevatorManager",
-			"ParentID": "f3d966e74b51d8dc0df670977fb32d0e",
-			"V": {
-	"cb": "aa85776d41d00fbaaaf8518611460350",
-	"EncounterSequence": [
-		{
-			"safeFloor": true,
-			"encounterName": "tut"
-		},
-		{
-			"safeFloor": false,
-			"encounterName": "skelefolder"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "recruit_friend"
-		},
-		{
-			"safeFloor": false,
-			"encounterName": "basic_enemy"
-		}
-	]
-}
-		},
-		{
-			"ID": "2d0048d44b7366f68c4179b1d1d790f8",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "FloorController"
-		},
-		{
-			"ID": "4db3a5d74509ae08cdc98caeab6597dc",
-			"TypeName": "dzemCiastkowy.FloorDisplay",
-			"ParentID": "2d0048d44b7366f68c4179b1d1d790f8",
-			"V": {
-	"ActiveMaterial": "634ac8cb47074b6ff7258da498f19a78",
-	"InactiveMaterial": "bbe1c4a14711f34a1b8bf3a25d21ea27",
-	"NoneMaterial": "4c1a4c4f45a97175a260f683e180af84",
-	"Floors": [
-		{
-			"FloorObject": "5895d4b440bb90146da1a1801b5a2aac",
-			"IsSafe": 0
-		},
-		{
-			"FloorObject": "d4eec09d4a63b3193b61308ae750b55c",
-			"IsSafe": 0
-		},
-		{
-			"FloorObject": "28c066074c3713799f1e5c9e52098bd4",
-			"IsSafe": 0
-		},
-		{
-			"FloorObject": "ccd4daab45b67b90a136b4a6c426b777",
-			"IsSafe": 0
-		},
-		{
-			"FloorObject": "d079715548eef8ec90190fadfa194b28",
-			"IsSafe": 0
-		}
-	]
-}
 		},
 		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
@@ -1198,14 +657,6 @@
 		"97d97be540bd6ceae96315bde8b2d10a",
 		"e3b353be4331f9c08ffa3297466386a8"
 	]
-}
-		},
-		{
-			"ID": "3cb50fb74af5770da8e2c38760315afa",
-			"TypeName": "Game.NPC.CombatSystem",
-			"ParentID": "5a305c1147067da12331d4b3724269f3",
-			"V": {
-	"inBattle": true
 }
 		},
 		{
@@ -5187,6 +4638,374 @@
 			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
 			"PrefabObjectID": "a8f5c2f740b7edb475eae4819257c26f",
 			"ParentID": "a1366dc34fe986d747efc0bf84240c0c"
+		},
+		{
+			"ID": "abc2a48b4b6cbcfbecd232af9deaadcc",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b689ebdafe123a8bc68ba7",
+			"ParentID": "74a68a984824b4510d12589f199ad68f"
+		},
+		{
+			"ID": "e5ef2290409fd205bc1bd29eacb7d78b",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b76a57dafe123b8bc68bb4",
+			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
+			"V": {
+	"startStory": "00000000000000000000000000000000"
+}
+		},
+		{
+			"ID": "1a0b9ffa43990fa60735efb0133cc459",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b87a87dafe123b8bc68bb7",
+			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
+			"V": {}
+		},
+		{
+			"ID": "a86c3bda472020d14049519fef124597",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b90b3ddafe123b8bc68bb9",
+			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
+			"V": {}
+		},
+		{
+			"ID": "b05939b14bd1a2bbbced61a657b78900",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bad702dafe123c8bc68bbc",
+			"ParentID": "a86c3bda472020d14049519fef124597",
+			"Data": {
+	"ResolutionCurve": {},
+	"DpiCurve": {}
+}
+		},
+		{
+			"ID": "174e2bfd499f75087a825a8c1df0e293",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bbdeb8dafe123c8bc68bbf",
+			"ParentID": "b05939b14bd1a2bbbced61a657b78900",
+			"Transform": {
+				"Translation": {
+					"X": 124.5257568359375,
+					"Y": 171.8590087890625,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "fe86e28148e343f0bfacf79cd1f89de0",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bcdecedafe123c8bc68bc0",
+			"ParentID": "b05939b14bd1a2bbbced61a657b78900",
+			"Transform": {
+				"Translation": {
+					"X": 1254.968505859375,
+					"Y": 171.8590087890625,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "ffcd53cc42f773dd325372a95c610537",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bdb088dafe123c8bc68bc2",
+			"ParentID": "b05939b14bd1a2bbbced61a657b78900",
+			"Transform": {
+				"Translation": {
+					"X": 283.55517578125,
+					"Y": 671.0,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "61aa4f034a34fdbe4ce09d97999f1ff8",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bece09dafe123c8bc68bc3",
+			"ParentID": "ffcd53cc42f773dd325372a95c610537",
+			"Data": {}
+		},
+		{
+			"ID": "143bfff748293a7188565eb3ce82390e",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bff1dcdafe123c8bc68bc4",
+			"ParentID": "ffcd53cc42f773dd325372a95c610537",
+			"Data": {}
+		},
+		{
+			"ID": "1d14f11c4834c29620e14080466af315",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c07b7cdafe123c8bc68bc5",
+			"ParentID": "143bfff748293a7188565eb3ce82390e",
+			"Data": {}
+		},
+		{
+			"ID": "5c835915442832776a2929a0bf52b5a6",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c1bcb0dafe123d8bc68bc6",
+			"ParentID": "1d14f11c4834c29620e14080466af315",
+			"Data": {
+	"Offsets": {
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "a63a330f428cad4c938f31ad56848ed6",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c22ae5dafe123d8bc68bc7",
+			"ParentID": "1d14f11c4834c29620e14080466af315",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 59.60000228881836,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"Offsets": {
+		"Top": 59.600002,
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "2579fbe8439b038da8653e95ce0a1be9",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c3d8c1dafe123d8bc68bc8",
+			"ParentID": "1d14f11c4834c29620e14080466af315",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 117.20000457763672,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"Offsets": {
+		"Top": 117.200005,
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "26f60edd407a79316655169bf1cf938b",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c431b1dafe123d8bc68bc9",
+			"ParentID": "1d14f11c4834c29620e14080466af315",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 174.8000030517578,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"Offsets": {
+		"Top": 174.8,
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "4aedf7d7461fc6472d3d8d823bb5e415",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c52961dafe123d8bc68bcb",
+			"ParentID": "ffcd53cc42f773dd325372a95c610537",
+			"Data": {}
+		},
+		{
+			"ID": "409b0cae45b4cd62b886deb2e0aa7250",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c6e49adafe123d8bc68bcc",
+			"ParentID": "b05939b14bd1a2bbbced61a657b78900",
+			"Transform": {
+				"Translation": {
+					"X": 507.1900634765625,
+					"Y": 1.892764500413612e-19,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "712376bf4e6b9cb86236d09475fb6472",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c7b483dafe123d8bc68bcd",
+			"ParentID": "409b0cae45b4cd62b886deb2e0aa7250",
+			"V": {}
+		},
+		{
+			"ID": "757b8d6a46df7461c686d79755ae9c7f",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c852c8dafe123d8bc68bcf",
+			"ParentID": "409b0cae45b4cd62b886deb2e0aa7250",
+			"Data": {}
+		},
+		{
+			"ID": "1151c08a4c6f8c527f65aa92be50e557",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c92979dafe123e8bc68bd0",
+			"ParentID": "409b0cae45b4cd62b886deb2e0aa7250",
+			"Data": {}
+		},
+		{
+			"ID": "9b41e28a49ef2f2e86494395ff8f519a",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767caf395dafe123e8bc68bd1",
+			"ParentID": "409b0cae45b4cd62b886deb2e0aa7250",
+			"Data": {}
+		},
+		{
+			"ID": "00aa08a448d1476d6b262898cc59f7c7",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767cba563dafe123e8bc68bd2",
+			"ParentID": "b05939b14bd1a2bbbced61a657b78900",
+			"Transform": {
+				"Translation": {
+					"X": 507.1900634765625,
+					"Y": 1.892764500413612e-19,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "1e73cc4541b7b631036cfdb7e00b7a81",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767ccf279dafe123e8bc68bd3",
+			"ParentID": "00aa08a448d1476d6b262898cc59f7c7",
+			"V": {}
+		},
+		{
+			"ID": "5269d02041e84dc74ad293b4087c675d",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767cd13b7dafe123e8bc68bd6",
+			"ParentID": "00aa08a448d1476d6b262898cc59f7c7",
+			"Data": {}
+		},
+		{
+			"ID": "ade3bb8c496f0b6d0ea510bedd9536db",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767ceeacedafe123e8bc68bd7",
+			"ParentID": "00aa08a448d1476d6b262898cc59f7c7",
+			"Data": {}
+		},
+		{
+			"ID": "aee2e15447e90ba4f115408cad25bf89",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767cf5ad3dafe123e8bc68bd8",
+			"ParentID": "00aa08a448d1476d6b262898cc59f7c7",
+			"Data": {}
+		},
+		{
+			"ID": "434ddedc428b912235a0b1857a40e024",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
+			"ParentID": "74a68a984824b4510d12589f199ad68f"
+		},
+		{
+			"ID": "71d7eb07498710ad14833a83f4862bbb",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "c5f10c1d448770427be3d3ae971e4f8e",
+			"ParentID": "434ddedc428b912235a0b1857a40e024"
+		},
+		{
+			"ID": "45b5416a4e2c9f74e484179e7cdde661",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
+			"ParentID": "71d7eb07498710ad14833a83f4862bbb",
+			"V": {
+	"EncounterSequence": [
+		{
+			"safeFloor": true,
+			"encounterName": "tut"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "skelefolder"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "recruit_friend"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "basic_enemy"
+		}
+	]
+}
+		},
+		{
+			"ID": "5cde50ef4a720f7e32967b94590e7b0e",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "4ee109054bd45fba2d628a802ee4acfe",
+			"ParentID": "434ddedc428b912235a0b1857a40e024"
+		},
+		{
+			"ID": "a80d2229493abd2875a1e98ef84712f5",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "5740a86342c11eea0fe4ff853018ccb2",
+			"ParentID": "5cde50ef4a720f7e32967b94590e7b0e",
+			"V": {
+	"Floors": [
+		{
+			"FloorObject": "5895d4b440bb90146da1a1801b5a2aac",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "d4eec09d4a63b3193b61308ae750b55c",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "28c066074c3713799f1e5c9e52098bd4",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "ccd4daab45b67b90a136b4a6c426b777",
+			"IsSafe": 0
+		},
+		{
+			"FloorObject": "d079715548eef8ec90190fadfa194b28",
+			"IsSafe": 0
+		}
+	]
+}
+		},
+		{
+			"ID": "fc36ec8b4b35c2a3e2e2a7982e0b08f1",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "6116ab0f4652fc7dca97b48bdfe11084",
+			"ParentID": "434ddedc428b912235a0b1857a40e024"
+		},
+		{
+			"ID": "ca686ab3468d7647f95c90bb91457a26",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "48e6664a465a99e6539dd7b1f72ca133",
+			"ParentID": "fc36ec8b4b35c2a3e2e2a7982e0b08f1",
+			"V": {
+	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
+	"elevatorDoorSFX": "dca347c44ee6e094ed2d49974e34999f",
+	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
+}
+		},
+		{
+			"ID": "a5eaab3e47dab2a7f5f930a907589c0f",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "839992d84f56ea2b2b03ab86e7b00a5d",
+			"ParentID": "434ddedc428b912235a0b1857a40e024"
+		},
+		{
+			"ID": "59d002ed470cbd28037710a76af5f686",
+			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
+			"PrefabObjectID": "d71a9ef64d910dcb7fd206b9bbda1a19",
+			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
+			"V": {
+	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
+	"doorcont": "ca686ab3468d7647f95c90bb91457a26"
+}
 		}
 	]
 }

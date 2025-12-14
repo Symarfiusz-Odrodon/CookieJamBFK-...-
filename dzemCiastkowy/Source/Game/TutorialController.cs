@@ -16,6 +16,8 @@ public class TutorialController : Script
     public JsonAssetReference<InkStory> story2;
     public DialogueController controller;
 
+    public ElevatorDoor doorcont;
+
     public Camera cum1;
     public Camera cum2;
     public Camera cum3;
@@ -29,11 +31,10 @@ public class TutorialController : Script
     /// <inheritdoc/>
     public override void OnStart()
     {
+        doorcont.OnOpenClose();
         cum1.IsActive = true;
         cum2.IsActive = false;
         cum3.IsActive = false;
-
-        Actor.Scene.FindScript<ElevatorDoor>().OnOpenClose();
     }
     
     /// <inheritdoc/>

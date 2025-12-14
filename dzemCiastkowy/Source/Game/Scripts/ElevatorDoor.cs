@@ -9,6 +9,8 @@ public class ElevatorDoor : Script
     public Vector3 openPosLeft;
     public Vector3 openPosRight;
 
+
+    public MusicController controller;
     public AudioClip elevatorDoorSFX;
     public AudioSource elevatordoorsource;
 
@@ -37,7 +39,7 @@ public class ElevatorDoor : Script
         {
             if(tutPass)
             {
-                Actor.Scene.FindScript<MusicController>().StartStopElevatorMusic();
+                controller.StartStopElevatorMusic();
             }
             else
             {
