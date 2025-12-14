@@ -6,6 +6,13 @@
 		{
 			"ID": "74a68a984824b4510d12589f199ad68f",
 			"TypeName": "FlaxEngine.Scene",
+			"Lightmaps": [
+				{
+					"Lightmap0": "ac3957724c0a7b3d1cc6d68999f9e296",
+					"Lightmap1": "7f4f2d0243d6004ed0735f9bf989f815",
+					"Lightmap2": "0b43774c409291d1537e738d04e7f068"
+				}
+			],
 			"LightmapSettings": {
 				"IndirectLightingIntensity": 1.0,
 				"GlobalObjectsScale": 1.0,
@@ -611,6 +618,17 @@
 			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
 			"PrefabObjectID": "e606939c4169decc03f411b688dfae64",
 			"ParentID": "db5a51d74b5ee957299fff95262026c3",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.08984375,
+					"Y": 0.3583984375
+				},
+				"Size": {
+					"X": 0.013671875,
+					"Y": 0.013671875
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -4588,6 +4606,17 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "f7a09ca74a9311e2a4836bb0917cac82",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.08984375,
+					"Y": 0.2158203125
+				},
+				"Size": {
+					"X": 0.0703125,
+					"Y": 0.0703125
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -4599,6 +4628,17 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "ab43a9e249c186bfbb41a8ae2d03be67",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.3896484375
+				},
+				"Size": {
+					"X": 0.083984375,
+					"Y": 0.083984375
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -4610,6 +4650,17 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "5c554fe04ec1e52cf5174785ebbc9cfd",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.302734375
+				},
+				"Size": {
+					"X": 0.083984375,
+					"Y": 0.083984375
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -4621,6 +4672,17 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "e00dd619438f48a5bb75cb8bb079a177",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.08984375,
+					"Y": 0.302734375
+				},
+				"Size": {
+					"X": 0.052734375,
+					"Y": 0.052734375
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -4632,6 +4694,17 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "2535479548444e76ae87f284e3b95e4f",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.2158203125
+				},
+				"Size": {
+					"X": 0.083984375,
+					"Y": 0.083984375
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -4643,6 +4716,17 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "d34dc435475a46319ea5f1afef0fae8a",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.0029296875
+				},
+				"Size": {
+					"X": 0.2099609375,
+					"Y": 0.2099609375
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
