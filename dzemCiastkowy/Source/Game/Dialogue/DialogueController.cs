@@ -121,7 +121,6 @@ public class DialogueController : Script
     {
         if(Input.GetKeyDown(KeyboardKeys.Spacebar))
         {
-            Debug.Log("Input Fired");
             if (StoryActive)
                 ContinueDialogue();
         }
@@ -173,8 +172,6 @@ public class DialogueController : Script
 
     public void ContinueDialogue()
     {
-        Debug.Log("Input Fired");
-
         if (optionsRootControl.IsActive) return;
 
         runner.ContinueDialogue();
@@ -200,6 +197,8 @@ public class DialogueController : Script
         CopyVarsFromStory();
         HideAllElements();
         StoryActive = false;
+
+        runner.StopDialogue();
 
         OnStoryFinished?.Invoke();
     }
