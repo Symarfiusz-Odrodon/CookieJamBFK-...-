@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlaxInk.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:FlaxInk.DialogueRunner">
+            <summary>
+            DialogueRunner Script.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.DialogueStarted">
+            <summary>
+            Event fired when the dialogue is started.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.DialogueRestarted">
+            <summary>
+            Event fired when the dialogue is restarted.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.DialogueStopped">
+            <summary>
+            Event fired when the dialogue is stopped.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.DialoguePaused">
+            <summary>
+            Event fired when the dialogue is paused.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.DialogueResumed">
+            <summary>
+            Event fired when the dialogue is resumed.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.DialogueEnded">
+            <summary>
+            Event fired when there are no more choices or lines to continue to.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.NewDialogueLine">
+            <summary>
+            Event called when a new dialogue line exists.
+            </summary>
+        </member>
+        <member name="E:FlaxInk.DialogueRunner.NewDialogueChoices">
+            <summary>
+            Event called when a new choice is present.
+            </summary>
+        </member>
+        <member name="P:FlaxInk.DialogueRunner.IsPaused">
+            <summary>
+            Whether the story is paused.
+            </summary>
+        </member>
+        <member name="P:FlaxInk.DialogueRunner.IsStoryActive">
+            <summary>
+            Whether there is an active story present.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.StartDialogue(FlaxEngine.JsonAssetReference{FlaxInk.InkStory},System.Boolean)">
+            <summary>
+            Start the dialogue.
+            </summary>
+            <param name="inkStory">The ink story in Flax JSON format to start.</param>
+            <param name="autoStart">Whether to call Continue dialogue immediately.</param>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.StartDialogue(System.String,System.Boolean)">
+            <summary>
+            Start the dialogue.
+            </summary>
+            <param name="jsonStory">The story in JSON format to start.</param>
+            <param name="autoStart">Whether to call Continue dialogue immediately.</param>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.StartDialogue(Ink.Runtime.Story,System.Boolean)">
+            <summary>
+            Start the dialogue.
+            </summary>
+            <param name="story">The story to start.</param>
+            <param name="autoStart">Whether to call Continue dialogue immediately.</param>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.ResetDialogue">
+            <summary>
+            Uses the same story, but resets all the data and starts at the beginning.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.GoToStartOfStory">
+            <summary>
+            Keeps existing story state and data but moves the dialogue back to the start.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.PauseDialogue">
+            <summary>
+            Pauses the dialogue and does not let it continue until resumed.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.ResumeDialogue">
+            <summary>
+            Resumes the dialogue if paused.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.StopDialogue">
+            <summary>
+            Stop the dialogue and clear the active story.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.ContinueDialogue">
+            <summary>
+            Call to continue the dialogue to the next line. Call this to move to the choices as well.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.ChooseChoice(System.Int32,System.Boolean)">
+            <summary>
+            Call this to choose a choice.
+            </summary>
+            <param name="index">The choice index.</param>
+            <param name="autoContinue">Whether to automatically call Continue once choice is chosen.</param>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.GetActiveDialogueStateSave">
+            <summary>
+            Saves the current state of the active story.
+            </summary>
+            <returns>Returns the state of the story in JSON format.</returns>
+        </member>
+        <member name="M:FlaxInk.DialogueRunner.LoadActiveDialogueStateSave(System.String)">
+            <summary>
+            Loads a save state of the active story.
+            </summary>
+            <param name="jsonStoryState">The saved story state in JSON format.</param>
+        </member>
+        <member name="T:FlaxInk.FlaxInkUtils">
+            <summary>
+            FlaxInkUtils class.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.FlaxInkUtils.CreateStory(FlaxEngine.JsonAssetReference{FlaxInk.InkStory})">
+            <summary>
+            Create a story from an JsonAssetReference.
+            </summary>
+            <param name="inkStoryReference">The ink story Json asset reference.</param>
+            <returns>The story.</returns>
+        </member>
+        <member name="M:FlaxInk.FlaxInkUtils.CreateStory(FlaxInk.InkStory)">
+            <summary>
+            Create a story from an InkStory.
+            </summary>
+            <param name="inkStoryReference">The ink story.</param>
+            <returns>The story.</returns>
+        </member>
+        <member name="M:FlaxInk.FlaxInkUtils.CreateStory(System.String)">
+            <summary>
+            Create a story from a json string.
+            </summary>
+            <param name="jsonStory">The json story.</param>
+            <returns>The story.</returns>
+        </member>
+        <member name="M:FlaxInk.FlaxInkUtils.CreateStory(FlaxEngine.JsonAsset)">
+            <summary>
+            Create a story from a JsonAsset.
+            </summary>
+            <param name="inkStoryReference">The JsonAsset.</param>
+            <returns>The story or null if JsonAsset does not contain InkStory.</returns>
+        </member>
+        <member name="T:FlaxInk.InkGamePlugin">
+            <summary>
+            InkGamePlugin GamePlugin.
+            </summary>
+        </member>
+        <member name="M:FlaxInk.InkGamePlugin.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:FlaxInk.InkGamePlugin.Deinitialize">
+            <inheritdoc/>
+        </member>
+        <member name="T:FlaxInk.InkStory">
+            <summary>
+            InkStory class.
+            </summary>
+        </member>
+        <member name="P:FlaxInk.InkStory.Story">
+            <summary>
+            The ink story stored as JSON.
+            </summary>
+        </member>
+    </members>
+</doc>
