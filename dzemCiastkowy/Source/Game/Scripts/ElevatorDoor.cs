@@ -40,6 +40,11 @@ public class ElevatorDoor : Script
             if(tutPass)
             {
                 controller.StartStopElevatorMusic();
+
+                if (controller.jibberSpeech.IsActuallyPlaying)
+                {
+                    controller.jibber = false;
+                }
             }
             else
             {

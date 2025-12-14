@@ -39,6 +39,8 @@ public class ElevatorManager : Script
 
     public ClickButton cb;
 
+    public List<FloorData> possibleEncounters = new List<FloorData>();
+
     [Tooltip("List of NPC IDs, one for each floor encounter.")]
     public List<FloorData> EncounterSequence = new List<FloorData>
     {

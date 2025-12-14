@@ -118,9 +118,6 @@ public class MusicController : Script
                     jibberSpeech2.Play();
                 }
             }
-            if (!jibberSpeech.IsActuallyPlaying)
-            {
-            }
         }
     }
 }
