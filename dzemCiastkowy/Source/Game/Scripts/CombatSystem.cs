@@ -123,7 +123,22 @@ public class CombatSystem : Script
                                         ally.actionPoints = 1.0f;
                                 }
                                 break;
-                            
+                            case 7:
+                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                                {
+                                    ally.health += 15;
+                                    if (ally.health >= ally.maxHealth)
+                                        ally.health = ally.maxHealth;
+                                }
+                                break;
+                            case 8:
+                                foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.actionPoints -= 0.35f;
+                                    if (enemy.actionPoints <= 0)
+                                        enemy.actionPoints = 0;
+                                }
+                                break;
 
 
 
@@ -202,6 +217,7 @@ public class CombatSystem : Script
                             if (NPC.Npcs[hitAlly].actionPoints <= 0)
                                 NPC.Npcs[hitAlly].actionPoints = 0;
                             break;
+
 
 
 
