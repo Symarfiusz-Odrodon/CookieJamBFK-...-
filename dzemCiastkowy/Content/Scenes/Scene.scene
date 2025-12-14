@@ -24,6 +24,25 @@
 			"V": {}
 		},
 		{
+			"ID": "71be4e6242658a4c6795c98e1557c138",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Tutorial"
+		},
+		{
+			"ID": "29b5bdbe4bd569adec058cbf6adbfe7b",
+			"TypeName": "dzemCiastkowy.TutorialController",
+			"ParentID": "71be4e6242658a4c6795c98e1557c138",
+			"V": {
+	"story": "08de3a3b0840b1cf338592173d1f9104",
+	"story2": "08de3a3f46144ca6a43f55e4a461724b",
+	"controller": "266bb9744eb3d6b3b265978699db27fa",
+	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
+	"cum2": "b634da444906d4659b8c599690488adb",
+	"cum3": "b0d72c3746caebca055e1f921ca21c7c"
+}
+		},
+		{
 			"ID": "30d410c947c5fbf924a3cdad9a5f2051",
 			"TypeName": "FlaxEngine.Camera",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -43,32 +62,21 @@
 			}
 		},
 		{
-			"ID": "29b5bdbe4bd569adec058cbf6adbfe7b",
-			"TypeName": "dzemCiastkowy.TutorialController",
-			"ParentID": "30d410c947c5fbf924a3cdad9a5f2051",
-			"V": {
-	"story": "08de3a3b0840b1cf338592173d1f9104",
-	"controller": "266bb9744eb3d6b3b265978699db27fa",
-	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
-	"cum2": "b634da444906d4659b8c599690488adb"
-}
-		},
-		{
 			"ID": "b634da444906d4659b8c599690488adb",
 			"TypeName": "FlaxEngine.Camera",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "LookAtElevatorCamera",
 			"Transform": {
 				"Translation": {
-					"X": 188.47093200683594,
-					"Y": 177.16659545898438,
-					"Z": 206.6866455078125
+					"X": -452.1640930175781,
+					"Y": 365.0965576171875,
+					"Z": 265.06085205078125
 				},
 				"Orientation": {
-					"X": 0.006916738115251064,
-					"Y": -0.6760450601577759,
-					"Z": 0.006346394307911396,
-					"W": 0.736800491809845
+					"X": 0.08088824152946472,
+					"Y": 0.7861809134483337,
+					"Z": -0.10536422580480576,
+					"W": 0.603551983833313
 				}
 			}
 		},
@@ -77,25 +85,6 @@
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "Visuals"
-		},
-		{
-			"ID": "96d2d1c34fa75b18a4ba0c8685e321da",
-			"TypeName": "FlaxEngine.DirectionalLight",
-			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "DirectionalLight",
-			"Transform": {
-				"Translation": {
-					"X": -190.97642517089844,
-					"Y": 3060.92724609375,
-					"Z": -344.12115478515625
-				},
-				"Orientation": {
-					"X": 0.07691167294979095,
-					"Y": 0.3813551664352417,
-					"Z": -0.03185785561800003,
-					"W": 0.920672595500946
-				}
-			}
 		},
 		{
 			"ID": "502d60684c1a4c0c9c0cf3808db433c6",
@@ -347,41 +336,6 @@
 		"Z": -120.0
 	}
 }
-		},
-		{
-			"ID": "c3e601ec491e1ad7b492cea7b083554d",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "biuro cale kwiatek.001",
-			"Transform": {
-				"Translation": {
-					"X": 273.5,
-					"Y": 26.0,
-					"Z": 115.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": -1.0,
-					"Z": 0.0,
-					"W": 5.066394237474015e-7
-				},
-				"Scale": {
-					"X": 2.0,
-					"Y": 2.0,
-					"Z": 2.0
-				}
-			},
-			"Model": "25d705f24049e4080ef366ab38535341",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "90ad8fe849bab84b478532a03da45646",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
 		},
 		{
 			"ID": "132dad9f4a3cde59ce45ff8425566666",
@@ -1044,6 +998,226 @@
 			"TypeName": "Game.FloorRenderer",
 			"ParentID": "798c4ebf4a541fdbe0de808b47d3eb04",
 			"V": {}
+		},
+		{
+			"ID": "f51c1e3240353f89a29abd99443582ff",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
+			"Name": "Button 0",
+			"Transform": {
+				"Translation": {
+					"X": -225.3260498046875,
+					"Y": -197.90460205078125,
+					"Z": -45.5
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071070671081543,
+					"Z": 0.0,
+					"W": -0.7071064710617065
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 1.5,
+					"Z": 2.0999999046325684
+				}
+			}
+		},
+		{
+			"ID": "8618e9b847e2f0687c5479935b2968bc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "f51c1e3240353f89a29abd99443582ff",
+			"Name": "drzwi osobno duzy_przycisk",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.5,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "9f3183724cf88b235c9f91b4ae62cbfd",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "4a6969d540488944c04f1ca84a0ceff7",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "5e214cf645ab5914866dae926453c8f1",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "8618e9b847e2f0687c5479935b2968bc",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": -26.640106201171875,
+				"Y": 132.68785095214844,
+				"Z": -40.337249755859375
+			},
+			"Size": {
+				"X": 5.313201904296875,
+				"Y": 5.310699462890625,
+				"Z": 1.1277008056640625
+			}
+		},
+		{
+			"ID": "c72b5a374bc74fc0b96eedb4c3b6257d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "f51c1e3240353f89a29abd99443582ff",
+			"Name": "drzwi osobno duzy_przycisk_obowdka",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.5919036865234375,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "c10110cf468f0e5c265394a5a1e2d40f",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b31db2e14143937a864fc69509a52fbc",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "1ffa1bce46021f02a57bcf86b450b3cf",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
+			"Name": "Button 1",
+			"Transform": {
+				"Translation": {
+					"X": -225.3260498046875,
+					"Y": 576.0953979492188,
+					"Z": -152.0
+				},
+				"Orientation": {
+					"X": -0.7071070671081543,
+					"Y": -3.090860900556436e-8,
+					"Z": -0.7071065902709961,
+					"W": 3.090864097998747e-8
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 1.5,
+					"Z": 2.0999999046325684
+				}
+			}
+		},
+		{
+			"ID": "e2d3f14848b6c0488635c0938793edae",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "1ffa1bce46021f02a57bcf86b450b3cf",
+			"Name": "drzwi osobno duzy_przycisk",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.5,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "9f3183724cf88b235c9f91b4ae62cbfd",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "4a6969d540488944c04f1ca84a0ceff7",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "cb24ee5d4c60166e0a4589b69b2de6c0",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "e2d3f14848b6c0488635c0938793edae",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": -26.640106201171875,
+				"Y": 132.68785095214844,
+				"Z": -40.337249755859375
+			},
+			"Size": {
+				"X": 5.313201904296875,
+				"Y": 5.310699462890625,
+				"Z": 1.1277008056640625
+			}
+		},
+		{
+			"ID": "db3c80ef482e7730230b91ac8e3dade0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "1ffa1bce46021f02a57bcf86b450b3cf",
+			"Name": "drzwi osobno duzy_przycisk_obowdka",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.5919036865234375,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "c10110cf468f0e5c265394a5a1e2d40f",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b31db2e14143937a864fc69509a52fbc",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
 		},
 		{
 			"ID": "5a305c1147067da12331d4b3724269f3",
@@ -4878,6 +5052,17 @@
 			}
 		},
 		{
+			"ID": "9877c172406068322249d5be479027df",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "b77da8e447f533deee0072970e269f48",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
 			"ID": "b7add26e45c93e7a4c04c086df321af4",
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "e261bf9d4e04f2b2372939acd0ae8c21",
@@ -4970,6 +5155,18 @@
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "ab1d9bd448d5cac17d58779b2e1517bd",
 			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Transform": {
+				"Translation": {
+					"X": 155.47628784179688,
+					"Y": 33.506954193115234,
+					"Z": -0.00002013212360907346
+				},
+				"Scale": {
+					"X": 2.2699999809265137,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -5035,6 +5232,28 @@
 			"ID": "326dabe842e6b33e07daa384a9ef6dbb",
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "d34dc435475a46319ea5f1afef0fae8a",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "e8eda905485a45a51bd36da6cfc3a7a5",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "1a2d721d4ed4bd08e55a8aa27e7101d1",
+			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f8f1b80c465fe66d238e71b7b4e27389",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "e816ef204f4aa5789612afa7240562c7",
 			"ParentID": "2ae62a664f3073ae32da72b61efc82b5",
 			"Buffer": {
 				"Entries": [
@@ -5131,6 +5350,57 @@
 }
 		},
 		{
+			"ID": "d56b75e84dd769478402c7b4e6d40bce",
+			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+			"PrefabObjectID": "ad5942064f9fdaa06142fe9f12447f78",
+			"ParentID": "74a68a984824b4510d12589f199ad68f"
+		},
+		{
+			"ID": "123ef6c24802bc60f8e3eb84aa6446f2",
+			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+			"PrefabObjectID": "584876ad4e20c6a108152691a3cad25e",
+			"ParentID": "d56b75e84dd769478402c7b4e6d40bce",
+			"V": {}
+		},
+		{
+			"ID": "d9b97cbf4aa7cee15c2e87bf4f6c5ca5",
+			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+			"PrefabObjectID": "84e2b7454c1511e4b1b4788242ba6c68",
+			"ParentID": "d56b75e84dd769478402c7b4e6d40bce"
+		},
+		{
+			"ID": "14f05c2e4b21ef0504db11882169810d",
+			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+			"PrefabObjectID": "7380e727418d5b1c8ea882843985d662",
+			"ParentID": "d56b75e84dd769478402c7b4e6d40bce"
+		},
+		{
+			"ID": "5d62986542ab10f7d396aaaf5c6b799f",
+			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+			"PrefabObjectID": "90d0cab445f5817c6cfcb3b9557da009",
+			"ParentID": "d56b75e84dd769478402c7b4e6d40bce",
+			"Transform": {
+				"Translation": {
+					"X": -129.83346557617188,
+					"Y": 173.9341583251953,
+					"Z": 202.72171020507813
+				}
+			}
+		},
+		{
+			"ID": "a5d8196b46be3d7f863cb5a744e5d8ee",
+			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+			"PrefabObjectID": "a8f5c2f740b7edb475eae4819257c26f",
+			"ParentID": "d56b75e84dd769478402c7b4e6d40bce",
+			"Transform": {
+				"Translation": {
+					"X": -129.83346557617188,
+					"Y": 173.9341583251953,
+					"Z": 202.72171020507813
+				}
+			}
+		},
+		{
 			"ID": "df3a0cfe45436610cdbab7bc7e95ebdb",
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767b689ebdafe123a8bc68ba7",
@@ -5143,7 +5413,8 @@
 			"ParentID": "df3a0cfe45436610cdbab7bc7e95ebdb",
 			"V": {
 	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c",
-	"startStory": "00000000000000000000000000000000"
+	"startStory": "00000000000000000000000000000000",
+	"TypeSpeed": 0.02
 }
 		},
 		{
