@@ -68,28 +68,56 @@ public class CombatSystem : Script
                             actionId = NPC.Npcs[i].Data.friendAction1Id;
                         if (NPC.NPC_Action2[i].Get<Button>().IsPressed)
                             actionId = NPC.Npcs[i].Data.friendAction2Id;
+
+                        int target = rand.Next(0, NPC.Enemies.Count + 1);
                         switch (actionId)
                         {
                             case 0:
                                 foreach(EnemyNpcInstance enemy in NPC.Enemies)
                                 {
-                                    enemy.health -= 5;
+                                    enemy.health -= 10;
                                     if(enemy.health <= 0)
                                         enemy.health = 0;
                                 }
-                                NPC.Npcs[i].actionPoints = 0.0f;
                                 break;
                             case 1:
                                 foreach (FriendlyNpcInstance ally in NPC.Npcs)
                                 {
-                                    ally.health += 10;
+                                    ally.health += 20;
                                     if (ally.health >= ally.maxHealth)
                                         ally.health = ally.maxHealth;
                                 }
-                                NPC.Npcs[i].actionPoints = 0.0f;
                                 break;
-                        }
+                            case 2:
+                                foreach(EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.health -= 5;
+                                    if (enemy.health <= 0)
+                                        enemy.health = 0;
+                                }
+                                break;
+                            case 3:
+                                NPC.Enemies[target].health -= 15;
+                                if (NPC.Enemies[target].health  <= 0)
+                                    NPC.Enemies[target].health = 0;
+                                break;
+                            case 4:
+                                foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.health -= 8;
+                                    if (enemy.health <= 0)
+                                        enemy.health = 0;
+                                }
+                                break;
+                            case 5:
+                                NPC.Enemies[target].health -= 20;
+                                if (NPC.Enemies[target].health <= 0)
+                                    NPC.Enemies[target].health = 0;
+                                break;
 
+
+                        }
+                        NPC.Npcs[i].actionPoints = 0.0f;
                     }
                 }
             }
