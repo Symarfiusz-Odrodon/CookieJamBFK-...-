@@ -90,6 +90,7 @@ public class ElevatorManager : Script
     private bool traveling = false;
 
     private bool waitForKill = false;
+    private int completedTalk = 0;
 
     /// <inheritdoc/>
     public override void OnStart()
@@ -283,8 +284,9 @@ public class ElevatorManager : Script
             return;
         }
 
-        if (EncounterSequence[CurrentFloor - 1].talkBeforeFight)
+        if (EncounterSequence[CurrentFloor - 1].talkBeforeFight && completedTalk < 1)
         {
+            Debug.Log(completedTalk);
             if (NPC_System.Instance.Enemies.Count == 0)
             {
                 _npcManager.SpawnEnemyNpc(EncounterSequence[CurrentFloor - 1].encounterName);
@@ -294,6 +296,8 @@ public class ElevatorManager : Script
             }
             return;
         }
+
+        completedTalk = 0;
 
         // If we were in combat, stop music
         if (Actor.Scene.FindScript<CombatSystem>().inCombat)
@@ -331,8 +335,9 @@ public class ElevatorManager : Script
 
         if (waitForKill && NPC_System.Instance.Enemies.Count == 0)
         {
+            completedTalk++;
             waitForKill = false;
-            EndCurrentEncounter();            
+            EndCurrentEncounter();
         }
     }
 }
