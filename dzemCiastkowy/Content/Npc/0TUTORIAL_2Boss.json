@@ -8,7 +8,7 @@
 	"headTexture": "14e560e74d514ddb2d5665b89521445f",
 	"dialogueTexture": "14e560e74d514ddb2d5665b89521445f",
 	"worldTexture": "14e560e74d514ddb2d5665b89521445f",
-	"friendHealth": 0,
+	"friendHealth": 5,
 	"friendMaxHealth": 0,
 	"friendActionRegen": 0.0,
 	"friendAction1Name": null,

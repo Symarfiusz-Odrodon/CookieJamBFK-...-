@@ -16,7 +16,7 @@
 	"friendAction1Id": 3,
 	"friendAction2Id": 6,
 	"enemyHealth": 0,
-	"enemyMaxHealth": 0,
+	"enemyMaxHealth": -25,
 	"enemyActionRegen": 0.0,
 	"enemyAction1Name": null,
 	"enemyAction2Name": null,
