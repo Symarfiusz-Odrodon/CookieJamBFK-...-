@@ -100,24 +100,53 @@ public class ElevatorManager : Script
         cb = Actor.Scene.FindScript<ClickButton>();
         _dialogueController = Actor.Scene.FindScript<DialogueController>();
 
-        if (_npcSystem == null)
+        if (_npcSystem == null || _dialogueController == null || _npcManager == null)
         {
-            Debug.LogError("ElevatorManager requires an NPC_System component.");
+            Debug.LogError("ElevatorManager is missing critical components.");
             return;
         }
-        if (_dialogueController == null)
-        {
-            Debug.LogError("ElevatorManager requires a DialogueController component.");
-            return;
-        }
+
+        // BUILD THE LIST
+        BuildEncounterSequence();
 
         // Link the dialogue finished event to end the encounter
         _dialogueController.OnStoryFinished += EndCurrentEncounter;
     }
 
-    /// <summary>
-    /// Initiates the next floor encounter. Call this when the current encounter is finished.
-    /// </summary>
+    private void BuildEncounterSequence()
+    {
+        EncounterSequence.Clear();
+
+        int maxCount = Math.Max(possibleFriendlyEncounters.Count, possibleEnemyEncounters.Count);
+
+        // Iterate through both lists by index and interleave (F[i] then E[i]).
+        for (int i = 0; i < maxCount; i++)
+        {
+            // Add Friendly at current index i
+            for( int j = 0; j < possibleFriendlyEncounters.Count; j++)
+            {
+                if (possibleFriendlyEncounters[j].weight == i)
+                {
+                    var f = possibleFriendlyEncounters[j];
+                    f.safeFloor = true;
+                    EncounterSequence.Add(f);
+                }
+            }
+
+            for (int j = 0; j < possibleEnemyEncounters.Count; j++)
+            {
+                if (possibleEnemyEncounters[j].weight == i)
+                {
+                    var e = possibleEnemyEncounters[j];
+                    e.safeFloor = false;
+                    EncounterSequence.Add(e);
+                }
+            }
+        }
+
+        Debug.Log($"Sequence built with {EncounterSequence.Count} total floors.");
+    }
+
     public void GoToNextFloor()
     {
         if (IsEncounterActive) return;
@@ -167,59 +196,119 @@ public class ElevatorManager : Script
         var currentEncounter = EncounterSequence[sequenceIndex];
         string npcIdToSpawn = currentEncounter.encounterName;
 
-        // 1. Spawn the NPC/Enemy
-        //_npcManager?.SpawnNpc(npcIdToSpawn);
+        Debug.Log($"Encounter started: {npcIdToSpawn} (Safe: {currentEncounter.safeFloor})");
 
-        Debug.Log($"Encounter started: Spawned NPC ID: {npcIdToSpawn}");
-
-        // 2. CONDITIONAL DIALOGUE START
+        // --- FRIENDLY FLOOR ---
         if (currentEncounter.safeFloor)
         {
-            // NEW LOGIC: Use the directly assigned storyAsset
             var storyAsset = currentEncounter.storyAsset;
 
-            if (storyAsset.Instance != null)
+            // Spawn Friendly NPC if name exists
+            if (!string.IsNullOrEmpty(npcIdToSpawn))
+            {
+                //_npcManager.SpawnNpc(npcIdToSpawn);
+            }
+
+            if (storyAsset != null)
             {
                 thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.IsActive = true;
-                thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.Image = currentEncounter.idfkanymorethisisasprite;
+
+                // Assign the sprite using .Instance
+                if (currentEncounter.idfkanymorethisisasprite != null)
+                {
+                    thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.Image = currentEncounter.idfkanymorethisisasprite;
+                }
+
                 _dialogueController.StartStory(storyAsset);
-                // DialogueController.OnStoryFinished will call EndCurrentEncounter
             }
             else
             {
-                Debug.LogError($"Friendly encounter ({npcIdToSpawn}) is missing an assigned InkStory asset! Ending encounter immediately.");
+                Debug.LogError($"Friendly encounter ({npcIdToSpawn}) missing InkStory asset! Ending.");
                 EndCurrentEncounter();
             }
         }
+        // --- ENEMY FLOOR ---
         else
         {
-            waitForKill = true;
-            _npcManager.SpawnEnemyNpc(npcIdToSpawn);
-            Actor.Scene.FindScript<CombatSystem>().inCombat = true;
-            Actor.Scene.FindScript<MusicController>().StartStopCombatMusic();
+            // Spawn multiple enemies
+            var enemies = new List<string> { currentEncounter.encounterName, currentEncounter.encounterName2, currentEncounter.encounterName3 };
+            if(!currentEncounter.talkBeforeFight)
+            {
+                foreach (var enName in enemies)
+                {
+                    if (!string.IsNullOrEmpty(enName))
+                    {
+                        _npcManager.SpawnEnemyNpc(enName);
+                    }
+                }
+            } 
+
+            // Check for Talk Before Fight
+            if (currentEncounter.talkBeforeFight && currentEncounter.storyAsset != null)
+            {
+                thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.IsActive = true;
+
+                if (currentEncounter.idfkanymorethisisasprite != null)
+                {
+                    thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.Image = currentEncounter.idfkanymorethisisasprite;
+                }
+
+                _dialogueController.StartStory(currentEncounter.storyAsset);
+                // Note: Logic for starting combat AFTER talk needs to be handled in EndCurrentEncounter or Dialogue system
+            }
+            else
+            {
+                // Go straight to combat
+                StartCombat();
+            }
         }
     }
 
-    /// <summary>
-    /// Called when the player has finished their interaction (dialogue ended or enemy defeated).
-    /// </summary>
+    private void StartCombat()
+    {
+        waitForKill = true;
+        Actor.Scene.FindScript<CombatSystem>().inCombat = true;
+        Actor.Scene.FindScript<MusicController>().StartStopCombatMusic();
+
+        // Hide sprite during combat if preferred
+        thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.IsActive = false;
+    }
+
     [DebugCommand]
     public void EndCurrentEncounter()
     {
-        if (!IsEncounterActive)
+        if (!IsEncounterActive && !waitForKill)
         {
             Debug.LogWarning("Cannot end encounter, no encounter is currently active.");
             return;
         }
 
-        if( Actor.Scene.FindScript<CombatSystem>().inCombat)
+        if (EncounterSequence[CurrentFloor - 1].talkBeforeFight)
+        {
+            if (NPC_System.Instance.Enemies.Count == 0)
+            {
+                _npcManager.SpawnEnemyNpc(EncounterSequence[CurrentFloor - 1].encounterName);
+                StartCombat();
+                IsEncounterActive = true;
+                waitForKill = true;
+            }
+            return;
+        }
+
+        // If we were in combat, stop music
+        if (Actor.Scene.FindScript<CombatSystem>().inCombat)
         {
             Actor.Scene.FindScript<MusicController>().StartStopCombatMusic();
         }
 
         IsEncounterActive = false;
+        waitForKill = false;
         Actor.Scene.FindScript<CombatSystem>().inCombat = false;
 
+        thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.IsActive = false;
+
+
+        
         if (cb != null)
         {
             cb.unlocked = true;
@@ -240,10 +329,10 @@ public class ElevatorManager : Script
             }
         }
 
-        if(waitForKill && NPC_System.Instance.Enemies.Count == 0)
+        if (waitForKill && NPC_System.Instance.Enemies.Count == 0)
         {
             waitForKill = false;
-            EndCurrentEncounter();
+            EndCurrentEncounter();            
         }
     }
 }

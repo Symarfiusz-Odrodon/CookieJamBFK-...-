@@ -3,7 +3,7 @@
   "Platform": "Windows",
   "Architecture": "x64",
   "Configuration": "Development",
-  "HotReloadPostfix": ".HotReload.16",
+  "HotReloadPostfix": ".HotReload.53",
   "BinaryModules": [
     {
       "Name": "Ink",
