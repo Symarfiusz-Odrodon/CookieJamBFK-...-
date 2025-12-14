@@ -21,24 +21,25 @@ public class CombatSystem : Script
         if(NPC == null )
             return;
 
-        if(inBattle)
+        if (inBattle)
         {
+            NPC.uiVisible = true;
             timer1 += Time.DeltaTime;
 
             if (timer1 > 1.0f)
             {
-                
+
                 timer1 = 0;
                 foreach (FriendlyNpcInstance ally in NPC.Npcs)
                 {
                     ally.actionPoints += ally.actionRegen;
-                    if (ally.actionPoints > 1 ) 
+                    if (ally.actionPoints > 1)
                         ally.actionPoints = 1;
                 }
                 foreach (EnemyNpcInstance enemy in NPC.Enemies)
                 {
                     enemy.actionPoints += enemy.actionRegen;
-                    if (enemy.actionPoints > 1 )
+                    if (enemy.actionPoints > 1)
                         enemy.actionPoints = 1;
                 }
             }
@@ -53,14 +54,14 @@ public class CombatSystem : Script
                         switch (NPC.Npcs[i].Data.friendAction1Id)
                         {
                             case 0:
-                                
+
                                 NPC.Npcs[i].actionPoints = 0;
                                 break;
                         }
-                            
+
                     }
                 }
-                
+
             }
         }
     }
