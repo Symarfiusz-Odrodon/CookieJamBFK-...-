@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using FlaxEngine;
 using FlaxInk;
+using Game;
 using Game.Dialogue;
 
 namespace dzemCiastkowy;
@@ -75,7 +76,15 @@ public class TutorialController : Script
             }
         }
 
-        Debug.Log("started: " + _started + " controller: " + controller.StoryActive + " startedd2: " + _started2);
+        if(_started2 && !controller.StoryActive)
+        {
+            cum2.IsActive = false;
+            cum3.IsActive = true;
+            Actor.Scene.FindScript<ClickButton>().unlocked = true;
+            Destroy(Actor);
+        }
+
+        //Debug.Log("started: " + _started + " controller: " + controller.StoryActive + " startedd2: " + _started2);
 
         // Here you can add code that needs to be called every frame
     }
