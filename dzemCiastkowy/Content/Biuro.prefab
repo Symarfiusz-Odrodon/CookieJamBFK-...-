@@ -562,6 +562,216 @@
 				}
 			]
 		}
+	},
+	{
+		"ID": "f7a09ca74a9311e2a4836bb0917cac82",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "Cube",
+		"Transform": {
+			"Translation": {
+				"X": 9.047769546508789,
+				"Y": 287.0,
+				"Z": -433.96710205078125
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 3.27825517842939e-7,
+				"Z": -0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 1.5799999237060547,
+				"Y": 5.449999809265137,
+				"Z": 1.5799998044967651
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "ab43a9e249c186bfbb41a8ae2d03be67",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "Cube 0",
+		"Transform": {
+			"Translation": {
+				"X": 105.3778076171875,
+				"Y": 287.0,
+				"Z": -275.43035888671875
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 3.27825517842939e-7,
+				"Z": -0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 1.5799999237060547,
+				"Y": 5.449999809265137,
+				"Z": 3.169999599456787
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "5c554fe04ec1e52cf5174785ebbc9cfd",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "Cube 1",
+		"Transform": {
+			"Translation": {
+				"X": 105.37740325927734,
+				"Y": 287.0,
+				"Z": 334.69708251953125
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 3.27825517842939e-7,
+				"Z": -0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 1.5799999237060547,
+				"Y": 5.449999809265137,
+				"Z": 3.169999599456787
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e00dd619438f48a5bb75cb8bb079a177",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "Cube 2",
+		"Transform": {
+			"Translation": {
+				"X": 105.37760162353516,
+				"Y": 504.0118408203125,
+				"Z": 36.28185272216797
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 3.27825517842939e-7,
+				"Z": -0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 1.5799999237060547,
+				"Y": 1.679999828338623,
+				"Z": 3.169999599456787
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "2535479548444e76ae87f284e3b95e4f",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "Cube 3",
+		"Transform": {
+			"Translation": {
+				"X": -48.788352966308594,
+				"Y": 287.0,
+				"Z": 523.3980102539063
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 3.27825517842939e-7,
+				"Z": -0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 1.5799999237060547,
+				"Y": 5.449999809265137,
+				"Z": 3.169999599456787
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "28b87cdb41b7efb9492d9ab675b77f36",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "d34dc435475a46319ea5f1afef0fae8a",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "Cube 4",
+		"Transform": {
+			"Translation": {
+				"X": -54.30313491821289,
+				"Y": 799.0999755859375,
+				"Z": -295.9515686035156
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 3.27825517842939e-7,
+				"Z": -0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 1.5799999237060547,
+				"Y": 5.449999809265137,
+				"Z": 18.649999618530273
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "4c1a4c4f45a97175a260f683e180af84",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
 	}
 ]
 }
