@@ -5,9 +5,9 @@
 	"Data": {
 	"id": "tut",
 	"name": "An",
-	"headTexture": "d72377b9451f63c7cdca81b0dde4224f",
-	"dialogueTexture": null,
-	"worldTexture": null,
+	"headTexture": "08de3aa5066282a1da84ba61c317b366",
+	"dialogueTexture": "08de3aa5066282a1da84ba61c317b366",
+	"worldTexture": "08de3aa5066282a1da84ba61c317b366",
 	"friendHealth": 100,
 	"friendMaxHealth": 100,
 	"friendActionRegen": 0.2,

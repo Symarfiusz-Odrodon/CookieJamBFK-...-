@@ -10,19 +10,35 @@ using System.Linq; // Added for safety if you need LINQ
 namespace Game.Managers;
 
 // UPDATED FloorData Class
+[Serializable]
 public class FloorData
 {
+    // All fields inside a [Serializable] class that you want to save must be public.
     public bool safeFloor = false;
     public string encounterName;
+    public string encounterName2;
+    public string encounterName3;
 
-    // NEW FIELD: Directly assign the Ink Story asset in the Inspector
+    //public AudioClip music;
+
+    public int weight = 0;
+    public int maxWeight = 0;
+
+    public bool talkBeforeFight = false;
+
+    // The asset reference itself is public, which is correct.
     public JsonAssetReference<InkStory> storyAsset;
 
+    // It's also best practice to include a parameterless constructor when 
+    // using custom classes in Lists.
+    public FloorData() { }
+
+    // Your existing custom constructor is fine to keep, but the parameterless 
+    // one helps the Inspector create new instances.
     public FloorData(bool safeFloor, string encounterName)
     {
         this.safeFloor = safeFloor;
         this.encounterName = encounterName;
-        // storyAsset is now expected to be set separately in the Inspector for this instance
     }
 }
 
@@ -39,7 +55,8 @@ public class ElevatorManager : Script
 
     public ClickButton cb;
 
-    public List<FloorData> possibleEncounters = new List<FloorData>();
+    public List<FloorData> possibleFriendlyEncounters = new List<FloorData>();
+    public List<FloorData> possibleEnemyEncounters = new List<FloorData>();
 
     [Tooltip("List of NPC IDs, one for each floor encounter.")]
     public List<FloorData> EncounterSequence = new List<FloorData>
@@ -173,7 +190,7 @@ public class ElevatorManager : Script
             waitForKill = true;
             _npcManager.SpawnEnemyNpc(npcIdToSpawn);
             Actor.Scene.FindScript<CombatSystem>().inCombat = true;
-
+            Actor.Scene.FindScript<MusicController>().StartStopCombatMusic();
         }
     }
 
@@ -187,6 +204,11 @@ public class ElevatorManager : Script
         {
             Debug.LogWarning("Cannot end encounter, no encounter is currently active.");
             return;
+        }
+
+        if( Actor.Scene.FindScript<CombatSystem>().inCombat)
+        {
+            Actor.Scene.FindScript<MusicController>().StartStopCombatMusic();
         }
 
         IsEncounterActive = false;
