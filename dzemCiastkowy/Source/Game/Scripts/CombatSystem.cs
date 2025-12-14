@@ -11,6 +11,7 @@ namespace Game.NPC;
 public class CombatSystem : Script
 {
     public bool inCombat = false;
+    public SceneReference gameScene;
     private float timer1 = 0;
     private NPC_System NPC;
     private Random rand = new Random();
@@ -114,6 +115,15 @@ public class CombatSystem : Script
                                 if (NPC.Enemies[target].health <= 0)
                                     NPC.Enemies[target].health = 0;
                                 break;
+                            case 6:
+                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                                {
+                                    ally.actionPoints += 0.2f;
+                                    if (ally.actionPoints >= 1.0f)
+                                        ally.actionPoints = 1.0f;
+                                }
+                                break;
+
 
 
                         }
@@ -165,6 +175,13 @@ public class CombatSystem : Script
         if (index >= 0 && index < NPC.Npcs.Count)
         {
             NPC.Npcs.RemoveAt(index);
+            if(NPC.Npcs.Count == 0)
+                Scripting.RunOnUpdate(() =>
+                {
+                    Level.UnloadAllScenes();
+                    Level.LoadScene(gameScene);
+                });
+
         }
     }
 
@@ -173,6 +190,12 @@ public class CombatSystem : Script
         if (index >= 0 && index < NPC.Enemies.Count)
         {
             NPC.Enemies.RemoveAt(index);
+            if (NPC.Npcs.Count == 0)
+                Scripting.RunOnUpdate(() =>
+                {
+                    Level.UnloadAllScenes();
+                    Level.LoadScene(gameScene);
+                });
         }
     }
 }
