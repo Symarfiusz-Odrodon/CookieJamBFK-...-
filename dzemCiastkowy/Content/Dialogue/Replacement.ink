@@ -3,14 +3,9 @@ EXTERNAL remove_from_team(id)
 EXTERNAL improve_morale()
 EXTERNAL hurt_morale()
 
-VAR replacement_spoke = false
 VAR speaker = "replacement"
 VAR printert = false
-VAR to_export = "replacement_spoke;printert"
-
-{ replacement_spoke:
-    -> repeat
-}
+VAR to_export = "printert"
 
 -> intro
 
@@ -105,10 +100,4 @@ Whatever.
 I hope you have fun doing whatever it is you're doing.
 ~ speaker = "annoying"
 Oh, we will.
-~ replacement_spoke = true
 -> END
-
-=== repeat ===
-~ speaker = "replacement"
-I hope you succeed in your dreams!
--> END 

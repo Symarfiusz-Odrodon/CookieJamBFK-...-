@@ -3,13 +3,8 @@ EXTERNAL hurt_morale()
 
 VAR speaker = "printert"
 VAR annoying_admit_thief = false
-VAR printert_spoke = false
 
-CONST to_export = "annoying_admit_thief;printert_spoke"
-
-{printert_spoke:
-    -> reconsider
-}
+CONST to_export = "annoying_admit_thief"
 
 -> intro
 
@@ -90,7 +85,6 @@ Can I join you?
 === accept ===
 Thank you.
 I'll unlock the elevator for you.
-~ printert_spoke = true
 ~ add_to_team("printert")
 -> END
 
@@ -101,21 +95,4 @@ Okay then.
 Not sure why you would prefer having her with you instead of me, but whatever.
 As long as you cause trouble.
 I'm gonna unlock the elevator for you.
-~ printert_spoke = true
--> END
-
-=== reconsider ===
-So, did you reconsider my proposition?
-* [Let him join] -> accept2
-* [Decline again] -> decline2
-
-=== accept2 ===
-Oh wait really?
-Awesome.
-~ add_to_team("printert")
--> END
-
-=== decline2 ===
-Oh.
-Yeah, okay.
 -> END

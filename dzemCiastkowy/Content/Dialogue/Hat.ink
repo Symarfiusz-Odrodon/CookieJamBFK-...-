@@ -1,16 +1,11 @@
 VAR speaker = "hat"
-VAR has_highlighter = true
+VAR has_highlighter = false
 VAR horse_hoisted = false
-VAR intro_highlighter_shown = false
 
-VAR to_export = "horse_hoisted;highlighter_num"
+VAR to_export = "horse_hoisted;has_highlighter"
 
 // To export
-VAR highlighter_num = 0
-
-{ highlighter_num == 0:
-    -> intro
-}
+-> intro
 
 === intro ===
 
@@ -68,19 +63,13 @@ It's too sharp.
     Without a highlighter?
     What would you even do with it?
 }
-* [Okay, I'm gonna look for a {intro_highlighter_shown: better} highlighter]
-    -> finish_first
-* {horse_hoisted} [Worry not, I shal venture forth and locate the right highlighing device!]
-    -> finish_first
+* [Let's look for a {intro_highlighter_shown: better} highlighter together.]
+    ~ horse_hoisted = false
+    -> finish
+* {horse_hoisted} [Worry not, we shal venture forth and locate the right highlighing device!]
+    Splendid.
+    -> finish
+* [I'm just gonna... leave...]
 
-=== finish_first ===
-~ highlighter_num = 1
--> END
-
-=== first_highlighter ===
-Mmmm...
-No.
-This won't do.
-It's too green.
-Try finding another one.
+=== finish ===
 -> END
