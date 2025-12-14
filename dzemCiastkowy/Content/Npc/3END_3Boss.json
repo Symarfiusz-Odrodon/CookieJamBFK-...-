@@ -15,11 +15,11 @@
 	"friendAction2Name": null,
 	"friendAction1Id": 0,
 	"friendAction2Id": 0,
-	"enemyHealth": 0,
+	"enemyHealth": 300,
 	"enemyMaxHealth": 0,
-	"enemyActionRegen": 0.0,
-	"enemyAction1Name": null,
-	"enemyAction2Name": null,
+	"enemyActionRegen": 0.01,
+	"enemyAction1Name": "You'r fired (-40hp to highest hp)",
+	"enemyAction2Name": "Glass celling (set ap to 0 random)",
 	"enemyAction1Id": 0,
 	"enemyAction2Id": 0
 }
