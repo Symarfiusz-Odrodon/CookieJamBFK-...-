@@ -12,19 +12,23 @@ namespace dzemCiastkowy;
 public class TutorialController : Script
 {
     public JsonAssetReference<InkStory> story;
-    private DialogueController controller;
+    public DialogueController controller;
+
+    public Camera cum1;
+    public Camera cum2;
+
+    private bool _started = false;
 
     /// <inheritdoc/>
     public override void OnStart()
     {
-        Actor.Scene.FindScript<DialogueController>();
-        controller.StartStory(story);
     }
     
     /// <inheritdoc/>
     public override void OnEnable()
     {
         // Here you can add code that needs to be called when script is enabled (eg. register for events)
+
     }
 
     /// <inheritdoc/>
@@ -36,6 +40,12 @@ public class TutorialController : Script
     /// <inheritdoc/>
     public override void OnUpdate()
     {
+        if (!_started && controller != null)
+        {
+            controller.StartStory(story);
+            _started = true;
+        }
+
         // Here you can add code that needs to be called every frame
     }
 }

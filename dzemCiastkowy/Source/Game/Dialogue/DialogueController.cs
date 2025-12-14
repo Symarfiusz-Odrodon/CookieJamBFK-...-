@@ -102,12 +102,6 @@ public class DialogueController : Script
             FinishStory();
         };
 
-        progressDialogueInput.Pressed += () =>
-        {
-            if (StoryActive)
-                ContinueDialogue();
-        };
-
         if (npcSystem != null)
         {
             npcSystem.Npcs.CollectionChanged += (_, _) =>
@@ -121,6 +115,16 @@ public class DialogueController : Script
 
         if (startStory.Instance != null)
             StartStory(startStory);
+    }
+
+    public override void OnUpdate()
+    {
+        if(Input.GetKeyDown(KeyboardKeys.Spacebar))
+        {
+            Debug.Log("Input Fired");
+            if (StoryActive)
+                ContinueDialogue();
+        }
     }
 
     public void SelectOption(int index)
@@ -138,7 +142,7 @@ public class DialogueController : Script
         StoryActive = true;
         runner.StartDialogue(story);
 
-        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, id => npcSystem?.AddEnemyNpc(id));
+        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, id => npcSystem?.AddFriendNpc(id));
         runner.BindExternalFunction<string>(FUNC_NAME_REMOVE_FROM_TEAM, id => 
         {
             if (npcSystem == null) return;
@@ -169,6 +173,8 @@ public class DialogueController : Script
 
     public void ContinueDialogue()
     {
+        Debug.Log("Input Fired");
+
         if (optionsRootControl.IsActive) return;
 
         runner.ContinueDialogue();

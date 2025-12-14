@@ -74,8 +74,6 @@ public class ElevatorManager : Script
             return;
         }
 
-        // Start the game by opening the door on Floor 0
-        GoToNextFloor();
     }
 
     /// <summary>

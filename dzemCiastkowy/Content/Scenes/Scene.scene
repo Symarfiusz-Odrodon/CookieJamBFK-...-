@@ -46,7 +46,10 @@
 			"ID": "e15b64e04a586f8c3dd03dbd30377477",
 			"TypeName": "dzemCiastkowy.TutorialController",
 			"ParentID": "30d410c947c5fbf924a3cdad9a5f2051",
-			"V": {}
+			"V": {
+	"story": "08de3a3b0840b1cf338592173d1f9104",
+	"controller": "3a4fd4eb47a9b3baf9d3a591e27803d6"
+}
 		},
 		{
 			"ID": "b634da444906d4659b8c599690488adb",
@@ -5118,6 +5121,268 @@
 }
 		},
 		{
+			"ID": "045842a5480f524205c66baf81148bd4",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b689ebdafe123a8bc68ba7",
+			"ParentID": "74a68a984824b4510d12589f199ad68f"
+		},
+		{
+			"ID": "3a4fd4eb47a9b3baf9d3a591e27803d6",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b76a57dafe123b8bc68bb4",
+			"ParentID": "045842a5480f524205c66baf81148bd4",
+			"V": {
+	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c",
+	"startStory": "00000000000000000000000000000000"
+}
+		},
+		{
+			"ID": "195b059f4dfbda30dd9506b827cbfb79",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b87a87dafe123b8bc68bb7",
+			"ParentID": "045842a5480f524205c66baf81148bd4",
+			"V": {}
+		},
+		{
+			"ID": "99c1124f412c0df1d0f1e5939cda5840",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767b90b3ddafe123b8bc68bb9",
+			"ParentID": "045842a5480f524205c66baf81148bd4",
+			"V": {}
+		},
+		{
+			"ID": "7429f8954f92a8be9db1e5a3d0f6005b",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bad702dafe123c8bc68bbc",
+			"ParentID": "99c1124f412c0df1d0f1e5939cda5840",
+			"Data": {
+	"ResolutionCurve": {},
+	"DpiCurve": {}
+}
+		},
+		{
+			"ID": "df671dce4f3bbfeab67e819c31ab6291",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bbdeb8dafe123c8bc68bbf",
+			"ParentID": "7429f8954f92a8be9db1e5a3d0f6005b",
+			"Transform": {
+				"Translation": {
+					"X": 124.5257568359375,
+					"Y": 171.8590087890625,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "0cf424a349b3d6b04b6ad1bacff963ad",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bcdecedafe123c8bc68bc0",
+			"ParentID": "7429f8954f92a8be9db1e5a3d0f6005b",
+			"Transform": {
+				"Translation": {
+					"X": 1254.968505859375,
+					"Y": 171.8590087890625,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "db1837824368d8b9138513a41749d137",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bdb088dafe123c8bc68bc2",
+			"ParentID": "7429f8954f92a8be9db1e5a3d0f6005b",
+			"Transform": {
+				"Translation": {
+					"X": 283.55517578125,
+					"Y": 671.0,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "097f070642b7273fa062419a62c92ea8",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bece09dafe123c8bc68bc3",
+			"ParentID": "db1837824368d8b9138513a41749d137",
+			"Data": {}
+		},
+		{
+			"ID": "73e095e34da83f73e124c2b44726411e",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767bff1dcdafe123c8bc68bc4",
+			"ParentID": "db1837824368d8b9138513a41749d137",
+			"Data": {}
+		},
+		{
+			"ID": "0ad5a15f4ca9912ed746a39237842653",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c07b7cdafe123c8bc68bc5",
+			"ParentID": "73e095e34da83f73e124c2b44726411e",
+			"Data": {}
+		},
+		{
+			"ID": "cde628c046574d8f22afa78ee96cba01",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c1bcb0dafe123d8bc68bc6",
+			"ParentID": "0ad5a15f4ca9912ed746a39237842653",
+			"Data": {
+	"Offsets": {
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "31d1d61f4ae8ea3f05221a9e36301b70",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c22ae5dafe123d8bc68bc7",
+			"ParentID": "0ad5a15f4ca9912ed746a39237842653",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 59.60000228881836,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"Offsets": {
+		"Top": 59.600002,
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "55f1d70244bcf026560f21b9559cecaf",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c3d8c1dafe123d8bc68bc8",
+			"ParentID": "0ad5a15f4ca9912ed746a39237842653",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 117.20000457763672,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"Offsets": {
+		"Top": 117.200005,
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "24ef14ea4ed7dc48ff394894303359a7",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c431b1dafe123d8bc68bc9",
+			"ParentID": "0ad5a15f4ca9912ed746a39237842653",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 174.8000030517578,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"Offsets": {
+		"Top": 174.8,
+		"Bottom": 53.600002
+	}
+}
+		},
+		{
+			"ID": "092ff9b34d61e63af6e9199427a58e5b",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c52961dafe123d8bc68bcb",
+			"ParentID": "db1837824368d8b9138513a41749d137",
+			"Data": {}
+		},
+		{
+			"ID": "58a809ff4e5fc75773614683d871a1ac",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c6e49adafe123d8bc68bcc",
+			"ParentID": "7429f8954f92a8be9db1e5a3d0f6005b",
+			"Transform": {
+				"Translation": {
+					"X": 507.1900634765625,
+					"Y": 1.892764500413612e-19,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "311059b7476c5dabffc074bac63340b2",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c7b483dafe123d8bc68bcd",
+			"ParentID": "58a809ff4e5fc75773614683d871a1ac",
+			"V": {}
+		},
+		{
+			"ID": "cb4af7bb4fe3195174ca0ead7f55dd92",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c852c8dafe123d8bc68bcf",
+			"ParentID": "58a809ff4e5fc75773614683d871a1ac",
+			"Data": {}
+		},
+		{
+			"ID": "826824a942a42f74621beb8eb6aa78ca",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767c92979dafe123e8bc68bd0",
+			"ParentID": "58a809ff4e5fc75773614683d871a1ac",
+			"Data": {}
+		},
+		{
+			"ID": "4432228d41a8eac68cae42a7e097faa1",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767caf395dafe123e8bc68bd1",
+			"ParentID": "58a809ff4e5fc75773614683d871a1ac",
+			"Data": {}
+		},
+		{
+			"ID": "f89227ae488138b7bf9b0ea6a40c9582",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767cba563dafe123e8bc68bd2",
+			"ParentID": "7429f8954f92a8be9db1e5a3d0f6005b",
+			"Transform": {
+				"Translation": {
+					"X": 507.1900634765625,
+					"Y": 1.892764500413612e-19,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "4b51c0dc4d6f24553c0591859a8c406c",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767ccf279dafe123e8bc68bd3",
+			"ParentID": "f89227ae488138b7bf9b0ea6a40c9582",
+			"V": {}
+		},
+		{
+			"ID": "32c0a1e241dcc998b11c2a9f66f90911",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767cd13b7dafe123e8bc68bd6",
+			"ParentID": "f89227ae488138b7bf9b0ea6a40c9582",
+			"Data": {}
+		},
+		{
+			"ID": "2b5612604b6bc384e73d28a97b374bfe",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767ceeacedafe123e8bc68bd7",
+			"ParentID": "f89227ae488138b7bf9b0ea6a40c9582",
+			"Data": {}
+		},
+		{
+			"ID": "e3357da84be27a10a8016f95b5b03bca",
+			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
+			"PrefabObjectID": "08de3ac767cf5ad3dafe123e8bc68bd8",
+			"ParentID": "f89227ae488138b7bf9b0ea6a40c9582",
+			"Data": {}
+		},
+		{
 			"ID": "d574773d446791987464b88cd71dc93c",
 			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
 			"PrefabObjectID": "ad5942064f9fdaa06142fe9f12447f78",
@@ -5153,20 +5418,6 @@
 			"PrefabID": "8f36a45d4dfe11a3f9029cbf1454f11a",
 			"PrefabObjectID": "a8f5c2f740b7edb475eae4819257c26f",
 			"ParentID": "d574773d446791987464b88cd71dc93c"
-		},
-		{
-			"ID": "abf0706647fd214c96f08bbee9879a92",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Dialogue"
-		},
-		{
-			"ID": "5369a1c242797c194b824b8d33350253",
-			"TypeName": "Game.Dialogue.DialogueController",
-			"ParentID": "abf0706647fd214c96f08bbee9879a92",
-			"V": {
-	"npcDatabase": "08de3a4a06d063cbb5a413a552504b72"
-}
 		}
 	]
 }
