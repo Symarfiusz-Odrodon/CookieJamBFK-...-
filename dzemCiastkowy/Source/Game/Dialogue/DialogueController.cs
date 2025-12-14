@@ -16,6 +16,7 @@ public class DialogueController : Script
     public const string VAR_NAME_CHARACTER_LEFT = "char_left";
     public const string VAR_NAME_CHARACTER_RIGHT = "char_right";
     public const string VAR_NAME_TO_EXPORT = "to_export";
+    public const string VAR_NAME_TEAM_COUNT = "team_count";
     public const string FUNC_NAME_ADD_TO_TEAM = "add_to_team";
     public const string FUNC_NAME_REMOVE_FROM_TEAM = "remove_from_team";
     public const string FUNC_NAME_IMPROVE_MORALE = "improve_morale";
@@ -146,6 +147,8 @@ public class DialogueController : Script
             {
                 foreach (var item in npcDatabase.Instance.npcs)
                     SetValue(item.Instance.id, npcSystem.Npcs.Any(x => x.Data.id == item.Instance.id));
+                
+                SetValue(VAR_NAME_TEAM_COUNT, npcSystem.Npcs.Count);
             };
         }
 
@@ -340,12 +343,10 @@ public class DialogueController : Script
     public void SetValue(string name, object value)
     {
         if (!_variables.ContainsKey(name))
-        {
             _variables.Add(name, value);
-            return;
-        }
 
         _variables[name] = value;
+        runner.SetVariable(name, value);
     }
 
     private string[] GetVarsToExport()

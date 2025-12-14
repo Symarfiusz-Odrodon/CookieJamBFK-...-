@@ -55,7 +55,7 @@ VAR to_export = "printert"
     Oh, and...
     She...
     ~ speaker = "annoying"
-    A similar plesure to meet you.
+    A simular plesure to meet you.
     ~ speaker = "replacement"
     What are you doing?
     ~ speaker = "annoying"
