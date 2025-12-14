@@ -5,7 +5,8 @@ using FlaxEngine;
 using FlaxInk; // Required for JsonAssetReference<InkStory>
 using Game.NPC;
 using Game.Dialogue; // Required for DialogueController
-using System.Linq; // Added for safety if you need LINQ
+using System.Linq;
+using FlaxEngine.GUI; // Added for safety if you need LINQ
 
 namespace Game.Managers;
 
@@ -24,6 +25,7 @@ public class FloorData
     public int weight = 0;
     public int maxWeight = 0;
 
+    public Texture idfkanymorethisisasprite;
     public bool talkBeforeFight = false;
 
     // The asset reference itself is public, which is correct.
@@ -76,6 +78,8 @@ public class ElevatorManager : Script
 
     [ReadOnly]
     public bool IsEncounterActive = false;
+
+    public SpriteRender thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh;
 
     // References to your existing managers
     private NPC_System _npcSystem;
@@ -176,6 +180,8 @@ public class ElevatorManager : Script
 
             if (storyAsset.Instance != null)
             {
+                thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.IsActive = true;
+                thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh.Image = currentEncounter.idfkanymorethisisasprite;
                 _dialogueController.StartStory(storyAsset);
                 // DialogueController.OnStoryFinished will call EndCurrentEncounter
             }
