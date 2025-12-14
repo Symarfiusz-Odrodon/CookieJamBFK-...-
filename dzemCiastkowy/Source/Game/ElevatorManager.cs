@@ -168,6 +168,7 @@ public class ElevatorManager : Script
         else
         {
             _npcManager.SpawnEnemyNpc(npcIdToSpawn);
+            Actor.Scene.FindScript<CombatSystem>().inBattle = true;
         }
     }
 
@@ -184,6 +185,7 @@ public class ElevatorManager : Script
         }
 
         IsEncounterActive = false;
+        Actor.Scene.FindScript<CombatSystem>().inBattle = false;
 
         if (cb != null)
         {
