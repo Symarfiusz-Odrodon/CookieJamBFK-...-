@@ -3340,9 +3340,9 @@
 			"Name": "Enemy1_Sprite",
 			"Transform": {
 				"Translation": {
-					"X": 149.90042114257813,
+					"X": -138.3773956298828,
 					"Y": 119.2349853515625,
-					"Z": 149.28875732421875
+					"Z": 29.63837432861328
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3670,9 +3670,9 @@
 			"Name": "Enemy2_Sprite",
 			"Transform": {
 				"Translation": {
-					"X": 25.563507080078125,
+					"X": -281.0450439453125,
 					"Y": 127.70257568359375,
-					"Z": 294.3175964355469
+					"Z": 227.27871704101563
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -4000,9 +4000,9 @@
 			"Name": "Enemy3_Sprite",
 			"Transform": {
 				"Translation": {
-					"X": -35.35029602050781,
+					"X": -383.11260986328125,
 					"Y": 132.1843719482422,
-					"Z": -14.052082061767578
+					"Z": -149.83297729492188
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -4653,8 +4653,7 @@
 			"PrefabObjectID": "08de3ac767b76a57dafe123b8bc68bb4",
 			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
 			"V": {
-	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c",
-	"startStory": "00000000000000000000000000000000"
+	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c"
 }
 		},
 		{
@@ -4749,68 +4748,28 @@
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767c1bcb0dafe123d8bc68bc6",
 			"ParentID": "1d14f11c4834c29620e14080466af315",
-			"Data": {
-	"Offsets": {
-		"Bottom": 53.600002
-	}
-}
+			"Data": {}
 		},
 		{
 			"ID": "a63a330f428cad4c938f31ad56848ed6",
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767c22ae5dafe123d8bc68bc7",
 			"ParentID": "1d14f11c4834c29620e14080466af315",
-			"Transform": {
-				"Translation": {
-					"X": 2.0,
-					"Y": 59.60000228881836,
-					"Z": 0.0
-				}
-			},
-			"Data": {
-	"Offsets": {
-		"Top": 59.600002,
-		"Bottom": 53.600002
-	}
-}
+			"Data": {}
 		},
 		{
 			"ID": "2579fbe8439b038da8653e95ce0a1be9",
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767c3d8c1dafe123d8bc68bc8",
 			"ParentID": "1d14f11c4834c29620e14080466af315",
-			"Transform": {
-				"Translation": {
-					"X": 2.0,
-					"Y": 117.20000457763672,
-					"Z": 0.0
-				}
-			},
-			"Data": {
-	"Offsets": {
-		"Top": 117.200005,
-		"Bottom": 53.600002
-	}
-}
+			"Data": {}
 		},
 		{
 			"ID": "26f60edd407a79316655169bf1cf938b",
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767c431b1dafe123d8bc68bc9",
 			"ParentID": "1d14f11c4834c29620e14080466af315",
-			"Transform": {
-				"Translation": {
-					"X": 2.0,
-					"Y": 174.8000030517578,
-					"Z": 0.0
-				}
-			},
-			"Data": {
-	"Offsets": {
-		"Top": 174.8,
-		"Bottom": 53.600002
-	}
-}
+			"Data": {}
 		},
 		{
 			"ID": "4aedf7d7461fc6472d3d8d823bb5e415",
@@ -4993,7 +4952,6 @@
 	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
 	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
 	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
-	"elevatorDoorSFX": "dca347c44ee6e094ed2d49974e34999f",
 	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
 }
 		},
@@ -5010,7 +4968,6 @@
 			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
 			"V": {
 	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
-	"doorcont": "ca686ab3468d7647f95c90bb91457a26",
 	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
 	"cum2": "b634da444906d4659b8c599690488adb",
 	"cum3": "b0d72c3746caebca055e1f921ca21c7c"

@@ -35,6 +35,8 @@ public class NPC_System : Script
     public ObservableCollection<FriendlyNpcInstance> Npcs { get; } = [];
     public List<EnemyNpcInstance> Enemies { get; } = [];
 
+    public bool uiVisible = false;
+
     public override void OnStart()
     {
         if (Instance == null)
@@ -130,28 +132,51 @@ public class NPC_System : Script
 
         void UpdateUiForCharacter(int i, FriendlyNpcInstance npc)
         {
-            NPC_Character[i].Get<Image>().Brush = npc?.Data.headTexture == null ? null : new TextureBrush(npc?.Data.headTexture);
-            NPC_Background[i].Get<Image>().Visible = npc != null;
-            NPC_Frame[i].Get<Image>().Visible = npc != null;
+            if (uiVisible)
+            {
+                NPC_Character[i].Get<Image>().Brush = npc?.Data.headTexture == null ? null : new TextureBrush(npc?.Data.headTexture);
+                NPC_Background[i].Get<Image>().Visible = npc != null;
+                NPC_Frame[i].Get<Image>().Visible = npc != null;
 
 
-            var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
-            HPProgress.Value = npc == null || npc.maxHealth == 0 ? HPProgress.Maximum : (float)npc.health / npc.maxHealth;
-            HPProgress.Visible = npc != null;
+                var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
+                HPProgress.Value = npc == null || npc.maxHealth == 0 ? HPProgress.Maximum : (float)npc.health / npc.maxHealth;
+                HPProgress.Visible = npc != null;
 
-            var APProgress = NPC_APProgress[i].Get<ProgressBar>();
-            APProgress.Value = npc?.actionPoints ?? APProgress.Maximum;
-            APProgress.Visible = npc != null;
+                var APProgress = NPC_APProgress[i].Get<ProgressBar>();
+                APProgress.Value = npc?.actionPoints ?? APProgress.Maximum;
+                APProgress.Visible = npc != null;
 
-            var action1 = NPC_Action1[i].Get<Button>();
-            action1.Visible = npc != null;
-            action1.Enabled = npc?.actionPoints >= 1;
-            action1.Text = npc?.Data.friendAction1Name;
+                var action1 = NPC_Action1[i].Get<Button>();
+                action1.Visible = npc != null;
+                action1.Enabled = npc?.actionPoints >= 1;
+                action1.Text = npc?.Data.friendAction1Name;
 
-            var action2 = NPC_Action2[i].Get<Button>();
-            action2.Visible = npc != null;
-            action2.Enabled = npc?.actionPoints >= 1;
-            action2.Text = npc?.Data.friendAction2Name;
+                var action2 = NPC_Action2[i].Get<Button>();
+                action2.Visible = npc != null;
+                action2.Enabled = npc?.actionPoints >= 1;
+                action2.Text = npc?.Data.friendAction2Name;
+            }
+            else
+            {
+                NPC_Character[i].Get<Image>().Brush = null;
+                NPC_Background[i].Get<Image>().Visible = false;
+                NPC_Frame[i].Get<Image>().Visible = false;
+
+
+                var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
+                HPProgress.Visible = false;
+
+                var APProgress = NPC_APProgress[i].Get<ProgressBar>();
+                APProgress.Visible = false;
+
+                var action1 = NPC_Action1[i].Get<Button>();
+                action1.Visible = false;
+
+                var action2 = NPC_Action2[i].Get<Button>();
+                action2.Visible = false;
+            }
+            
         }
 
         //Update enemy sprites
