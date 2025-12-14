@@ -52,12 +52,10 @@ public class MusicController : Script
     {
         if (jibber)
         {
-            Debug.Log("JibberStop");
             jibber = false;
         }
         else
         {
-            Debug.Log("JibberStart");
             jibber = true;
         }
     }
@@ -91,7 +89,6 @@ public class MusicController : Script
             
             if(timer > 0.14f && jibberSounds.Count > 0)
             {
-                Debug.Log(tim);
                 tim = !tim;
 
                 timer = 0;
@@ -111,14 +108,12 @@ public class MusicController : Script
                 if(tim)
                 {
                     jibberSpeech.Clip = randomClip;
-                    Debug.Log("jibber1 " + randomIndex);
 
                     jibberSpeech.Play();
                 }
                 else
                 {
                     jibberSpeech2.Clip = randomClip;
-                    Debug.Log("jibber2 " + randomIndex);
 
                     jibberSpeech2.Play();
                 }

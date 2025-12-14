@@ -84,7 +84,6 @@ namespace Game
             if (Camera == null)
                 return;
 
-            Debug.Log("checkclick");
             Ray ray = Camera.ConvertMouseToRay(Input.MousePosition);
 
             if (Physics.RayCast(ray.Position, ray.Direction, out RayCastHit hitInfo, 1000f))
@@ -109,8 +108,6 @@ namespace Game
 
         private void OnClicked()
         {
-            Debug.Log("Clicked " + Actor.Name);
-
             if (!isAnimating)
             {
                 button.Clip = doorButton;
