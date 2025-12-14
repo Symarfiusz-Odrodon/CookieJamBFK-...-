@@ -115,7 +115,14 @@ public class CombatSystem : Script
                                 if (NPC.Enemies[target].health <= 0)
                                     NPC.Enemies[target].health = 0;
                                 break;
-
+                            case 6:
+                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                                {
+                                    ally.actionPoints += 0.2f;
+                                    if (ally.actionPoints >= 1.0f)
+                                        ally.actionPoints = 1.0f;
+                                }
+                                break;
 
 
 
