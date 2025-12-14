@@ -5420,7 +5420,12 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "48e6664a465a99e6539dd7b1f72ca133",
 			"ParentID": "fc36ec8b4b35c2a3e2e2a7982e0b08f1",
-			"V": {}
+			"V": {
+	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
+	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
+	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
+	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
+}
 		},
 		{
 			"ID": "a5eaab3e47dab2a7f5f930a907589c0f",
@@ -5433,7 +5438,13 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "d71a9ef64d910dcb7fd206b9bbda1a19",
 			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
-			"V": {}
+			"V": {
+	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
+	"sam": "0b2eab5140ce280eb94fb89a284a6063",
+	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
+	"cum2": "b634da444906d4659b8c599690488adb",
+	"cum3": "b0d72c3746caebca055e1f921ca21c7c"
+}
 		},
 		{
 			"ID": "9179ab1f46e1d51897a14a8dc434a849",
@@ -5447,6 +5458,7 @@
 			"PrefabObjectID": "387d2c8f4b1bfe0f1109bf8f0371a31d",
 			"ParentID": "9179ab1f46e1d51897a14a8dc434a849",
 			"V": {
+	"cb": "aa85776d41d00fbaaaf8518611460350",
 	"possibleFriendlyEncounters": [
 		{
 			"safeFloor": true,
@@ -5499,7 +5511,7 @@
 			"encounterName3": null,
 			"weight": 4,
 			"maxWeight": 3,
-			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
+			"idfkanymorethisisasprite": null,
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
 		},
@@ -5657,7 +5669,7 @@
 			"encounterName3": null,
 			"weight": 0,
 			"maxWeight": 0,
-			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
+			"idfkanymorethisisasprite": null,
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
 		},
@@ -5672,7 +5684,8 @@
 			"talkBeforeFight": false,
 			"storyAsset": "00000000000000000000000000000000"
 		}
-	]
+	],
+	"thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh": "a5feed3343a4ebb7c1c8559d4deaa77f"
 }
 		}
 	]
