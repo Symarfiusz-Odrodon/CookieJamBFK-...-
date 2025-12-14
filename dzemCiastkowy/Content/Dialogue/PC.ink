@@ -1,4 +1,4 @@
-VAR to_export = "printert;annoying;replacement;annoying_admit_thief;hat;team_count"
+VAR to_export = "printert;annoying;replacement;annoying_admit_thief;hat;team_count;flash_drive"
 VAR speaker = "pc"
 VAR printert = false
 VAR annoying = false
@@ -6,6 +6,7 @@ VAR replacement = false
 VAR hat = false
 VAR annoying_admit_thief = false
 VAR team_count = 0
+VAR flash_drive = false
 
 -> intro
 
@@ -24,11 +25,14 @@ EXTERNAL hurt_morale()
 ~ return
 
 === intro ===
-Oh, hi hello.
+Oh, hi
+hello.
 It has been
 a while # italic
 since I saw someone here.
-how is your day afternoon night?
+how is your day
+afternoon
+night? # bold
 HAULT
 Necklace.
 Mmmm.
@@ -37,6 +41,10 @@ Mmmm.
 * [You're welcome]
 - What are you doing here.
 {
+- printert:
+    ~speaker = "printert"
+    We are here to mess up upper management.
+    -> to_cause_trouble
 - replacement:
     ~speaker = "replacement"
     Causing trouble?
@@ -48,10 +56,6 @@ Mmmm.
 - annoying:
     ~speaker = "annoying"
     We are here to cause trouble.
-    -> to_cause_trouble
-- printert:
-    ~speaker = "printert"
-    We are here to mess up upper management.
     -> to_cause_trouble
 }
 * [{team_count == 0: I'm} {team_count > 1: We're} here to cause trouble] -> to_cause_trouble
@@ -101,11 +105,11 @@ Do you require assistance?
         ~ hurt_morale()
         I exchange simular feelings with this object.
     }
-    -> end
+    -> any_more_assistance
     
 * [(The opposite of that)]
     As you wish.
-    -> end
+    -> any_more_assistance
 
 === capacity_reached ===
 Oh, I see the elevator is already at max
@@ -124,16 +128,25 @@ Well then, I'm not going to hold you.
         Oh.
         I'm not sure, why you want me here so much, but...
         thank you.
-        -> end
+        -> any_more_assistance
     * [Okay]
         ~ remove_from_team("replacement")
         ~ add_to_team("pc")
         See you, later.
         Maybe.
-        -> end
+        -> any_more_assistance
 }
 
--> end
+-> any_more_assistance
+
+=== any_more_assistance ===
+~ speaker = "pc"
+Could I be of any other assistance?
+* [(Plug in the flash light to a server)]
+    ~ flash_drive = true
+    As you wish.
+* [Nothing]
+- -> end
 
 === end ===
 -> END
