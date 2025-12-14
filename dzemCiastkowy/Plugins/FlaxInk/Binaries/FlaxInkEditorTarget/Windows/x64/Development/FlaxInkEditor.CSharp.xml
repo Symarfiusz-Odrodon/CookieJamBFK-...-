@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlaxInkEditor.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:FlaxInkEditor.InkEditorPlugin">
+            <summary>
+            Ink Editor Plugin.
+            </summary>
+        </member>
+        <member name="M:FlaxInkEditor.InkEditorPlugin.InitializeEditor">
+            <inheritdoc/>
+        </member>
+        <member name="M:FlaxInkEditor.InkEditorPlugin.RegisterInkItem(FlaxInkEditor.InkFileItem)">
+            <summary>
+            Register for editor plugin to keep track of.
+            </summary>
+            <param name="item">The ink file item.</param>
+        </member>
+        <member name="M:FlaxInkEditor.InkEditorPlugin.UnregisterInkItem(FlaxInkEditor.InkFileItem)">
+            <summary>
+            Unregister for editor plugin to not keep track of.
+            </summary>
+            <param name="item">The ink file item.</param>
+        </member>
+        <member name="M:FlaxInkEditor.InkEditorPlugin.CompileInkAndSave(System.String)">
+            <summary>
+            Compiles and saves an Ink file to a InkStory.
+            </summary>
+            <param name="path">The path of the Ink file.</param>
+        </member>
+        <member name="M:FlaxInkEditor.InkEditorPlugin.DeinitializeEditor">
+            <inheritdoc/>
+        </member>
+        <member name="T:FlaxInkEditor.InkFileItem">
+            <summary>
+            InkItem.
+            </summary>
+        </member>
+        <member name="T:FlaxInkEditor.InkFileProxy">
+            <summary>
+            InkProxy.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,27 @@
+{
+  "Name": "FlaxInkEditorTarget",
+  "Platform": "Windows",
+  "Architecture": "x64",
+  "Configuration": "Development",
+  "HotReloadPostfix": ".HotReload.1",
+  "BinaryModules": [
+    {
+      "Name": "Ink",
+      "ManagedPath": "$(ProjectPath)/Binaries/FlaxInkEditorTarget/Windows/x64/Development/Ink.CSharp.dll"
+    },
+    {
+      "Name": "FlaxInk",
+      "ManagedPath": "$(ProjectPath)/Binaries/FlaxInkEditorTarget/Windows/x64/Development/FlaxInk.CSharp.dll"
+    },
+    {
+      "Name": "FlaxInkEditor",
+      "ManagedPath": "$(ProjectPath)/Binaries/FlaxInkEditorTarget/Windows/x64/Development/FlaxInkEditor.CSharp.dll"
+    }
+  ],
+  "References": [
+    {
+      "ProjectPath": "$(EnginePath)/Flax.flaxproj",
+      "Path": "$(EnginePath)/Binaries/Editor/Win64/Development/FlaxEditor.Build.json"
+    }
+  ]
+}
