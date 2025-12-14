@@ -120,6 +120,8 @@ public class ElevatorManager : Script
 
         int maxCount = Math.Max(possibleFriendlyEncounters.Count, possibleEnemyEncounters.Count);
 
+        maxCount += 20;
+
         // Iterate through both lists by index and interleave (F[i] then E[i]).
         for (int i = 0; i < maxCount; i++)
         {
