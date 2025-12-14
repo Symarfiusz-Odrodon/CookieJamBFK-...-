@@ -155,9 +155,9 @@
 		"Name": "biuro cale dywan",
 		"Transform": {
 			"Translation": {
-				"X": 0.000030517578125,
-				"Y": 29.0,
-				"Z": -0.00002288818359375
+				"X": 0.00003051759267691523,
+				"Y": 37.506954193115234,
+				"Z": -0.00002288816358486656
 			},
 			"Orientation": {
 				"X": 0.0,
@@ -246,6 +246,41 @@
 			"Entries": [
 				{
 					"Material": "52fede9043de5a0111f749a6552623b8",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "b77da8e447f533deee0072970e269f48",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale kwiatek.001",
+		"Transform": {
+			"Translation": {
+				"X": 0.4111337661743164,
+				"Y": 18.0,
+				"Z": -1.4470365047454834
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.7881390590446244e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "25d705f24049e4080ef366ab38535341",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "90ad8fe849bab84b478532a03da45646",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -536,7 +571,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 0.0,
-				"Y": 25.0,
+				"Y": 33.506954193115234,
 				"Z": 0.0
 			},
 			"Orientation": {
@@ -606,7 +641,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 105.3778076171875,
-				"Y": 287.0,
+				"Y": 276.34820556640625,
 				"Z": -275.43035888671875
 			},
 			"Orientation": {
@@ -745,9 +780,9 @@
 		"Name": "Cube 4",
 		"Transform": {
 			"Translation": {
-				"X": -54.30313491821289,
-				"Y": 799.0999755859375,
-				"Z": -295.9515686035156
+				"X": -0.15724614262580872,
+				"Y": 760.1080322265625,
+				"Z": -295.9515380859375
 			},
 			"Orientation": {
 				"X": 0.0,
@@ -766,6 +801,76 @@
 			"Entries": [
 				{
 					"Material": "4c1a4c4f45a97175a260f683e180af84",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "1a2d721d4ed4bd08e55a8aa27e7101d1",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale kwiatek.2",
+		"Transform": {
+			"Translation": {
+				"X": 980.6329345703125,
+				"Y": 18.0,
+				"Z": 535.108642578125
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.7881390590446244e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "25d705f24049e4080ef366ab38535341",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "90ad8fe849bab84b478532a03da45646",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e816ef204f4aa5789612afa7240562c7",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale kwiatek 0",
+		"Transform": {
+			"Translation": {
+				"X": 980.2218017578125,
+				"Y": 22.334047317504883,
+				"Z": 536.5556640625
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.341104507446289e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "38f0630948c385f4327f77a32e59c7d5",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "52fede9043de5a0111f749a6552623b8",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true

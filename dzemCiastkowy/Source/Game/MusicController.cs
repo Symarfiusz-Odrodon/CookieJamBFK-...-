@@ -14,7 +14,7 @@ public class MusicController : Script
     public AudioSource jibberSpeech;
     public AudioSource jibberSpeech2;
 
-    private bool jibber;
+    public bool jibber;
 
     private float timer = 0;
     private bool tim = false;
@@ -51,11 +51,13 @@ public class MusicController : Script
     public void StartStopJibberSpeech()
     {
         if (jibber)
-        {   
+        {
+            Debug.Log("JibberStop");
             jibber = false;
         }
         else
         {
+            Debug.Log("JibberStart");
             jibber = true;
         }
     }
@@ -94,7 +96,7 @@ public class MusicController : Script
 
                 timer = 0;
 
-                maxTimer = _rng.RandRange(0.155f, 0.2f);
+                maxTimer = _rng.RandRange(0.15f, 0.2f);
 
                 int randomIndex = _rng.RandRange(0, jibberSounds.Count - 1);
 
@@ -109,12 +111,14 @@ public class MusicController : Script
                 if(tim)
                 {
                     jibberSpeech.Clip = randomClip;
+                    Debug.Log("jibber1 " + randomIndex);
 
                     jibberSpeech.Play();
                 }
                 else
                 {
                     jibberSpeech2.Clip = randomClip;
+                    Debug.Log("jibber2 " + randomIndex);
 
                     jibberSpeech2.Play();
                 }
