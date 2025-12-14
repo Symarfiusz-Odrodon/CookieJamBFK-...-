@@ -116,9 +116,9 @@
 			"Name": "PointLight 0",
 			"Transform": {
 				"Translation": {
-					"X": 337.52789306640625,
+					"X": 45.97344970703125,
 					"Y": 0.000030517578125,
-					"Z": -165.13812255859375
+					"Z": -277.73797607421875
 				}
 			},
 			"Color": {
@@ -139,9 +139,9 @@
 			"Name": "PointLight 2",
 			"Transform": {
 				"Translation": {
-					"X": 6.728118896484375,
+					"X": -284.82611083984375,
 					"Y": 0.000030517578125,
-					"Z": 194.54733276367188
+					"Z": 81.94749450683594
 				}
 			},
 			"Color": {
@@ -162,9 +162,9 @@
 			"Name": "PointLight 1",
 			"Transform": {
 				"Translation": {
-					"X": 337.52789306640625,
+					"X": 45.97344970703125,
 					"Y": 0.000030517578125,
-					"Z": 179.04452514648438
+					"Z": 66.44468688964844
 				}
 			},
 			"Color": {
@@ -185,9 +185,9 @@
 			"Name": "PointLight 3",
 			"Transform": {
 				"Translation": {
-					"X": -344.25604248046875,
+					"X": -635.8103637695313,
 					"Y": 0.000030517578125,
-					"Z": 194.54733276367188
+					"Z": 81.94749450683594
 				}
 			},
 			"Color": {
@@ -208,9 +208,9 @@
 			"Name": "PointLight 5",
 			"Transform": {
 				"Translation": {
-					"X": 6.728118896484375,
+					"X": -284.82611083984375,
 					"Y": 0.000030517578125,
-					"Z": -201.50054931640625
+					"Z": -314.100341796875
 				}
 			},
 			"Color": {
@@ -231,9 +231,9 @@
 			"Name": "PointLight 6",
 			"Transform": {
 				"Translation": {
-					"X": -344.25604248046875,
+					"X": -635.8103637695313,
 					"Y": 0.000030517578125,
-					"Z": -201.50054931640625
+					"Z": -314.100341796875
 				}
 			},
 			"Color": {
@@ -3672,7 +3672,7 @@
 				"Translation": {
 					"X": -281.0450439453125,
 					"Y": 127.70257568359375,
-					"Z": 227.27871704101563
+					"Z": 170.4652557373047
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -4000,9 +4000,9 @@
 			"Name": "Enemy3_Sprite",
 			"Transform": {
 				"Translation": {
-					"X": -383.11260986328125,
+					"X": -348.5421447753906,
 					"Y": 132.1843719482422,
-					"Z": -149.83297729492188
+					"Z": -140.97703552246094
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -4884,19 +4884,23 @@
 	"EncounterSequence": [
 		{
 			"safeFloor": true,
-			"encounterName": "tut"
+			"encounterName": "tut",
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": false,
-			"encounterName": "skelefolder"
+			"encounterName": "skelefolder",
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": true,
-			"encounterName": "recruit_friend"
+			"encounterName": "recruit_friend",
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": false,
-			"encounterName": "basic_enemy"
+			"encounterName": "basic_enemy",
+			"storyAsset": "00000000000000000000000000000000"
 		}
 	]
 }
