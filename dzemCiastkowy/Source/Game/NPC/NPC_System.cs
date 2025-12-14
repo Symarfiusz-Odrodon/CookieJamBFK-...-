@@ -131,22 +131,23 @@ public class NPC_System : Script
     
 
         void UpdateUiForCharacter(int i, FriendlyNpcInstance npc)
-        {
+        {       
+            NPC_Character[i].Get<Image>().Brush = npc?.Data.headTexture == null ? null : new TextureBrush(npc?.Data.headTexture);
+            NPC_Background[i].Get<Image>().Visible = npc != null;
+            NPC_Frame[i].Get<Image>().Visible = npc != null;
+
+
+            var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
+            HPProgress.Value = npc == null || npc.maxHealth == 0 ? HPProgress.Maximum : (float)npc.health / npc.maxHealth;
+            HPProgress.Visible = npc != null;
+
+            var APProgress = NPC_APProgress[i].Get<ProgressBar>();
+            APProgress.Value = npc?.actionPoints ?? APProgress.Maximum;
+            APProgress.Visible = npc != null;
+
+            
             if (uiVisible)
             {
-                NPC_Character[i].Get<Image>().Brush = npc?.Data.headTexture == null ? null : new TextureBrush(npc?.Data.headTexture);
-                NPC_Background[i].Get<Image>().Visible = npc != null;
-                NPC_Frame[i].Get<Image>().Visible = npc != null;
-
-
-                var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
-                HPProgress.Value = npc == null || npc.maxHealth == 0 ? HPProgress.Maximum : (float)npc.health / npc.maxHealth;
-                HPProgress.Visible = npc != null;
-
-                var APProgress = NPC_APProgress[i].Get<ProgressBar>();
-                APProgress.Value = npc?.actionPoints ?? APProgress.Maximum;
-                APProgress.Visible = npc != null;
-
                 var action1 = NPC_Action1[i].Get<Button>();
                 action1.Visible = npc != null;
                 action1.Enabled = npc?.actionPoints >= 1;
@@ -159,17 +160,6 @@ public class NPC_System : Script
             }
             else
             {
-                NPC_Character[i].Get<Image>().Brush = null;
-                NPC_Background[i].Get<Image>().Visible = false;
-                NPC_Frame[i].Get<Image>().Visible = false;
-
-
-                var HPProgress = NPC_HPProgress[i].Get<ProgressBar>();
-                HPProgress.Visible = false;
-
-                var APProgress = NPC_APProgress[i].Get<ProgressBar>();
-                APProgress.Visible = false;
-
                 var action1 = NPC_Action1[i].Get<Button>();
                 action1.Visible = false;
 
