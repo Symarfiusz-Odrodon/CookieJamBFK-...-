@@ -5,9 +5,9 @@
 	"Data": {
 	"id": "bio",
 	"name": "Bio Engineer",
-	"headTexture": "87b3edaf413f2cfbe7f33f9061e416fb",
-	"dialogueTexture": null,
-	"worldTexture": null,
+	"headTexture": "274c7e2b4293dfc89513949d1c99e2d4",
+	"dialogueTexture": "11a18a5d4e2aca9880bafcbca9f24c21",
+	"worldTexture": "11a18a5d4e2aca9880bafcbca9f24c21",
 	"friendHealth": 150,
 	"friendMaxHealth": 150,
 	"friendActionRegen": 0.15,

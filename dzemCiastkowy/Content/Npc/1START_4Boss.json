@@ -5,9 +5,9 @@
 	"Data": {
 	"id": "printer",
 	"name": "Inkfestation",
-	"headTexture": "3ff6399342528088925d46a1629793a4",
-	"dialogueTexture": "3ff6399342528088925d46a1629793a4",
-	"worldTexture": "3ff6399342528088925d46a1629793a4",
+	"headTexture": "7bc606014dd024e8e68145a5851d2fe7",
+	"dialogueTexture": "7bc606014dd024e8e68145a5851d2fe7",
+	"worldTexture": "7bc606014dd024e8e68145a5851d2fe7",
 	"friendHealth": 0,
 	"friendMaxHealth": 0,
 	"friendActionRegen": 0.0,

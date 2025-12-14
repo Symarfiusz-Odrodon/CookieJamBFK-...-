@@ -5,9 +5,9 @@
 	"Data": {
 	"id": "replacement",
 	"name": "Trixie",
-	"headTexture": "ec2d262d46564d62709f508bf773bef4",
-	"dialogueTexture": "eda23eb341c2325238282b8daa77e03d",
-	"worldTexture": "eda23eb341c2325238282b8daa77e03d",
+	"headTexture": "01ee115b4514a0c44887b68a72ff9da8",
+	"dialogueTexture": "e4bad96641c61a884c7d5cbb2d10e02d",
+	"worldTexture": "e4bad96641c61a884c7d5cbb2d10e02d",
 	"friendHealth": 50,
 	"friendMaxHealth": 50,
 	"friendActionRegen": 0.25,

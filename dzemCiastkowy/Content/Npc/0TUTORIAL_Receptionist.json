@@ -5,9 +5,9 @@
 	"Data": {
 	"id": "tut",
 	"name": "Sam",
-	"headTexture": "97eab7554322d9f217e790ac5d6924f3",
-	"dialogueTexture": "08de3aa5066282a1da84ba61c317b366",
-	"worldTexture": "08de3aa5066282a1da84ba61c317b366",
+	"headTexture": "f4cc76fa4fca7f905df98eaed2008c8d",
+	"dialogueTexture": "16f797574ab339b9b1e99fb12827ab02",
+	"worldTexture": "16f797574ab339b9b1e99fb12827ab02",
 	"friendHealth": 100,
 	"friendMaxHealth": 100,
 	"friendActionRegen": 0.34,
