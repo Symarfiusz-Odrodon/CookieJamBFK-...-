@@ -64,5 +64,9 @@ public class CombatSystem : Script
 
             }
         }
+        else
+        {
+            NPC.uiVisible = false;
+        }
     }
 }
