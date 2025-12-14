@@ -307,6 +307,10 @@ public class ElevatorManager : Script
             Actor.Scene.FindScript<MusicController>().StartStopCombatMusic();
         }
 
+        Actor.Scene.FindScript<ExternalNPCManager>().ModifyNpcHealth(0, 10000);
+        Actor.Scene.FindScript<ExternalNPCManager>().ModifyNpcHealth(1, 10000);
+        Actor.Scene.FindScript<ExternalNPCManager>().ModifyNpcHealth(2, 10000);
+
         IsEncounterActive = false;
         waitForKill = false;
         Actor.Scene.FindScript<CombatSystem>().inCombat = false;
