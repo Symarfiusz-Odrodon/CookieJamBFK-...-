@@ -27,6 +27,7 @@ public class DialogueController : Script
 
     [Header("References")]
     public BetterDialogueRunner runner;
+    public NPC_System npcSystem;
     public JsonAssetReference<InkStory> startStory;
 
     [Header("UI Controls")]
@@ -100,10 +101,10 @@ public class DialogueController : Script
                 ContinueDialogue();
         };
 
-        NPC_System.OnNpcsChanged += _ =>
+        npcSystem.Npcs.CollectionChanged += (_, _) =>
         {
             foreach (var item in npcDatabase.Instance.npcs)
-                SetValue(item.Instance.id, NPC_System.Instance.Npcs.Any(x => x.Data.id == item.Instance.id));
+                SetValue(item.Instance.id, npcSystem.Npcs.Any(x => x.Data.id == item.Instance.id));
         };
 
         HideAllElements();
@@ -127,14 +128,14 @@ public class DialogueController : Script
         StoryActive = true;
         runner.StartDialogue(story);
 
-        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, NPC_System.Instance.AddEnemyNpc);
+        runner.BindExternalFunction<string>(FUNC_NAME_ADD_TO_TEAM, npcSystem.AddEnemyNpc);
         runner.BindExternalFunction<string>(FUNC_NAME_REMOVE_FROM_TEAM, id => 
         {
-            var items = NPC_System.Instance.Npcs.Where(x => x.Data.id == id)
+            var items = npcSystem.Npcs.Where(x => x.Data.id == id)
                 .ToList();
 
             foreach (var item in items)
-                NPC_System.Instance.Npcs.Remove(item);
+                npcSystem.Npcs.Remove(item);
         });
 
         CopyVarsToStory();

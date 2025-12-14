@@ -35,15 +35,10 @@ public class NPC_System : Script
     public ObservableCollection<FriendlyNpcInstance> Npcs { get; } = [];
     public List<EnemyNpcInstance> Enemies { get; } = [];
 
-    public static Action<System.Collections.Specialized.NotifyCollectionChangedEventArgs> OnNpcsChanged;
-
     public override void OnStart()
     {
         if (Instance == null)
-        {
             Instance = this;
-            Npcs.CollectionChanged += (o, args) => OnNpcsChanged?.Invoke(args);
-        }
     }
 
     public override void OnUpdate()
