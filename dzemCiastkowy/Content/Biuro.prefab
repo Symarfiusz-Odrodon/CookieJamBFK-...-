@@ -105,7 +105,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "00000000000000000000000000000000",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -350,7 +350,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "00000000000000000000000000000000",
+					"Material": "7e68190a469b106e227d5ea4a67e156c",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -385,7 +385,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "00000000000000000000000000000000",
+					"Material": "7e68190a469b106e227d5ea4a67e156c",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -420,7 +420,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "00000000000000000000000000000000",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -490,7 +490,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "00000000000000000000000000000000",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -625,7 +625,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -660,7 +660,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -695,7 +695,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -730,7 +730,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -765,7 +765,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "28b87cdb41b7efb9492d9ab675b77f36",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -800,7 +800,7 @@
 		"Buffer": {
 			"Entries": [
 				{
-					"Material": "4c1a4c4f45a97175a260f683e180af84",
+					"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25",
 					"ShadowsMode": 3,
 					"Visible": true,
 					"ReceiveDecals": true
@@ -872,6 +872,146 @@
 				{
 					"Material": "52fede9043de5a0111f749a6552623b8",
 					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "5ae7e994489b96e38d7ecc8ccaf2dbc2",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale sufit",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 23.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.4901161193847656e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "2ad60aae4fb13fe0761fe49a3b2a0542",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "de1e88dd4e51c0ca102c7086138debc4",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "cb001b3e4500533647fb4cae9aa5d91f",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale glass2",
+		"Transform": {
+			"Translation": {
+				"X": -546.2655639648438,
+				"Y": 23.0,
+				"Z": -730.474365234375
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -3.27825517842939e-7,
+				"Z": 0.0,
+				"W": -1.0
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "9c19007b415f4d5368f0aba5dde27217",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "29dbd15d48c3e9ded4ea7b997e12ceaf",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "2e00a45f4017dba72754d9a67f13ac31",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale glass",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 23.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.4901161193847656e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "6f19920240c586d7fd55e7b676276c2c",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "29dbd15d48c3e9ded4ea7b997e12ceaf",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "dbc4097d41107149895f98b57f993411",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cc3bbe114e633935028a11a7abe8aef3",
+		"Name": "biuro cale idk_light",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 23.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": -1.4901161193847656e-7
+			},
+			"Scale": {
+				"X": 2.0,
+				"Y": 2.0,
+				"Z": 2.0
+			}
+		},
+		"Model": "8bee73da432c532482ac86bb5aab570f",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "2fd328a44468e721077c92ab053635b9",
+					"ShadowsMode": 0,
 					"Visible": true,
 					"ReceiveDecals": true
 				}

@@ -104,7 +104,7 @@
 			"Transform": {
 				"Translation": {
 					"X": -343.8863525390625,
-					"Y": 506.0727844238281,
+					"Y": 440.0727844238281,
 					"Z": 101.53353881835938
 				}
 			}
@@ -280,23 +280,84 @@
 			"TypeName": "FlaxEngine.PostFxVolume",
 			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
 			"Name": "Volume",
+			"Size": {
+				"X": 4373.0,
+				"Y": 3133.0,
+				"Z": 3808.0
+			},
 			"Settings": {
 				"AO": {},
-				"GI": {},
+				"GI": {
+					"Mode": 1
+				},
 				"Bloom": {
 					"OverrideFlags": 7,
-					"Intensity": 0.1499999463558197,
-					"Threshold": 0.6000000238418579
+					"Intensity": 0.2279999554157257,
+					"Threshold": 0.5
 				},
-				"ToneMapping": {},
-				"ColorGrading": {},
+				"ToneMapping": {
+					"WhiteTemperature": 15000.0,
+					"WhiteTint": 1.0
+				},
+				"ColorGrading": {
+					"ColorSaturation": {
+						"X": 1.0,
+						"Y": 0.0,
+						"Z": 0.31722164154052734,
+						"W": 1.0
+					},
+					"ColorContrast": {
+						"X": 1.0,
+						"Y": 0.0,
+						"Z": 0.0373077392578125,
+						"W": 1.0
+					},
+					"ColorGamma": {
+						"X": 1.0,
+						"Y": 0.404573917388916,
+						"Z": 0.0,
+						"W": 1.0
+					},
+					"ColorGain": {
+						"X": 0.0,
+						"Y": 0.4032173156738281,
+						"Z": 1.0,
+						"W": 1.0
+					},
+					"ColorOffset": {
+						"X": 1.0,
+						"Y": 0.0,
+						"Z": 0.23029422760009766,
+						"W": 0.0
+					},
+					"ColorSaturationShadows": {
+						"X": 0.0,
+						"Y": 0.8031463623046875,
+						"Z": 1.0,
+						"W": 1.0
+					},
+					"ColorContrastShadows": {
+						"X": 1.0,
+						"Y": 0.0,
+						"Z": 0.2983436584472656,
+						"W": 1.0
+					},
+					"ColorGammaShadows": {
+						"X": 1.0,
+						"Y": 0.0,
+						"Z": 0.7291536331176758,
+						"W": 1.0
+					},
+					"ShadowsMax": -1.0,
+					"HighlightsMin": -1.0
+				},
 				"EyeAdaptation": {},
 				"CameraArtifacts": {
 					"OverrideFlags": 123,
-					"VignetteIntensity": 2.0,
+					"VignetteIntensity": 1.5,
 					"GrainAmount": 0.05000000074505806,
 					"GrainSpeed": 0.10000000149011612,
-					"ChromaticDistortion": 0.29999998211860657
+					"ChromaticDistortion": 0.18999998271465302
 				},
 				"LensFlares": {},
 				"DepthOfField": {
@@ -361,9 +422,7 @@
 			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
 			"PrefabObjectID": "44dcb7e342917379777b5f89d6bcba6e",
 			"ParentID": "e25b888244754decc87545bfe8fa36d3",
-			"V": {
-	"Camera": "b0d72c3746caebca055e1f921ca21c7c"
-}
+			"V": {}
 		},
 		{
 			"ID": "179bb332454bc0921ab068a7946557c6",
@@ -4364,7 +4423,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4441,7 +4502,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "7e68190a469b106e227d5ea4a67e156c"
+					}
 				]
 			}
 		},
@@ -4452,7 +4515,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "7e68190a469b106e227d5ea4a67e156c"
+					}
 				]
 			}
 		},
@@ -4463,7 +4528,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4485,7 +4552,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4529,7 +4598,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4540,7 +4611,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4551,7 +4624,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4562,7 +4637,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4573,7 +4650,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4584,7 +4663,9 @@
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "4fa69c2b464aecc9f0b71c9b7f4f9f25"
+					}
 				]
 			}
 		},
@@ -4607,6 +4688,146 @@
 			"Buffer": {
 				"Entries": [
 					{}
+				]
+			}
+		},
+		{
+			"ID": "b91d486a40401ee34bd2b5ada3b55c5f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Name": "biuro cale sufit",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 23.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "2ad60aae4fb13fe0761fe49a3b2a0542",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "de1e88dd4e51c0ca102c7086138debc4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "31feb59c4356a7c427da46ae142ad350",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Name": "biuro cale glass2",
+			"Transform": {
+				"Translation": {
+					"X": -546.2655639648438,
+					"Y": 23.0,
+					"Z": -730.474365234375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -3.27825517842939e-7,
+					"Z": 0.0,
+					"W": -1.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "9c19007b415f4d5368f0aba5dde27217",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "29dbd15d48c3e9ded4ea7b997e12ceaf",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "1c2cba65441c14faf2add0ac014e1776",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Name": "biuro cale glass",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 23.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "6f19920240c586d7fd55e7b676276c2c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "29dbd15d48c3e9ded4ea7b997e12ceaf",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "82c07823417b3203eb80f28afb5cbe7c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Name": "biuro cale idk_light",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 23.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.4901161193847656e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "8bee73da432c532482ac86bb5aab570f",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "2fd328a44468e721077c92ab053635b9",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
 				]
 			}
 		},
@@ -4658,9 +4879,7 @@
 			"PrefabID": "08de3ac767d078ebdafe13b68bc69a7c",
 			"PrefabObjectID": "08de3ac767b76a57dafe123b8bc68bb4",
 			"ParentID": "abc2a48b4b6cbcfbecd232af9deaadcc",
-			"V": {
-	"npcSystem": "44eb976044bd8cdf1cf7a4a6e5aef35c"
-}
+			"V": {}
 		},
 		{
 			"ID": "1a0b9ffa43990fa60735efb0133cc459",
@@ -4886,7 +5105,6 @@
 			"PrefabObjectID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
 			"ParentID": "71d7eb07498710ad14833a83f4862bbb",
 			"V": {
-	"cb": "aa85776d41d00fbaaaf8518611460350",
 	"EncounterSequence": [
 		{
 			"safeFloor": true,
@@ -4958,12 +5176,7 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "48e6664a465a99e6539dd7b1f72ca133",
 			"ParentID": "fc36ec8b4b35c2a3e2e2a7982e0b08f1",
-			"V": {
-	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
-	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
-	"controller": "4d0faac84c8a8538c6c1b98005c8b6a8",
-	"elevatordoorsource": "74b0a0f74b6261482023f5844bd412c7"
-}
+			"V": {}
 		},
 		{
 			"ID": "a5eaab3e47dab2a7f5f930a907589c0f",
@@ -4976,12 +5189,7 @@
 			"PrefabID": "503079cd496f4005b0977282a25ed5d8",
 			"PrefabObjectID": "d71a9ef64d910dcb7fd206b9bbda1a19",
 			"ParentID": "a5eaab3e47dab2a7f5f930a907589c0f",
-			"V": {
-	"controller": "e5ef2290409fd205bc1bd29eacb7d78b",
-	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
-	"cum2": "b634da444906d4659b8c599690488adb",
-	"cum3": "b0d72c3746caebca055e1f921ca21c7c"
-}
+			"V": {}
 		}
 	]
 }
