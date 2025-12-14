@@ -49,10 +49,11 @@ public class CombatSystem : Script
                 {
                     if (NPC.NPC_Action1[i].Get<Button>().IsPressed)
                     {
+                        Debug.Log($"Used action ID: 0");
                         switch (NPC.Npcs[i].Data.friendAction1Id)
                         {
                             case 0:
-                                Debug.Log($"Used action ID: 0");
+                                
                                 NPC.Npcs[i].actionPoints = 0;
                                 break;
                         }
