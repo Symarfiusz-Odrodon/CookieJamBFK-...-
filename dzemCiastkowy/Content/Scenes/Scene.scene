@@ -1084,7 +1084,7 @@
 			"Transform": {
 				"Translation": {
 					"X": -0.79998779296875,
-					"Y": 0.0,
+					"Y": -0.800018310546875,
 					"Z": 0.0
 				}
 			},
@@ -1160,8 +1160,8 @@
 	"Offsets": {
 		"Left": -0.7999878,
 		"Right": 0.7999878,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Top": -0.8000183,
+		"Bottom": 0.8000183
 	},
 	"Scale": {
 		"X": 1.0,
@@ -5002,6 +5002,71 @@
 		}
 	]
 }
+		},
+		{
+			"ID": "dd178776477380acfefc14abb844b63e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "AudioLittleBitch"
+		},
+		{
+			"ID": "3d88da5f4a7c3f48902a86b4c29dcef9",
+			"TypeName": "dzemCiastkowy.MusicController",
+			"ParentID": "dd178776477380acfefc14abb844b63e",
+			"V": {
+	"elevatorMusic": "85757e994782aca0cb96e8932699beb2",
+	"combatMusic": "c0718f1b4e0d1a83c122b89ff524a6eb",
+	"jibberSpeech": "259e95504faf85b492ab6d8e350ef7b2",
+	"jibberSpeech2": "d0248a584afcd46bbb6b0cbbb328d396",
+	"jibberSounds": [
+		"693337cb447e4163bb92eb85f5d3f796",
+		"93122db249169bf366b55e8703b62365",
+		"db3a1d0f434154622853bda768dff79b",
+		"a5e5a28d43618e09ffc71ebbb349b94e",
+		"c82156dc4a7ceed2dbd42abd9fdd3487"
+	]
+}
+		},
+		{
+			"ID": "85757e994782aca0cb96e8932699beb2",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "dd178776477380acfefc14abb844b63e",
+			"Name": "elevator",
+			"Transform": {
+				"Translation": {
+					"X": 512.163330078125,
+					"Y": 404.9003601074219,
+					"Z": 136.84481811523438
+				}
+			},
+			"Clip": "248848d6455debd349a639b3fee286e9",
+			"Loop": true
+		},
+		{
+			"ID": "c0718f1b4e0d1a83c122b89ff524a6eb",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "dd178776477380acfefc14abb844b63e",
+			"Name": "combat",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 218.3955078125,
+					"Z": 138.1361083984375
+				}
+			},
+			"Loop": true
+		},
+		{
+			"ID": "259e95504faf85b492ab6d8e350ef7b2",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "dd178776477380acfefc14abb844b63e",
+			"Name": "Jibberspeach"
+		},
+		{
+			"ID": "d0248a584afcd46bbb6b0cbbb328d396",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "dd178776477380acfefc14abb844b63e",
+			"Name": "Jibberspeach 0"
 		}
 	]
 }

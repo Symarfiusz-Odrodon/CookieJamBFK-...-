@@ -1,0 +1,72 @@
+{
+	"ID": "8f36a45d4dfe11a3f9029cbf1454f11a",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6802,
+	"Data": [
+	{
+		"ID": "ad5942064f9fdaa06142fe9f12447f78",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "AudioLittleBitch"
+	},
+	{
+		"ID": "584876ad4e20c6a108152691a3cad25e",
+		"TypeName": "dzemCiastkowy.MusicController",
+		"ParentID": "ad5942064f9fdaa06142fe9f12447f78",
+		"V": {
+			"elevatorMusic": "84e2b7454c1511e4b1b4788242ba6c68",
+			"combatMusic": "7380e727418d5b1c8ea882843985d662",
+			"jibberSpeech": "90d0cab445f5817c6cfcb3b9557da009",
+			"jibberSpeech2": "a8f5c2f740b7edb475eae4819257c26f",
+			"jibberSounds": [
+				"693337cb447e4163bb92eb85f5d3f796",
+				"93122db249169bf366b55e8703b62365",
+				"db3a1d0f434154622853bda768dff79b",
+				"a5e5a28d43618e09ffc71ebbb349b94e",
+				"c82156dc4a7ceed2dbd42abd9fdd3487"
+			]
+		}
+	},
+	{
+		"ID": "84e2b7454c1511e4b1b4788242ba6c68",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "ad5942064f9fdaa06142fe9f12447f78",
+		"Name": "elevator",
+		"Transform": {
+			"Translation": {
+				"X": 512.163330078125,
+				"Y": 404.9003601074219,
+				"Z": 136.84481811523438
+			}
+		},
+		"Clip": "248848d6455debd349a639b3fee286e9",
+		"Loop": true
+	},
+	{
+		"ID": "7380e727418d5b1c8ea882843985d662",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "ad5942064f9fdaa06142fe9f12447f78",
+		"Name": "combat",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 218.3955078125,
+				"Z": 138.1361083984375
+			}
+		},
+		"Loop": true
+	},
+	{
+		"ID": "90d0cab445f5817c6cfcb3b9557da009",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "ad5942064f9fdaa06142fe9f12447f78",
+		"Name": "Jibberspeach"
+	},
+	{
+		"ID": "a8f5c2f740b7edb475eae4819257c26f",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "ad5942064f9fdaa06142fe9f12447f78",
+		"Name": "Jibberspeach 0"
+	}
+]
+}

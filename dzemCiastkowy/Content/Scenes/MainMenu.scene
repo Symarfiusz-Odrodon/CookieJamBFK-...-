@@ -547,6 +547,21 @@
 			"TypeName": "Game.QuitGame",
 			"ParentID": "0360353340f4832f9601759e9713513b",
 			"V": {}
+		},
+		{
+			"ID": "2f56aae84d35d597618b13b5d082c27a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e7e03ab44d99f1e7618cba97b0c2ceb2",
+			"Name": "MusicPlayer"
+		},
+		{
+			"ID": "a922cf60418f5779d71d2da1ac7ce2a1",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "2f56aae84d35d597618b13b5d082c27a",
+			"Name": "AudioSource",
+			"Clip": "e557deec4adac780642b74b3abf65094",
+			"Loop": true,
+			"PlayOnStart": true
 		}
 	]
 }
