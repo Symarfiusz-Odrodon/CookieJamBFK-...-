@@ -30,28 +30,6 @@
 			"Name": "Visuals"
 		},
 		{
-			"ID": "0e4b49ed406882487953b5b975f8bd5e",
-			"TypeName": "FlaxEngine.PointLight",
-			"ParentID": "28553d634087c67c711ebd96080482aa",
-			"Name": "PointLight",
-			"Transform": {
-				"Translation": {
-					"X": 507.5553894042969,
-					"Y": 388.8555603027344,
-					"Z": 139.74148559570313
-				}
-			},
-			"Color": {
-				"R": 0.3711111545562744,
-				"G": 0.3711111545562744,
-				"B": 0.3711111545562744,
-				"A": 1.0
-			},
-			"Brightness": 5.0,
-			"MinRoughness": 1.0,
-			"FallOffExponent": 16.0
-		},
-		{
 			"ID": "96d2d1c34fa75b18a4ba0c8685e321da",
 			"TypeName": "FlaxEngine.DirectionalLight",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
@@ -126,6 +104,7 @@
 			},
 			"Brightness": 7.0,
 			"MinRoughness": 1.0,
+			"Radius": 2000.0,
 			"FallOffExponent": 7.0
 		},
 		{
@@ -171,6 +150,7 @@
 			},
 			"Brightness": 7.0,
 			"MinRoughness": 1.0,
+			"Radius": 2000.0,
 			"FallOffExponent": 7.0
 		},
 		{
@@ -193,6 +173,7 @@
 			},
 			"Brightness": 7.0,
 			"MinRoughness": 1.0,
+			"Radius": 2000.0,
 			"FallOffExponent": 7.0
 		},
 		{
@@ -215,6 +196,7 @@
 			},
 			"Brightness": 7.0,
 			"MinRoughness": 1.0,
+			"Radius": 2000.0,
 			"FallOffExponent": 7.0
 		},
 		{
@@ -311,15 +293,15 @@
 			"Name": "LookAtElevatorCamera",
 			"Transform": {
 				"Translation": {
-					"X": -694.9767456054688,
-					"Y": 291.7109680175781,
-					"Z": 21.47891616821289
+					"X": 188.47093200683594,
+					"Y": 177.16659545898438,
+					"Z": 206.6866455078125
 				},
 				"Orientation": {
-					"X": 0.03188355639576912,
-					"Y": 0.6366071105003357,
-					"Z": -0.026357457041740417,
-					"W": 0.7700780034065247
+					"X": 0.006916738115251064,
+					"Y": -0.6760450601577759,
+					"Z": 0.006346394307911396,
+					"W": 0.736800491809845
 				}
 			}
 		},
@@ -409,6 +391,34 @@
 			}
 		},
 		{
+			"ID": "0e4b49ed406882487953b5b975f8bd5e",
+			"TypeName": "FlaxEngine.PointLight",
+			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 86.31402587890625,
+					"Y": 393.8080749511719,
+					"Z": -16.06026268005371
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 1.0,
+					"Z": 0.6666666865348816
+				}
+			},
+			"Color": {
+				"R": 0.3711111545562744,
+				"G": 0.3711111545562744,
+				"B": 0.3711111545562744,
+				"A": 1.0
+			},
+			"Brightness": 5.0,
+			"MinRoughness": 1.0,
+			"Radius": 2000.0,
+			"FallOffExponent": 16.0
+		},
+		{
 			"ID": "01814c294d1fc95d24d103a3ae79ace1",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "132dad9f4a3cde59ce45ff8425566666",
@@ -448,7 +458,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "c95a19284865f54d85cf448ea52268ba",
+						"Material": "d80ee10447551e23011ba99b8c8d6242",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -483,7 +493,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "c95a19284865f54d85cf448ea52268ba",
+						"Material": "d80ee10447551e23011ba99b8c8d6242",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -863,7 +873,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "c4bdbea540b0fd66088c3098035bab4c",
+						"Material": "14a224a34900d790e23608b1922a2c5d",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -895,10 +905,11 @@
 				}
 			},
 			"Model": "8fd50e404054a58a0f6d668ab96fc435",
+			"DrawModes": 126,
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "c4bdbea540b0fd66088c3098035bab4c",
+						"Material": "6d8a577b457179c081a0b3a0692634e8",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
@@ -924,15 +935,10 @@
 				}
 			},
 			"Text": "0",
-			"Color": {
-				"R": 0.0,
-				"G": 0.0,
-				"B": 0.0,
-				"A": 1.0
-			},
 			"Size": 64.0,
 			"Material": "c53ad96d42e35895dc188c839be3d114",
-			"Font": "6203d3b04fc3f13896346996b9750750"
+			"Font": "6203d3b04fc3f13896346996b9750750",
+			"ShadowsMode": 0
 		},
 		{
 			"ID": "d7467eb54ffb7ce48ce2bcbeef0a45aa",
@@ -947,8 +953,8 @@
 			"Name": "tabliczka",
 			"Transform": {
 				"Translation": {
-					"X": 36.071533203125,
-					"Y": 249.10250854492188,
+					"X": 27.071529388427734,
+					"Y": 259.1025085449219,
 					"Z": 75.905029296875
 				},
 				"Scale": {
@@ -3807,7 +3813,7 @@
 			"Image": "5170330b4f513b3826f7618a7e3e6d32",
 			"Material": "6542187d40386b3768d0818d98dbd63a",
 			"FaceCamera": false,
-			"DrawModes": 123
+			"DrawModes": 122
 		},
 		{
 			"ID": "fa411465416b51e15fa19e82a6967049",
@@ -4136,7 +4142,8 @@
 			"Sprite": {},
 			"Image": "5170330b4f513b3826f7618a7e3e6d32",
 			"Material": "6542187d40386b3768d0818d98dbd63a",
-			"FaceCamera": false
+			"FaceCamera": false,
+			"DrawModes": 126
 		},
 		{
 			"ID": "934e7f5446843475e2c6f9ae196afaa5",
@@ -4465,7 +4472,8 @@
 			"Sprite": {},
 			"Image": "5170330b4f513b3826f7618a7e3e6d32",
 			"Material": "6542187d40386b3768d0818d98dbd63a",
-			"FaceCamera": false
+			"FaceCamera": false,
+			"DrawModes": 126
 		},
 		{
 			"ID": "a84c81a14d8abb952d315d9a94f7bde8",
