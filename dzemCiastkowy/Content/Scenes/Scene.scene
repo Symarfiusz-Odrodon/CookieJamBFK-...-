@@ -5624,7 +5624,6 @@
 			"PrefabObjectID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
 			"ParentID": "f3d966e74b51d8dc0df670977fb32d0e",
 			"V": {
-	"cb": "aa85776d41d00fbaaaf8518611460350",
 	"EncounterSequence": [
 		{
 			"safeFloor": true,
@@ -5693,9 +5692,6 @@
 			"PrefabObjectID": "48e6664a465a99e6539dd7b1f72ca133",
 			"ParentID": "24e5fee54c3ee75ddc88f1bae61f43e8",
 			"V": {
-	"DoorRight": "b3593f7e498d788f8ae80f90f834bb0b",
-	"DoorLeft": "10ed67ad47c208ef9119b7afa6dc1fea",
-	"elevatorDoorSFX": "dca347c44ee6e094ed2d49974e34999f",
 	"elevatordoorsource": "bdbf9b9541c194202c86ac9df01da98a"
 }
 		}

@@ -3,11 +3,7 @@
   "Platform": "Windows",
   "Architecture": "x64",
   "Configuration": "Development",
-<<<<<<< Updated upstream
-  "HotReloadPostfix": ".HotReload.41",
-=======
-  "HotReloadPostfix": ".HotReload.52",
->>>>>>> Stashed changes
+  "HotReloadPostfix": ".HotReload.53",
   "BinaryModules": [
     {
       "Name": "ACGIntegration",
