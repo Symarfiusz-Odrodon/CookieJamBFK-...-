@@ -52,6 +52,9 @@ public class DialogueController : Script
 
     public bool StoryActive { get; private set; }
 
+    public event Action OnStoryFinished;
+    public event Action OnStoryStarted;
+
     public override void OnStart()
     {
         // Register click events to option buttons
@@ -160,6 +163,8 @@ public class DialogueController : Script
         CopyVarsToStory();
 
         ContinueDialogue();
+
+        OnStoryStarted?.Invoke();
     }
 
     public void ContinueDialogue()
@@ -189,6 +194,8 @@ public class DialogueController : Script
         CopyVarsFromStory();
         HideAllElements();
         StoryActive = false;
+
+        OnStoryFinished?.Invoke();
     }
 
     void HideOptions()
