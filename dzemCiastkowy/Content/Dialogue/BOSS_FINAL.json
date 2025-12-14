@@ -1,0 +1,8 @@
+{
+	"ID": "08de3b0e0768f5cacdaf48aa61a9d99e",
+	"TypeName": "FlaxInk.InkStory",
+	"EngineBuild": 6802,
+	"Data": {
+	"_story": "{\"inkVersion\":21,\"root\":[[\"^I'm not going to horse around, you know?\",\"\\n\",[\"done\",{\"#f\":5,\"#n\":\"g-0\"}],null],\"done\",{\"global decl\":[\"ev\",\"str\",\"^boss\",\"/str\",{\"VAR=\":\"speaker\"},\"/ev\",\"end\",null],\"#f\":1}],\"listDefs\":{}}"
+}
+}

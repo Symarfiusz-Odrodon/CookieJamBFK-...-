@@ -16,6 +16,7 @@ public class TutorialController : Script
     public JsonAssetReference<InkStory> story2;
     public DialogueController controller;
 
+    public Actor sam;
     public ElevatorDoor doorcont;
 
     public Camera cum1;
@@ -82,6 +83,7 @@ public class TutorialController : Script
             cum2.IsActive = false;
             cum3.IsActive = true;
             Actor.Scene.FindScript<ClickButton>().unlocked = true;
+            Destroy(sam);
             Destroy(Actor);
         }
 

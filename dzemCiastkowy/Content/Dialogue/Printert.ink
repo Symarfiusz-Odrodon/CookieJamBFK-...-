@@ -1,14 +1,31 @@
-EXTERNAL add_to_team(id)
-EXTERNAL hurt_morale()
-
 VAR speaker = "printert"
 VAR annoying_admit_thief = false
+VAR annoying = false
 
-CONST to_export = "annoying_admit_thief"
+VAR to_export = "annoying_admit_thief;annoying"
 
 -> intro
 
+EXTERNAL add_to_team(id)
+EXTERNAL remove_from_team(id)
+EXTERNAL improve_morale()
+EXTERNAL hurt_morale()
+
+=== function add_to_team(id) ===
+~ return
+=== function remove_from_team(id) ===
+~ return
+=== function improve_morale() ===
+~ return
+=== function hurt_morale() ===
+~ return
+
 === intro ===
+
+{not annoying:
+    -> intro2
+}
+
 Oh wait, are you a...
 Oh. You have her here with you.
 ~ speaker = "annoying"
@@ -67,6 +84,19 @@ What is going on here?
 
 -> END
 
+=== intro2 ===
+Oh wait, are you a human?
+Wow, I haven't actually seen one in my life.
+Are you trying breaking in?
+* [Yes]
+* [No]
+- No matter
+I hate my job.
+Or enslavement, I guess.
+Could I join you?
+* [Yes] -> accept
+* [No] -> decline
+
 === proposition ===
 ~ speaker = "printert"
 Also, just a heads up.
@@ -85,6 +115,7 @@ Can I join you?
 === accept ===
 Thank you.
 I'll unlock the elevator for you.
+Also, that's a very nice necklace.
 ~ add_to_team("printert")
 -> END
 
@@ -92,7 +123,9 @@ I'll unlock the elevator for you.
 ...
 Well...
 Okay then.
-Not sure why you would prefer having her with you instead of me, but whatever.
+{annoying:
+    Not sure why you would prefer having her with you instead of me, but whatever.
+}
 As long as you cause trouble.
 I'm gonna unlock the elevator for you.
 -> END

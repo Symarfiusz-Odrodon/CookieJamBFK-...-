@@ -7,6 +7,20 @@ VAR to_export="annoying_admit_thief"
 
 -> intro
 
+EXTERNAL add_to_team(id)
+EXTERNAL remove_from_team(id)
+EXTERNAL improve_morale()
+EXTERNAL hurt_morale()
+
+=== function add_to_team(id) ===
+~ return
+=== function remove_from_team(id) ===
+~ return
+=== function improve_morale() ===
+~ return
+=== function hurt_morale() ===
+~ return
+
 === intro ===
 Who are you?
 Wait, you have such a beautiful necklace.

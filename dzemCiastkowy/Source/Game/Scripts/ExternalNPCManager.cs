@@ -37,7 +37,7 @@ public class ExternalNPCManager : Script
     public bool TriggerDamage
     {
         get => _triggerDamage;
-        set { _triggerDamage = false; if (value) ModifyNpcHealth(DebugTargetIndex, -DebugAmount2    ); }
+        set { _triggerDamage = false; if (value) ModifyNpcHealth(DebugTargetIndex, -DebugAmount2); }
     }
 
     private bool _triggerHeal;
@@ -61,7 +61,7 @@ public class ExternalNPCManager : Script
     // ========================================================================
 
     /// <summary>
-    /// Spawns a new NPC by ID using the main system.
+    /// Spawns a new friendly NPC by ID using the main system.
     /// </summary>
     public void SpawnNpc(string npcId)
     {
@@ -71,10 +71,13 @@ public class ExternalNPCManager : Script
             return;
         }
 
-        Debug.Log($"External Manager: Requesting Spawn of '{npcId}'");
+        Debug.Log($"External Manager: Requesting Spawn of FRIENDLY '{npcId}'");
         NPC_System.Instance.AddFriendNpc(npcId);
     }
 
+    /// <summary>
+    /// Spawns a new enemy NPC by ID using the main system.
+    /// </summary>
     public void SpawnEnemyNpc(string npcId)
     {
         if (NPC_System.Instance == null)
@@ -83,7 +86,7 @@ public class ExternalNPCManager : Script
             return;
         }
 
-        Debug.Log($"External Manager: Requesting Spawn of '{npcId}'");
+        Debug.Log($"External Manager: Requesting Spawn of ENEMY '{npcId}'");
         NPC_System.Instance.AddEnemyNpc(npcId);
     }
 
@@ -138,10 +141,39 @@ public class ExternalNPCManager : Script
         }
     }
 
+    // --- NEW FUNCTION TO GET TEXTURE ---
+
+    /// <summary>
+    /// Retrieves the Dialogue Texture for a friendly NPC at a specific index.
+    /// </summary>
+    /// <param name="index">Index in the NPC list.</param>
+    /// <returns>The dialogue texture (sprite) or null if the index is invalid or data is missing.</returns>
+    public Texture GetFriendlyNpcDialogueTexture(int index)
+    {
+        var npcInstance = GetNpcSafe(index);
+
+        if (npcInstance == null)
+        {
+            // GetNpcSafe already logged a warning/error
+            return null;
+        }
+
+        // Ensure the underlying NpcData is available before trying to access the texture
+        if (npcInstance.Data == null)
+        {
+            Debug.LogError($"NPC Instance at index {index} has no NpcData attached!");
+            return null;
+        }
+
+        // Return the texture from the read-only NpcData
+        return npcInstance.Data.worldTexture;
+    }
+
     // ========================================================================
     // HELPERS
     // ========================================================================
 
+    // NOTE: This helper assumes 'Npcs' only contains FriendlyNpcInstance objects.
     private FriendlyNpcInstance GetNpcSafe(int index)
     {
         if (NPC_System.Instance == null)
@@ -156,6 +188,13 @@ public class ExternalNPCManager : Script
             return null;
         }
 
-        return NPC_System.Instance.Npcs[index];
+        // Attempt to cast the item from the list to the expected type
+        if (NPC_System.Instance.Npcs[index] is FriendlyNpcInstance friendlyNpc)
+        {
+            return friendlyNpc;
+        }
+
+        Debug.LogError($"Item at index {index} is not a FriendlyNpcInstance!");
+        return null;
     }
 }

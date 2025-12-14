@@ -36,7 +36,6 @@ public class NPC_System : Script
     public List<EnemyNpcInstance> Enemies { get; } = [];
 
     public bool uiVisible = false;
-
     public override void OnStart()
     {
         if (Instance == null)

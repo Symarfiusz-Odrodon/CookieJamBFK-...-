@@ -5,7 +5,7 @@
 	"Data": {
 	"id": "printer",
 	"name": "Inkfestation",
-	"headTexture": null,
+	"headTexture": "3ff6399342528088925d46a1629793a4",
 	"dialogueTexture": "3ff6399342528088925d46a1629793a4",
 	"worldTexture": "3ff6399342528088925d46a1629793a4",
 	"friendHealth": 0,
@@ -15,12 +15,12 @@
 	"friendAction2Name": null,
 	"friendAction1Id": 0,
 	"friendAction2Id": 0,
-	"enemyHealth": 0,
-	"enemyMaxHealth": 0,
-	"enemyActionRegen": 0.0,
-	"enemyAction1Name": null,
-	"enemyAction2Name": null,
-	"enemyAction1Id": 0,
-	"enemyAction2Id": 0
+	"enemyHealth": 80,
+	"enemyMaxHealth": 80,
+	"enemyActionRegen": 0.1,
+	"enemyAction1Name": "Heal all enemies 5*Characters",
+	"enemyAction2Name": "15 DMG ALL",
+	"enemyAction1Id": 2,
+	"enemyAction2Id": 3
 }
 }

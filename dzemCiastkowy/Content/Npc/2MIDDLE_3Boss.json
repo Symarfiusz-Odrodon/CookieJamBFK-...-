@@ -4,8 +4,8 @@
 	"EngineBuild": 6802,
 	"Data": {
 	"id": "dl",
-	"name": "DL",
-	"headTexture": "9267940f40763abffd6dfb81df830128",
+	"name": "Deadline",
+	"headTexture": "8922e5a6443afc8244aa79b9111ebe4f",
 	"dialogueTexture": "8922e5a6443afc8244aa79b9111ebe4f",
 	"worldTexture": "8922e5a6443afc8244aa79b9111ebe4f",
 	"friendHealth": 0,
@@ -15,12 +15,12 @@
 	"friendAction2Name": null,
 	"friendAction1Id": 0,
 	"friendAction2Id": 0,
-	"enemyHealth": 0,
-	"enemyMaxHealth": 0,
-	"enemyActionRegen": 0.0,
-	"enemyAction1Name": null,
-	"enemyAction2Name": null,
-	"enemyAction1Id": 0,
-	"enemyAction2Id": 0
+	"enemyHealth": 150,
+	"enemyMaxHealth": 150,
+	"enemyActionRegen": 0.5,
+	"enemyAction1Name": "10DMG TO LOWEST",
+	"enemyAction2Name": "RANDOM HP +10  AP = 0",
+	"enemyAction1Id": 4,
+	"enemyAction2Id": 5
 }
 }

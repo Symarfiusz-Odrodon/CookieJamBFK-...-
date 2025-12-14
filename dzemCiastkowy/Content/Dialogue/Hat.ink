@@ -4,12 +4,26 @@ VAR horse_hoisted = false
 
 VAR to_export = "horse_hoisted;has_highlighter"
 
-// To export
 -> intro
+
+EXTERNAL add_to_team(id)
+EXTERNAL remove_from_team(id)
+EXTERNAL improve_morale()
+EXTERNAL hurt_morale()
+
+=== function add_to_team(id) ===
+~ return
+=== function remove_from_team(id) ===
+~ return
+=== function improve_morale() ===
+~ return
+=== function hurt_morale() ===
+~ return
 
 === intro ===
 
 Do YOU happen to have a gray highlighter?
+You could use one to fix that green necklace.
 
 * { has_highlighter } [(give highlighter)] -> you_in_fact_have_a_highlighter
 * [No]
@@ -65,11 +79,13 @@ It's too sharp.
 }
 * [Let's look for a {intro_highlighter_shown: better} highlighter together.]
     ~ horse_hoisted = false
-    -> finish
-* {horse_hoisted} [Worry not, we shal venture forth and locate the right highlighing device!]
+    -> accept
+* {horse_hoisted} [Worry not, we shall venture forth and locate the right highlighing device!]
     Splendid.
-    -> finish
+    -> accept
 * [I'm just gonna... leave...]
+    -> END
 
-=== finish ===
+=== accept ===
+-> add_to_team("hat")
 -> END

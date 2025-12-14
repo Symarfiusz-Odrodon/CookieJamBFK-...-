@@ -11,8 +11,11 @@ namespace Game.NPC;
 public class CombatSystem : Script
 {
     public bool inCombat = false;
+    public SceneReference gameScene;
     private float timer1 = 0;
     private NPC_System NPC;
+    private Random rand = new Random();
+
     /// <inheritdoc/>
     public override void OnUpdate()
     {
@@ -59,37 +62,73 @@ public class CombatSystem : Script
             {
                 if (NPC.Npcs[i].actionPoints >= 1.0f)
                 {
-                    if (NPC.NPC_Action1[i].Get<Button>().IsPressed)
+                    if (NPC.NPC_Action1[i].Get<Button>().IsPressed || NPC.NPC_Action2[i].Get<Button>().IsPressed)
                     {
-                        switch (NPC.Npcs[i].Data.friendAction1Id)
+                        int actionId = 0;
+                        if (NPC.NPC_Action1[i].Get<Button>().IsPressed)
+                            actionId = NPC.Npcs[i].Data.friendAction1Id;
+                        if (NPC.NPC_Action2[i].Get<Button>().IsPressed)
+                            actionId = NPC.Npcs[i].Data.friendAction2Id;
+
+                        int target = rand.Next(0, NPC.Enemies.Count + 1);
+                        switch (actionId)
                         {
                             case 0:
                                 foreach(EnemyNpcInstance enemy in NPC.Enemies)
                                 {
-                                    enemy.health -= 5;
+                                    enemy.health -= 10;
                                     if(enemy.health <= 0)
                                         enemy.health = 0;
                                 }
-                                NPC.Npcs[i].actionPoints = 0.0f;
                                 break;
-                        }
-
-                    }
-                    if (NPC.NPC_Action2[i].Get<Button>().IsPressed)
-                    {
-                        switch (NPC.Npcs[i].Data.friendAction2Id)
-                        {
                             case 1:
                                 foreach (FriendlyNpcInstance ally in NPC.Npcs)
                                 {
-                                    ally.health += 10;
+                                    ally.health += 20;
                                     if (ally.health >= ally.maxHealth)
                                         ally.health = ally.maxHealth;
                                 }
-                                NPC.Npcs[i].actionPoints = 0.0f;
                                 break;
-                        }
+                            case 2:
+                                foreach(EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.health -= 5;
+                                    if (enemy.health <= 0)
+                                        enemy.health = 0;
+                                }
+                                break;
+                            case 3:
+                                NPC.Enemies[target].health -= 15;
+                                if (NPC.Enemies[target].health  <= 0)
+                                    NPC.Enemies[target].health = 0;
+                                break;
+                            case 4:
+                                foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.health -= 8;
+                                    if (enemy.health <= 0)
+                                        enemy.health = 0;
+                                }
+                                break;
+                            case 5:
+                                NPC.Enemies[target].health -= 20;
+                                if (NPC.Enemies[target].health <= 0)
+                                    NPC.Enemies[target].health = 0;
+                                break;
+                            case 6:
+                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                                {
+                                    ally.actionPoints += 0.2f;
+                                    if (ally.actionPoints >= 1.0f)
+                                        ally.actionPoints = 1.0f;
+                                }
+                                break;
+                            
 
+
+
+                        }
+                        NPC.Npcs[i].actionPoints = 0.0f;
                     }
                 }
             }
@@ -97,37 +136,77 @@ public class CombatSystem : Script
             {
                 if (NPC.Enemies[i].actionPoints >= 1.0f)
                 {
-
-                    Random rand = new Random();
-                    int action = rand.Next(0, 2);
-                    if(action == 1)
+                    int hitAlly = rand.Next(0, NPC.Npcs.Count);
+                    int actionId = 0;
+                    int choice = rand.Next(0, 2);
+                    if (choice == 0)
+                        actionId = NPC.Enemies[i].Data.enemyAction1Id;
+                    if (choice == 1)
+                        actionId = NPC.Enemies[i].Data.enemyAction2Id;
+                    switch (NPC.Enemies[i].Data.enemyAction1Id)
                     {
-                        switch (NPC.Enemies[i].Data.enemyAction1Id)
-                        {
-                            case 0:
-                                int hitAlly = rand.Next(0, NPC.Npcs.Count);
-                                NPC.Npcs[hitAlly].health -= 5;
-                                if (NPC.Npcs[hitAlly].health <= 0)
-                                    NPC.Npcs[hitAlly].health = 0;
-                                break;
+                        case 0:
                             
-                        }
-                    }
-                    else
-                    {
-                        switch (NPC.Enemies[i].Data.enemyAction2Id)
-                        {
-                            case 1:
-                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
-                                { 
-                                    ally.actionPoints -= 0.4f;
-                                    if (ally.actionPoints <= 0)
-                                        ally.actionPoints = 0;
+                            NPC.Npcs[hitAlly].health -= 10;
+                            if (NPC.Npcs[hitAlly].health <= 0)
+                                NPC.Npcs[hitAlly].health = 0;
+                            break;
+                        case 1:
+                            foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                            { 
+                                ally.actionPoints -= 0.3f;
+                                if (ally.actionPoints <= 0)
+                                    ally.actionPoints = 0;
+                            }
+                            break;
+                        case 2:
+                            foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                            {
+                                enemy.health += 5 * NPC.Npcs.Count;
+                                if (enemy.health <= 0)
+                                    enemy.health = 0;
+                            }
+                            break;
+                        case 3:
+                            foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                            {
+                                ally.health -= 15;
+                                if (ally.health <= 0)
+                                    ally.health = 0;
+                            }
+                            break;
+                        case 4:
+                            int maxHealth = 10000;
+                            int index = 0;
+                            for(int j = 0;  j < NPC.Npcs.Count; j++)
+                            {
+                                if(maxHealth > NPC.Npcs[j].health)
+                                {
+                                    maxHealth = NPC.Npcs[j].health;
+                                    index = j;
                                 }
-                                
-                                break;
-                        }
-                    }
+                            }
+                            if (NPC.Npcs[index] != null)
+                            {
+                                NPC.Npcs[index].health -= 10;
+                                if(NPC.Npcs[index].health < 0)
+                                    NPC.Npcs[index].health = 0;
+                            }
+                            
+                            break;
+                        case 5:
+                            NPC.Npcs[hitAlly].health += 5;
+                            NPC.Npcs[hitAlly].actionPoints = 0.0f;
+                            if (NPC.Npcs[hitAlly].health >= NPC.Npcs[hitAlly].maxHealth)
+                                NPC.Npcs[hitAlly].health = NPC.Npcs[hitAlly].maxHealth;
+                            if (NPC.Npcs[hitAlly].actionPoints <= 0)
+                                NPC.Npcs[hitAlly].actionPoints = 0;
+                            break;
+
+
+
+
+                    }                    
                     NPC.Enemies[i].actionPoints = 0.0f;
                 }
             }
@@ -143,6 +222,13 @@ public class CombatSystem : Script
         if (index >= 0 && index < NPC.Npcs.Count)
         {
             NPC.Npcs.RemoveAt(index);
+            if(NPC.Npcs.Count == 0)
+                Scripting.RunOnUpdate(() =>
+                {
+                    Level.UnloadAllScenes();
+                    Level.LoadScene(gameScene);
+                });
+
         }
     }
 
@@ -151,6 +237,12 @@ public class CombatSystem : Script
         if (index >= 0 && index < NPC.Enemies.Count)
         {
             NPC.Enemies.RemoveAt(index);
+            if (NPC.Npcs.Count == 0)
+                Scripting.RunOnUpdate(() =>
+                {
+                    Level.UnloadAllScenes();
+                    Level.LoadScene(gameScene);
+                });
         }
     }
 }

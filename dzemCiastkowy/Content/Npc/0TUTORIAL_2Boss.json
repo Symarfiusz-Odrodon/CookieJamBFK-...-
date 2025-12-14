@@ -4,8 +4,8 @@
 	"EngineBuild": 6802,
 	"Data": {
 	"id": "gunman",
-	"name": "Gun Man",
-	"headTexture": "9267940f40763abffd6dfb81df830128",
+	"name": "Skelefolder",
+	"headTexture": "14e560e74d514ddb2d5665b89521445f",
 	"dialogueTexture": "14e560e74d514ddb2d5665b89521445f",
 	"worldTexture": "14e560e74d514ddb2d5665b89521445f",
 	"friendHealth": 0,
@@ -15,12 +15,12 @@
 	"friendAction2Name": null,
 	"friendAction1Id": 0,
 	"friendAction2Id": 0,
-	"enemyHealth": 0,
-	"enemyMaxHealth": 0,
-	"enemyActionRegen": 0.0,
-	"enemyAction1Name": null,
-	"enemyAction2Name": null,
+	"enemyHealth": 30,
+	"enemyMaxHealth": 30,
+	"enemyActionRegen": 0.2,
+	"enemyAction1Name": "Papercut(10 DMG RANDOM)",
+	"enemyAction2Name": "Missing documentation(-30% AP RANDOM)",
 	"enemyAction1Id": 0,
-	"enemyAction2Id": 0
+	"enemyAction2Id": 1
 }
 }
