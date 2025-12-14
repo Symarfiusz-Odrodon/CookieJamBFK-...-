@@ -123,6 +123,7 @@ public class CombatSystem : Script
                                         ally.actionPoints = 1.0f;
                                 }
                                 break;
+                            
 
 
 
@@ -135,6 +136,7 @@ public class CombatSystem : Script
             {
                 if (NPC.Enemies[i].actionPoints >= 1.0f)
                 {
+                    int hitAlly = rand.Next(0, NPC.Npcs.Count);
                     int actionId = 0;
                     int choice = rand.Next(0, 2);
                     if (choice == 0)
@@ -144,21 +146,66 @@ public class CombatSystem : Script
                     switch (NPC.Enemies[i].Data.enemyAction1Id)
                     {
                         case 0:
-                            int hitAlly = rand.Next(0, NPC.Npcs.Count);
-                            NPC.Npcs[hitAlly].health -= 5;
+                            
+                            NPC.Npcs[hitAlly].health -= 10;
                             if (NPC.Npcs[hitAlly].health <= 0)
                                 NPC.Npcs[hitAlly].health = 0;
                             break;
                         case 1:
                             foreach (FriendlyNpcInstance ally in NPC.Npcs)
                             { 
-                                ally.actionPoints -= 0.4f;
+                                ally.actionPoints -= 0.3f;
                                 if (ally.actionPoints <= 0)
                                     ally.actionPoints = 0;
                             }
-                                
                             break;
+                        case 2:
+                            foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                            {
+                                enemy.health += 5 * NPC.Npcs.Count;
+                                if (enemy.health <= 0)
+                                    enemy.health = 0;
+                            }
+                            break;
+                        case 3:
+                            foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                            {
+                                ally.health -= 15;
+                                if (ally.health <= 0)
+                                    ally.health = 0;
+                            }
+                            break;
+                        case 4:
+                            int maxHealth = 10000;
+                            int index = 0;
+                            for(int j = 0;  j < NPC.Npcs.Count; j++)
+                            {
+                                if(maxHealth > NPC.Npcs[j].health)
+                                {
+                                    maxHealth = NPC.Npcs[j].health;
+                                    index = j;
+                                }
+                            }
+                            if (NPC.Npcs[index] != null)
+                            {
+                                NPC.Npcs[index].health -= 10;
+                                if(NPC.Npcs[index].health < 0)
+                                    NPC.Npcs[index].health = 0;
+                            }
                             
+                            break;
+                        case 5:
+                            NPC.Npcs[hitAlly].health += 5;
+                            NPC.Npcs[hitAlly].actionPoints = 0.0f;
+                            if (NPC.Npcs[hitAlly].health >= NPC.Npcs[hitAlly].maxHealth)
+                                NPC.Npcs[hitAlly].health = NPC.Npcs[hitAlly].maxHealth;
+                            if (NPC.Npcs[hitAlly].actionPoints <= 0)
+                                NPC.Npcs[hitAlly].actionPoints = 0;
+                            break;
+
+
+
+
                     }                    
                     NPC.Enemies[i].actionPoints = 0.0f;
                 }
