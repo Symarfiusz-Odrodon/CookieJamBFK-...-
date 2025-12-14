@@ -21,6 +21,8 @@ public class DialogueController : Script
     public const string FUNC_NAME_REMOVE_FROM_TEAM = "remove_from_team";
     public const string FUNC_NAME_IMPROVE_MORALE = "improve_morale";
     public const string FUNC_NAME_HURT_MORALE = "hurt_morale";
+    public const string TAG_NAME_ITALIC = "italic";
+    public const string TAG_NAME_BOLD = "bold";
 
     // --- CONFIGURATION FIELDS ---
     [Header("Database")]
@@ -104,9 +106,15 @@ public class DialogueController : Script
 
             // Set the text control to EMPTY initially, OnUpdate will fill it
             if (textControl?.Control is RichTextBox textBox)
+            {
                 textBox.Text = string.Empty;
+            }
             else if (textControl?.Control is Label label)
+            {
                 label.Text = string.Empty;
+                label.Bold = line.Tags.Contains(TAG_NAME_BOLD);
+                label.Italic = line.Tags.Contains(TAG_NAME_ITALIC);
+            }
             // --- END TEXT REVEAL SETUP ---
 
             // 2. Speaker Label Update

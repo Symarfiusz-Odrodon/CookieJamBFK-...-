@@ -48,7 +48,7 @@ VAR to_export="annoying;printert"
         Well...
         ...
         Okay, I'm starting to realize that I am in fact sounding, like I am in love.
-        But just for your knowladge.
+        But just for your knowledge.
         I'm not.
         I think.
         I mean, I'm not.
