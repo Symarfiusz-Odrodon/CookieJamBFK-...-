@@ -30,19 +30,23 @@
 	"EncounterSequence": [
 		{
 			"safeFloor": true,
-			"encounterName": "tut"
+			"encounterName": "tut",
+			"storyAsset": "08de3a7d08325bafd5f928c795a3ab96"
 		},
 		{
 			"safeFloor": false,
-			"encounterName": "skelefolder"
+			"encounterName": "skelefolder",
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": true,
-			"encounterName": "recruit_friend"
+			"encounterName": "recruit_friend",
+			"storyAsset": "00000000000000000000000000000000"
 		},
 		{
 			"safeFloor": false,
-			"encounterName": "basic_enemy"
+			"encounterName": "basic_enemy",
+			"storyAsset": "00000000000000000000000000000000"
 		}
 	]
 }
