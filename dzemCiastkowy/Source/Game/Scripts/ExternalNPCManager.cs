@@ -75,6 +75,18 @@ public class ExternalNPCManager : Script
         NPC_System.Instance.AddFriendNpc(npcId);
     }
 
+    public void SpawnEnemyNpc(string npcId)
+    {
+        if (NPC_System.Instance == null)
+        {
+            Debug.LogError("NPC_System Instance is missing!");
+            return;
+        }
+
+        Debug.Log($"External Manager: Requesting Spawn of '{npcId}'");
+        NPC_System.Instance.AddEnemyNpc(npcId);
+    }
+
     /// <summary>
     /// Modifies the health of a specific NPC. Handles clamping between 0 and MaxHealth.
     /// </summary>

@@ -167,8 +167,7 @@ public class ElevatorManager : Script
         }
         else
         {
-            // Enemy encounter: No dialogue, proceed to next step (end encounter)
-            EndCurrentEncounter();
+            _npcManager.SpawnEnemyNpc(npcIdToSpawn);
         }
     }
 
@@ -198,7 +197,7 @@ public class ElevatorManager : Script
         {
             timer1 += Time.DeltaTime;
 
-            if (timer1 > 6.5f)
+            if (timer1 > 1.5f)
             {
                 timer1 = 0;
                 traveling = false;

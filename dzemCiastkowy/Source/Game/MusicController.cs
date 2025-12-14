@@ -122,14 +122,5 @@ public class MusicController : Script
             {
             }
         }
-
-        if (Input.GetKeyDown(KeyboardKeys.F))
-        {
-            StartStopJibberSpeech();
-        }
-        if (Input.GetKeyDown(KeyboardKeys.G))
-        {
-            StartStopElevatorMusic();
-        }
     }
 }
