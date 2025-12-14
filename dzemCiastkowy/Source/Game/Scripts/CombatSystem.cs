@@ -13,6 +13,8 @@ public class CombatSystem : Script
     public bool inCombat = false;
     private float timer1 = 0;
     private NPC_System NPC;
+    private Random rand = new Random();
+
     /// <inheritdoc/>
     public override void OnUpdate()
     {
@@ -59,9 +61,14 @@ public class CombatSystem : Script
             {
                 if (NPC.Npcs[i].actionPoints >= 1.0f)
                 {
-                    if (NPC.NPC_Action1[i].Get<Button>().IsPressed)
+                    if (NPC.NPC_Action1[i].Get<Button>().IsPressed || NPC.NPC_Action2[i].Get<Button>().IsPressed)
                     {
-                        switch (NPC.Npcs[i].Data.friendAction1Id)
+                        int actionId = 0;
+                        if (NPC.NPC_Action1[i].Get<Button>().IsPressed)
+                            actionId = NPC.Npcs[i].Data.friendAction1Id;
+                        if (NPC.NPC_Action2[i].Get<Button>().IsPressed)
+                            actionId = NPC.Npcs[i].Data.friendAction2Id;
+                        switch (actionId)
                         {
                             case 0:
                                 foreach(EnemyNpcInstance enemy in NPC.Enemies)
@@ -72,13 +79,6 @@ public class CombatSystem : Script
                                 }
                                 NPC.Npcs[i].actionPoints = 0.0f;
                                 break;
-                        }
-
-                    }
-                    if (NPC.NPC_Action2[i].Get<Button>().IsPressed)
-                    {
-                        switch (NPC.Npcs[i].Data.friendAction2Id)
-                        {
                             case 1:
                                 foreach (FriendlyNpcInstance ally in NPC.Npcs)
                                 {
@@ -97,37 +97,31 @@ public class CombatSystem : Script
             {
                 if (NPC.Enemies[i].actionPoints >= 1.0f)
                 {
-
-                    Random rand = new Random();
-                    int action = rand.Next(0, 2);
-                    if(action == 1)
+                    int actionId = 0;
+                    int choice = rand.Next(0, 2);
+                    if (choice == 0)
+                        actionId = NPC.Enemies[i].Data.enemyAction1Id;
+                    if (choice == 1)
+                        actionId = NPC.Enemies[i].Data.enemyAction2Id;
+                    switch (NPC.Enemies[i].Data.enemyAction1Id)
                     {
-                        switch (NPC.Enemies[i].Data.enemyAction1Id)
-                        {
-                            case 0:
-                                int hitAlly = rand.Next(0, NPC.Npcs.Count);
-                                NPC.Npcs[hitAlly].health -= 5;
-                                if (NPC.Npcs[hitAlly].health <= 0)
-                                    NPC.Npcs[hitAlly].health = 0;
-                                break;
-                            
-                        }
-                    }
-                    else
-                    {
-                        switch (NPC.Enemies[i].Data.enemyAction2Id)
-                        {
-                            case 1:
-                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
-                                { 
-                                    ally.actionPoints -= 0.4f;
-                                    if (ally.actionPoints <= 0)
-                                        ally.actionPoints = 0;
-                                }
+                        case 0:
+                            int hitAlly = rand.Next(0, NPC.Npcs.Count);
+                            NPC.Npcs[hitAlly].health -= 5;
+                            if (NPC.Npcs[hitAlly].health <= 0)
+                                NPC.Npcs[hitAlly].health = 0;
+                            break;
+                        case 1:
+                            foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                            { 
+                                ally.actionPoints -= 0.4f;
+                                if (ally.actionPoints <= 0)
+                                    ally.actionPoints = 0;
+                            }
                                 
-                                break;
-                        }
-                    }
+                            break;
+                            
+                    }                    
                     NPC.Enemies[i].actionPoints = 0.0f;
                 }
             }
