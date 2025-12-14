@@ -139,6 +139,49 @@ public class CombatSystem : Script
                                         enemy.actionPoints = 0;
                                 }
                                 break;
+                            case 9:
+                                foreach (FriendlyNpcInstance ally in NPC.Npcs)
+                                {
+                                    ally.actionPoints += 0.5f;
+                                    if (ally.actionPoints >= 1.0f)
+                                        ally.actionPoints = 1.0f;
+                                }
+                                break;
+                            case 10:
+                                NPC.Enemies[target].health -= 50;
+                                if (NPC.Enemies[target].health <= 0)
+                                    NPC.Enemies[target].health = 0;
+                                break;
+                            case 11:
+                                NPC.Npcs[i].health += 50;
+                                if (NPC.Npcs[i].health >= NPC.Npcs[i].maxHealth)
+                                    NPC.Npcs[i].health = NPC.Npcs[i].maxHealth;
+                                break;
+                            case 12:
+                                NPC.Npcs[i].health -= 20;
+                                foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.health -= 50;
+                                    if (enemy.health <= 0)
+                                        enemy.health = 0;
+                                }
+                                if (NPC.Npcs[i].health < 0)
+                                    NPC.Npcs[i].health = 0;
+                                break;
+                            case 13:
+                                NPC.Enemies[target].health -= 100;
+                                if (NPC.Enemies[target].health <= 0)
+                                    NPC.Enemies[target].health = 0;
+                                break;
+                            case 14:
+                                foreach (EnemyNpcInstance enemy in NPC.Enemies)
+                                {
+                                    enemy.health -= 50;
+                                    if (enemy.health <= 0)
+                                        enemy.health = 0;
+                                }
+                                break;
+
 
 
 
