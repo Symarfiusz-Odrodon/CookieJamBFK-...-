@@ -197,6 +197,9 @@ public class CombatSystem : Script
                     int hitAlly = rand.Next(0, NPC.Npcs.Count);
                     int actionId = 0;
                     int choice = rand.Next(0, 2);
+                    int minHealth = 10000;
+                    int maxHealth = 0;
+                    int index = 0;
                     if (choice == 0)
                         actionId = NPC.Enemies[i].Data.enemyAction1Id;
                     if (choice == 1)
@@ -234,13 +237,11 @@ public class CombatSystem : Script
                             }
                             break;
                         case 4:
-                            int maxHealth = 10000;
-                            int index = 0;
                             for(int j = 0;  j < NPC.Npcs.Count; j++)
                             {
-                                if(maxHealth > NPC.Npcs[j].health)
+                                if(minHealth > NPC.Npcs[j].health)
                                 {
-                                    maxHealth = NPC.Npcs[j].health;
+                                    minHealth = NPC.Npcs[j].health;
                                     index = j;
                                 }
                             }
@@ -260,7 +261,25 @@ public class CombatSystem : Script
                             if (NPC.Npcs[hitAlly].actionPoints <= 0)
                                 NPC.Npcs[hitAlly].actionPoints = 0;
                             break;
-
+                        case 6:
+                            for (int j = 0; j < NPC.Npcs.Count; j++)
+                            {
+                                if (maxHealth < NPC.Npcs[j].health)
+                                {
+                                    maxHealth = NPC.Npcs[j].health;
+                                    index = j;
+                                }
+                            }
+                            if (NPC.Npcs[index] != null)
+                            {
+                                NPC.Npcs[index].health -= 40;
+                                if (NPC.Npcs[index].health < 0)
+                                    NPC.Npcs[index].health = 0;
+                            }
+                            break;
+                        case 7:
+                            NPC.Npcs[hitAlly].actionPoints = 0.0f;
+                            break;
 
 
 

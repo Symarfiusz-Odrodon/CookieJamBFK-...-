@@ -429,9 +429,7 @@
 			"PrefabID": "921096564ffed90b6af43fb38f6c263b",
 			"PrefabObjectID": "44dcb7e342917379777b5f89d6bcba6e",
 			"ParentID": "e25b888244754decc87545bfe8fa36d3",
-			"V": {
-	"Camera": "b0d72c3746caebca055e1f921ca21c7c"
-}
+			"V": {}
 		},
 		{
 			"ID": "179bb332454bc0921ab068a7946557c6",
@@ -1191,9 +1189,9 @@
 	"Bold": false,
 	"Italic": false,
 	"TextColor": {
-		"R": 1.0,
-		"G": 1.0,
-		"B": 1.0,
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
 		"A": 1.0
 	},
 	"TextColorHighlighted": {
@@ -1204,16 +1202,16 @@
 	},
 	"HorizontalAlignment": 1,
 	"VerticalAlignment": 1,
-	"Wrapping": 0,
+	"Wrapping": 1,
 	"BaseLinesGapScale": 1.0,
 	"Font": {
-		"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+		"Font": "40403da44612565a6f2dcfb0d3047a40",
 		"Size": 9.0
 	},
 	"Material": null,
 	"Margin": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 45.0,
+		"Right": 30.0,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -4402,7 +4400,10 @@
 			"ID": "5d1047b146ffd166e837a18f980402a0",
 			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
 			"PrefabObjectID": "cc3bbe114e633935028a11a7abe8aef3",
-			"ParentID": "74a68a984824b4510d12589f199ad68f"
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"RemovedObjects": [
+				"e816ef204f4aa5789612afa7240562c7"
+			]
 		},
 		{
 			"ID": "2197e2814b3ed9d7ef079782dcbfec20",
@@ -4735,61 +4736,6 @@
 			}
 		},
 		{
-			"ID": "39b001344e7a8784972735abb4b21b44",
-			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
-			"PrefabObjectID": "e816ef204f4aa5789612afa7240562c7",
-			"ParentID": "5d1047b146ffd166e837a18f980402a0",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "b91d486a40401ee34bd2b5ada3b55c5f",
-			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
-			"PrefabObjectID": "5ae7e994489b96e38d7ecc8ccaf2dbc2",
-			"ParentID": "5d1047b146ffd166e837a18f980402a0",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "31feb59c4356a7c427da46ae142ad350",
-			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
-			"PrefabObjectID": "cb001b3e4500533647fb4cae9aa5d91f",
-			"ParentID": "5d1047b146ffd166e837a18f980402a0",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "1c2cba65441c14faf2add0ac014e1776",
-			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
-			"PrefabObjectID": "2e00a45f4017dba72754d9a67f13ac31",
-			"ParentID": "5d1047b146ffd166e837a18f980402a0",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "82c07823417b3203eb80f28afb5cbe7c",
-			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
-			"PrefabObjectID": "dbc4097d41107149895f98b57f993411",
-			"ParentID": "5d1047b146ffd166e837a18f980402a0",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
 			"ID": "0b2eab5140ce280eb94fb89a284a6063",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "5d1047b146ffd166e837a18f980402a0",
@@ -4945,8 +4891,87 @@
 				}
 			},
 			"Sprite": {},
-			"Image": "08de3aa5066282a1da84ba61c317b366",
+			"Image": "16f797574ab339b9b1e99fb12827ab02",
 			"Material": "6542187d40386b3768d0818d98dbd63a"
+		},
+		{
+			"ID": "39b001344e7a8784972735abb4b21b44",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "0b2eab5140ce280eb94fb89a284a6063",
+			"Name": "biuro cale kwiatek 0",
+			"Transform": {
+				"Translation": {
+					"X": 980.2218017578125,
+					"Y": 22.334047317504883,
+					"Z": 536.5556640625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -1.341104507446289e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"Model": "38f0630948c385f4327f77a32e59c7d5",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "52fede9043de5a0111f749a6552623b8",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "b91d486a40401ee34bd2b5ada3b55c5f",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "5ae7e994489b96e38d7ecc8ccaf2dbc2",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "31feb59c4356a7c427da46ae142ad350",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "cb001b3e4500533647fb4cae9aa5d91f",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "1c2cba65441c14faf2add0ac014e1776",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "2e00a45f4017dba72754d9a67f13ac31",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "82c07823417b3203eb80f28afb5cbe7c",
+			"PrefabID": "f762c30c487cff5d4549f2b1e08f8196",
+			"PrefabObjectID": "dbc4097d41107149895f98b57f993411",
+			"ParentID": "5d1047b146ffd166e837a18f980402a0",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
 		},
 		{
 			"ID": "ced2c5bd41e17698bedb5aa21a45c9bd",
@@ -5405,7 +5430,7 @@
 			"encounterName3": null,
 			"weight": 1,
 			"maxWeight": 0,
-			"idfkanymorethisisasprite": null,
+			"idfkanymorethisisasprite": "e4bad96641c61a884c7d5cbb2d10e02d",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a7d08325bafd5f928c795a3ab96"
 		},
@@ -5427,7 +5452,7 @@
 			"encounterName3": null,
 			"weight": 3,
 			"maxWeight": 2,
-			"idfkanymorethisisasprite": null,
+			"idfkanymorethisisasprite": "e4bad96641c61a884c7d5cbb2d10e02d",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3a8e082e06b98804ce428a186046"
 		},
@@ -5460,7 +5485,7 @@
 			"encounterName3": null,
 			"weight": 6,
 			"maxWeight": 5,
-			"idfkanymorethisisasprite": null,
+			"idfkanymorethisisasprite": "11a18a5d4e2aca9880bafcbca9f24c21",
 			"talkBeforeFight": false,
 			"storyAsset": "08de3b0e06a48549ca3d18243f33f209"
 		},
@@ -5517,7 +5542,7 @@
 			"encounterName3": "gunman",
 			"weight": 3,
 			"maxWeight": 3,
-			"idfkanymorethisisasprite": null,
+			"idfkanymorethisisasprite": "7bc606014dd024e8e68145a5851d2fe7",
 			"talkBeforeFight": true,
 			"storyAsset": "08de3a94080193b0234fcad79b065a7f"
 		},
@@ -5563,7 +5588,7 @@
 			"maxWeight": 10,
 			"idfkanymorethisisasprite": "5170330b4f513b3826f7618a7e3e6d32",
 			"talkBeforeFight": true,
-			"storyAsset": "00000000000000000000000000000000"
+			"storyAsset": "08de3b0e0768f5cacdaf48aa61a9d99e"
 		}
 	],
 	"EncounterSequence": [

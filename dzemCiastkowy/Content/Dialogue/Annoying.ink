@@ -1,5 +1,3 @@
-EXTERNAL add_to_team(id)
-
 VAR annoying_admit_thief = false
 VAR speaker = "annoying"
 

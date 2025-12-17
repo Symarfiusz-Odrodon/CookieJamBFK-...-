@@ -1,5 +1,5 @@
 VAR speaker = "bio"
-VAR to_export = "flash_drive;team_count;annoying;printert;replacement;hat;pc;lore_dropped"
+VAR to_export = "flash_drive;team_count;annoying;printert;replacement;hatman;pc;lore_dropped"
 VAR flash_drive = false
 VAR lore_dropped = false
 VAR team_count = 0
@@ -7,7 +7,7 @@ VAR team_count = 0
 VAR annoying = false
 VAR printert = false
 VAR replacement = false
-VAR hat = false
+VAR hatman = false
 VAR pc = false
 
 -> intro
@@ -75,7 +75,7 @@ You don't know what you are doing.
 * [I am fully aware]
 * [I don't need to know]
 - ...
-{team_count == 0 or hat:
+{team_count == 0 or hatman:
 -> alone
 }
 
@@ -158,8 +158,8 @@ Do you know what's on the top floor?
 That's where the life machine is located.
 The thing that created all of us in this building.
 
-{hat:
-    ~speaker = "hat"
+{hatman:
+    ~speaker = "hatman"
     Even me?
     ~speaker = "bio"
     No, you're just...
@@ -200,12 +200,12 @@ This is incredibly dangerous.
     Okay, this is... getting a bit out of hand.
     ~ hurt_morale()
 }
-{hat:
-    ~ speaker = "hat"
+{hatman:
+    ~ speaker = "hatman"
     ...
     I'm just here for a gray highlighter
 }
-{pc and hat:
+{pc and hatman:
     ~ speaker = "pc"
     I do not have a problem with this as I'm here to assist.
     {
@@ -229,8 +229,8 @@ The elevator should now be unlocked.
 -> END
 
 === alone ===
-{hat:
-    ~ speaker = "hat"
+{hatman:
+    ~ speaker = "hatman"
     So when will we find those gray markers?
     ~ speaker = "bio"
     ...

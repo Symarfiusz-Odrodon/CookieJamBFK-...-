@@ -1,4 +1,4 @@
-VAR speaker = "hat"
+VAR speaker = "hatman"
 VAR has_highlighter = false
 VAR horse_hoisted = false
 VAR intro_highlighter_shown = false
@@ -88,5 +88,6 @@ It's too sharp.
     -> END
 
 === accept ===
-~ add_to_team("hat")
+~ add_to_team("hatman")
+Onwards then.
 -> END
