@@ -9,153 +9,6 @@
 		"Name": "controllers"
 	},
 	{
-		"ID": "c5f10c1d448770427be3d3ae971e4f8e",
-		"TypeName": "FlaxEngine.EmptyActor",
-		"ParentID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
-		"Name": "ElevatorManager",
-		"Transform": {
-			"Translation": {
-				"X": -1.6666666269302368,
-				"Y": 0.0,
-				"Z": 0.0
-			}
-		}
-	},
-	{
-		"ID": "8b95b1884aa6d5cd3760b08e59b4c0f1",
-		"TypeName": "Game.Managers.ElevatorManager",
-		"ParentID": "c5f10c1d448770427be3d3ae971e4f8e",
-		"V": {
-	"cb": "aa85776d41d00fbaaaf8518611460350",
-	"possibleFriendlyEncounters": [
-		{
-			"safeFloor": true,
-			"encounterName": "annoying",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "eda23eb341c2325238282b8daa77e03d",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a7d08325bafd5f928c795a3ab96"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "printert",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 1,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "08de3b210969fbd6b52f641c6cac539b",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a8007e6daa02ad1a6efe618aa84"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "replacement",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "eda23eb341c2325238282b8daa77e03d",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a8e082e06b98804ce428a186046"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "hatman",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 2,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "pc",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "879c582d4cad1663e4888291ad1e953d",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3ace1a4e6e80852673b3315b1729"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "bio",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "c78de11448bc7ccd50282b8faf652e1e",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3b0e06a48549ca3d18243f33f209"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "box",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "ff77827c48ed68c7c8150fbba745b363",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3b0e06e3aae5cac62ead448ed3ad"
-		}
-	],
-	"EncounterSequence": [
-		{
-			"safeFloor": true,
-			"encounterName": "tut",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "16f797574ab339b9b1e99fb12827ab02",
-			"talkBeforeFight": false,
-			"storyAsset": "00000000000000000000000000000000"
-		},
-		{
-			"safeFloor": false,
-			"encounterName": "skelefolder",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": null,
-			"talkBeforeFight": false,
-			"storyAsset": "00000000000000000000000000000000"
-		},
-		{
-			"safeFloor": true,
-			"encounterName": "hatman",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
-			"talkBeforeFight": false,
-			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
-		},
-		{
-			"safeFloor": false,
-			"encounterName": "basic_enemy",
-			"encounterName2": null,
-			"encounterName3": null,
-			"weight": 0,
-			"maxWeight": 0,
-			"idfkanymorethisisasprite": null,
-			"talkBeforeFight": false,
-			"storyAsset": "00000000000000000000000000000000"
-		}
-	],
-	"thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh": "a5feed3343a4ebb7c1c8559d4deaa77f"
-}
-	},
-	{
 		"ID": "4ee109054bd45fba2d628a802ee4acfe",
 		"TypeName": "FlaxEngine.EmptyActor",
 		"ParentID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
@@ -261,6 +114,254 @@
 	"cum1": "30d410c947c5fbf924a3cdad9a5f2051",
 	"cum2": "b634da444906d4659b8c599690488adb",
 	"cum3": "b0d72c3746caebca055e1f921ca21c7c"
+}
+	},
+	{
+		"ID": "3f6ed6014aea8aba397678a2e4681fc8",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "9b825e0f48a3a4c3c0195cab7ca85b8a",
+		"Name": "ElevatorManager",
+		"Transform": {
+			"Translation": {
+				"X": -1.6666666269302368,
+				"Y": 0.0,
+				"Z": 0.0
+			}
+		}
+	},
+	{
+		"ID": "387d2c8f4b1bfe0f1109bf8f0371a31d",
+		"TypeName": "Game.Managers.ElevatorManager",
+		"ParentID": "3f6ed6014aea8aba397678a2e4681fc8",
+		"V": {
+	"cb": "aa85776d41d00fbaaaf8518611460350",
+	"possibleFriendlyEncounters": [
+		{
+			"safeFloor": true,
+			"encounterName": null,
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 1,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": "02d5674a402db65b05f41fb37f56d6e9",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3b0d060bebdec1849dade7ff237a"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "annoying",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 1,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": "01ee115b4514a0c44887b68a72ff9da8",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3a7d08325bafd5f928c795a3ab96"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "printert",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 2,
+			"maxWeight": 1,
+			"idfkanymorethisisasprite": "08de3b210969fbd6b52f641c6cac539b",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3a8007e6daa02ad1a6efe618aa84"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "replacement",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 3,
+			"maxWeight": 2,
+			"idfkanymorethisisasprite": "01ee115b4514a0c44887b68a72ff9da8",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3a8e082e06b98804ce428a186046"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "hatman",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 4,
+			"maxWeight": 3,
+			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "pc",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 5,
+			"maxWeight": 4,
+			"idfkanymorethisisasprite": "b5a11c4e429a9a954985eab710aad199",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3ace1a4e6e80852673b3315b1729"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "bio",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 6,
+			"maxWeight": 5,
+			"idfkanymorethisisasprite": "87b3edaf413f2cfbe7f33f9061e416fb",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3b0e06a48549ca3d18243f33f209"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "box",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 7,
+			"maxWeight": 6,
+			"idfkanymorethisisasprite": "0ab3b4aa402483e75a8f89a1dc89f685",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3b0e06e3aae5cac62ead448ed3ad"
+		}
+	],
+	"possibleEnemyEncounters": [
+		{
+			"safeFloor": false,
+			"encounterName": "gunman",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": true,
+			"storyAsset": "08de3a424723cc72eb737ef06c6a9a3e"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "gunman",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 1,
+			"maxWeight": 1,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "gunman",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 2,
+			"maxWeight": 2,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "printer",
+			"encounterName2": "gunman",
+			"encounterName3": "",
+			"weight": 3,
+			"maxWeight": 3,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": true,
+			"storyAsset": "08de3a94080193b0234fcad79b065a7f"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "gunman",
+			"encounterName2": "gunman",
+			"encounterName3": null,
+			"weight": 4,
+			"maxWeight": 4,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "dl",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 5,
+			"maxWeight": 5,
+			"idfkanymorethisisasprite": "8922e5a6443afc8244aa79b9111ebe4f",
+			"talkBeforeFight": true,
+			"storyAsset": "08de3b070689c7a32595a034d0a83fe3"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "printer",
+			"encounterName2": "printer",
+			"encounterName3": "gunman",
+			"weight": 6,
+			"maxWeight": 6,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "bossman",
+			"encounterName2": "",
+			"encounterName3": null,
+			"weight": 10,
+			"maxWeight": 10,
+			"idfkanymorethisisasprite": "5170330b4f513b3826f7618a7e3e6d32",
+			"talkBeforeFight": true,
+			"storyAsset": "00000000000000000000000000000000"
+		}
+	],
+	"EncounterSequence": [
+		{
+			"safeFloor": true,
+			"encounterName": "tut",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": "16f797574ab339b9b1e99fb12827ab02",
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "skelefolder",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		},
+		{
+			"safeFloor": true,
+			"encounterName": "hatman",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 0,
+			"maxWeight": 0,
+			"idfkanymorethisisasprite": "b106bffc4e9a5b9025a2b785e5e69350",
+			"talkBeforeFight": false,
+			"storyAsset": "08de3a7507d2f1e50a50bc4ba10f3a3b"
+		},
+		{
+			"safeFloor": false,
+			"encounterName": "skelefolder",
+			"encounterName2": null,
+			"encounterName3": null,
+			"weight": 1,
+			"maxWeight": 1,
+			"idfkanymorethisisasprite": null,
+			"talkBeforeFight": false,
+			"storyAsset": "00000000000000000000000000000000"
+		}
+	],
+	"thebitchthatspawnsrnbecausefuckyouiamlosingmymindforgodssakeaaaaaaahhhhhhhh": "a5feed3343a4ebb7c1c8559d4deaa77f"
 }
 	}
 ]
