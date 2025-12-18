@@ -297,7 +297,7 @@ public class CombatSystem : Script
 
     void removeAlly(int index)
     {
-        if (index >= 0 && index < NPC.Npcs.Count)
+        if (index >= 0 && index < NPC.Npcs.Count && )
         {
             NPC.Npcs.RemoveAt(index);
             if(NPC.Npcs.Count == 0)
