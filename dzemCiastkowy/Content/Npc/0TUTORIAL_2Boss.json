@@ -5,9 +5,9 @@
 	"Data": {
 	"id": "gunman",
 	"name": "Skelefolder",
-	"headTexture": "02d5674a402db65b05f41fb37f56d6e9",
-	"dialogueTexture": "02d5674a402db65b05f41fb37f56d6e9",
-	"worldTexture": "02d5674a402db65b05f41fb37f56d6e9",
+	"headTexture": "14e560e74d514ddb2d5665b89521445f",
+	"dialogueTexture": "14e560e74d514ddb2d5665b89521445f",
+	"worldTexture": "14e560e74d514ddb2d5665b89521445f",
 	"friendHealth": 5,
 	"friendMaxHealth": 0,
 	"friendActionRegen": 27.0,

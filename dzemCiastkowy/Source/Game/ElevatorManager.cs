@@ -333,7 +333,7 @@ public class ElevatorManager : Script
         {
             timer1 += Time.DeltaTime;
 
-            if (timer1 > 1.5f)
+            if (timer1 > 3.5f)
             {
                 timer1 = 0;
                 traveling = false;
